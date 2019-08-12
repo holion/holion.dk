@@ -1,0 +1,16 @@
+body {
+	font-size: 16px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.testimonials .item .testimonial .bottom .icon {
+	width: 10%;
+}
+
+.testimonials .item .testimonial .name-picture {
+	width: 90%;
+}
+
+.icon {
+	font-size: 40px;
+}

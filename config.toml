@@ -1,4 +1,136 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://holion.dk/"
+languageCode = "da-dk"
+defaultContentLanguage = "da"
+title = "Apps, web og automatisering løfter vores samarbejdspartnere"
 theme = "universal"
+googleAnalytics = "UA-338843-5"
+
+[menu]
+
+[[menu.main]]
+	identifier = "home"
+	name = "forside"
+	url = "/"
+	weight = 1
+
+[[menu.main]]
+	identifier = "services"
+	name = "Ydelser"
+	url = "/ydelser/"
+	weight = 2
+
+[[menu.main]]
+    identifier = "apps"
+    name = "Udvikling af apps"
+    url = "/apps/"
+    weight = 1
+    parent = "services"
+
+[[menu.main]]
+    identifier = "websys"
+    name = "Udvikling af websystemer"
+    url = "/websystemer/"
+    weight = 2
+    parent = "services"
+
+[[menu.main]]
+    identifier = "drift"
+    name = "Drift og hosting af apps og websystemer"
+    url = "/websystemer/"
+    weight = 3
+    parent = "services"
+
+[[menu.main]]
+    identifier = "konsulent"
+    name = "On-site konsulentassistance"
+    url = "/websystemer/"
+    weight = 3
+    parent = "services"
+
+[[menu.main]]
+	identifier = "cases"
+	name = "Cases"
+	url = "/cases/"
+	weight = 3
+
+[[menu.main]]
+	identifier = "about"
+	name = "Om Holion"
+	weight = 10
+
+[[menu.main]]
+    identifier = "jobs"
+    name = "Ledige stillinger"
+    url = "/ledige-stillinger/"
+    parent = "about"
+    weight = 1
+
+[[menu.main]]
+    identifier = "teknologi"
+    name = "Teknologi"
+    url = "/teknologi/"
+    parent = "about"
+    weight = 2
+
+[[menu.main]]
+    identifier = "fællesindsats"
+    name = "Fælles indsats"
+    url = "/fællesskab/"
+    parent = "about"
+    weight = 4
+
+[[menu.main]]
+	identifier = "contact"
+	name = "Kontakt"
+	url = "/kontakt/"
+	parent = "about"
+    weight = 100
+
+[params]
+	style = "default"
+
+    author = "holion.dk"
+    defaultKeywords = ["udvikling", "app", "web", ""]
+    defaultDescription = "IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale"
+
+    logo = "img/logo.png"
+    logo_small = "img/logo.png"
+
+    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
+
+    about_us = "<p>IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale</p>"
+    address = """<p><strong>Holion ApS</strong>
+        <br>Østergade 4, 1.
+        <br>8370 Hadsten
+      </p>
+      """
+    latitude = "56.327009"
+    longitude = "10.046421"
+    directions = "Holion ApS, Østergade 4, 1."
+
+    email = "info@holion.dk"
+    contact_form_ajax = false
+
+[params.carousel]
+    enable = true
+
+[params.features]
+    enable = true
+
+[params.testimonials]
+    enable = true
+    title = "Hvad siger samarbejdspartnerne?"
+    subtitle = "Vi har haft mange samarbejdspartnere gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt."
+
+[params.see_more]
+    enable = true
+    title = "Hvem er vi?"
+    subtitle = '''Holion er et konsulentfirma med speciale indenfor .NET udvikling.
+
+Vi leverer apps, webløsninger og programmer af høj kvalitet. Vi arbejder med både store og små kunder og fokuserer på altid at levere et resultat af højeste kvalitet.
+
+Vi er eksperter i det tekniske - men de specifikke tekniske detaljer behøver vi ikke kede jer med. Fortæl os om jeres behov, så kommer vi med et forslag til den løsning, som passer bedst til jer.
+
+Vores stil er venlig og afslappet, og vi tager meget gerne et uforpligtende møde.
+
+Vi ser frem til også at løse opgaver for jer.'''

@@ -1,0 +1,129 @@
+<div class="container" id="contact">
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <section>
+
+                {{ .Content }}
+
+                {{ if isset .Site.Params "email" }}
+
+                <div class="heading">
+                  <h3>{{ i18n "contactForm" }}</h3>
+                </div>
+
+                <div id="contact-message"></div>
+
+                <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="name">{{ i18n "contactName" }}</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">{{ i18n "contactMail" }}</label>
+                                <input type="text" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="phone">Dit telefonnummer</label>
+                                <input type="text" class="form-control" name="phone" id="phone">
+                            </div>
+                            </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">{{ i18n "contactMessage" }}</label>
+                                <textarea id="message" class="form-control" name="message" rows="12" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 text-center">
+                          <button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i>{{ i18n "contactSend" }}</button>
+
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </form>
+
+                {{ end }}
+
+            </section>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <section>
+                <h3 class="text-uppercase">Kontakt</h3>
+                <div style="display: table">
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Mobil:&nbsp;
+                        </p>
+                        <p style="display: table-cell">
+                            <a href="tel:+4561303039">61 30 30 39</a>
+                        </p>
+                    </div>
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Mail:&nbsp;
+                        </p>
+                        <p style="display: table-cell">
+                            <a href="mailto:info@holion.dk">info@holion.dk</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {{ if isset .Site.Params "address" }}
+            <section>
+
+              <h3 class="text-uppercase"> {{ i18n "contactAddrTitle" }}</h3>
+
+              <a href="https://www.google.com/maps/place/%C3%98stergade+4,+8370+Hadsten/@56.327041,10.0484348,19z/data=!4m5!3m4!1s0x464c1084bea2d299:0x794076b78af6f5de!8m2!3d56.3270037!4d10.0486274?hl=da">
+                {{ .Site.Params.address | safeHTML }}
+              </a>
+            </section>
+
+            {{ end }}
+
+            <section>
+                <h3 class="text-uppercase">Bank</h3>
+                Spar Nord Bank
+                <br /><br />
+                <div style="display: table">
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Regnr:
+                        </p>
+                        <p style="display: table-cell">
+                            7470
+                        </p>
+                    </div>
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Kontonr:&nbsp;
+                        </p>
+                        <p style="display: table-cell">
+                            4583314437
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-uppercase">CVR</h3>
+                36 08 60 09
+            </section>
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+
+{{ partial "map.html" . }}
