@@ -93,8 +93,8 @@ googleAnalytics = "UA-338843-5"
     defaultKeywords = ["udvikling", "app", "web", ""]
     defaultDescription = "IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale"
 
-    logo = "img/logo.png"
-    logo_small = "img/logo.png"
+    logo = "/img/logo.png"
+    logo_small = "/img/logo.png"
 
     googleMapsApiKey = "AIzaSyDIVOs27G2ngMgR84tFtaKTGsIjg70EIcc"
 
