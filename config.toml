@@ -36,14 +36,14 @@ googleAnalytics = "UA-338843-5"
 [[menu.main]]
     identifier = "drift"
     name = "Drift og hosting af apps og websystemer"
-    url = "/websystemer/"
+    url = "/drift/"
     weight = 3
     parent = "services"
 
 [[menu.main]]
     identifier = "konsulent"
     name = "On-site konsulentassistance"
-    url = "/websystemer/"
+    url = "/konsulent/"
     weight = 3
     parent = "services"
 
@@ -96,7 +96,7 @@ googleAnalytics = "UA-338843-5"
     logo = "img/logo.png"
     logo_small = "img/logo.png"
 
-    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
+    googleMapsApiKey = "AIzaSyDIVOs27G2ngMgR84tFtaKTGsIjg70EIcc"
 
     about_us = "<p>IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale</p>"
     address = """<p><strong>Holion ApS</strong>
