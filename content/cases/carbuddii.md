@@ -1,11 +1,11 @@
 ---
 title: "CarBuddii - Bilsælgernes foretrukne salgsværktøj"
-date: 2019-06-06
+aliases: [/carbuddii/]
 ---
  
+{{< testimonial "#3996dc" "carbuddii.png" "dp.jpg" "Dennis Præstekjær" "https://www.linkedin.com/in/dennispraestekjaer/" "CIO" "CarBuddii A/S" >}}
 I over tre år har vi kontinuerligt og med meget stor succes brugt Holion til udvikling af vores system. Vi er rigtig glade for både den forretningsmæssige, strategiske og processorienterede input og sparring og samtidig den udviklingen af produktet, vi har fået ved samarbejdet. 
-
-Dennis Præstekjær, CIO, CarBuddii A/S
+{{< /testimonial >}}
 
 Projektet
 ---

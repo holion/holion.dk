@@ -1,0 +1,11 @@
+weight: 1
+title: "Udvikling af apps til mobil og tablet"
+#description: "<p>iPhone. Android.<br/>Cross-Platform.<br/>Hurtigt. Effektivt.</p>"
+description: >
+  <ul class="list-style-none">
+     <li>iPhone. Android.<br/>
+     Cross-Platform.</li>
+     <li>Hurtigt. Effektivt. Flot.</li>
+   </ul>
+image: "img/carousel/apps.png"
+link: "apps"

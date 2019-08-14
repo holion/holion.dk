@@ -1,11 +1,11 @@
 ---
 title: "Stofa - Nem hjælp til bedre trådløs dækning"
-date: 2019-06-06
+aliases: [/stofa/]
 ---
- 
-Jeg havde brug for en knivskarp udvikler, der kunne samle et eksisterende halvfærdigt Xamarin app projekt op, og 2 uger efter være lead udvikler på det. Det finder man ikke bare lige, men det fandt jeg med Holion. Har kun pæne ord om kvaliteten af arbejdet, kompetencer og fleksibiliteten fra Holions side.
 
-Martin Wickings, Senior Business Developer, Stofa A/S
+{{< testimonial "#DB002A" "stofa.png" "mw.jpg" "Martin Wickings" "https://www.linkedin.com/in/wickings/" "Senior Business Developer" "Stofa A/S" >}}
+Jeg havde brug for en knivskarp udvikler, der kunne samle et eksisterende halvfærdigt Xamarin app projekt op, og 2 uger efter være lead udvikler på det. Det finder man ikke bare lige, men det fandt jeg med Holion. Har kun pæne ord om kvaliteten af arbejdet, kompetencer og fleksibiliteten fra Holions side.
+{{< /testimonial >}}
 
 Projektet
 ---

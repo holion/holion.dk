@@ -1,5 +1,5 @@
 ---
-title: "Drift og hosting af apps og websystemer"
+title: "Hosting og drift af apps og websystemer"
 date: 2019-06-06
 ---
 

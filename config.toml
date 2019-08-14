@@ -35,14 +35,14 @@ googleAnalytics = "UA-338843-5"
 
 [[menu.main]]
     identifier = "drift"
-    name = "Drift og hosting af apps og websystemer"
+    name = "Hosting og drift af apps og websystemer"
     url = "/drift/"
     weight = 3
     parent = "services"
 
 [[menu.main]]
     identifier = "konsulent"
-    name = "On-site konsulentassistance"
+    name = "Konsulentassistance"
     url = "/konsulent/"
     weight = 3
     parent = "services"

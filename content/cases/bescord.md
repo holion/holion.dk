@@ -1,11 +1,11 @@
 ---
 title: "BeScord - Avanceret finansiel analyse"
-date: 2019-06-06
+aliases: [/bescord/]
 ---
  
+ {{< testimonial "#C19F95" "bescord-white.png" "rhs.jpg" "Rasmus Heskier Schiønning" "https://www.linkedin.com/in/rasmusheskier/" "CEO" "BeScord ApS" >}}
 Samarbejdet med Holion har vist at de har dygtige full stack udviklere, som udviklede vores BeScord Banking applikation. Fra starten var vores ønske at finde en dansk udviklingspartner, som har været en fordel igennem hele forløbet. Vi står med en applikation som er udviklet uden misforståelser og tidsforsinkelser. 
-
-Rasmus Heskier Schiønning, CEO, BeScord ApS
+{{< /testimonial >}}
 
 Projektet
 ---
