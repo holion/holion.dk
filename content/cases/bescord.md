@@ -1,6 +1,13 @@
 ---
 title: "BeScord - Avanceret finansiel analyse"
 aliases: [/bescord/]
+
+link: "bescord"
+color: "#c19f95"
+img: "/img/cases/bescord.png"
+header: "Avanceret finansiel analyse"
+description: "[BeScord](https://bescord.com) hjælper store virksomheder med at analysere deres regnskaber og på den baggrund opnå store besparelser."
+weight: 2
 ---
  
  {{< testimonial "#C19F95" "bescord-white.png" "rhs.jpg" "Rasmus Heskier Schiønning" "https://www.linkedin.com/in/rasmusheskier/" "CEO" "BeScord ApS" >}}

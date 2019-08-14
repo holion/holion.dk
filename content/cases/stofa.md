@@ -1,6 +1,13 @@
 ---
 title: "Stofa - Nem hjælp til bedre trådløs dækning"
 aliases: [/stofa/]
+
+link: "stofa"
+color: "#DB002A"
+img: "/img/cases/stofa.png"
+header: "Nem hjælp til bedre trådløs dækning"
+description: "[Stofa](https://stofa.dk) ville gerne gøre det lettere og sjovere for deres kunder at hjælpe dem selv med at forbedre deres Wi-Fi i hjemmet."
+weight: 1
 ---
 
 {{< testimonial "#DB002A" "stofa.png" "mw.jpg" "Martin Wickings" "https://www.linkedin.com/in/wickings/" "Senior Business Developer" "Stofa A/S" >}}

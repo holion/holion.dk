@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head.html" . }}
+
+<body>
+
+    <div id="all">
+
+        <header>
+
+            {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            {{ if isset .Params "id" }} {{ partial .Params.id . }} {{ else }}
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <section>
+                            {{ .Content }}
+                        </section>
+
+                        {{ $paginator := .Paginate (where .Data.Pages "Type" "cases") }} {{ range $paginator.Pages }}
+                        <section class="case" style="display: inline-block; width: 100%; max-height: 300px; overflow: hidden; background-image: linear-gradient(to right bottom, {{.Params.color}}, #ffffff); border-radius: 20px; border: 1px solid black">
+                            <div style="width: 520px; float: left; text-align: center; padding" class="hidden-xs hidden-sm">
+                                <a href="{{.Params.link}}">
+                                    <img src="{{.Params.img}}" style="width: 510px">
+                                </a>
+                            </div>
+                            <div style="margin: 20px">
+                                <h3>{{.Params.header}}</h3>
+                                <p class="description">{{.Params.description | markdownify}}</p>
+                                <a href="{{.Params.link}}" class="btn btn-small btn-template-main">Læse mere</a>
+                            </div>
+                        </section>
+                        {{ end }}
+
+                        <section>
+                            {{.Page.Params.footer}}
+                        </section>
+                    </div>
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+
+            {{ end }}
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

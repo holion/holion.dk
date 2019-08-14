@@ -54,34 +54,34 @@ h3 {
 	margin: 0 auto;
 }
 
-.testimonial {
+.casetestimonial {
 	color: white;
 	padding: 60px 0;
 	margin-top: -60px;
 	font-size: 20px;
 }
 
-.testimonial img {
+.casetestimonial img {
 	max-height: 200px;
 }
 
-.testimonial img.profile {
+.casetestimonial img.profile {
 	border-radius: 100%;
 	float: left;
 	max-height: 200px;
 	margin-right: 20px;
 }
 
-.testimonial a {
+.casetestimonial a {
 	color: white;
 	text-decoration: underline;
 }
 
-.testimonial .text {
+.casetestimonial .text {
 	text-align: justify;
 	margin-bottom: 20px;
 }
 
-.testimonial .contact {
+.casetestimonial .contact {
 	font-weight: bold;
 }

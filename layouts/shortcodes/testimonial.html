@@ -3,14 +3,16 @@
 	</div>
 </div>
 
-<div class="testimonial" style="background-color: {{.Get 0}}">
+<div class="casetestimonial" style="background-color: {{.Get 0}}">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<img src="/img/testimonials/{{.Get 1}}" class="img-responsive img-centered">
 			</div>
 			<div class="col-md-10 col-md-offset-1" style="padding: 20px; margin-top: 20px">
-				<img src="/img/testimonials/{{.Get 2}}" class="profile">
+				<a href="{{.Get 4}}">
+					<img src="/img/testimonials/{{.Get 2}}" class="profile hidden-xs hidden-sm">
+				</a>
 				<div style="display: table-cell">
 					<div class="text">
 						<p><i class="fas fa-quote-left"></i> {{.Inner}} <i class="fas fa-quote-right"></i></p>
