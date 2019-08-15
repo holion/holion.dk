@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-sm-6 col-sm-offset-3" id="error-page">
+
+                        <p class="text-center">
+                            <a href="{{ .Site.BaseURL }}">
+                                <img src="/img/404.png" alt="Oh no - 404 :-/" class="img-responsive">
+                            </a>
+                        </p>
+
+                        <h2>Vi beklager</h2>
+                        <h4 class="text-muted">Du har ramt en side, som vi ikke kender.</h4>
+
+                        <p class="buttons"><a href="{{ .Site.BaseURL }}" class="btn btn-template-main"><i class="fa fa-home"></i> Gå til forsiden</a>
+                        </p>
+                    </div>
+
+                    <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+  </body>
+</html>
