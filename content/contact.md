@@ -1,7 +1,6 @@
 ---
 id: "contact"
 title: "Kontakt os"
-date: 2019-06-06
 slug: kontakt
 ---
 

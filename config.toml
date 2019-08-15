@@ -108,8 +108,8 @@ googleAnalytics = "UA-338843-5"
     longitude = "10.0484723"
     directions = "Holion ApS, Østergade 4, 1."
 
-    email = "info@holion.dk"
-    contact_form_ajax = false
+    mailService = "https://holionfunctions.azurewebsites.net/api/contact"
+    contact_form_ajax = true
 
 [params.carousel]
     enable = true
