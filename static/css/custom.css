@@ -98,4 +98,8 @@ h3 {
     h3 {
         font-size: 18px;
     }
+
+    .long-text {
+        font-size: 12px;
+    }
 }

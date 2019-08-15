@@ -15,9 +15,11 @@ Vi mangler altid udviklere. Både junior og senior. Helst full stack, men mindre
 
 Send os dine svar på ovenstående spørgsmål til:
 
+{{< long-text >}}
 {{< base64encode >}}
 jegerdendusøger@holion.dk
 {{< /base64encode >}}
+{{< /long-text >}}
 &nbsp;
 
 ## Hvorfor arbejde hos Holion
