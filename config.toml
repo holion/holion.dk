@@ -104,8 +104,8 @@ googleAnalytics = "UA-338843-5"
         <br>8370 Hadsten
       </p>
       """
-    latitude = "56.327009"
-    longitude = "10.046421"
+    latitude = "56.3270084"
+    longitude = "10.0484723"
     directions = "Holion ApS, Østergade 4, 1."
 
     email = "info@holion.dk"
