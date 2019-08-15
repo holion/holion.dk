@@ -4,7 +4,7 @@
   {{ partial "head.html" . }}
 
   <body>
-    {{ partial "bodytop.html" . }}
+	{{ partial "bodytop.html" . }}
     <div id="all">
 
         <header>
@@ -12,6 +12,8 @@
           {{ partial "nav.html" . }}
 
         </header>
+
+        {{ partial "breadcrumbs.html" . }}
 
         <div id="content">
             {{ if isset .Params "id" }}
@@ -35,23 +37,11 @@
                 </div>
                 <!-- /.row -->
 
-                <h2>
-                  Andre cases
-                </h2>
-
-                <p>
-                  {{ range (where (where .Site.Pages "Type" "cases") "Title" "!=" .Page.Title) }}
-                    {{ if ne .Kind "section" }}
-                      {{ partial "case.html" . }}
-                    {{end}}
-                  {{ end }}
-                </p>
             </div>
             <!-- /.container -->
 
             {{ end }}
         </div>
-
         <!-- /#content -->
 
         {{ partial "footer.html" . }}
