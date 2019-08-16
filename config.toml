@@ -22,14 +22,14 @@ googleAnalytics = "UA-338843-5"
 [[menu.main]]
     identifier = "apps"
     name = "Udvikling af apps"
-    url = "/apps/"
+    url = "/appudvikling/"
     weight = 1
     parent = "services"
 
 [[menu.main]]
     identifier = "websys"
     name = "Udvikling af websystemer"
-    url = "/websystemer/"
+    url = "/webudvikling/"
     weight = 2
     parent = "services"
 
