@@ -1,6 +1,5 @@
 ---
 title: "Udvikling af webbaserede systemer"
-date: 2019-06-06
 ---
 
 {{< text-with-image "/img/cases/bescord.png" "right" >}}

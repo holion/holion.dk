@@ -1,6 +1,5 @@
 ---
 title: "Hosting og drift af apps og websystemer"
-date: 2019-06-06
 ---
 
 {{< text-with-image "/img/server.jpg" "right" >}}

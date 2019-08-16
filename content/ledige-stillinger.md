@@ -1,6 +1,5 @@
 ---
 title: "Ledige stillinger"
-date: 2019-06-06
 ---
 
 ### Udvikler

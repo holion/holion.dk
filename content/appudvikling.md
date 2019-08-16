@@ -1,6 +1,5 @@
 ---
 title: "Udvikling af apps"
-date: 2019-06-06
 ---
 
 {{< text-with-image "/img/cases/stofa.png" "right" >}}

@@ -1,6 +1,5 @@
 ---
 title: "Teknologi"
-date: 2019-06-06
 ---
 
 Vi er eksperterne, når det kommer til den tekniske del af opgaven - den del behøver kunden ikke bekymre sig om. Er man alligevel interesseret i denne del, kommer her nogle tekniske nøgleord, der knytter sig til Holions seneste opgaver. Generelt kan det siges, at vi har rigtig god og stor erfaring med teknologi baseret på Microsoft-platformen, men det er som med tyske verber, at der ikke er nogen regel uden (mange) undtagelser.
