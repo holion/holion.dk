@@ -24,15 +24,15 @@ body {
 }
 
 .case .description a {
-	color: black;
-	text-decoration: underline;
+    color: black;
+    text-decoration: underline;
 }
 
 h2 {
     display: inline-block;
     border-bottom: solid 5px #38a7bb;
     line-height: 1.1;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-bottom: 10px;
     vertical-align: middle;
     text-transform: uppercase;
@@ -51,54 +51,51 @@ h3 {
 }
 
 .img-centered {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .casetestimonial {
-	color: white;
-	padding: 60px 0;
-	margin-top: -1px;
-	font-size: 20px;
+    color: white;
+    padding: 60px 0;
+    margin-top: -1px;
+    font-size: 20px;
 }
 
 .casetestimonial img {
-	max-height: 200px;
+    max-height: 200px;
 }
 
 .casetestimonial img.profile {
-	border-radius: 100%;
-	float: left;
-	max-height: 200px;
-	margin-right: 20px;
+    border-radius: 100%;
+    float: left;
+    max-height: 200px;
+    margin-right: 20px;
 }
 
 .casetestimonial a {
-	color: white;
-	text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
 
 .casetestimonial .text {
-	text-align: justify;
-	margin-bottom: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
 }
 
 .casetestimonial .contact {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 @media (max-width: 500px) {
     h1 {
         font-size: 22px !important;
     }
-
     h2 {
         font-size: 20px;
     }
-
     h3 {
         font-size: 18px;
     }
-
     .long-text {
         font-size: 12px;
     }

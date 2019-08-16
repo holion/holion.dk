@@ -99,10 +99,8 @@ googleAnalytics = "UA-338843-5"
     googleMapsApiKey = "AIzaSyDIVOs27G2ngMgR84tFtaKTGsIjg70EIcc"
 
     about_us = "<p>IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale</p>"
-    address = """<p><strong>Holion ApS</strong>
-        <br>Østergade 4, 1.
+    address = """<br>Østergade 4, 1.
         <br>8370 Hadsten
-      </p>
       """
     latitude = "56.3270084"
     longitude = "10.0484723"
