@@ -1,6 +1,4 @@
-{{ if isset .Site.Params "carousel" }}
-{{ if .Site.Params.carousel.enable }}
-{{ if gt (len .Site.Data.carousel) 0 }}
+{{ if isset .Site.Params "carousel" }} {{ if .Site.Params.carousel.enable }} {{ if gt (len .Site.Data.carousel) 0 }}
 <section>
     <div class="home-carousel">
         <div class="dark-mask"></div>
@@ -12,7 +10,8 @@
                         <div class="col-sm-5 right">
                             <a href="{{.link}}">
                                 <h1>{{ .title }}</h1>
-                                {{ .description | safeHTML }}
+                                {{ .description | safeHTML }} &nbsp;<br/>
+                                <a href="/cases/{{.Params.link}}" class="btn btn-small btn-template-main">Læse mere</a>
                             </a>
                         </div>
                         <div class="col-sm-7 hidden-xs">
@@ -26,6 +25,4 @@
         </div>
     </div>
 </section>
-{{ end }}
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} {{ end }}
