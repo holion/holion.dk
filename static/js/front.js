@@ -23,6 +23,8 @@ $(function() {
 
 function contactFormAjax() {
     var contactForm = document.getElementById("contact-form");
+    if (!contactForm)
+        return;
 
     contactForm.onsubmit = function(event) {
         event.preventDefault();
