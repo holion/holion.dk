@@ -100,3 +100,7 @@ h3 {
         font-size: 12px;
     }
 }
+
+.box-simple p {
+    text-align: left;
+}
