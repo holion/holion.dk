@@ -8,7 +8,7 @@ link: "bescord"
 color: "#c19f95"
 img: "/img/cases/bescord.png"
 header: "Avanceret finansiel analyse"
-description: "[BeScord](https://bescord.com) hjælper store virksomheder med at analysere deres regnskaber og på den baggrund opnå store besparelser."
+casedescription: "[BeScord](https://bescord.com) hjælper store virksomheder med at analysere deres regnskaber og på den baggrund opnå store besparelser."
 weight: 2
 ---
  

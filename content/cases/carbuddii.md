@@ -8,7 +8,7 @@ link: "carbuddii"
 color: "#3996dc"
 img: "/img/cases/carbuddii.png"
 header: "Bilsælgernes foretrukne salgsværktøj"
-description: "[CarBuddii](https://carbuddii.dk) har fået udviklet en app som den dag i dag er bilsælgernes fortrukne salgsredskab. Al kundekontakt håndteres via appen, så kunden opnår den bedst mulige service."
+casedescription: "[CarBuddii](https://carbuddii.dk) har fået udviklet en app som den dag i dag er bilsælgernes fortrukne salgsredskab. Al kundekontakt håndteres via appen, så kunden opnår den bedst mulige service."
 weight: 3
 ---
  

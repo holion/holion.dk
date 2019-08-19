@@ -8,7 +8,7 @@ link: "stofa"
 color: "#DB002A"
 img: "/img/cases/stofa.png"
 header: "Nem hjælp til bedre trådløs dækning"
-description: "[Stofa](https://stofa.dk) ville gerne gøre det lettere og sjovere for deres kunder at hjælpe dem selv med at forbedre deres Wi-Fi i hjemmet."
+casedescription: "[Stofa](https://stofa.dk) ville gerne gøre det lettere og sjovere for deres kunder at hjælpe dem selv med at forbedre deres Wi-Fi i hjemmet."
 weight: 1
 ---
 

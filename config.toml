@@ -91,7 +91,7 @@ googleAnalytics = "UA-338843-5"
 
     author = "holion.dk"
     defaultKeywords = ["udvikling", "app", "web", ""]
-    defaultDescription = "IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale"
+    defaultDescription = "Specialister i apps til Android/iPhone, websystemer og automatisering af IT-processer. Se hvordan vi kan hjælpe dig her."
 
     logo = "/img/logo.png"
     logo_small = "/img/logo.png"
