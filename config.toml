@@ -1,7 +1,7 @@
 baseURL = "https://holion.dk/"
 languageCode = "da-dk"
 defaultContentLanguage = "da"
-title = "Apps, web og automatisering løfter vores samarbejdspartnere"
+title = "App- og webudvikler med base i Østjylland | Holion.dk"
 theme = "universal"
 googleAnalytics = "UA-338843-5"
 

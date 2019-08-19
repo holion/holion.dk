@@ -1,6 +1,8 @@
 ---
 title: "CarBuddii - Bilsælgernes foretrukne salgsværktøj"
 aliases: [/carbuddii/]
+pagetitle: "CarBuddii-case | Læs om deres salgsbaserede app til bilsælgere"
+description: "I samarbejde med Holion fik CarBuddii en ny app, som blev bilsælgernes foretrukne redskab til styring af salgsprocessen."
 
 link: "carbuddii"
 color: "#3996dc"

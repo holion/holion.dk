@@ -1,6 +1,8 @@
 ---
 title: "BeScord - Avanceret finansiel analyse"
 aliases: [/bescord/]
+pagetitle: "BeScord-case | Læs om det avancerede system til regnskabsanalyse"
+description: "BeScord skulle bruge et system til at analysere deres kunders regnskaber. Til dette udviklede Holion en avanceret løsning."
 
 link: "bescord"
 color: "#c19f95"

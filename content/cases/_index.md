@@ -1,5 +1,7 @@
 ---
 title: "Hvad siger samarbejdspartnerne?"
+pagetitle: "Hvad siger vores kunder? | Læs cases fra Stofa, CarBuddii m.fl. her"
+description: "I årenes løb har vi hjulpet mange virksomheder med appudvikling og websystemer. Læs mere om, hvad vi kan gøre for dig."
 
 footer: "Vi har haft et rigtig godt samarbejde med mange andre virksomheder og vi er ret sikre på, at vi også vil kunne hjælpe jer, med jeres udfordringer. Så ta' fat i os og lad os gi' et bud på en god løsning for jer."
 ---

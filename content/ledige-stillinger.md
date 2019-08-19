@@ -1,5 +1,7 @@
 ---
 title: "Ledige stillinger"
+pagetitle: "Ledige jobs hos Holion | Vi søger altid nye udvikler-talenter"
+description: "Der er flere gode grunde til at arbejde hos Holion. Stor frihed i forhold til opgaver og arbejdstid. Send din ansøgning her."
 ---
 
 ### Udvikler

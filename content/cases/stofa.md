@@ -1,6 +1,8 @@
 ---
 title: "Stofa - Nem hjælp til bedre trådløs dækning"
 aliases: [/stofa/]
+pagetitle: "Stofa-case | Læs om deres app til optimering af trådløs dækning"
+description: "Stofa ville gøre det let for deres kunder at forbedre WIFI'en. Dette blev i samarbejde med Holion til en spændende ny app."
 
 link: "stofa"
 color: "#DB002A"
