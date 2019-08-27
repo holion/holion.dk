@@ -11,7 +11,7 @@ En god og høj uddannelse betyder ikke nødvendigvis, at man er den bedste til a
 Med andre ord - nogle virkelig **stærke konsulenter**.
 
 ## Vi kommer ud til dig
-Vi sidder normalt sammen på vores eget kontor og arbejder. Men hvis du har behov for, at vi kommer ud til dig og hjælper dit team, er det det vi gør. Vi kan cirka det samme som dine egne udviklere - vi har bare masser af erfaring med alt lige fra agile udviklingsprocesser over backendudvikling til appudvikling. Det kan være, at I har nogle konkrete problemer, som I kunne bruge et par ekstra øjne på et par dage, en uge eller måske en måned. Det kan også være, at I har brug for at hæve kompetenceniveauet for et team over en længere periode. Vi er klar til at hjælpe med både stort og småt.
+Vi sidder normalt sammen på vores eget kontor og arbejder. Men hvis du har behov for, at vi kommer ud til dig og hjælper dit team, er det det vi gør. Vi kan cirka det samme som dine egne udviklere - vi har bare masser af erfaring med alt lige fra agile udviklingsprocesser over [backendudvikling]({{<ref webudvikling>}}) til [appudvikling]({{<ref appudvikling>}}). Det kan være, at I har nogle konkrete problemer, som I kunne bruge et par ekstra øjne på et par dage, en uge eller måske en måned. Det kan også være, at I har brug for at hæve kompetenceniveauet for et team over en længere periode. Vi er klar til at hjælpe med både stort og småt.
 
 ## Hvad har vi hjulpet med?
 Vi hjalp i løbet af nogle få dage en mindre kunde med at identificere nogle performance issues og finde en brugbar løsning på disse. Hurtigt ind - hurtigt ud. Det var hvad der var behov for og økonomi til her.
