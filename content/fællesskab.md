@@ -8,4 +8,4 @@ I Holion tror vi på, at skal man vinde, kræver det en fælles indsats. Dette g
 
 Da vi tror på, at en fælles indsats og et tæt samarbejde er den bedste ingrediens for at opnå det perfekte samarbejde, har vi ingen kunder i Holion - vi har samarbejdspartnere.
 
-![Kræftens Bekæmpelse](/img/cancer.png) ![Danmark Planter Træer](/img/trees.png) ![Fritidspuljen](/img/fritidspuljen.jpg)
+![Danmark Planter Træer](/img/trees.png) ![Kræftens Bekæmpelse](/img/cancer.png) ![Fritidspuljen](/img/fritidspuljen.jpg)
