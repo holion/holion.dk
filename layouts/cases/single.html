@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body>
-    {{ partial "bodytop.html" . }}
-    <div id="all">
+<body>
+  {{ partial "bodytop.html" . }}
+  <div id="all">
 
-        <header>
+    <header>
 
-          {{ partial "nav.html" . }}
+      {{ partial "nav.html" . }}
 
-        </header>
+    </header>
 
-        <div id="content">
-            {{ if isset .Params "id" }}
+    <div id="content">
+      {{ if isset .Params "id" }}
 
-              {{ partial .Params.id . }}
+      {{ partial .Params.id . }}
 
-            {{ else }}
+      {{ else }}
 
-            <div class="container">
+      <div class="container">
 
-                <div class="row">
+        <div class="row">
 
-                    <div class="col-md-12">
+          <div class="col-md-12">
 
-                        <div>
-                          {{ .Content }}
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- /.row -->
-
-                <h2>
-                  Andre cases
-                </h2>
-
-                <p>
-                  {{ range (where (where .Site.Pages "Type" "cases") "Title" "!=" .Page.Title) }}
-                    {{ if ne .Kind "section" }}
-                      {{ partial "case.html" . }}
-                    {{end}}
-                  {{ end }}
-                </p>
+            <div>
+              {{ .Content }}
             </div>
-            <!-- /.container -->
 
-            {{ end }}
+          </div>
+
         </div>
+        <!-- /.row -->
 
-        <!-- /#content -->
+        <h2>
+          Andre cases
+        </h2>
 
-        {{ partial "footer.html" . }}
+        <p>
+          {{ range (where (where .Site.Pages "Type" "cases") "Title" "!=" .Page.Title) }}
+          {{ if ne .Kind "section" }}
+          {{ partial "case.html" . }}
+          {{end}}
+          {{ end }}
+        </p>
+      </div>
+      <!-- /.container -->
 
+      {{ end }}
     </div>
-    <!-- /#all -->
 
-    {{ partial "scripts.html" . }}
+    <!-- /#content -->
 
-  </body>
+    {{ partial "footer.html" . }}
+
+  </div>
+  <!-- /#all -->
+
+  {{ partial "scripts.html" . }}
+
+</body>
+
 </html>
