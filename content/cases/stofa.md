@@ -4,17 +4,21 @@ aliases: [/stofa/]
 pagetitle: "Stofa-case | Læs om deres app til optimering af trådløs dækning"
 description: "Stofa ville gøre det let for deres kunder at forbedre WIFI'en. Dette blev i samarbejde med Holion til en spændende ny app."
 
+company: "Stofa A/S"
+companyLogo: "stofa.png"
 link: "stofa"
 color: "#DB002A"
 img: "/img/cases/stofa.png"
 header: "Nem hjælp til bedre trådløs dækning"
 casedescription: "[Stofa](https://stofa.dk) ville gerne gøre det lettere og sjovere for deres kunder at hjælpe dem selv med at forbedre deres Wi-Fi i hjemmet."
 weight: 1
----
 
-{{< testimonial "#DB002A" "stofa.png" "mw.jpg" "Martin Wickings" "https://www.linkedin.com/in/wickings/" "Senior Business Developer" "Stofa A/S" >}}
-Jeg havde brug for en knivskarp udvikler, der kunne samle et eksisterende halvfærdigt Xamarin app projekt op, og 2 uger efter være lead udvikler på det. Det finder man ikke bare lige, men det fandt jeg med Holion. Har kun pæne ord om kvaliteten af arbejdet, kompetencer og fleksibiliteten fra Holions side.
-{{< /testimonial >}}
+testimonial: "Jeg havde brug for en knivskarp udvikler, der kunne samle et eksisterende halvfærdigt Xamarin app projekt op, og 2 uger efter være lead udvikler på det. Det finder man ikke bare lige, men det fandt jeg med Holion. Har kun pæne ord om kvaliteten af arbejdet, kompetencer og fleksibiliteten fra Holions side."
+testimonialBy: "Martin Wickings"
+testimonialByImg: "mw.jpg"
+testimonialByLink: "https://www.linkedin.com/in/wickings/"
+testimonialByTitle: "Senior Business Developer"
+---
 
 Projektet
 ---

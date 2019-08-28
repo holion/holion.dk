@@ -4,18 +4,22 @@ aliases: [/carbuddii/]
 pagetitle: "CarBuddii-case | Læs om deres salgsbaserede app til bilsælgere"
 description: "I samarbejde med Holion fik CarBuddii en ny app, som blev bilsælgernes foretrukne redskab til styring af salgsprocessen."
 
+company: "CarBuddii A/S"
+companyLogo: "carbuddii.png"
 link: "carbuddii"
 color: "#3996dc"
 img: "/img/cases/carbuddii.png"
 header: "Bilsælgernes foretrukne salgsværktøj"
 casedescription: "[CarBuddii](https://carbuddii.dk) har fået udviklet en app som den dag i dag er bilsælgernes fortrukne salgsredskab. Al kundekontakt håndteres via appen, så kunden opnår den bedst mulige service."
 weight: 3
+
+testimonial: "I over tre år har vi kontinuerligt og med meget stor succes brugt Holion til udvikling af vores system. Vi er rigtig glade for både den forretningsmæssige, strategiske og processorienterede input og sparring og samtidig den udviklingen af produktet, vi har fået ved samarbejdet."
+testimonialBy: "Dennis Præstekjær"
+testimonialByImg: "dp.jpg"
+testimonialByLink: "https://www.linkedin.com/in/dennispraestekjaer/"
+testimonialByTitle: "CIO"
 ---
  
-{{< testimonial "#3996dc" "carbuddii.png" "dp.jpg" "Dennis Præstekjær" "https://www.linkedin.com/in/dennispraestekjaer/" "CIO" "CarBuddii A/S" >}}
-I over tre år har vi kontinuerligt og med meget stor succes brugt Holion til udvikling af vores system. Vi er rigtig glade for både den forretningsmæssige, strategiske og processorienterede input og sparring og samtidig den udviklingen af produktet, vi har fået ved samarbejdet. 
-{{< /testimonial >}}
-
 Projektet
 ---
 Holion har i samarbejde med CarBuddii udviklet en app, som er tænkt til at være bilsælgerens foretrukne salgsredskab. Når en kunde går ind på forhandlerens hjemmeside og indtaster en forespørgsel eller booker en prøvetur i en bil, notificeres sælgeren øjeblikkelig om henvendelsen. Herefter kan sælgeren benytte appen igennem hele sagsprocessen og løbende kontakte kunden via opkald eller foruddefinerede e-mail templates, indtil bilen er solgt, afleveret til kunden og der ikke længere er behov for kontakt til denne.

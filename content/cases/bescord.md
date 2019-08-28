@@ -4,18 +4,22 @@ aliases: [/bescord/]
 pagetitle: "BeScord-case | Læs om det avancerede system til regnskabsanalyse"
 description: "BeScord skulle bruge et system til at analysere deres kunders regnskaber. Til dette udviklede Holion en avanceret løsning."
 
+company: "BeScord ApS"
+companyLogo: "bescord-white.png"
 link: "bescord"
 color: "#c19f95"
 img: "/img/cases/bescord.png"
 header: "Avanceret finansiel analyse"
 casedescription: "[BeScord](https://bescord.com) hjælper store virksomheder med at analysere deres regnskaber og på den baggrund opnå store besparelser."
 weight: 2
+
+testimonial: "Samarbejdet med Holion har vist at de har dygtige full stack udviklere, som udviklede vores BeScord Banking applikation. Fra starten var vores ønske at finde en dansk udviklingspartner, som har været en fordel igennem hele forløbet. Vi står med en applikation som er udviklet uden misforståelser og tidsforsinkelser."
+testimonialBy: "Rasmus Heskier Schiønning"
+testimonialByImg: "rhs.jpg"
+testimonialByLink: "https://www.linkedin.com/in/rasmusheskier/"
+testimonialByTitle: "CEO"
 ---
  
- {{< testimonial "#C19F95" "bescord-white.png" "rhs.jpg" "Rasmus Heskier Schiønning" "https://www.linkedin.com/in/rasmusheskier/" "CEO" "BeScord ApS" >}}
-Samarbejdet med Holion har vist at de har dygtige full stack udviklere, som udviklede vores BeScord Banking applikation. Fra starten var vores ønske at finde en dansk udviklingspartner, som har været en fordel igennem hele forløbet. Vi står med en applikation som er udviklet uden misforståelser og tidsforsinkelser. 
-{{< /testimonial >}}
-
 Projektet
 ---
 Holion har i samarbejde med BeScord udviklet et meget avanceret system til finansiel analyse af regnskaber. Systemet kan tale direkte sammen med nogle af Danmarks største virksomheders ERP-systemer, hvorfra der hentes data ud i skyen. Når data er kommet ud i skyen, bliver disse transformeret, således at det er muligt at sammenligne disse på tværs af ERP-systemer, banker osv., så disse kan analyseres. Der bliver herefter genereret rapporter på baggrund af analyserne. Der genereres eksempelvis rapporter der fortæller, hvis bankerne har faktureret virksomhederne forkert - hvilket sker i stor stil! BeScord fandt ved hjælp af systemet overfakturering for mere end 900.000 kr. hos en meget uheldig kunde.

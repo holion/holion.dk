@@ -27,6 +27,13 @@
           <div class="col-md-12">
 
             <div>
+              {{ partial "testimonial.html" . }}
+              <div style="float: right; margin-left: 20px; margin-bottom: 20px; margin-top: 48px" class="hidden-xs">
+                  <img src="{{ .Params.img }}" width="350">
+              </div>                
+              <div class="visible-xs">
+                  <img src="{{ .Params.img }}" style="img-responsive">
+              </div>                
               {{ .Content }}
             </div>
 

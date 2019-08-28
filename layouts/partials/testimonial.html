@@ -1,0 +1,33 @@
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="casetestimonial" style="background-color: {{.Params.color}}">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="/img/testimonials/{{.Params.companyLogo}}" class="img-responsive img-centered">
+			</div>
+			<div class="col-md-10 col-md-offset-1" style="padding: 20px; margin-top: 20px">
+				<a href="{{.Params.testimonialByLink}}">
+					<img src="/img/testimonials/{{.Params.testimonialByImg}}" class="profile hidden-xs hidden-sm">
+				</a>
+				<div style="display: table-cell">
+					<div class="text">
+						<p><i class="fas fa-quote-left"></i> {{.Params.testimonial}} <i class="fas fa-quote-right"></i></p>
+					</div>
+					<div class="contact">
+						<p><a href="{{.Params.testimonialByLink}}">{{.Params.testimonialBy}}</a>, {{.Params.testimonialByTitle}}<br />
+							{{ .Params.company }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div>
