@@ -17,13 +17,12 @@ Vi mangler altid udviklere. Både junior og senior. Helst full stack, men mindre
 Send os dine svar på ovenstående spørgsmål til:
 
 {{< long-text >}}
-{{< base64encode >}}
-jegerdendusøger@holion.dk
-{{< /base64encode >}}
+{{< base64encode >}}jegerdendusøger@holion.dk{{< /base64encode >}}
 {{< /long-text >}}
 &nbsp;
 
 ## Hvorfor arbejde hos Holion
+
 &nbsp;
 {{< text-with-image "/img/job.jpg" "right" >}}
 Der er masser af gode arbejdspladser indenfor IT branchen. Så hvorfor skal det lige være Holion, man skal vælge? Hos Holion tror vi på, at hvis vi forventer noget af vores medarbejdere (hvilket vi gør), skal vi også kunne indfri nogen af de forventninger, de har til os. Det drejer sig blandt andet om:
