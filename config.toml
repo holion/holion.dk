@@ -126,9 +126,9 @@ googleAnalytics = "UA-338843-5"
     title = "Hvem er vi?"
     subtitle = '''Holion er et konsulentfirma med speciale indenfor .NET udvikling.
 
-Vi leverer apps, webløsninger og programmer af høj kvalitet. Vi arbejder med både store og små kunder og fokuserer på altid at levere et resultat af højeste kvalitet.
+Vi leverer <a href="appudvikling">apps</a>, <a href="webudvikling">webløsninger</a> og programmer af høj kvalitet. Vi arbejder med <a href="cases">både store og små samarbejdspartnere</a> og fokuserer på altid at levere et resultat af højeste kvalitet.
 
-Vi er eksperter i det tekniske - men de specifikke tekniske detaljer behøver vi ikke kede jer med. Fortæl os om jeres behov, så kommer vi med et forslag til den løsning, som passer bedst til jer.
+Vi er eksperter i <a href="teknologi">det tekniske</a> - men de specifikke tekniske detaljer behøver vi ikke kede jer med. Fortæl os om jeres behov, så kommer vi med et forslag til den løsning, som passer bedst til jer.
 
 Vores stil er venlig og afslappet, og vi tager meget gerne et uforpligtende møde.
 
