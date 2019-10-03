@@ -18,8 +18,14 @@ $(function() {
     utils()
     animations()
     counters()
+    checkForMessageSentInIE()
     contactFormAjax()
 })
+
+function checkForMessageSentInIE() {
+    if (window.location.href.indexOf('messageSent=true') > 0)
+        showMessageSent();
+}
 
 function contactFormAjax() {
     var contactForm = document.getElementById("contact-form");
@@ -31,7 +37,7 @@ function contactFormAjax() {
 
         var payload = {};
 
-        contactForm.querySelectorAll("input, textarea").forEach(field => {
+        contactForm.querySelectorAll("input, textarea").forEach(function(field) {
             payload[field.name] = field.value;
             field.readOnly = true;
         });
@@ -40,8 +46,8 @@ function contactFormAjax() {
         fetch(contactForm.action, {
             method: 'post',
             body: JSON.stringify(payload)
-        }).then(response => {
-            contactForm.querySelectorAll("input, textarea").forEach(field => {
+        }).then(function(response) {
+            contactForm.querySelectorAll("input, textarea").forEach(function(field) {
                 field.readOnly = false;
             });
 
@@ -54,12 +60,16 @@ function contactFormAjax() {
             }
             contactForm.reset();
 
-            $('#contact-message')
-                .html('<div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Tak for din besked. Vi vender tilbage så hurtigt som muligt.</div>')
-                .fadeIn()
+            showMessageSent();
         });
         return false
     };
+}
+
+function showMessageSent() {
+    $('#contact-message')
+        .html('<div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Tak for din besked. Vi vender tilbage så hurtigt som muligt.</div>')
+        .fadeIn()
 }
 
 /* slider homepage */
