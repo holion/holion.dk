@@ -55,7 +55,7 @@ Der er masser af gode arbejdspladser indenfor IT branchen. Så hvorfor skal det 
 - **Høj grad af frihed.** Det gælder både indenfor hvilke opgaver du gerne vil arbejde med. Er det frontend, backend, apps, web eller noget helt andet? Men det gælder også i forhold til arbejdstider og steder. Som udgangspunkt fungerer det bedst, hvis vi sidder sammen og har mulighed for at trække på hinandens kompetencer. Men passer det dig bedst at du arbejder hjemmefra en dag eller to, finder vi nok ud af det - vi bruger Slack i stor stil, så der er ikke langt til kollegaerne.
 - **Frokostordning.** Ikke noget med at slæbe et par slatne stykker rugbrød med.
 - **Socialt samvær.** Vi kan godt li' god mad, hygge og en øl eller to - det håber vi også du kan?
-- **Super dygtige kollegaer.** Alle vores ansatte er i øjeblikket dataloger og ingeniører, så det er nogle fagligt kompetente kollegaer du får.
+- **Super dygtige kollegaer.** Alle vores ansatte er i øjeblikket dataloger, så det er nogle fagligt kompetente kollegaer du får.
 - **Fed teknologi.** Som konsulenthus har vi ofte muligheden for at være med til igangsætningen af nye projekter hos vores kunder. Det betyder, at vi er med til at definere projektet og den teknologi der skal anvendes - så vi anvender naturligvis [de teknologier]({{< ref "teknologi" >}}), som vi synes er fedest.
 - **Kontor i centrum af Hadsten** - lige ved busstationen og banegården. Så bor du f.eks. i Aarhus kan du bruge 18 minutter i toget på at komme til kontoret. Bor du i nærheden af Aarhus og kører bil, kan du hurtigt spare en del tid hver morgen på at køre ud af Aarhus i stedet for at køre ind til Aarhus.
 {{< /text-with-image >}}
