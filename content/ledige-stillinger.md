@@ -20,7 +20,7 @@ Læs gerne de enkelte jobopslag herunder og send os så dine svar på ovenståen
 {{< /long-text >}}
 &nbsp;
 
-Der afholdes løbende jobsamtaler og der ansættes så snart vi har et godt match. **Ansøgningsfristen er 30. oktober.**
+Der afholdes løbende jobsamtaler og der ansættes så snart vi har et godt match. **Ansøgningsfristen er 15. november.**
 
 ### Studentermedhjælper med styr på sin kode søges
 
