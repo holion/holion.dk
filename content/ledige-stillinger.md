@@ -6,7 +6,7 @@ description: "Der er flere gode grunde til at arbejde hos Holion. Stor frihed i 
 
 ## Holion mangler udviklere
 
-Der er gang i den hos Holion, så vi mangler dygtige udviklere. Hos Holion er vi super skarpe i Microsofts teknologier, men kan også lave web og apps. Om du kan det ene eller det andet betyder ikke så meget - bare ud er god til det som du kan og er frisk på at lære lidt nyt engang i mellem.
+Der er gang i den hos Holion, så vi mangler dygtige udviklere. Hos Holion er vi super skarpe i Microsofts teknologier, men kan også lave web og apps. Om du kan det ene eller det andet betyder ikke så meget - bare du er god til det som du kan og er frisk på at lære lidt nyt engang i mellem.
 
 - Interesserer du dig for IT, udvikling, apps m.m. udenfor dine arbejdstider?
 - Anser du dig selv for at være en af de dygtigste, indenfor det, du er bedst til?
