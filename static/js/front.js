@@ -8,7 +8,7 @@ if ($.cookie('themeLayout')) {
     $('body').addClass($.cookie('themeLayout'))
 }
 
-$(function() {
+$(function () {
     sliderHomepage()
     sliders()
     fullScreenContainer()
@@ -65,12 +65,12 @@ function contactFormAjax() {
     if (detectIE())
         return;
 
-    contactForm.onsubmit = function(event) {
+    contactForm.onsubmit = function (event) {
         event.preventDefault();
 
         var payload = {};
 
-        contactForm.querySelectorAll("input, textarea").forEach(function(field) {
+        contactForm.querySelectorAll("input, textarea").forEach(function (field) {
             payload[field.name] = field.value;
             field.readOnly = true;
         });
@@ -79,8 +79,8 @@ function contactFormAjax() {
         fetch(contactForm.action, {
             method: 'post',
             body: JSON.stringify(payload)
-        }).then(function(response) {
-            contactForm.querySelectorAll("input, textarea").forEach(function(field) {
+        }).then(function (response) {
+            contactForm.querySelectorAll("input, textarea").forEach(function (field) {
                 field.readOnly = false;
             });
 
@@ -160,10 +160,10 @@ function sliders() {
             singleItem: true,
             lazyLoad: false,
             addClassActive: true,
-            afterInit: function() {
+            afterInit: function () {
                 // animationsSlider()
             },
-            afterMove: function() {
+            afterMove: function () {
                 // animationsSlider()
             }
         })
@@ -172,7 +172,7 @@ function sliders() {
 
 /* menu sliding */
 function menuSliding() {
-    $('.dropdown').on('show.bs.dropdown', function() {
+    $('.dropdown').on('show.bs.dropdown', function () {
         if ($(window).width() > 750) {
             $(this).find('.dropdown-menu').first().stop(true, true).slideDown()
         } else {
@@ -180,7 +180,7 @@ function menuSliding() {
         }
     })
 
-    $('.dropdown').on('hide.bs.dropdown', function() {
+    $('.dropdown').on('hide.bs.dropdown', function () {
         if ($(window).width() > 750) {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp()
         } else {
@@ -193,27 +193,27 @@ function menuSliding() {
 function animations() {
     var delayTime = 0
     $('[data-animate]').css({ opacity: '0' })
-    $('[data-animate]').waypoint(function() {
+    $('[data-animate]').waypoint(function () {
         delayTime += 150
-        $(this).delay(delayTime).queue(function(next) {
+        $(this).delay(delayTime).queue(function (next) {
             $(this).toggleClass('animated')
             $(this).toggleClass($(this).data('animate'))
             delayTime = 0
             next()
-                // $(this).removeClass('animated')
-                // $(this).toggleClass($(this).data('animate'))
+            // $(this).removeClass('animated')
+            // $(this).toggleClass($(this).data('animate'))
         })
     }, {
         offset: '90%',
         triggerOnce: true
     })
 
-    $('[data-animate-hover]').hover(function() {
+    $('[data-animate-hover]').hover(function () {
         $(this).css({ opacity: 1 })
         $(this).addClass('animated')
         $(this).removeClass($(this).data('animate'))
         $(this).addClass($(this).data('animate-hover'))
-    }, function() {
+    }, function () {
         $(this).removeClass('animated')
         $(this).removeClass($(this).data('animate-hover'))
     })
@@ -222,16 +222,16 @@ function animations() {
 function animationsSlider() {
     var delayTimeSlider = 400
 
-    $('.owl-item:not(.active) [data-animate-always]').each(function() {
+    $('.owl-item:not(.active) [data-animate-always]').each(function () {
         $(this).removeClass('animated')
         $(this).removeClass($(this).data('animate-always'))
         $(this).stop(true, true, true).css({ opacity: 0 })
     })
 
-    $('.owl-item.active [data-animate-always]').each(function() {
+    $('.owl-item.active [data-animate-always]').each(function () {
         delayTimeSlider += 500
 
-        $(this).delay(delayTimeSlider).queue(function() {
+        $(this).delay(delayTimeSlider).queue(function () {
             $(this).addClass('animated')
             $(this).addClass($(this).data('animate-always'))
 
@@ -250,7 +250,7 @@ function counters() {
 
 /* picture zoom */
 function pictureZoom() {
-    $('.product .image, .post .image, .photostream div').each(function() {
+    $('.product .image, .post .image, .photostream div').each(function () {
         var imgHeight = $(this).find('img').height()
         if (imgHeight) {
             $(this).height(imgHeight)
@@ -278,24 +278,24 @@ function utils() {
     $('[data-toggle="tooltip"]').tooltip()
 
     /* click on the box activates the radio */
-    $('#checkout').on('click', '.box.shipping-method, .box.payment-method', function() {
+    $('#checkout').on('click', '.box.shipping-method, .box.payment-method', function () {
         var radio = $(this).find(':radio')
         radio.prop('checked', true)
     })
 
     /* click on the box activates the link in it */
-    $('.box.clickable').on('click', function() {
+    $('.box.clickable').on('click', function () {
         window.location = $(this).find('a').attr('href')
     })
 
     /* external links in new window */
-    $('.external').on('click', function(e) {
+    $('.external').on('click', function (e) {
         e.preventDefault()
         window.open($(this).attr('href'))
     })
 
     /* animated scrolling */
-    $('.scroll-to, .scroll-to-top').click(function(event) {
+    $('.scroll-to, .scroll-to-top').click(function (event) {
         var fullUrl = this.href
         var parts = fullUrl.split('#')
 
@@ -326,16 +326,16 @@ function productDetailGallery(confDetailSwitch) {
     $('.thumb:first').addClass('active')
     var timer = setInterval(autoSwitch, confDetailSwitch)
 
-    $('.thumb').click(function(e) {
+    $('.thumb').click(function (e) {
         switchImage($(this))
         clearInterval(timer)
         timer = setInterval(autoSwitch, confDetailSwitch)
         e.preventDefault()
     })
 
-    $('#mainImage').hover(function() {
+    $('#mainImage').hover(function () {
         clearInterval(timer)
-    }, function() {
+    }, function () {
         timer = setInterval(autoSwitch, confDetailSwitch)
     })
 
@@ -357,7 +357,7 @@ function productDetailGallery(confDetailSwitch) {
 
 /* product detail sizes */
 function productDetailSizes() {
-    $('.sizes a').click(function(e) {
+    $('.sizes a').click(function (e) {
         e.preventDefault()
         $('.sizes a').removeClass('active')
         $('.size-input').prop('checked', false)
@@ -366,14 +366,14 @@ function productDetailSizes() {
     })
 }
 
-$.fn.alignElementsSameHeight = function() {
-    $('.same-height-row').each(function() {
+$.fn.alignElementsSameHeight = function () {
+    $('.same-height-row').each(function () {
         var maxHeight = 0
         var children = $(this).find('.same-height')
         children.height('auto')
 
         if ($(window).width() > 768) {
-            children.each(function() {
+            children.each(function () {
                 if ($(this).innerHeight() > maxHeight) {
                     maxHeight = $(this).innerHeight()
                 }
@@ -384,7 +384,7 @@ $.fn.alignElementsSameHeight = function() {
         maxHeight = 0
         children = $(this).find('.same-height-always')
         children.height('auto')
-        children.each(function() {
+        children.each(function () {
             if ($(this).height() > maxHeight) {
                 maxHeight = $(this).innerHeight()
             }
@@ -394,18 +394,18 @@ $.fn.alignElementsSameHeight = function() {
 }
 
 var windowWidth
-$(function() {
+$(function () {
     windowWidth = $(window).width()
 
     $(this).alignElementsSameHeight()
     pictureZoom()
 })
 
-$(window).resize(function() {
+$(window).resize(function () {
     var newWindowWidth = $(window).width()
 
     if (windowWidth !== newWindowWidth) {
-        setTimeout(function() {
+        setTimeout(function () {
             $(this).alignElementsSameHeight()
             fullScreenContainer()
             pictureZoom()
