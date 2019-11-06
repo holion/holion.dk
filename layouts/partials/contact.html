@@ -35,6 +35,13 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
+                                <label for="name">Robottjek! Hvad er 2 + 2?</label> 
+                                <span id="magicValueRequired" style="display: none; color: red"><br/>Du skal svare korrekt på dette spørgsmål.</span>
+                                <input type="text" class="form-control" name="magicValue" id="magicValue" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
                                 <label for="message">{{ i18n "contactMessage" }}</label>
                                 <textarea id="message" class="form-control" name="message" rows="12" required></textarea>
                             </div>
