@@ -140,3 +140,8 @@ h3 {
 .home-carousel {
     margin-top: 67px;
 }
+
+.logos img {
+    max-width: 350px;
+    margin: 5px;
+}
