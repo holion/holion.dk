@@ -139,6 +139,8 @@ function sliders() {
         })
 
         $('.testimonials').owlCarousel({
+            autoPlay: 10000,
+            stopOnHover: true,
             items: 3,
             itemsDesktop: 3,
             itemsDesktopSmall: [990, 2],
