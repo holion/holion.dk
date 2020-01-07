@@ -20,9 +20,6 @@ testimonialByLink: "https://www.linkedin.com/in/rasmusheskier/"
 testimonialByTitle: "CEO"
 ---
  
-Projektet
----
-
 Holion har i samarbejde med BeScord udviklet et meget avanceret system til finansiel analyse af regnskaber. Systemet kan tale direkte sammen med nogle af Danmarks største virksomheders ERP-systemer, hvorfra der hentes data ud i skyen. Når data er kommet ud i skyen, bliver disse transformeret, således at det er muligt at sammenligne disse på tværs af ERP-systemer, banker osv., så disse kan analyseres. Der bliver herefter genereret rapporter på baggrund af analyserne. Der genereres eksempelvis rapporter der fortæller, hvis bankerne har faktureret virksomhederne forkert - hvilket sker i stor stil! BeScord fandt ved hjælp af systemet overfakturering for mere end 900.000 kr. hos en meget uheldig kunde.
 
 Holions rolle

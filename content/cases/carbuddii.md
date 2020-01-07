@@ -20,9 +20,6 @@ testimonialByLink: "https://www.linkedin.com/in/dennispraestekjaer/"
 testimonialByTitle: "CIO"
 ---
  
-Projektet
----
-
 Holion har i samarbejde med CarBuddii udviklet en app, som er tænkt til at være bilsælgerens foretrukne salgsredskab. Når en kunde går ind på forhandlerens hjemmeside og indtaster en forespørgsel eller booker en prøvetur i en bil, notificeres sælgeren øjeblikkelig om henvendelsen. Herefter kan sælgeren benytte appen igennem hele sagsprocessen og løbende kontakte kunden via opkald eller foruddefinerede e-mail templates, indtil bilen er solgt, afleveret til kunden og der ikke længere er behov for kontakt til denne.
 
 Holions rolle

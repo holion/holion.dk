@@ -20,9 +20,6 @@ testimonialByLink: "https://www.linkedin.com/in/wickings/"
 testimonialByTitle: "Senior Business Developer"
 ---
 
-Projektet
----
-
 Stofa ville gerne gøre det lettere og sjovere for deres kunder at hjælpe dem selv med at forbedre deres Wi-Fi i hjemmet. Derfor havde de brug for en app til både iPhone og Android, som brugere kan anvende til at optimere den trådløse dækning i hjemmet.
 
 Appen skulle være nytænkende, brugervenlig og anderledes end de andre løsninger på markedet - og det blev den ved bl.a. at anvende kamerafunktionen til at kortlægge hjemmet vha. Augmented Reality. WifiScanneren, som appen kom til at hedde, lå kort efter udgivelsen som den mest downloadede app i både [App Store](https://itunes.apple.com/dk/app/wifiscanneren/id1381401346?mt=8) og [Google Play](https://play.google.com/store/apps/details?id=dk.stofa.wifiscanneren).
