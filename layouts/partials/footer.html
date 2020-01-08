@@ -5,7 +5,7 @@
         <div class="col-md-4 col-sm-6">
             <h4>{{ i18n "aboutUs" }}</h4>
 
-            {{ .Site.Params.about_us | markdownify }}
+            {{ .Site.Params.about_us | safeHTML }}
 
             <hr>
 
@@ -50,7 +50,7 @@
         <div class="col-md-4 col-sm-6">
 
             <h4>{{ i18n "contactTitle" }}</h4>
-            <strong>{{.Site.Params.companyName}}</strong> {{ .Site.Params.address | markdownify }}
+            <strong>{{.Site.Params.companyName}}</strong> {{ .Site.Params.address | safeHTML }}
 
             <br /> Mobil: <a href="tel:+4561303039">61 30 30 39</a>
             <br /> CVR: 36 08 60 09
