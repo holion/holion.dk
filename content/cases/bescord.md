@@ -11,7 +11,7 @@ color: "#c19f95"
 img: "/img/cases/bescord.png"
 header: "Avanceret finansiel analyse"
 casedescription: "[BeScord](https://bescord.com) hjælper store virksomheder med at analysere deres regnskaber og på den baggrund opnå store besparelser."
-weight: 2
+weight: 3
 
 testimonial: "Samarbejdet med Holion har vist at de har dygtige full stack udviklere, som udviklede vores BeScord Banking applikation. Fra starten var vores ønske at finde en dansk udviklingspartner, som har været en fordel igennem hele forløbet. Vi står med en applikation som er udviklet uden misforståelser og tidsforsinkelser."
 testimonialBy: "Rasmus Heskier Schiønning"
