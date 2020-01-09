@@ -13,7 +13,7 @@ header: "Bilsælgernes foretrukne salgsværktøj"
 casedescription: "[CarBuddii](https://carbuddii.dk) har fået udviklet en app som den dag i dag er bilsælgernes fortrukne salgsredskab. Al kundekontakt håndteres via appen, så kunden opnår den bedst mulige service."
 weight: 3
 
-testimonial: "I over fire år har vi kontinuerligt og med meget stor succes brugt Holion til udvikling af vores system. Vi er rigtig glade for både den forretningsmæssige, strategiske og processorienterede input og sparring og samtidig den udviklingen af produktet, vi har fået ved samarbejdet."
+testimonial: "I over fire år har vi kontinuerligt og med meget stor succes brugt Holion til udvikling af vores system. Vi er rigtig glade for både den forretningsmæssige, strategiske og processorienterede input og sparring og samtidig den udvikling af produktet, vi har fået ved samarbejdet."
 testimonialBy: "Dennis Præstekjær"
 testimonialByImg: "dp.jpg"
 testimonialByLink: "https://www.linkedin.com/in/dennispraestekjaer/"
