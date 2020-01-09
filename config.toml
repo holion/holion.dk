@@ -119,17 +119,13 @@ googleAnalytics = "UA-338843-5"
 [params.testimonials]
     enable = true
     title = "Hvad siger samarbejdspartnerne?"
-    subtitle = "Vi har haft mange samarbejdspartnere gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt."
+    subtitle = "Vi har haft mange samarbejdspartnere og kunder gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt. Kontakt os for at høre mere om en eller flere specifikke kundecases."
 
 [params.see_more]
     enable = true
-    title = "Hvem er vi?"
-    subtitle = '''Holion er et konsulentfirma med speciale indenfor .NET udvikling.
+    title = "Hvem er Holion?"
+    subtitle = '''Holion er et konsulentfirma med speciale indenfor .NET udvikling. Vi leverer <a href="appudvikling">apps</a>, <a href="webudvikling">webløsninger</a> og programmer til virksomheder i alle størrelser, og vi er meget stolte af de mange succesfulde løsninger, som vi har leveret. Under <a href="cases">cases</a> kan du læse mere om, hvordan vi har gjort en forskel for vores kunder.
 
-Vi leverer <a href="appudvikling">apps</a>, <a href="webudvikling">webløsninger</a> og programmer af høj kvalitet. Vi arbejder med <a href="cases">både store og små samarbejdspartnere</a> og fokuserer på altid at levere et resultat af højeste kvalitet.
+Vi er eksperter i det tekniske - men de specifikke detaljer behøver vi ikke kede dig med. Vi hjælper nemlig vores kunder igennem alle faser af projektet, hvor vi dækker både de tekniske og kreative aspekter, der er vigtige at tage stilling til. Vi ser frem til at løse opgaver for dig, der giver værdi både i dag og i morgen. 
 
-Vi er eksperter i <a href="teknologi">det tekniske</a> - men de specifikke tekniske detaljer behøver vi ikke kede jer med. Fortæl os om jeres behov, så kommer vi med et forslag til den løsning, som passer bedst til jer.
-
-Vores stil er venlig og afslappet, og vi tager meget gerne et uforpligtende møde.
-
-Vi ser frem til også at løse opgaver for jer.'''
+Vi har kompetencerne til at vækste din forretning, og vi stræber altid efter at levere et resultat af højeste kvalitet. Fortæl os om dit behov, så kommer vi med et forslag til den løsning, som vi mener passer bedst til din forretning. <a href="kontakt">Kontakt os</a> allerede i dag!'''
