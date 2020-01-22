@@ -15,14 +15,14 @@ Ofte er det en fordel at bruge den samme virksomhed til at udvikle, vedligeholde
 ## IT Hosting
 Vi har en passion for Microsofts teknologier. Når vi hoster din virksomheds IT, er [Azure](https://azure.com) således vores foretrukne cloud platform. Den er hurtig, stabil og billig. Desuden er det her, du finder den bedste support for Microsofts egne teknologier. Selvom Azure er vores foretrukne platform, har vi også erfaring med [AWS](https://aws.com).
 
-Når vi udvikler websystemer, er noget af det første vi gør altid at få skabt en forbindelse mellem den kode vi udvikler og et sted i Azure, så vi lynhurtigt kan få de nyeste features ud i skyen, hvor vores samarbejdspartnere kan prøve det, vi har lavet til dem. 
+Når vi udvikler websystemer, er noget af det første vi gør altid at få skabt en forbindelse mellem den kode vi udvikler og et sted i Azure, så vi lynhurtigt kan få de nyeste features ud i skyen, hvor vores kunder kan prøve det, vi har lavet til dem. 
 
 #### Azure og appudvikling
 En app er sjældent meget værd uden en backend. Det er her systemet holder styr på brugerne, integrerer med andre systemer og du kan administrere appen. Så selvom du måske tænker, at der kun er behov for en app til din specifikke løsning, ender det alligevel ofte med, at der også skal udvikles en backend. Derfor er der også behov for hosting i Azure, når der udvikles apps.
 {{< /text-with-image >}}
 
 ## Distribution
-Apps distribueres normalt til brugerne via [App Store](https://www.apple.com/ios/app-store/) og [Google Play](https://play.google.com). Men mens der udvikles kan det være en fordel, hvis vores samarbejdspartner også kan teste appen. Til dette formål anvender vi Microsoft [App Center](https://appcenter.ms). Via App Center kan vi automatisk distribuere testversioner af apps, indsamle fejlrapporter og køre automatiske tests på forskellige fysiske telefoner.
+Apps distribueres normalt til brugerne via [App Store](https://www.apple.com/ios/app-store/) og [Google Play](https://play.google.com). Men mens der udvikles kan det være en fordel, hvis vores kunder også kan teste appen. Til dette formål anvender vi Microsoft [App Center](https://appcenter.ms). Via App Center kan vi automatisk distribuere testversioner af apps, indsamle fejlrapporter og køre automatiske tests på forskellige fysiske telefoner.
 
 Når en app er klar til udgivelse, kan den sendes direkte fra App Center og over i App Store og Google Play. Dermed undgår vi unødig spildtid og manuelt arbejde i forbindelse med udgivelse af nye versioner.
 

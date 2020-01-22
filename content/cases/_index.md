@@ -1,5 +1,5 @@
 ---
-title: "Hvad siger samarbejdspartnerne?"
+title: "Hvad siger kunderne?"
 pagetitle: "Hvad siger vores kunder? | Læs cases fra Stofa, CarBuddii m.fl. her"
 description: "I årenes løb har vi hjulpet mange virksomheder med appudvikling og websystemer. Læs mere om, hvad vi kan gøre for dig."
 

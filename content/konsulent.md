@@ -9,7 +9,7 @@ Hos Holion kvalificerer vi dine valg gennem kompetent rådgivning før, under og
 
 ## Høj uddannelse og passion
 {{< text-with-image "/img/carousel/consultant.jpg" "right" >}}
-En god og høj uddannelse betyder ikke nødvendigvis, at man er den bedste til at klare jobbet, men det sender helt sikkert én i den rigtige retning. Hos Holion er vi alle dataloger eller IT-ingeniører - altså virkelig veluddannede folk. Men udover uddannelsen, har vi alle en enorm passion for vores fag. Samtidig elsker vi at dele vores viden med andre og mærke, hvordan vi hjælper vores samarbejdspartnere til at få endnu bedre styr på deres processer, arkitektur og selve koden.
+En god og høj uddannelse betyder ikke nødvendigvis, at man er den bedste til at klare jobbet, men det sender helt sikkert én i den rigtige retning. Hos Holion er vi alle dataloger eller IT-ingeniører - altså virkelig veluddannede folk. Men udover uddannelsen, har vi alle en enorm passion for vores fag. Samtidig elsker vi at dele vores viden med andre og mærke, hvordan vi hjælper vores kunder til at få endnu bedre styr på deres processer, arkitektur og selve koden.
 
 Med andre ord - nogle virkelig **stærke konsulenter**.
 

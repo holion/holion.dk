@@ -8,9 +8,9 @@ description: "Gennemtænkte apps til både Android og iOS/iPhone - altid med slu
 
 ## Dig og din case i centrum
 
-Som Holions [samarbejdspartner]({{< ref fællesskab >}}) behøver du ikke have den store viden om apps eller bekymre dig om teknikken bag - den del tager vi os af. Vi brænder for [teknologi]({{< ref teknologi >}}) og fortæller gerne om, hvad der rent faktisk ligger inde bagved, hvis du skulle være interesseret. Vi udvikler apps til alt fra [små startups]({{< ref "cases/carbuddii" >}}) til [store virksomheder]({{< ref "cases/stofa" >}}), uanset om der er tale om mindre projekter, kampagneapps med begrænset levetid eller større komplekse appløsninger.
+Som kunde hos Holions behøver du ikke have den store viden om apps eller bekymre dig om teknikken bag - den del tager vi os af. Vi brænder for [teknologi]({{< ref teknologi >}}) og fortæller gerne om, hvad der rent faktisk ligger inde bagved, hvis du skulle være interesseret. Vi udvikler apps til alt fra [små startups]({{< ref "cases/carbuddii" >}}) til [store virksomheder]({{< ref "cases/stofa" >}}), uanset om der er tale om mindre projekter, kampagneapps med begrænset levetid eller større komplekse appløsninger.
 
-Vi er passionerede IT-konsulenter, som udvikler og designer applikationer i tæt samarbejde med vores samarbejdspartnere. I udviklingsprocessen rådgiver vi derfor om, hvilke features der er mulige ud fra et teknologisk perspektiv og hvilke der giver mening i forhold til appens formål og brugernes behov. Fortæl os hvem der skal anvende appen og hvad de skal anvende den til, så hjælper vi dig med at finde den helt rigtige løsning.
+Vi er passionerede IT-konsulenter, som udvikler og designer applikationer i tæt samarbejde med vores kunder. I udviklingsprocessen rådgiver vi derfor om, hvilke features der er mulige ud fra et teknologisk perspektiv og hvilke der giver mening i forhold til appens formål og brugernes behov. Fortæl os hvem der skal anvende appen og hvad de skal anvende den til, så hjælper vi dig med at finde den helt rigtige løsning.
 
 {{< cta "/kontakt" >}}Lad os udvikle din app{{< /cta >}}
 
@@ -24,11 +24,11 @@ Med mange års erfaring inden for appudvikling mestrer vi både apps med enkelte
 
 ## Udvikling af crossplatform-apps til iOS/iPhone og Android
 
-Ved udvikling af apps tænker vi ikke blot på slutbrugerens oplevelse af systemet, men i særdeleshed også på vores samarbejdspartners pengepung. Den traditionelle tilgang til appudvikling er, at man udvikler én app til iOS/iPhone og én til Android - og dermed også betaler for 2 apps, som i bund og grund kan nøjagtig det samme. Men hos Holion ved vi, at hvis samarbejdspartneren skal have succes og en fornuftig bundlinje, skal det ikke være en app, der bruger hele budgettet.
+Ved udvikling af apps tænker vi ikke blot på slutbrugerens oplevelse af systemet, men i særdeleshed også på vores kunders pengepung. Den traditionelle tilgang til appudvikling er, at man udvikler én app til iOS/iPhone og én til Android - og dermed også betaler for 2 apps, som i bund og grund kan nøjagtig det samme. Men hos Holion ved vi, at hvis kunden skal have succes og en fornuftig bundlinje, skal det ikke være en app, der bruger hele budgettet.
 
 Vi udvikler derfor altid apps ved brug af crossplatform-værktøjer. At vi udvikler crossplatform-apps betyder, at vi kun udvikler én app, som til gengæld fungerer både på iOS/iPhone og Android. Det tager ikke den halve tid i forhold til den traditionelle tilgang, men det tager væsentlig kortere tid end at udvikle den samme app to gange, hvilket også er grunden til, at crossplatform-apps typisk er et billigere alternativ til native-apps.
 
-Det betyder dog ikke at vi går på kompromis med brugeroplevelsen, da vi designer vores apps med et native look-and-feel. Vi udvikler crossplatform-apps i enten Xamarin eller Flutter - alt efter hvad din app skal kunne. Vi har udviklet og designet et hav af forskelligartede apps til såvel små som store virksomheder. Under [cases]({{< ref cases >}}) kan du læse meget mere om vores appløsninger og hvordan de har gjort en forskel for vores samarbejdspartners forretning.
+Det betyder dog ikke at vi går på kompromis med brugeroplevelsen, da vi designer vores apps med et native look-and-feel. Vi udvikler crossplatform-apps i enten Xamarin eller Flutter - alt efter hvad din app skal kunne. Vi har udviklet og designet et hav af forskelligartede apps til såvel små som store virksomheder. Under [cases]({{< ref cases >}}) kan du læse meget mere om vores appløsninger og hvordan de har gjort en forskel for vores kunders forretning.
 
 {{< cta "/cases" >}}Se udvalgte kundecases{{< /cta >}}
 
