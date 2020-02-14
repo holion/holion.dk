@@ -176,3 +176,22 @@ h3 {
         width: 360px;
     }
 }
+
+#footer {
+    z-index: 100;
+}
+
+#static {
+    position: fixed;
+    background: #555555;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#static a {
+    font-weight: bold;
+}
