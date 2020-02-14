@@ -22,7 +22,7 @@ Vi sidder normalt på vores eget kontor og arbejder, men hvis du har behov for, 
 
 Det kan være, at du har nogle konkrete problemer, som du kunne bruge et par ekstra øjne på et par dage, en uge eller måske en måned. Det kan også være, at du har brug for at hæve kompetenceniveauet for et team over en længere periode. Vi er klar til at hjælpe dig og din virksomhed med både stort og småt.
 
-{{< cta "/kontakt" >}}Lad os finde ud af, hvordan vi kan hjælpe dig{{< /cta >}}
+{{< cta "/kontakt" >}}Find ud af, hvordan vi kan hjælpe dig{{< /cta >}}
 
 ## Hvad har vi hjulpet med?
 Vi hjalp i løbet af nogle få dage en mindre kunde med at identificere performance problemer og finde en brugbar løsning på disse. Hurtigt ind - hurtigt ud. Det var, hvad der var behov for og økonomi til her.
