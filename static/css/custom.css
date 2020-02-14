@@ -192,6 +192,12 @@ h3 {
     padding-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    #static {
+        bottom: 0;
+    }
+}
+
 #static a {
     font-weight: bold;
 }
