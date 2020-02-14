@@ -2,6 +2,7 @@
 title: "On-site konsulentassistance"
 pagetitle: "IT-konsulenter | Vi rykker ud og hjælper dig med dine websystemer"
 description: "Holion kan være din on-site IT-konsulent, som optimerer og videreudvikler din virksomheds websystemer og software. Læs mere om os her."
+type: withtestimonials
 ---
 
 ## Rådgivning før, under og efter dit projekt

@@ -12,7 +12,7 @@
 
                 <!-- *** TESTIMONIALS CAROUSEL *** -->
                 <ul class="owl-carousel testimonials same-height-row">
-                    {{ $paginator := .Paginate (where (where .Site.Pages.ByWeight "Type" "cases") ".Params.testimonial" "!=" nil) }} {{ range $paginator.Pages }}
+                    {{ range (where (where .Site.AllPages.ByWeight "Type" "cases") ".Params.testimonial" "!=" nil) }}
                     <li class="item">
                         <div style="background-color: {{ .Params.color }}; height: 120px; position: relative; cursor: pointer" onclick="location.href='/cases/{{.Params.link}}'">
                             <img src="/img/testimonials/{{ .Params.companyLogo }}" class="img-responsive img-centered" style="max-height: 80%; max-width: 90%; top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute">
