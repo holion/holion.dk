@@ -19,6 +19,8 @@ Det handler derfor om at udvikle websystemer, der er funktionelle, intuitive og 
 
 ## Udvikling af webbaserede systemer
 
+{{< single-testimonial carbuddii >}}
+
 Indenfor udvikling af webbaserede systemer bevæger teknologien sig afsted med en sådan hastighed, at det kan være svært for de fleste at følge med i, hvad der er state-of-the-art i øjeblikket. Heldigvis har vi hos Holion ansatte som interesserer sig rigtig meget for IT, hvorfor fritiden ofte bruges på at følge med i, hvad der reelt fungerer og hvad der er fremtidssikret på en sådan måde, at der også vil være udviklere, der kan vedligeholde og videreudvikle systemerne de næste mange år.  
 
 Mangler du et system som kan holde styr på jeres kundekartotek eller skal du bruge en løsning, der kan analysere avanceret data, så kan vi hjælpe dig. Vi webudvikler altid det system, som passer bedst til dit projekt. På denne måde er du sikret at din løsning er skræddersyet til dig, og at du får mest muligt ud af dit websystem.
@@ -42,5 +44,3 @@ Hos Holion sætter vi en ære i at være din foretrukne webudvikler. Derfor gør
 Fortæl os om dit projekt, hvad enten det gælder [udvikling af applikationer]({{< ref appudvikling >}}) til smartphones og tablets eller webbaserede systemer, kan vi være behjælpelige. Er du interesseret i at få udviklet et webbaseret system til din virksomhed, er du velkommen til at kontakte os. Vi sidder klar ved tasterne og telefonen til en uforpligtende snak.
 
 {{< cta "/kontakt" >}}Kontakt Holion{{< /cta >}}
-
-{{< text-with-image >}}

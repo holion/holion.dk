@@ -138,7 +138,7 @@ function sliders() {
             itemsMobile: [480, 1]
         })
 
-        $('.testimonials').owlCarousel({
+        $('.owl-carousel.testimonials').owlCarousel({
             autoPlay: 10000,
             stopOnHover: true,
             items: 3,

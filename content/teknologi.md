@@ -9,7 +9,6 @@ Hos Holion arbejder vi med alle de førende teknologier, og vi ved derfor hvad d
 Ved ethvert projekt er der naturligvis både tekniske og kreative aspekter, som alle skal gå op i en højere enhed. Derfor har vi kun de bedste og de skarpeste IT-konsulenter, som ikke kun besidder den nødvendige viden og færdigheder, men som også er brugerorienterede og æstetiske anlagte. 
 
 Vi er eksperterne, når det kommer til den tekniske del af opgaven - den del behøver du som kunde derfor ikke bekymre dig om. Er du alligevel interesseret i denne del, kommer her nogle tekniske nøgleord, der knytter sig til vores seneste opgaver. Generelt kan det siges, at vi har rigtig god og stor erfaring med teknologi baseret på Microsoft-platformen, men der er selvfølgelig undtagelser. Listen nedenfor er på ingen måder udtømmende, men fokus ligger på .NET, apps og web.  
-{{< /text-with-image >}}
 
 - .NET Core
 - C#

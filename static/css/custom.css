@@ -159,3 +159,20 @@ h3 {
     max-width: 350px;
     margin: 5px;
 }
+
+.single-testimonial {
+    float: left; 
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .single-testimonial {
+        float: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .single-testimonial {
+        width: 360px;
+    }
+}

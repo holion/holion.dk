@@ -15,6 +15,9 @@ En god og høj uddannelse betyder ikke nødvendigvis, at man er den bedste til a
 Med andre ord - nogle virkelig **stærke konsulenter**.
 
 ## Vi kommer ud til dig
+
+{{< single-testimonial stofa >}}
+
 Vi sidder normalt på vores eget kontor og arbejder, men hvis du har behov for, at vi kommer ud til dig og hjælper dit team, gør vi naturligvis også det. Vi kan cirka det samme som dine egne udviklere - vi har bare masser af erfaring med alt lige fra agile udviklingsprocesser over [backendudvikling]({{< ref webudvikling >}}) til [appudvikling]({{< ref appudvikling >}}). 
 
 Det kan være, at du har nogle konkrete problemer, som du kunne bruge et par ekstra øjne på et par dage, en uge eller måske en måned. Det kan også være, at du har brug for at hæve kompetenceniveauet for et team over en længere periode. Vi er klar til at hjælpe dig og din virksomhed med både stort og småt.
@@ -34,5 +37,3 @@ Hos en af landets største banker var vi mest af alt forbi for at hjælpe med at
 Vil du vide mere om, hvordan vi kan hjælpe dig med kompetent og omkostningseffektiv konsulentassistance til dine IT-projekter, er du altid meget velkommen til at [kontakte os]({{< ref contact >}}), så vi kan få dig og dit team godt videre.
 
 {{< cta "/kontakt" >}}Kontakt Holion{{< /cta >}}
-
-{{< /text-with-image >}}

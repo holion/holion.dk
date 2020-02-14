@@ -24,6 +24,7 @@ Med mange års erfaring inden for appudvikling mestrer vi både apps med enkelte
 {{< cta "/kontakt" >}}Få et tilbud på appudvikling{{< /cta >}}
 
 ## Udvikling af crossplatform-apps til iOS/iPhone og Android
+{{< single-testimonial stofa >}}
 
 Ved udvikling af apps tænker vi ikke blot på slutbrugerens oplevelse af systemet, men i særdeleshed også på vores kunders pengepung. Den traditionelle tilgang til appudvikling er, at man udvikler én app til iOS/iPhone og én til Android - og dermed også betaler for 2 apps, som i bund og grund kan nøjagtig det samme. Men hos Holion ved vi, at hvis kunden skal have succes og en fornuftig bundlinje, skal det ikke være en app, der bruger hele budgettet.
 
@@ -46,5 +47,3 @@ Hos Holion får du en professionel udviklet app i topkvalitet, men til en væsen
 Fortæl os om dit projekt, hvad enten det gælder [udvikling af websystemer]({{< ref webudvikling >}}), applikationer eller [hosting og drift]({{< ref drift >}}), kan vi være behjælpelige. Er du interesseret i at få udviklet en app til din virksomhed, er du altid meget velkommen til at kontakte os. Vi sidder klar ved tasterne og telefonen til en uforpligtende snak.
 
 {{< cta "/kontakt" >}}Kontakt Holion{{< /cta >}}
-
-{{< /text-with-image >}}
