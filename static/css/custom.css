@@ -22,6 +22,20 @@ body {
     flex-shrink: 0;
 }
 
+.testimonials .read-case {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.testimonials .item {
+    padding-bottom: 0;
+}
+
+.testimonials .item .testimonial {
+    margin-bottom: 60px;
+}
+
 .testimonials .item .testimonial .bottom .icon {
     width: 10%;
 }
