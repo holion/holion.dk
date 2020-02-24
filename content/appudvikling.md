@@ -34,6 +34,13 @@ Det betyder dog ikke at vi går på kompromis med brugeroplevelsen, da vi design
 
 {{< cta "/cases" >}}Se udvalgte kundecases{{< /cta >}}
 
+## Fra idé til app - udviklingsprocessen
+Når idéen til en app melder sig og man ikke tidligere har været indblandet i udvikling af IT-systemer, kan det være svært at overskue, hvilke trin der er i [processen]({{< ref processen >}}), indtil man har den færdige app i hånden. Der er dog ikke noget at være nervøs for, hvis blot man vælger den rette samarbejdspartner til opgaven - én der har prøvet det mange gange før.
+
+Hos Holion tror vi på, at det nærmest er umuligt at forudse, hvilken app man i sidste ende ønsker sig. Man har nogle tanker og drømme, men det er vigtigt at man ikke sætter sig et alt for fast mål for, hvilken app man ønsker at ende ud med. Det er nemlig sjældent man ender med at få den app, man i første omgang troede man skulle have - simpelthen fordi man bliver klogere undervejs i [udviklingsprocessen]({{< ref processen >}}).
+
+{{< cta "/processen" >}}Læs mere om udviklingsprocessen{{< /cta >}}
+
 ## Få specialudviklet en app til din virksomhed
 
 Det kan være en god idé at få specialudviklet en app til din virksomhed, hvis du f.eks.:
