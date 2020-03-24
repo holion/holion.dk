@@ -10,7 +10,7 @@ I Holion tror vi på, at skal man vinde, kræver det en fælles indsats. Dette g
 
 {{< logos >}}
 ![Danmark Planter Træer](/img/trees.png) 
-![Kræftens Bekæmpelse](/img/cancer.png) 
+![Kræftens Bekæmpelse](/img/cancer2020.png) 
 ![Fritidspuljen](/img/fritidspuljen.jpg)
 ![Danske Hospitalsklovne](/img/klovnesponsor2020.png)
 {{< /logos >}}
