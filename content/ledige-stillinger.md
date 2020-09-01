@@ -36,7 +36,7 @@ Er du nyuddannet eller har du et par år på bagen som udvikler, bør du allered
 
 Vi forventer, at du har erfaring med .NET og C#. Har du erfaring med appudvikling, er det et plus.
 
-<!--### Skarp seniorudvikler søges
+### Skarp seniorudvikler søges
 
 - Vi forventer, at du har minimum 5 års erfaring med udvikling af komplekse systemer
 - Du behersker en bred vifte af teknologier
@@ -44,7 +44,7 @@ Vi forventer, at du har erfaring med .NET og C#. Har du erfaring med appudviklin
 - Du kan arbejde selvstændigt men har heller ikke nogen problemer med at være en del af et team - og måske du endda kan styre et team med knap så erfarne folk i den rigtige retning?
 - Du brænder for fed teknologi - men mest af alt for at løse nogle reelle udfordringer
 - Erfaring med .NET og C# er et helt sikkert et plus.
-- Erfaring med appudvikling er også et plus, men bestemt ikke et must. Om det er iPhone, Android eller cross platform er ligegyldigt - bare du har mod på at lære nye platforme og måske en cross platform teknologi (Xamarin/Flutter).-->
+- Erfaring med appudvikling er også et plus, men bestemt ikke et must. Om det er iPhone, Android eller cross platform er ligegyldigt - bare du har mod på at lære nye platforme og også gerne en cross platform teknologi (pt. Flutter).
 
 ## Hvorfor arbejde hos Holion?
 
