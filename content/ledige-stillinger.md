@@ -8,10 +8,10 @@ description: "Der er flere gode grunde til at arbejde hos Holion. Stor frihed i 
 
 Der er gang i den hos Holion, så vi mangler dygtige udviklere. Hos Holion er vi super skarpe i Microsofts teknologier, men kan også lave web og apps. Om du kan det ene eller det andet betyder ikke så meget - bare du er god til det som du kan og er frisk på at lære lidt nyt engang i mellem.
 
-- Interesserer du dig for IT, udvikling, apps m.m. udenfor dine arbejdstider?
 - Anser du dig selv for at være en af de dygtigste, indenfor det, du er bedst til?
 - Ser du problemer eller udfordringer?
 - Kan du både arbejde sammen med andre men også håndtere opgaver selvstændigt (men altid med dygtige kollegaer i stolen ved siden af)?
+- Interesserer du dig for IT, udvikling, apps m.m. udenfor dine arbejdstider?
 
 Læs gerne de enkelte jobopslag herunder og send os så dine svar på ovenstående spørgsmål til:
 
@@ -20,7 +20,7 @@ Læs gerne de enkelte jobopslag herunder og send os så dine svar på ovenståen
 {{< /long-text >}}
 &nbsp;
 
-<!--Der afholdes løbende jobsamtaler og der ansættes så snart vi har et godt match. **Ansøgningsfristen er 15. december.**-->
+Der afholdes løbende jobsamtaler og der ansættes så snart vi har et godt match. <!--**Ansøgningsfristen er 15. december.**-->
 
 ### Studentermedhjælper med styr på sin kode søges
 
