@@ -14,4 +14,5 @@ I Holion tror vi på, at skal man vinde, kræver det en fælles indsats. Dette g
 ![Kræftens Bekæmpelse](/img/cancer2020.png) 
 ![Fritidspuljen](/img/fritidspuljen.jpg)
 ![Danske Hospitalsklovne](/img/klovnesponsor2020.png)
+![Knæk Cancer](/img/KnaekCancer.png)
 {{< /logos >}}
