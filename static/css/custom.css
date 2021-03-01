@@ -124,6 +124,10 @@ h3 {
     margin-bottom: 20px;
 }
 
+.casetestimonial .text p {
+    white-space: pre-line;
+}
+
 .casetestimonial .contact {
     font-weight: bold;
 }

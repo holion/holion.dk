@@ -15,7 +15,7 @@
 				</a>
 				<div style="display: table-cell">
 					<div class="text">
-						<p><i class="fas fa-quote-left"></i> {{.Params.testimonial}} <i class="fas fa-quote-right"></i></p>
+						<p><i class="fas fa-quote-left"></i> {{ cond (isset .Params "testimoniallong") .Params.testimonialLong .Params.testimonial }} <i class="fas fa-quote-right"></i></p>
 					</div>
 					<div class="contact">
 						<p><a href="{{.Params.testimonialByLink}}">{{.Params.testimonialBy}}</a>, {{.Params.testimonialByTitle}}<br />
