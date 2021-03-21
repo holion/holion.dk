@@ -47,9 +47,11 @@
                     </li>
                     {{ end }} 
                     {{ if ne .Page.Params.id "contact" }}
-                    <a href="/kontakt/" class="btn btn-small btn-template-main hidden-xs hidden-sm"
-                        style="margin-top: 22px; margin-left: 20px; background: #38a7bb; border-color: #38a7bb; color: white">Kontakt
-                        os</a> 
+                    <div style="margin-left: 20px; display: flex">
+                        <a href="/kontakt/" class="btn btn-small btn-template-main hidden-xs hidden-sm"
+                            style="margin-top: 22px; background: #38a7bb; border-color: #38a7bb; color: white">Kontakt
+                            os</a> 
+                    </div>
                     {{ end }}
                 </ul>
             </div>
