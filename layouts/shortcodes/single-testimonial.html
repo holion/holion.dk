@@ -5,7 +5,7 @@
             <div style="background-color: {{ .Params.color }}; height: 120px; position: relative; cursor: pointer"
                 onclick="location.href='/cases/{{.Params.link}}'">
                 <img src="/img/testimonials/{{ .Params.companyLogo }}" class="img-responsive img-centered"
-                    style="max-height: 80%; max-width: 90%; top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute">
+                    style="max-height: 80%; max-width: 90%; top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute; {{ .Params.companyLogoCss }}">
             </div>
             <div class="testimonial">
                 <div class="text">
