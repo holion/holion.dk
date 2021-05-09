@@ -28,7 +28,9 @@
                         </section>
 
                         {{ $paginator := .Paginate (where .Data.Pages "Type" "cases") }} {{ range $paginator.Pages }}
-                        {{ partial "case.html" . }}
+                            {{ if isset .Params "link" }}
+                                {{ partial "case.html" . }}
+                            {{ end }}
                         {{ end }}
 
                         <section>

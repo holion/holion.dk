@@ -50,8 +50,10 @@
         <p>
           {{ range (where (where .Site.Pages "Type" "cases") "Title" "!=" .Page.Title) }}
           {{ if ne .Kind "section" }}
+          {{ if isset .Params "link" }}
           {{ partial "case.html" . }}
-          {{end}}
+          {{ end }}
+          {{ end }}
           {{ end }}
         </p>
       </div>

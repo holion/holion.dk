@@ -32,7 +32,11 @@
                             </div>
                         </div>
                         <div class="read-case" style="background-color: {{ .Params.color }}; cursor: pointer" onclick="location.href='/cases/{{.Params.link}}'">
-                            Læs mere om projektet
+                            {{ if isset .Params "link" }}
+                                Læs mere om projektet
+                            {{ else }}
+                                &nbsp;
+                            {{ end }}
                         </div>
                     </li>
                     {{ end }}
