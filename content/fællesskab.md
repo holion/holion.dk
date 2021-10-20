@@ -10,7 +10,7 @@ I Holion tror vi på, at skal man vinde, kræver det en fælles indsats. Dette g
 
 {{< logos >}}
 ![Kræftens Bekæmpelse](/img/cancer2021.png) 
-![Danske Hospitalsklovne](/img/klovnesponsor2021.png)
+![Danske Hospitalsklovne](/img/klovnesponsor2022.png)
 ![Folkekirkens Nødhjælp](/img/Klimapartner.jpg)
 ![Knæk Cancer](/img/KnaekCancer.png)
 ![Fritidspuljen](/img/fritidspuljen.jpg)
