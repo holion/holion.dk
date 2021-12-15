@@ -34,7 +34,7 @@
     let step = steps.WARM_UP;
     let delay = 1500;
     let rowCount = 11;
-    let drawLetterSpeed = 1000;
+    let drawLetterSpeed = 500;
 
     function log(message) {
         console.log(message);
@@ -451,7 +451,7 @@
 
     function showBit() {
         if (hiddenBits.length === 0) {
-            setTimeout(drawLetters, 1000);
+            setTimeout(drawLetters, 500);
             return;
         }
 
@@ -478,7 +478,7 @@
                 bit.off();
             });
 
-            showBitTimer = setTimeout(showBit, 2500);
+            showBitTimer = setTimeout(showBit, 500);
 
             return;
         }
@@ -491,7 +491,7 @@
                 bit.on();
             });
 
-            showBitTimer = setTimeout(showBit, 2500);
+            showBitTimer = setTimeout(showBit, 500);
 
             return;
         }
