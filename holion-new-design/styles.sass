@@ -1,0 +1,242 @@
+// @import url('https://fonts.googleapis.com/css?family=Mukta Mahee:Bold,Extraold,Extra-light,Light,Medium,Regular,SemiBold')
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap')
+$font-main: 'Mukta Mahee', sans-serif
+
+$extra-light: 200
+$light: 300
+$regular: 400
+$medium: 500
+$semi-bold: 600
+$bold: 700
+$extra-bold: 800
+
+$holion-color: #65bd84
+// $footer-color: #707070
+$footer-color: #65BD84
+$background-color: #000
+
+body
+    background: $background-color
+
+    // background-color: black 
+    // margin: 20px
+    color: white
+    font-family: $font-main
+    font-weight: $regular
+    background-image: url('~images/background_1.svg') no-repeat center center fixed
+    background-size: cover
+
+.footer
+    position: relative
+    // height: 180px
+    // margin-bottom: 0px
+    // padding: 0px
+    width: 100%
+    bottom: 0px
+    & .footer-position
+        position: absolute
+        bottom: 40%
+        &.position-left
+            left: 70px
+            width: 30%
+        &.position-center
+            left: 40%
+            width: 30%
+        &.position-right
+            left: 75%
+            width: 30%
+
+.footer-lower
+    background-color: rgba($footer-color, 0.1)
+    height: 180px
+
+.footer-upper
+    // background-color: black
+    height: 220px
+
+.img-outer
+    position: relative
+    height: 320px
+    width: 100%
+    // background-color: grey
+    bottom: 0px
+    & .img-inner
+        position: absolute
+        top: -10%
+        &.case-1
+            left: 40%
+        &.case-2
+            left: 43%
+
+.holion-button-outer
+    position: relative
+    height: 20px
+    width: 100%
+    // background-color: red
+    bottom: 0px
+    & .holion-button-inner
+        position: absolute
+        top: 0px
+        left: 80%
+        width: 150px
+        background-color: $holion-color
+        color: white
+        font-size: 11px
+        letter-spacing: 2.2px
+        text-transform: uppercase
+        text-align: center
+
+.kontact-background
+    width: 130px
+    background-color: grey
+
+.holion_main_color
+    color: $holion-color
+
+.card-box
+    background-color: black
+    min-width: 100%
+    font-size: 11px
+    position: relative
+
+    &.holion-border
+        border-width: 1px
+        border-color: $holion-color
+        border-style: solid
+
+    & .title
+        text-transform: uppercase
+        letter-spacing: 1px
+
+    & .content
+        font-weight: $medium
+        // position: relative
+        // &.align-right
+        //     text-align: right
+        &.align-bottom-outer
+            height: 20px
+
+            & .align-bottom
+                position: absolute
+                right: 70px
+                bottom: 10px
+                // vertical-align: bottom
+
+    & .bigcontent
+        font-size: 16px
+        font-weight: $light
+
+.same-size-box
+    min-height: 100%
+
+.line-outer-class
+    position: relative
+    height: 400px
+    // border-width: 1px
+    // border-color: red
+    // border-style: solid
+
+.vertical-line
+    border-left: 1px solid $holion-color
+    position: absolute
+    top: 5%
+    left: 50%
+    height: 90%
+    // margin-left: -2pxs
+
+.circle
+    border-radius: 50%
+    margin-left: -2px
+    left: 50%
+    width: 5px
+    height: 5px
+    top: 5%
+    position: absolute
+    background: black
+    border: 2px solid $holion-color
+    text-align: center
+
+.lower
+    top: 95%
+
+.img-center
+    display: block
+    margin: auto
+
+.title_small
+    letter-spacing: 2px
+    font-size: 8px
+    // margin-top: 10px
+    text-transform: uppercase
+    text-align: left
+
+.title_medium
+    font-size: 11px
+    letter-spacing: 2.2px
+    text-transform: uppercase
+    text-align: left
+
+.title_medium_weight_medium
+    font-size: 11px
+    letter-spacing: 2.2px
+    text-transform: uppercase
+    font-weight: $medium
+    text-align: left
+
+.content_medium
+    font-size: 11px
+    letter-spacing: 0.2px
+    line-height: 18px
+    text-align: left
+    font-weight: $medium
+
+.title_medium_large
+    font-size: 15px
+    letter-spacing: 2.2px
+    text-transform: uppercase
+    text-align: left
+
+.title_large
+    letter-spacing: 1.8px
+    font-weight: $light
+    font-size: 40px
+    line-height: 48px
+    text-transform: uppercase
+    text-align: left
+    &.align-center
+        text-align: center
+
+.img-holion
+    zoom: 80%
+
+.img-holion-small
+    zoom: 40%
+
+.img-holion-large
+    zoom: 180%
+
+.textRegion
+    margin-top: 20px
+    margin-bottom: 20px
+
+.img-quotation-mark
+    min-height: 60px
+    max-height: 60px
+
+.img-full-width
+    min-width: -webkit-fill-available
+    max-width: 100%
+
+.arrow-size
+    min-height: 60px
+    max-height: 60px
+
+.name-box
+    display: flex
+    position: relative
+    & .align-top
+        position: absolute
+        top: 0
+
+.name-fill
+    flex-grow: 100
