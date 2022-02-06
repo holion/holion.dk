@@ -100,12 +100,12 @@ googleAnalytics = "UA-338843-5"
 
     about_us = "<p>IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale</p>"
     companyName = "Holion ApS"
-    address = """<br>Østergade 4, 2.
+    address = """<br>Vesselbjergvej 3
         <br>8370 Hadsten
       """
-    latitude = "56.3270084"
-    longitude = "10.0484723"
-    directions = "Holion ApS, Østergade 4, 2."
+    latitude = "56.3287536"
+    longitude = "10.0483177"
+    directions = "Holion ApS, Vesselbjergvej 3"
 
     mailService = "https://holionsharedfunctions.azurewebsites.net/api/contact"
     contact_form_ajax = true
