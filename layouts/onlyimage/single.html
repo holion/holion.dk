@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background: {{ .Params.background }};
+      }
+      img {
+        width: 100%;
+        height: auto;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      </style>
+      </head>
+  <body>
+    <img src="../{{ .Params.image }}" />
+  </body>
+</html>
