@@ -1,207 +1,290 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-size: 16px;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    height: 100%;
+  font-size: 11px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.testiment {
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.punchline {
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: #65bd84;
+}
+
+.card-box {
+  background-color: black;
+  min-width: 100%;
+  font-size: 11px;
+  position: relative;
+}
+.card-box.holion-border {
+  border-width: 1px;
+  border-color: #65bd84;
+  border-style: solid;
+}
+.card-box .title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 28px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.card-box .content {
+  font-weight: 500;
+  margin-bottom: 28px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.card-box .content.align-bottom-outer {
+  height: 20px;
+}
+.card-box .content.align-bottom-outer .align-bottom {
+  position: absolute;
+  right: 70px;
+  bottom: 10px;
+}
+.card-box .bigcontent {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.same-size-box {
+  min-height: 100%;
+}
+
+.line-outer-class {
+  position: relative;
+  height: 400px;
+}
+
+.vertical-line {
+  border-left: 1px solid #65bd84;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  height: 90%;
+}
+
+.circle {
+  border-radius: 50%;
+  margin-left: -2px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  top: 5%;
+  position: absolute;
+  background: black;
+  border: 2px solid #65bd84;
+  text-align: center;
+}
+
+.lower {
+  top: 95%;
 }
 
 #all {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #content {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
+  background: black;
 }
 
 #footer {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .testimonials .read-case {
-    color: white;
-    text-align: center;
-    padding: 10px;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .testimonials .item {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .testimonials .item .testimonial {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .testimonials .item .testimonial .bottom .icon {
-    width: 10%;
+  width: 10%;
 }
 
 .testimonials .item .testimonial .name-picture {
-    width: 90%;
+  width: 90%;
 }
 
 .icon {
-    font-size: 40px;
+  font-size: 40px;
 }
 
-.navbar ul.nav>li>a {
-    text-decoration: none;
+.navbar ul.nav > li > a {
+  text-decoration: none;
 }
 
 .home-carousel a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .case {
-    display: inline-block;
-    width: 100%;
-    max-height: 380px;
-    overflow: hidden;
-    border: 1px solid black;
+  display: inline-block;
+  width: 100%;
+  max-height: 380px;
+  overflow: hidden;
+  border: 1px solid black;
 }
 
 .case .description a {
-    color: black;
-    text-decoration: underline;
+  color: black;
+  text-decoration: underline;
 }
 
 h2 {
-    display: inline-block;
-    border-bottom: solid 5px #38a7bb;
-    line-height: 1.1;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    vertical-align: middle;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  display: inline-block;
+  border-bottom: solid 5px black;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 h3 {
-    display: flex;
-    border-bottom: solid 5px #38a7bb;
-    line-height: 1.1;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    vertical-align: middle;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  display: flex;
+  border-bottom: solid 5px black;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .img-centered {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .casetestimonial {
-    color: white;
-    padding: 60px 0;
-    margin-top: -1px;
-    font-size: 20px;
-    margin-top: 67px;
+  color: white;
+  padding: 60px 0;
+  margin-top: -1px;
+  font-size: 20px;
+  margin-top: 67px;
 }
 
 .casetestimonial img {
-    max-height: 200px;
+  max-height: 200px;
 }
 
 .casetestimonial img.profile {
-    border-radius: 100%;
-    float: left;
-    max-height: 200px;
-    margin-right: 20px;
+  border-radius: 100%;
+  float: left;
+  max-height: 200px;
+  margin-right: 20px;
 }
 
 .casetestimonial a {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 .casetestimonial .text {
-    text-align: justify;
-    margin-bottom: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 .casetestimonial .text p {
-    white-space: pre-line;
+  white-space: pre-line;
 }
 
 .casetestimonial .contact {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {
-    h1 {
-        font-size: 22px !important;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 18px;
-    }
-    .long-text {
-        font-size: 12px;
-    }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .long-text {
+    font-size: 12px;
+  }
 }
 
 .box-simple p {
-    text-align: left;
+  text-align: left;
 }
 
 #heading-breadcrumbs {
-    margin-top: 67px;
+  margin-top: 67px;
 }
 
 .home-carousel {
-    margin-top: 67px;
+  margin-top: 67px;
 }
 
 .logos img {
-    max-width: 350px;
-    margin: 5px;
+  max-width: 350px;
+  margin: 5px;
 }
 
 .single-testimonial {
-    float: left; 
-    margin-right: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
-    .single-testimonial {
-        float: none;
-    }
+  .single-testimonial {
+    float: none;
+  }
 }
 
 @media (min-width: 767px) {
-    .single-testimonial {
-        width: 360px;
-    }
+  .single-testimonial {
+    width: 360px;
+  }
 }
 
 #footer {
-    z-index: 100;
+  z-index: 100;
 }
 
 #static {
-    position: fixed;
-    background: #555555;
-    bottom: 0;
-    width: 100vw;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  position: fixed;
+  background: #555555;
+  bottom: 0;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-    #static {
-        bottom: 0;
-    }
+  #static {
+    bottom: 0;
+  }
 }
 
 #static a {
-    font-weight: bold;
+  font-weight: bold;
 }
