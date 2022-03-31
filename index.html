@@ -7,6 +7,7 @@
     var visibleBit;
     var currentBitIndex;
     var showBitTimer;
+    var runFasterTimer;
     const steps = {
         WARM_UP: 'warmup',
         RUNNING_FASTER: 'runningfaster',
@@ -445,6 +446,11 @@
             step = steps.RUNNING_FASTER;
         });
 
+        // Automatically run faster
+        runFasterTimer = setTimeout(() => {
+            step = steps.RUNNING_FASTER;
+        }, 10000);
+
         // step = steps.RUNNING_FASTER;
         showBit();
     }
@@ -551,18 +557,18 @@
         }
         else if (step === steps.LOGO_HOLION_WITH_LEAF) {
             holionBits[4].addLeaf();
+
+            setTimeout(reset, 20000);
+
             return;
         }
 
         showBitTimer = setTimeout(showBit, drawLetterSpeed);
     }
 
-    window.onload = function () {
-        initialize();
-    }
-
-    window.addEventListener('resize', () => {
+    function reset() {
         clearTimeout(showBitTimer);
+        clearTimeout(runFasterTimer);
         document.body.style.backgroundColor = 'black';
         document.getElementById('intro').innerHTML = '';
         step = steps.WARM_UP;
@@ -573,7 +579,13 @@
         holionBits = [];
 
         initialize();
-    });
+    }
+
+    window.onload = function () {
+        initialize();
+    }
+
+    window.addEventListener('resize', reset);
 </script>
 <style>
     body {
