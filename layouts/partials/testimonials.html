@@ -10,30 +10,48 @@
                 <ul class="owl-carousel testimonials same-height-row">
                     {{ range (where (where .Site.AllPages.ByWeight "Type" "cases") ".Params.testimonial" "!=" nil) }}
                     <li class="item">
-                        <div style="background-color: {{ .Params.color }}; height: 120px; position: relative; cursor: pointer" onclick="location.href='/cases/{{.Params.link}}'">
+                        <!-- <div style="background-color: {{ .Params.color }}; height: 120px; position: relative; cursor: pointer" onclick="location.href='/cases/{{.Params.link}}'">
                             <img src="/img/testimonials/{{ .Params.companyLogo }}" class="img-responsive img-centered" style="max-height: 80%; max-width: 90%; top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute; {{ .Params.companyLogoCss }}">
-                        </div>
-                        <div class="testimonial same-height-always">
-                            <div class="text">
+                        </div> -->
+                        <!-- <div class="testimonial same-height-always"> -->
+                        <div class="card-box holion-border">
+                            <div class="m-4 mt-5">
+                                <img class="img-quotation-mark" src="/img/layout/quotation_mark.svg" />
+                            </div>
+                            <div class="bigcontent m-4">
                                 <p>{{ .Params.testimonial | markdownify }}</p>
                             </div>
-                            <div class="bottom">
-                                <div class="icon"><i class="fa fa-quote-left"></i>
+                            <img class="img-full-width m-0 p-0" src="/img/testimonials/{{ .Params.testimonialByImg }} " />
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img class="mt-4 m-4" src="/img/layout/arrow-up.svg" />
                                 </div>
-                                <div class="name-picture">
-                                    <img class="" alt="" src="/img/testimonials/{{ .Params.testimonialByImg }}">
-                                    <h5><a href="{{ .Params.testimonialByLink }}" target="_blank">{{ .Params.testimonialBy }}</a></h5>
-                                    <p>{{ .Params.testimonialByTitle }}, {{ .Params.company }}</p>
+                                <div class="col-md-10 m-2 mt-4">
+                                    <div class="holion_main_color title_medium_weight_medium">
+                                        <!-- <a href="{{ .Params.testimonialByLink }} " target="_blank ">{{ .Params.testimonialBy }}</a> -->
+                                        {{ .Params.testimonialBy }}
+                                    </div>
+                                    <div class="content_medium">{{ .Params.testimonialByTitle }} <br> {{ .Params.company }}</div>
+                                    <div class="content_medium my-3" onclick="location.href='/cases/{{.Params.link}}' ">
+                                        {{ if isset .Params "link " }} Læs mere om projektet {{ else }} &nbsp; {{ end }}
+                                    </div>
+
                                 </div>
                             </div>
+                            <!-- <div class=" bottom ">
+                                <div class="icon "><i class="fa fa-quote-left "></i>
+                                </div>
+                                <div class="name-picture ">
+                                    <img class=" " alt=" " src="/img/testimonials/{{ .Params.testimonialByImg }} ">
+                                    <h5><a href="{{ .Params.testimonialByLink }} " target="_blank ">{{ .Params.testimonialBy }}</a></h5>
+                                    <p>{{ .Params.testimonialByTitle }}, {{ .Params.company }}</p>
+                                </div>
+                        </div> -->
                         </div>
-                        <div class="read-case" style="background-color: {{ .Params.color }}; cursor: pointer" onclick="location.href='/cases/{{.Params.link}}'">
-                            {{ if isset .Params "link" }}
-                                Læs mere om projektet
-                            {{ else }}
-                                &nbsp;
-                            {{ end }}
-                        </div>
+                        <!-- <div class="read-case " style="background-color: {{ .Params.color }}; cursor: pointer " onclick="location.href='/cases/{{.Params.link}}' ">
+                            {{ if isset .Params "link " }} Læs mere om projektet {{ else }} &nbsp; {{ end }}
+                        </div> -->
+                        <!-- </div> -->
                     </li>
                     {{ end }}
                 </ul>
