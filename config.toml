@@ -116,17 +116,31 @@ googleAnalytics = "UA-338843-5"
 [params.features]
     enable = true
 
+
+
+[params.vertical_line]
+    enable = true
+
 [params.testimonials]
     enable = true
     title = "Hvad siger kunderne?"
     subtitle = "Vi har haft mange kunder gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt. Kontakt os for at høre mere om en eller flere specifikke kundecases."
 
 [params.see_more]
+    icon = "/img/layout/holion-circle.svg"      
     enable = true
     title = "Hvem er Holion?"
-    subtitle = '''VI UDVIKLER APPS OG PROGRAMMER AF HØJ KVALITET. 
+    subtitle = ''' Vi udvikler apps og programmer af høj kvalitet.
 
-VI GÅR MEGET OP I BÆREDYGTIGHED, OG HAR VÆRET PÅ EN SPÆNDENDE
-
-UDVIKLINGSREJSE I FORHOLD TIL MILJØ, ETIK OG EN NY GRØN PROFIL'''
+Vi går meget op i bæredygtighed, og har været på en spændende
+                    
+udviklingsrejse i forhold til miljø, etik og en ny grøn profil'''
+   
     punchline = "&#8208; DET SKAL GIVE MENING!"
+
+
+[params.who_is]
+    enable = true    
+    icon = "/img/layout/holion-logo.svg"
+    title = "Hvem er Holion,"
+    subtitle = "og hvad kan vi gøre for dig?"

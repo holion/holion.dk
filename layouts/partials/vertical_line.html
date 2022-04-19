@@ -1,0 +1,9 @@
+{{ if isset .Site.Params "vertical_line" }} {{ if .Site.Params.vertical_line.enable }}
+<section class="bar">
+    <div class="line-outer-class">
+        <div class="vertical-line"></div>
+        <div class="circle"></div>
+        <div class="circle lower"></div>
+    </div>
+</section>
+{{ end }} {{ end }}
