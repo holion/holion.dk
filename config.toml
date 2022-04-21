@@ -116,10 +116,14 @@ googleAnalytics = "UA-338843-5"
 [params.features]
     enable = true
 
-
-
 [params.vertical_line]
     enable = true
+
+[params.who_is]
+    enable = true    
+    icon = "/img/layout/holion-logo.svg"
+    title = "Hvem er Holion,"
+    subtitle = "og hvad kan vi gøre for dig?"
 
 [params.testimonials]
     enable = true
@@ -139,8 +143,3 @@ udviklingsrejse i forhold til miljø, etik og en ny grøn profil'''
     punchline = "&#8208; DET SKAL GIVE MENING!"
 
 
-[params.who_is]
-    enable = true    
-    icon = "/img/layout/holion-logo.svg"
-    title = "Hvem er Holion,"
-    subtitle = "og hvad kan vi gøre for dig?"
