@@ -98,7 +98,14 @@ googleAnalytics = "UA-338843-5"
 
     googleMapsApiKey = "AIzaSyDIVOs27G2ngMgR84tFtaKTGsIjg70EIcc"
 
-    about_us = "<p>IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale</p>"
+    about_us = """Vi udvikler apps og programmer af høj kvalitet.
+    <br>vi går meget op i bæredygtighed, og har været på en 
+    <br>spændende udviklingsrejse i forhold til miljø, etik og en
+    <br>ny grøn profil
+    """
+
+    punchline = "&#8208; DET SKAL GIVE MENING!"
+                    
     companyName = "Holion ApS"
     address = """<br>Østergade 4, 2.
         <br>8370 Hadsten
@@ -134,12 +141,6 @@ googleAnalytics = "UA-338843-5"
     icon = "/img/layout/holion-circle.svg"      
     enable = true
     title = "Hvem er Holion?"
-    subtitle = ''' Vi udvikler apps og programmer af høj kvalitet.
-
-Vi går meget op i bæredygtighed, og har været på en spændende
-                    
-udviklingsrejse i forhold til miljø, etik og en ny grøn profil'''
    
-    punchline = "&#8208; DET SKAL GIVE MENING!"
 
 
