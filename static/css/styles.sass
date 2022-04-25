@@ -14,13 +14,16 @@ $holion-color: #65bd84
 // $footer-color: #707070
 $footer-color: #65BD84
 $background-color: #000
+$background-color: #000
+$text-color: #fff
+
 
 body
     background: $background-color
 
     // background-color: black 
     // margin: 20px
-    color: white
+    color: $text-color
     font-family: $font-main
     font-weight: $regular
     background-image: url('~images/background_1.svg') no-repeat center center fixed
@@ -28,7 +31,26 @@ body
 
 #footer
     background: $background-color
-    background-color: $background-color
+    // background-color: $background-color
+    color: $text-color
+
+
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 
+    color: $text-color
+
+    
+#footer .social a 
+    color: $text-color
+
+#footer ul a 
+    color: $text-color
+
+
 
 .footer
     position: relative
@@ -51,7 +73,7 @@ body
             width: 30%
 
 .footer-lower
-    background-color: rgba($footer-color, 0.1)
+    background-color: rgba($holion-color, 0.1)
     height: 180px
 
 .footer-upper
