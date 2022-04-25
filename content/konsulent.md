@@ -5,8 +5,9 @@ description: "Holion kan være din on-site IT-konsulent, som optimerer og videre
 type: withtestimonials
 ---
 
+{{< line-devider "/img/layout/curly-line-1.svg" >}}
 
-{{< pc "On-site konsulentassistance" "Rådgivning før, under og efter dit projekt">}}
+{{< pc "Rådgivning før, under og efter dit projekt">}}
 
 Hos Holion kvalificerer vi dine valg gennem kompetent rådgivning før, under og efter dit IT-projekt. Dermed sikrer vi, at din app eller webløsning bliver gennemtænkt lige fra den spæde idé til forretningsmodel og endelig implementering. Vi ser det som vores vigtigste opgave at skabe overblik og tryghed, så du kan træffe de rette valg, der skaber værdi og vækst for din forretning. 
 
@@ -14,7 +15,7 @@ Hos Holion kvalificerer vi dine valg gennem kompetent rådgivning før, under og
 
 {{< line-devider "/img/layout/curly-line-1.svg" >}}
 
-{{< pc "On-site konsulentassistance" "Høj uddannelse og passion">}}
+{{< pc "Høj uddannelse og passion">}}
 
 En god og høj uddannelse betyder ikke nødvendigvis, at man er den bedste til at klare jobbet, men det sender helt sikkert én i den rigtige retning. Hos Holion er vi alle dataloger eller IT-ingeniører - altså virkelig veluddannede folk. Men udover uddannelsen, har vi alle en enorm passion for vores fag. Samtidig elsker vi at dele vores viden med andre og mærke, hvordan vi hjælper vores kunder til at få endnu bedre styr på deres processer, arkitektur og selve koden.
 
@@ -24,7 +25,7 @@ Med andre ord - nogle virkelig **stærke konsulenter**.
 
 {{< line-devider "/img/layout/curly-line-1.svg" >}}
 
-{{< pc "On-site konsulentassistance" "Vi kommer ud til dig" "Bestil en konsulent" "/kontakt">}}
+{{< pc "Vi kommer ud til dig" "Bestil en konsulent" "/kontakt">}}
 
 
 Vi sidder normalt på vores eget kontor og arbejder, men hvis du har behov for, at vi kommer ud til dig og hjælper dit team, gør vi naturligvis også det. Vi kan cirka det samme som dine egne udviklere - vi har bare masser af erfaring med alt lige fra agile udviklingsprocesser over [backendudvikling]({{< ref webudvikling >}}) til [appudvikling]({{< ref appudvikling >}}). 
@@ -35,7 +36,7 @@ Det kan være, at du har nogle konkrete problemer, som du kunne bruge et par eks
 
 {{< line-devider "/img/layout/curly-line-1.svg" >}}
 
-{{< pc "On-site konsulentassistance" "Hvad har vi hjulpet med?">}}
+{{< pc "Hvad har vi hjulpet med?">}}
 
 Vi hjalp i løbet af nogle få dage en mindre kunde med at identificere performance problemer og finde en brugbar løsning på disse. Hurtigt ind - hurtigt ud. Det var, hvad der var behov for og økonomi til her.
 
