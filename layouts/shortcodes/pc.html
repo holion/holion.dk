@@ -17,9 +17,12 @@
 
         </div>
     </div>
+    {{ if ne (.Get 2) "" }}
     <div class="holion-button-outer m-3">
         <div class="holion-button-inner">
             <a href="{{.Get 3}}"> {{.Get 2}} </a>
         </div>
     </div>
+    {{ end }}
+
 </div>
