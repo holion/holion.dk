@@ -55,21 +55,34 @@ googleAnalytics = "UA-338843-5"
 
 [[menu.main]]
 	identifier = "about"
-	name = "Om Holion"
+	name = "Kontakt"
 	weight = 10
+
+[[menu.main]]
+	identifier = "holion"
+	name = "Holion"
+    url = "/holion/"
+	weight = 9
+
+[[menu.main]]
+    identifier = "medarbejdere"
+    name = "Medarbejdere"
+    url = "/medarbejdere/"
+    weight = 3
+    parent = "holion"    
 
 [[menu.main]]
     identifier = "jobs"
     name = "Ledige stillinger"
     url = "/ledige-stillinger/"
-    parent = "about"
+    parent = "holion"
     weight = 1
 
 [[menu.main]]
     identifier = "teknologi"
     name = "Teknologi"
     url = "/teknologi/"
-    parent = "about"
+    parent = "holion"
     weight = 2
 
 [[menu.main]]
