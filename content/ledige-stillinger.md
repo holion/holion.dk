@@ -4,6 +4,16 @@ pagetitle: "Ledige jobs hos Holion | Vi søger altid nye udvikler-talenter"
 description: "Der er flere gode grunde til at arbejde hos Holion. Stor frihed i forhold til opgaver og arbejdstid. Send din ansøgning her."
 ---
 
+{{< pc_small "Bliv en del af familien" "Uopfordret ansøgning" >}}
+
+
+Vi er altid på udkig efter talentfulde og rare mennesker, der gerne vil være med i vores skøre, kloge, 
+strukturerede, grudige og hårdarbejdende familie.
+
+Se vores ledeige stillinger herunder – eller vær lidt fremme i skoene og send en uopfordret ansøgning.
+
+{{< /pc_small >}}
+
 ## Holion mangler udviklere
 
 Der er gang i den hos Holion, så vi mangler dygtige udviklere. Hos Holion er vi super skarpe i Microsofts teknologier, men kan også lave web og apps. Om du kan det ene eller det andet betyder ikke så meget - bare du er god til det som du kan og er frisk på at lære lidt nyt engang i mellem.
