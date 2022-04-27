@@ -1,0 +1,30 @@
+<div class="container-md m-5 p-4">
+
+    {{ if ne (.Get "title") "" }}
+    <div class="title_large">
+        {{.Get "title"}}
+    </div>
+    {{ end }}
+
+    <div class="row align-items-baseline">
+        <div class="col-md-2 ml-5 mt-3">
+            <div class="holion_main_color title_medium">
+                {{.Get "subtitle"}}
+            </div>
+        </div>
+        <div class="col-md-10 mt-5">
+            <div class="content_medium">
+                {{ .Inner | markdownify}}
+            </div>
+
+        </div>
+    </div>
+    {{ if ne (.Get "linktitle") "" }}
+    <div class="holion-button-outer m-3">
+        <div class="holion-button-inner">
+            <a href="{{.Get " link "}}"> {{.Get "linktitle"}} </a>
+        </div>
+    </div>
+    {{ end }}
+
+</div>
