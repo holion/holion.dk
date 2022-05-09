@@ -6,6 +6,8 @@ description: "Gennemtænkte apps til både Android og iOS/iPhone - altid med slu
 ---
 
 
+{{< line-devider "/img/layout/curly-line-2.svg" >}}
+
 {{< pc "dig og din case i centrum" "Vil du vide mere" "/kontakt">}}
 
 Som kunde hos Holions behøver du ikke have den store viden om apps eller bekymre dig om teknikken bag - den del tager vi os af. Vi brænder for [teknologi]({{< ref teknologi >}}) og fortæller gerne om, hvad der rent faktisk ligger inde bagved, hvis du skulle være interesseret. Vi udvikler apps til alt fra [små startups]({{< ref "cases/carbuddii" >}}) til [store virksomheder]({{< ref "cases/stofa" >}}), uanset om der er tale om mindre projekter, kampagneapps med begrænset levetid eller større komplekse appløsninger.
