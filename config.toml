@@ -15,9 +15,9 @@ googleAnalytics = "UA-338843-5"
 
 [[menu.main]]
 	identifier = "services"
-	name = "Ydelser"
+	name = "4X Ydelser"
 	url = "/ydelser/"
-	weight = 2
+	weight = 3
 
 [[menu.main]]
     identifier = "apps"
@@ -51,7 +51,7 @@ googleAnalytics = "UA-338843-5"
 	identifier = "cases"
 	name = "Cases"
 	url = "/cases/"
-	weight = 3
+	weight = 2
 
 [[menu.main]]
 	identifier = "about"
