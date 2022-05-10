@@ -99,26 +99,33 @@ a {
 
 .citation-outer {
     position: relative;
-    height: 1200px;
-    width: 100%;
+    height: 400px;
+    width: 60%;
     bottom: 0px;
 }
 
-.citation-outer .citation-inner {
-    float: left;
-    margin-left: 66px;
-    margin-bottom: 20px;
-    margin-top: 5px;
+.citation-outer .citation-inner-upper {
+    position: absolute;
+    left: 60%;
+    top: 0px;
+}
+
+.citation-outer .citation-inner-lower {
+    position: absolute;
+    width: 100%;
+    top: 140px;
+    left: 30%
 }
 
 .case-outer {
     position: relative;
-    height: 1200px;
+    height: 1050px;
     width: 100%;
     bottom: 0px;
 }
 
 .case-outer .case-inner-name {
+    z-index: 1;
     float: left;
     margin-left: 66px;
     margin-bottom: 20px;
@@ -126,13 +133,16 @@ a {
 }
 
 .case-outer .case-inner-header {
-    float: right;
-    margin-left: 20px;
+    width: 100%;
+    float: left;
+    margin-left: 66px;
+    margin-right: 166px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
 .case-outer .case-inner {
+    z-index: 2;
     float: left;
     margin-left: 50px;
     margin-bottom: 20px;

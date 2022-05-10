@@ -19,38 +19,18 @@
 
             <div class="container">
 
-                <div class="row">
+                {{ partial "pc.html" . }} 
+                
+                {{ partial "case_images.html" . }} 
+                
+                {{ partial "vertical_line.html" . }} 
+                
+                {{ partial "citation.html" . }} 
+                
+                {{ partial "vertical_line.html" . }} 
+                
+                {{ partial "case_content.html" . }}
 
-                    <div class="col-md-12">
-
-                        <div class="case-outer">
-
-                            {{ partial "pc.html" . }}
-                            <div class="case-inner-header hidden-xs">
-                                <img class="img-full-width" src="{{ .Params.imgHeader }}">
-                            </div>
-                            <div class="case-inner-name hidden-xs">
-                                <img class="img-full-width" src="{{ .Params.imgName }}">
-                            </div>
-                            <div class="case-inner hidden-xs">
-                                <img class="img-half-width" src="{{ .Params.img }}">
-                            </div>
-
-                        </div>
-                        {{ partial "vertical_line.html" . }} {{ partial "citation.html" . }} {{ partial "vertical_line.html" . }}
-                    </div>
-
-                </div>
-                <!-- /.row -->
-
-                {{/*
-                <h2>
-                    Andre cases
-                </h2>
-
-                <p>
-                    {{ range (where (where .Site.Pages "Type" "cases") "Title" "!=" .Page.Title) }} {{ if ne .Kind "section" }} {{ if isset .Params "link" }} {{ partial "case.html" . }} {{ end }} {{ end }} {{ end }}
-                </p> */}}
             </div>
             <!-- /.container -->
 

@@ -28,22 +28,23 @@ testimonialHeader: "Stofa ville gerne gøre det lettere og sjovere for deres kun
 
 Appen skulle være nytænkende, brugervenlig og anderledes end de andre løsninger på markedet - og det blev den ved bl.a. at anvende kamerafunktionen til at kortlægge hjemmet vha. Augmented Reality. WifiScanneren, som appen kom til at hedde, lå kort efter udgivelsen som den mest downloadede app i både [App Store](https://itunes.apple.com/dk/app/wifiscanneren/id1381401346?mt=8) og [Google Play](https://play.google.com/store/apps/details?id=dk.stofa.wifiscanneren)."
 
-testimonial-2a: Holions rolle
 
+testimonialHolionRolle: "Holion kom først sent ind i projektet, da de eksterne konsulenter, som Stofa først havde hyret, ikke havde mulighed for at hjælpe Stofa helt i mål med udviklingen. Holion overtog dermed en app, som kun var halvvejs i udviklingsforløbet.
 
-testimonial-2: "Holion kom først sent ind i projektet, da de eksterne konsulenter, som Stofa først havde hyret, ikke havde mulighed for at hjælpe Stofa helt i mål med udviklingen. Holion overtog dermed en app, som kun var halvvejs i udviklingsforløbet.
 
 Hurtigt lykkedes det dog at få overblik over den kodebase, der allerede var blevet udviklet, så Holion effektivt kunne bygge videre på de grundsten, der allerede var sat. Efter en kompetent arbejdsindsats havde Holion hjulpet Stofa helt i mål med en fuldt udviklet og færdig app.
 
+
 Undervejs kunne Holion give værdiskabende input og kyndig rådgivning i forbindelse med udvikling af yderligere features til appen. Selv om appen nu er færdigudviklet, samarbejder Holion stadig med Stofa om vedligeholdelse og nyudvikling af appen."
 
-testimonial-3a: Teknikken
+testimonialTeknikken: "Appen er udviklet både til iPhone og Android og baseret på [Xamarin](https://visualstudio.microsoft.com/xamarin), hvilket har gjort det muligt at genbruge hovedparten af koden på tværs af de to platforme - og dette til trods for, at appen benytter Augmented Reality (AR), der i sig selv er meget platformspecifik.
 
-testimonial-3: "Appen er udviklet både til iPhone og Android og baseret på [Xamarin](https://visualstudio.microsoft.com/xamarin), hvilket har gjort det muligt at genbruge hovedparten af koden på tværs af de to platforme - og dette til trods for, at appen benytter Augmented Reality (AR), der i sig selv er meget platformspecifik.
 
 AR anvendes bl.a. til at animere farvede bolde ind i det billede, som vises via telefonens kamera, når brugeren går rundt i sin bolig for at kortlægge sit Wi-Fi netværk. Boldene indikerer kvaliteten af netværket på det sted, som telefonen befinder sig.
 
+
 Når kortlægningen er slut, vises en række råd til forbedring af netværket. Disse råd - både den faktiske tekst samt logikken, der bestemmer, om de skal vises eller ej - ligger i et CMS system og kan opdateres, uden at der skal udgives en ny version af appen.
+
 
 For at få samme oplevelse på både iPhone og Android var Holion nødt til at gøre en af Googles AR-komponenter til Android, [Sceneform](https://github.com/google-ar/sceneform-android-sdk), brugbar fra Xamarin. En sådan opgave varetages normalt af Xamarin selv."
 
