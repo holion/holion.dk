@@ -97,19 +97,46 @@ a {
     left: 40%;
 }
 
-.case .img-outer {
+.citation-outer {
     position: relative;
-    height: 320px;
+    height: 1200px;
     width: 100%;
     bottom: 0px;
 }
 
-.case .img-outer .img-inner {
-    zoom: 20%;
-    position: absolute;
-    max-height: 100px;
-    top: -10%;
-    left: 40%;
+.citation-outer .citation-inner {
+    float: left;
+    margin-left: 66px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.case-outer {
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.case-outer .case-inner-name {
+    float: left;
+    margin-left: 66px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.case-outer .case-inner-header {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.case-outer .case-inner {
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: -120px;
 }
 
 .img-outer .img-inner-left {
@@ -333,6 +360,10 @@ a {
     max-width: 100%;
 }
 
+.img-half-width {
+    zoom: 60%;
+}
+
 .arrow-size {
     min-height: 60px;
     max-height: 60px;
@@ -397,6 +428,10 @@ a {
 
 button:not(:-moz-focusring):focus>.menu__btn-title {
     box-shadow: none;
+}
+
+.navbar-default {
+    border-bottom: #e22d30;
 }
 
 .menu__btn:focus,

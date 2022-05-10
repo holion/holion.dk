@@ -23,21 +23,21 @@
 
                     <div class="col-md-12">
 
-                        <div>
+                        <div class="case-outer">
+
                             {{ partial "pc.html" . }}
-                            <div style="float: right; margin-left: 20px; margin-bottom: 20px; margin-top: -20px" class="hidden-xs">
+                            <div class="case-inner-header hidden-xs">
                                 <img class="img-full-width" src="{{ .Params.imgHeader }}">
                             </div>
-                            <div style="float: left; margin-left: 66px; margin-bottom: 20px; margin-top: 10px" class="hidden-xs">
+                            <div class="case-inner-name hidden-xs">
                                 <img class="img-full-width" src="{{ .Params.imgName }}">
                             </div>
-                            <div style="float: left; margin-left: 650px; margin-bottom: 20px; margin-top: -400px" class="hidden-xs">
+                            <div class="case-inner hidden-xs">
                                 <img class="img-half-width" src="{{ .Params.img }}">
                             </div>
 
                         </div>
-                        {{/* {{ partial "vertical_line.html" . }} */}}
-
+                        {{ partial "vertical_line.html" . }} {{ partial "citation.html" . }} {{ partial "vertical_line.html" . }}
                     </div>
 
                 </div>

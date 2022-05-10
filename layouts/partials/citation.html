@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-3">
+            <img class="img-full-width m-0 p-0" src="/img/testimonials/{{ .Params.testimonialByImg }}" />
+            <div class="row mt-3">
+                <div class="col-md-1">
+                    <img class="" src="/img/layout/arrow-up.svg" />
+                </div>
+                <div class="col-md-10">
+                    <div class="holion_main_color title_medium_weight_medium">
+                        {{ .Params.testimonialBy }}
+                    </div>
+                    <div class="content_medium">{{ .Params.testimonialByTitle }} <br> {{ .Params.company }}</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-7">
+            <div class="m-4 mt-5">
+                <img class="img-quotation-mark" src="/img/layout/quotation_mark.svg" />
+            </div>
+            <div class="title_medium_large m-4">
+                <p>{{ .Params.testimonial | markdownify }}</p>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
