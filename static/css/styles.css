@@ -90,16 +90,42 @@ a {
 }
 
 .img-outer .img-inner {
+    zoom: 20%;
     position: absolute;
+    max-height: 100px;
     top: -10%;
-}
-
-.img-outer .img-inner.case-1 {
     left: 40%;
 }
 
-.img-outer .img-inner.case-2 {
+.case .img-outer {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.case .img-outer .img-inner {
+    zoom: 20%;
+    position: absolute;
+    max-height: 100px;
+    top: -10%;
+    left: 40%;
+}
+
+.img-outer .img-inner-left {
+    zoom: 20%;
+    position: absolute;
+    max-height: 100px;
+    top: -10%;
     left: 43%;
+}
+
+.img-outer .img-inner-left-big {
+    zoom: 20%;
+    position: absolute;
+    max-height: 100px;
+    top: -10%;
+    left: 51%;
 }
 
 .holion-button-outer {

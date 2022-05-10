@@ -5,7 +5,7 @@ description: "Holion kan være din on-site IT-konsulent, som optimerer og videre
 # type: withtestimonials
 ---
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon13.png" class="img-inner-left">}}
 
 {{< pc "Rådgivning før, under og efter dit projekt">}}
 
@@ -13,7 +13,7 @@ Hos Holion kvalificerer vi dine valg gennem kompetent rådgivning før, under og
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon14.png" >}}
 
 {{< pc "Høj uddannelse og passion">}}
 
@@ -23,7 +23,7 @@ Med andre ord - nogle virkelig **stærke konsulenter**.
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon15.png" >}}
 
 {{< pc "Vi kommer ud til dig" "Bestil en konsulent" "/kontakt">}}
 
@@ -34,7 +34,7 @@ Det kan være, at du har nogle konkrete problemer, som du kunne bruge et par eks
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon16.png" >}}
 
 {{< pc "Hvad har vi hjulpet med?">}}
 

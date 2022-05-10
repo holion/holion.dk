@@ -5,7 +5,7 @@ description: "Vi hoster dine app og webløsninger og sørger for, at de altid er
 # type: withtestimonials
 ---
 
-{{< line-devider "/img/layout/curly-line-2.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon9.png" >}}
 
 {{< pc "Saml udvikling og drift ét sted">}}
 
@@ -17,7 +17,7 @@ Ofte er det en fordel at bruge den samme virksomhed til at udvikle, vedligeholde
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-2.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon10.png" >}}
 
 {{< pc "IT Hosting" "kontakt os for tilbud" "/kontakt">}}
 
@@ -30,7 +30,7 @@ En app er sjældent meget værd uden en backend. Det er her systemet holder styr
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-2.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon11.png" >}}
 
 {{< pc "Distribution">}}
 
@@ -41,7 +41,7 @@ Når en app er klar til udgivelse, kan den sendes direkte fra App Center og over
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-2.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon12.png" >}}
 
 {{< pc "Overvågning af app- og webløsninger">}}
 

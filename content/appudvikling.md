@@ -6,7 +6,7 @@ description: "Gennemtænkte apps til både Android og iOS/iPhone - altid med slu
 ---
 
 
-{{< line-devider "/img/layout/curly-line-2.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon1.png" >}}
 
 {{< pc "dig og din case i centrum" "Vil du vide mere" "/kontakt">}}
 
@@ -16,7 +16,7 @@ Vi er passionerede IT-konsulenter, som udvikler og designer applikationer i tæt
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon2.png" class="img-inner-left" >}}
 
 {{< pc "Hvad koster det at lave en app?" "Få et tilbud på appudvikling" "/kontakt">}}
 
@@ -26,7 +26,7 @@ Med mange års erfaring inden for appudvikling mestrer vi både apps med enkelte
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-2.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon3.png" >}}
 
 {{< pc "Udvikling af crossplatform-apps til iOS/iPhone og Android" "Se lignende kundecases" "/cases">}}
 
@@ -38,7 +38,7 @@ Det betyder dog ikke at vi går på kompromis med brugeroplevelsen, da vi design
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon4.png" >}}
 
 {{< pc "Fra idé til app - udviklingsprocessen" "Læs mere om udviklingsprocessen" "/processen">}}
 
@@ -48,7 +48,7 @@ Hos Holion tror vi på, at det nærmest er umuligt at forudse, hvilken app man i
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-2.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon5.png" class="img-inner-left-big">}}
 
 {{< pc "Få specialudviklet en app til din virksomhed" "Kontakt Holion" "/kontakt">}}
 

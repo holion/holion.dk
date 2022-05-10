@@ -5,7 +5,7 @@ description: "Med et webbaseret IT-system får du en moderne løsning, der kan t
 # type: withtestimonials
 ---
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon6.png" >}}
 
 {{< pc "Moderne systemer">}}
 
@@ -18,7 +18,7 @@ Det handler derfor om at udvikle websystemer, der er funktionelle, intuitive og 
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon7.png" >}}
 
 {{< pc "Udvikling af webbaserede systemer" "kontakt os for et møde" "/kontakt">}}
 
@@ -30,7 +30,7 @@ Hos Holion hjælper vi ikke blot med udviklingen af webbaserede systemer, vi hj�
 
 {{< /pc >}}
 
-{{< line-devider "/img/layout/curly-line-1.svg" >}}
+{{< line-devider src="/img/layout/curlylines/ikon8.png" >}}
 
 {{< pc "Professionelle webløsninger">}}
 
