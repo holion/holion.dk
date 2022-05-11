@@ -125,10 +125,19 @@ a {
 }
 
 .case-outer .case-inner-name {
-    z-index: 1;
-    float: left;
+    position: absolute;
+    height: 600px;
+    width: 40%;
     margin-left: 66px;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
+    margin-top: 5px;
+}
+
+.case-outer .case-inner-inner-name {
+    height: 600px;
+    width: 40%;
+    margin-left: 66px;
+    margin-bottom: 200px;
     margin-top: 5px;
 }
 

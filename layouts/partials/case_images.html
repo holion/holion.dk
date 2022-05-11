@@ -7,10 +7,12 @@
         <img src="/img/testimonials/{{ .Params.companyLogo }}" class="img-responsive img-centered" style="max-height: 80%; max-width: 40%; top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute; {{ .Params.companyLogoCss }}">
     </div> */}}
 
-    <div class="case-inner-name hidden-xs">
-        <img class="img-full-width" src="{{ .Params.imgName }}">
+    <div class="case-inner-name hidden-xs" style="background-color: {{ .Params.color }}; ">
+        <div style=" margin-top:50px;  margin-bottom:50px; margin-left:40px; margin-right:40px;">
+            <img src=" /img/testimonials/{{ .Params.companyLogo }} " class="img-responsive img-centered" style="max-height: 100%; max-width: 100%;">
+        </div>
     </div>
-    <div class="case-inner hidden-xs">
-        <img class="img-half-width" src="{{ .Params.img }}">
+    <div class="case-inner hidden-xs ">
+        <img class="img-half-width " src="{{ .Params.img }} ">
     </div>
 </div>
