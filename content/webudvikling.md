@@ -7,7 +7,7 @@ description: "Med et webbaseret IT-system får du en moderne løsning, der kan t
 
 {{< line-devider src="/img/layout/curlylines/ikon6.png" >}}
 
-{{< pc "Moderne systemer">}}
+{{< pc "Moderne systemer" "Moderne systemer">}}
 
 
 Hos Holion har vi udviklet webbaserede systemer i mere end 20 år, hvorfor du altid er garanteret en unik og professionel løsning, der dækker dine ønsker og behov. Vi er stolte over at være specialiserede IT-konsulenter, hvilket også er grunden til at vi kan løfte alt fra mindre webprojekter til de mere avancerede webløsninger.
@@ -20,7 +20,7 @@ Det handler derfor om at udvikle websystemer, der er funktionelle, intuitive og 
 
 {{< line-devider src="/img/layout/curlylines/ikon7.png" >}}
 
-{{< pc "Udvikling af webbaserede systemer" "kontakt os for et møde" "/kontakt">}}
+{{< pc "Udvikling af webbaserede systemer" "Udvikling af webbaserede systemer" "kontakt os for et møde" "/kontakt">}}
 
 Indenfor udvikling af webbaserede systemer bevæger teknologien sig afsted med en sådan hastighed, at det kan være svært for de fleste at følge med i, hvad der er state-of-the-art i øjeblikket. Heldigvis har vi hos Holion ansatte som interesserer sig rigtig meget for IT, hvorfor fritiden ofte bruges på at følge med i, hvad der reelt fungerer og hvad der er fremtidssikret på en sådan måde, at der også vil være udviklere, der kan vedligeholde og videreudvikle systemerne de næste mange år.  
 
@@ -32,7 +32,7 @@ Hos Holion hjælper vi ikke blot med udviklingen af webbaserede systemer, vi hj�
 
 {{< line-devider src="/img/layout/curlylines/ikon8.png" >}}
 
-{{< pc "Professionelle webløsninger">}}
+{{< pc "Professionelle webløsninger" "Professionelle webløsninger">}}
 
 Vi ved at forskellige kunder kræver forskellige løsninger, så vores specialiserede IT-konsulenter er altid parate til at rådgive, webudvikle og designe ud fra netop dine ønsker og behov. Igennem årene har vi udviklet mange forskellige websystemer til såvel små som store virksomheder inden for et hav af forskellige brancher. Derfor kan du altid være sikker på at få udviklet professionelle webløsninger hos os.
 
@@ -42,7 +42,7 @@ Holion er din kompetente samarbejdspartner, når du skal have udviklet unikke we
 
 {{< vertical-line >}}
 
-{{< pc "Holion – din foretrukne webudvikler">}}
+{{< pc "Holion – din foretrukne webudvikler" "Holion – din foretrukne webudvikler">}}
 
 Hos Holion sætter vi en ære i at være din foretrukne webudvikler. Derfor gør vi kun det, som vi er bedst til. Det betyder, at vi gør meget ud af at forstå din virksomhed og dine brugere. På den måde sikrer vi, at vi skaber innovative og langtidsholdbare webløsninger, der giver værdi for virksomheden både i dag og i morgen. Derudover tilbyder vi naturligvis også [on-site konsulentassistance]({{< ref konsulent >}}), hvis du foretrækker at vi sidder tæt på dig og måske som en del af et eksisterende team.
 

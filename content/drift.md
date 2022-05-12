@@ -7,7 +7,7 @@ description: "Vi hoster dine app og webløsninger og sørger for, at de altid er
 
 {{< line-devider src="/img/layout/curlylines/ikon9.png" >}}
 
-{{< pc "Saml udvikling og drift ét sted">}}
+{{< pc "Saml udvikling og drift ét sted" "Saml udvikling og drift ét sted">}}
 
 Én ting er at udvikle [apps]({{< ref appudvikling >}}) og [webbaserede systemer]({{< ref webudvikling >}}). Noget andet er at sørge for en velfungerende og stabil webhosting, så dine applikationer og webløsninger bliver ved med at fungere, selvom der kommer nye browsere eller versioner af iOS og Android.
 
@@ -19,7 +19,7 @@ Ofte er det en fordel at bruge den samme virksomhed til at udvikle, vedligeholde
 
 {{< line-devider src="/img/layout/curlylines/ikon10.png" >}}
 
-{{< pc "IT Hosting" "kontakt os for tilbud" "/kontakt">}}
+{{< pc "IT Hosting" "IT Hosting" "kontakt os for tilbud" "/kontakt">}}
 
 Vi har en passion for Microsofts teknologier. Når vi hoster din virksomheds IT, er [Azure](https://azure.com) således vores foretrukne cloud platform. Den er hurtig, stabil og billig. Desuden er det her, du finder den bedste support for Microsofts egne teknologier. Selvom Azure er vores foretrukne platform, har vi også erfaring med [AWS](https://aws.com).
 
@@ -32,7 +32,7 @@ En app er sjældent meget værd uden en backend. Det er her systemet holder styr
 
 {{< line-devider src="/img/layout/curlylines/ikon11.png" >}}
 
-{{< pc "Distribution">}}
+{{< pc "Distribution" "Distribution">}}
 
 
 Apps distribueres normalt til brugerne via [App Store](https://www.apple.com/ios/app-store/) og [Google Play](https://play.google.com). Men mens der udvikles kan det være en fordel, hvis vores kunder også kan teste appen. Til dette formål anvender vi Microsoft [App Center](https://appcenter.ms). Via App Center kan vi automatisk distribuere testversioner af apps, indsamle fejlrapporter og køre automatiske tests på forskellige fysiske telefoner.
@@ -43,7 +43,7 @@ Når en app er klar til udgivelse, kan den sendes direkte fra App Center og over
 
 {{< line-devider src="/img/layout/curlylines/ikon12.png" >}}
 
-{{< pc "Overvågning af app- og webløsninger">}}
+{{< pc "Overvågning af app- og webløsninger" "Overvågning af app- og webløsninger">}}
 
 Når du først har fået udviklet en app eller et webbaseret system, er det vigtigt løbende at holde øje med, om det fungerer som forventet. Man kan hurtigt overbevise sig selv om, at alt fungerer perfekt, for man har jo testet det. Men ofte sker der det, at der kommer almindelige brugere på systemet - og de gør ikke altid som man forventer. 
 

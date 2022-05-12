@@ -8,7 +8,7 @@ description: "Gennemtænkte apps til både Android og iOS/iPhone - altid med slu
 
 {{< line-devider src="/img/layout/curlylines/ikon1.png" >}}
 
-{{< pc "dig og din case i centrum" "Vil du vide mere" "/kontakt">}}
+{{< pc "dig og din case i centrum" "dig og din case i centrum" "Vil du vide mere" "/kontakt">}}
 
 Som kunde hos Holions behøver du ikke have den store viden om apps eller bekymre dig om teknikken bag - den del tager vi os af. Vi brænder for [teknologi]({{< ref teknologi >}}) og fortæller gerne om, hvad der rent faktisk ligger inde bagved, hvis du skulle være interesseret. Vi udvikler apps til alt fra [små startups]({{< ref "cases/carbuddii" >}}) til [store virksomheder]({{< ref "cases/stofa" >}}), uanset om der er tale om mindre projekter, kampagneapps med begrænset levetid eller større komplekse appløsninger.
 
@@ -18,7 +18,7 @@ Vi er passionerede IT-konsulenter, som udvikler og designer applikationer i tæt
 
 {{< line-devider src="/img/layout/curlylines/ikon2.png" class="img-inner-left" >}}
 
-{{< pc "Hvad koster det at lave en app?" "Få et tilbud på appudvikling" "/kontakt">}}
+{{< pc "Hvad koster det at lave en app?" "Hvad koster en app" "Få et tilbud på appudvikling" "/kontakt">}}
 
 Hvad det koster at lave en app afhænger af, om den skal indeholde få, basale features eller om det er en mere kompliceret app med et væld af funktioner, hvilket har betydning for den tid det tager at udvikle appen. Derfor er der heller ikke ét korrekt svar på, hvad appudvikling koster, da ambitionsniveauet har stor indflydelse på prisen.  
 
@@ -28,7 +28,7 @@ Med mange års erfaring inden for appudvikling mestrer vi både apps med enkelte
 
 {{< line-devider src="/img/layout/curlylines/ikon3.png" >}}
 
-{{< pc "Udvikling af crossplatform-apps til iOS/iPhone og Android" "Se lignende kundecases" "/cases">}}
+{{< pc "Udvikling af crossplatform-apps til iOS/iPhone og Android" "Udvikling af crossplatform" "Se lignende kundecases" "/cases">}}
 
 Ved udvikling af apps tænker vi ikke blot på slutbrugerens oplevelse af systemet, men i særdeleshed også på vores kunders pengepung. Den traditionelle tilgang til appudvikling er, at man udvikler én app til iOS/iPhone og én til Android - og dermed også betaler for 2 apps, som i bund og grund kan nøjagtig det samme. Men hos Holion ved vi, at hvis kunden skal have succes og en fornuftig bundlinje, skal det ikke være en app, der bruger hele budgettet.
 
@@ -40,7 +40,7 @@ Det betyder dog ikke at vi går på kompromis med brugeroplevelsen, da vi design
 
 {{< line-devider src="/img/layout/curlylines/ikon4.png" >}}
 
-{{< pc "Fra idé til app - udviklingsprocessen" "Læs mere om udviklingsprocessen" "/processen">}}
+{{< pc "Fra idé til app - udviklingsprocessen" "Fra idé til app" "Læs mere om udviklingsprocessen" "/processen">}}
 
 Når idéen til en app melder sig og man ikke tidligere har været indblandet i udvikling af IT-systemer, kan det være svært at overskue, hvilke trin der er i [processen]({{< ref processen >}}), indtil man har den færdige app i hånden. Der er dog ikke noget at være nervøs for, hvis blot man vælger den rette samarbejdspartner til opgaven - én der har prøvet det mange gange før.
 
@@ -50,7 +50,7 @@ Hos Holion tror vi på, at det nærmest er umuligt at forudse, hvilken app man i
 
 {{< line-devider src="/img/layout/curlylines/ikon5.png" class="img-inner-left-big">}}
 
-{{< pc "Få specialudviklet en app til din virksomhed" "Kontakt Holion" "/kontakt">}}
+{{< pc "Få specialudviklet en app til din virksomhed" "Få specialudviklet en app til din virksomhed" "Kontakt Holion" "/kontakt">}}
 
 Det kan være en god idé at få specialudviklet en app til din virksomhed, hvis du f.eks.:
 
