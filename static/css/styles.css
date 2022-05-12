@@ -452,7 +452,7 @@ a {
     user-select: none;
 }
 
-:focus>.menu__btn-title {
+ :focus>.menu__btn-title {
     box-shadow: inset 0 0 1px 3px #e22d30;
 }
 
@@ -634,7 +634,7 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
         right: 1rem;
         top: auto;
     } */
-    /* .menu__item.menu__dropdown input[type="checkbox"]+.submenu__list {
+    .menu__item.menu__dropdown input[type="checkbox"]+.submenu__list {
         display: none;
     }
     .menu__item.menu__dropdown input[type="checkbox"]:checked+.submenu__list {
@@ -645,7 +645,7 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
         display: block;
         position: relative;
         max-width: 100%;
-    } */
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -654,7 +654,7 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
         right: 1rem;
         top: auto;
     } */
-    /* .menu__item.menu__dropdown input[type="checkbox"]+.submenu__list {
+    .menu__item.menu__dropdown input[type="checkbox"]+.submenu__list {
         display: none;
     }
     .menu__item.menu__dropdown input[type="checkbox"]:checked+.submenu__list {
@@ -665,8 +665,10 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
         display: block;
         position: relative;
         max-width: 100%;
-    } */
+    }
 }
 
+
+}
 
 /*# sourceMappingURL=styles.css.map */
