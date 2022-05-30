@@ -216,7 +216,7 @@ body {
     background-color: #65bd84;
     color: white;
     /* height: 30px; */
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 2.2px;
     text-transform: uppercase;
     text-align: center;
@@ -253,7 +253,7 @@ a:hover {
 .card-box {
     background-color: black;
     min-width: 100%;
-    font-size: 11px;
+    font-size: 14px;
     position: relative;
 }
 
@@ -348,20 +348,20 @@ a:hover {
 
 .title_small {
     letter-spacing: 2px;
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
     text-align: left;
 }
 
 .testiment {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 2.2px;
     text-transform: uppercase;
     text-align: left;
 }
 
 .punchline {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 2.2px;
     text-transform: uppercase;
     text-align: left;
@@ -369,14 +369,14 @@ a:hover {
 }
 
 .title_medium {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 2.2px;
     text-transform: uppercase;
     text-align: left;
 }
 
 .title_medium_weight_medium {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 2.2px;
     text-transform: uppercase;
     font-weight: 500;
@@ -384,7 +384,7 @@ a:hover {
 }
 
 .content_medium {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.2px;
     line-height: 18px;
     text-align: left;
@@ -392,7 +392,7 @@ a:hover {
 }
 
 .title_medium_large {
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 2.2px;
     text-transform: uppercase;
     text-align: left;
