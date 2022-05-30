@@ -16,7 +16,7 @@ Vi er passionerede IT-konsulenter, som udvikler og designer applikationer i tæt
 
 {{< /pc >}}
 
-{{< line-devider src="/img/layout/curlylines/ikon2.png" class="img-inner-left" >}}
+{{< line-devider src="/img/layout/curlylines/ikon2.png" class="img-inner left" >}}
 
 {{< pc "Hvad koster det at lave en app?" "Hvad koster en app" "Få et tilbud på appudvikling" "/kontakt">}}
 
@@ -48,7 +48,7 @@ Hos Holion tror vi på, at det nærmest er umuligt at forudse, hvilken app man i
 
 {{< /pc >}}
 
-{{< line-devider src="/img/layout/curlylines/ikon5.png" class="img-inner-left-big">}}
+{{< line-devider src="/img/layout/curlylines/ikon5.png" class="img-inner left-big">}}
 
 {{< pc "Få specialudviklet en app til din virksomhed" "Få specialudviklet en app til din virksomhed" "Kontakt Holion" "/kontakt">}}
 

@@ -6,25 +6,27 @@
         <span class="holion_main_color">_ {{.Get 0}}</span>
     </div>
 
-    <div class="row align-items-baseline">
-        <div class="col-md-2 ml-5 mt-5">
+    <div class="row align-items-baseline justify-content-between">
+        <div class="col-md-2 ml-5 mt-5 d-none d-sm-block">
             <div class="holion_main_color title_medium">
                 {{.Get 1}}
             </div>
         </div>
-        <div class="col-md-10 mt-5">
+        <div class="col-md-9 mt-5">
             <div class="content_medium">
                 {{ .Inner | markdownify}}
             </div>
 
         </div>
     </div>
-    {{ if ne (.Get 2) "" }}
+
     <div class="holion-button-outer m-3">
+        {{ if ne (.Get 2) "" }}
         <div class="holion-button-inner">
             <a href="{{.Get 3}}"> {{.Get 2}} </a>
         </div>
+        {{ end }}
     </div>
-    {{ end }}
+
 
 </div>

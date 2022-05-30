@@ -5,7 +5,7 @@ description: "Holion kan være din on-site IT-konsulent, som optimerer og videre
 # type: withtestimonials
 ---
 
-{{< line-devider src="/img/layout/curlylines/ikon13.png" class="img-inner-left">}}
+{{< line-devider src="/img/layout/curlylines/ikon13.png" class="img-inner left">}}
 
 {{< pc "Rådgivning før, under og efter dit projekt" "Rådgivning før, under og efter dit projekt">}}
 
