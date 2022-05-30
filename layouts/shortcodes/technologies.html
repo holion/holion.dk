@@ -15,7 +15,7 @@
                         <div class="row pl-5 pt-3">
                             {{ range $index, $element := sort .Site.Data.technologies "weight" }}
                             <div class="col-3">
-                                <img style="width:100%; height:80%; margin-top: 5%; margin-bottom: 5% " src="/img/technologies/{{ $element.src }}" />
+                                <img class="technology-style" src="/img/technologies/{{ $element.src }}" />
                             </div>
                             {{ end }}
                         </div>
