@@ -63,3 +63,5 @@ Hos Holion får du en professionel udviklet app i topkvalitet, men til en væsen
 Fortæl os om dit projekt, hvad enten det gælder [udvikling af websystemer]({{< ref webudvikling >}}), applikationer eller [hosting og drift]({{< ref drift >}}), kan vi være behjælpelige. Er du interesseret i at få udviklet en app til din virksomhed, er du altid meget velkommen til at kontakte os. Vi sidder klar ved tasterne og telefonen til en uforpligtende snak.
 
 {{< /pc >}}
+
+{{< vertical-line >}}

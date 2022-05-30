@@ -116,6 +116,22 @@ body {
     left: 40%;
 }
 
+.img-outer .img-inner-left {
+    zoom: 20%;
+    position: absolute;
+    max-height: 100px;
+    top: -10%;
+    left: 43%;
+}
+
+.img-outer .img-inner-left-big {
+    zoom: 20%;
+    position: absolute;
+    max-height: 100px;
+    top: -10%;
+    left: 51%;
+}
+
 .citation-outer {
     position: relative;
     height: 400px;
@@ -175,22 +191,6 @@ body {
     margin-left: 50px;
     margin-bottom: 20px;
     margin-top: -120px;
-}
-
-.img-outer .img-inner-left {
-    zoom: 20%;
-    position: absolute;
-    max-height: 100px;
-    top: -10%;
-    left: 43%;
-}
-
-.img-outer .img-inner-left-big {
-    zoom: 20%;
-    position: absolute;
-    max-height: 100px;
-    top: -10%;
-    left: 51%;
 }
 
 .holion-button-outer {
@@ -280,9 +280,19 @@ a:hover {
     min-height: 100%;
 }
 
-.line-outer-class {
-    position: relative;
-    height: 400px;
+@media screen and (min-width: 767px) {
+    .line-outer-class {
+        position: relative;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .line-outer-class {
+        position: relative;
+        height: 200px;
+        margin: 15px;
+    }
 }
 
 .vertical-line {
@@ -306,8 +316,17 @@ a:hover {
     text-align: center;
 }
 
-.lower {
+.circle_lower {
+    border-radius: 50%;
+    margin-left: -1px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
     top: 95%;
+    position: absolute;
+    background: black;
+    border: 1px solid #65bd84;
+    text-align: center;
 }
 
 .img-center {
