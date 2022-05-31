@@ -92,13 +92,9 @@ div.section {
 }
 .heading {
   margin-bottom: 40px;
-  font-weight: 300;
-  font-size: 40px;
 }
 .heading h1,
-.heading h2 {
-  letter-spacing: 1.8px;
-}
+.heading h2,
 .heading h3,
 .heading h4,
 .heading h5 {
@@ -1147,6 +1143,8 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .home-carousel {
   position: relative;
+  background: url('../img/photogrid.jpg') center center repeat;
+  background-size: cover;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -3052,11 +3050,12 @@ fieldset[disabled] .btn-template-primary.active {
   }
 }
 .navbar-default {
-  background: black;
+  background-color: #ffffff;
+  border-color: #cccccc;
   border-bottom: none;
 }
 .navbar-default .navbar-brand {
-  background: black;
+  color: #555555;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -3091,19 +3090,19 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: black;
+  background-color: #38a7bb;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888888;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: black;
+  border-color: #cccccc;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: black;
+  background-color: #38a7bb;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -3112,13 +3111,13 @@ fieldset[disabled] .btn-template-primary.active {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: black;
+    color: #38a7bb;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: black;
+    background-color: #38a7bb;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -3138,7 +3137,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: white;
+  color: #555555;
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
@@ -3151,10 +3150,10 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: white;
+  color: #555555;
 }
 a {
-  color: black;
+  color: #38a7bb;
   text-decoration: none;
 }
 a:hover,
@@ -3360,9 +3359,9 @@ h6,
 .h5,
 .h6 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.1;
-  color: white;
+  color: #333333;
 }
 h1,
 .h1,
