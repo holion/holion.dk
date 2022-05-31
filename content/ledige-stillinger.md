@@ -23,7 +23,7 @@ Se vores ledeige stillinger herunder – eller vær lidt fremme i skoene og send
 
 {{< vertical-line >}}
 
-{{< img_full_width "/img/general/holion-desk.svg" >}}
+<!-- {{< img_full_width "/img/general/holion-desk.svg" >}} -->
 
 
 {{< pc_named subtitle="Holion er en spændende virksomhed med en fed profil og gode bæredygtige værdier">}}

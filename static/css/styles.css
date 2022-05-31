@@ -142,7 +142,7 @@ body {
 
 .citation-outer {
     position: relative;
-    height: 400px;
+    height: 500px;
     width: 60%;
     bottom: 0px;
 }
@@ -156,49 +156,45 @@ body {
 .citation-outer .citation-inner-lower {
     position: absolute;
     width: 100%;
-    top: 140px;
+    top: 180px;
     left: 30%
 }
 
 .case-outer {
     position: relative;
-    height: 1050px;
+    height: 950px;
     width: 100%;
     bottom: 0px;
 }
 
-.case-outer .case-inner-name {
-    position: absolute;
-    height: 600px;
-    width: 40%;
-    margin-left: 66px;
-    margin-bottom: 200px;
-    margin-top: 5px;
-}
-
-.case-outer .case-inner-inner-name {
-    height: 600px;
-    width: 40%;
-    margin-left: 66px;
-    margin-bottom: 200px;
-    margin-top: 5px;
-}
-
 .case-outer .case-inner-header {
+    position: absolute;
     width: 100%;
     float: left;
-    margin-left: 66px;
-    margin-right: 166px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+}
+
+.case-outer .case-inner-name {
+    position: absolute;
+    width: 40%;
+    top: 580px
 }
 
 .case-outer .case-inner {
-    z-index: 2;
-    float: left;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    margin-top: -120px;
+    position: absolute;
+    top: 47%;
+    left: 52%;
+}
+
+.case-img-logo-outer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.case-img-logo-outer .logo-inner {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .holion-button-outer {
