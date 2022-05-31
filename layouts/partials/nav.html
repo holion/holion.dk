@@ -1,97 +1,47 @@
-<div class="navbar-affixed-top affix">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-affixed-top affix">
+    <div class="navbar-brand">
+        <a href="/">
+            <img class="img-holion-small mt-5 pt-5" src="/img/layout/holion-logo.svg" />
+        </a>
+    </div>
 
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
 
-        <div class="container">
-            <div class="navbar-header">
-                <a href="/">
-                    <img class="img-holion-small mt-5 pt-5" src="/img/layout/holion-logo.svg" />
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
+            <a class="nav-item nav-link" href="#">{{ .Name }} <span class="sr-only">(current)</span></a> {{/*
+            <ul class="submenu__list">
+                {{ range .Children }}
+                <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                    <a class="submenu__link" href="{{ .URL }}">
+                        {{ .Pre }}
+                        <span class="submenu__text">{{ .Name }}</span>
+                        {{ .Post }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul> */}}
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ .Name }}
                 </a>
-            </div>
-            <!--/.navbar-header -->
-
-            {{ if .Site.Menus.main }}
-            <nav class="menu">
-                <button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-                    <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
-                </button>
-                <ul class="menu__list">
-                    {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
-                    <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                        <a class="menu__link" href="">
-                            {{ .Pre }}
-                            <span class="menu__text">{{ .Name }}</span>
-                            {{/*  <label class="drop-icon" for="{{ .Name }}">▾</label>  */}}
-                            {{ .Post }}
-                        </a>
-                        <input type="checkbox" id="{{ .Name }}">
-                        <ul class="submenu__list">
-                            {{ range .Children }}
-                            <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                                <a class="submenu__link" href="{{ .URL }}">
-                                    {{ .Pre }}
-                                    <span class="submenu__text">{{ .Name }}</span>
-                                    {{ .Post }}
-                                </a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </li>
-                    {{- else }}
-                    <li class="menu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                        <a class="menu__link" href="{{ .URL }}">
-                            {{ .Pre }}
-                            <span class="menu__text">{{ .Name }}</span>
-                            {{ .Post }}
-                        </a>
-                    </li>
-                    {{- end }} {{- end }} {{- end }}
-                </ul>
-            </nav>
-            {{ end }}
-            <!-- <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-right">
-                    {{ $current := . }} {{ range .Site.Menus.main }} {{ $topLevel := replace .URL "/" "" }}
-                    <li class="dropdown{{ if eq $current.RelPermalink .URL | or (eq $current.Type $topLevel) | or (and (eq (default (trim .URL " / ") .Identifier) "blog ") (in (slice "taxonomy " "taxonomyTerm ") $current.Kind)) }} active{{ end }}">
-                        {{ if .HasChildren }}
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            {{ range .Children }}
-                            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                            {{ end }}
-                        </ul>
-                        {{ else }}
-                        <a href="{{ .URL }}">{{ .Name }}</a> {{ end }}
-                    </li>
-                    {{ end }} {{ if ne .Page.Params.id "contact" }}
-                    <div style="margin-left: 20px; display: flex">
-                        <a href="/kontakt/" class="btn btn-small btn-template-main hidden-xs hidden-sm" style="margin-top: 22px; background: black; border-color: black; color: white">Kontakt
-                            os</a>
-                    </div>
-                    {{ end }}
-                </ul>
-            </div> -->
-            <!--/.nav-collapse -->
-
-            <div class="collapse clearfix" id="search">
-
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-
-                        </span>
-                    </div>
-                </form>
-
-            </div>
-            <!--/.nav-collapse -->
-
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            {{- end }} {{- end }} {{- end }}
         </div>
     </div>
-    <!-- /#navbar -->
+</nav>
 
-</div>
+
+
+
 
 <!-- *** NAVBAR END ***-->
