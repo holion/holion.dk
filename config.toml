@@ -8,16 +8,10 @@ googleAnalytics = "UA-338843-5"
 [menu]
 
 [[menu.main]]
-	identifier = "home"
-	name = "forside"
-	url = "/"
-	weight = 1
-
-[[menu.main]]
 	identifier = "services"
-	name = "Ydelser"
+	name = "4X Ydelser"
 	url = "/ydelser/"
-	weight = 2
+	weight = 3
 
 [[menu.main]]
     identifier = "apps"
@@ -51,25 +45,80 @@ googleAnalytics = "UA-338843-5"
 	identifier = "cases"
 	name = "Cases"
 	url = "/cases/"
-	weight = 3
+	weight = 2
+
+[[menu.main]]
+    identifier = "stofa"
+    name = "Stofa"
+    url = "/cases/stofa/"
+    weight = 1
+    parent = "cases"  
+
+[[menu.main]]
+    identifier = "bescord"
+    name = "Bescord"
+    url = "/bescord/"
+    weight = 2
+    parent = "cases"      
+
+[[menu.main]]
+    identifier = "caleon"
+    name = "Caleon"
+    url = "/caleon/"
+    weight = 3
+    parent = "cases"
+
+[[menu.main]]
+    identifier = "carbuddii"
+    name = "Carbuddii"
+    url = "/carbuddii/"
+    weight = 4
+    parent = "cases"    
+
+[[menu.main]]
+    identifier = "idphotos"
+    name = "Idphotos"
+    url = "/idphotos/"
+    weight = 5
+    parent = "cases"   
+
+    [[menu.main]]
+    identifier = "improvento"
+    name = "Improvento"
+    url = "/improvento/"
+    weight = 6
+    parent = "cases"  
 
 [[menu.main]]
 	identifier = "about"
-	name = "Om Holion"
+	name = "Kontakt"
 	weight = 10
+
+[[menu.main]]
+	identifier = "holion"
+	name = "Holion"
+    url = "/holion/"
+	weight = 9
+
+[[menu.main]]
+    identifier = "medarbejdere"
+    name = "Medarbejdere"
+    url = "/medarbejdere/"
+    weight = 3
+    parent = "holion"    
 
 [[menu.main]]
     identifier = "jobs"
     name = "Ledige stillinger"
     url = "/ledige-stillinger/"
-    parent = "about"
+    parent = "holion"
     weight = 1
 
 [[menu.main]]
     identifier = "teknologi"
     name = "Teknologi"
     url = "/teknologi/"
-    parent = "about"
+    parent = "holion"
     weight = 2
 
 [[menu.main]]
@@ -98,7 +147,14 @@ googleAnalytics = "UA-338843-5"
 
     googleMapsApiKey = "AIzaSyDIVOs27G2ngMgR84tFtaKTGsIjg70EIcc"
 
-    about_us = "<p>IT-konsulenter med udvikling af apps, web og automatiseringsrobotter som speciale</p>"
+    about_us = """Vi udvikler apps og programmer af høj kvalitet.
+    <br>vi går meget op i bæredygtighed, og har været på en 
+    <br>spændende udviklingsrejse i forhold til miljø, etik og en
+    <br>ny grøn profil
+    """
+
+    punchline = "&#8208; DET SKAL GIVE MENING!"
+                    
     companyName = "Holion ApS"
     address = """<br>Østergade 4, 2.
         <br>8370 Hadsten
@@ -116,16 +172,24 @@ googleAnalytics = "UA-338843-5"
 [params.features]
     enable = true
 
+[params.vertical_line]
+    enable = true
+
+[params.who_is]
+    enable = true    
+    icon = "/img/layout/holion-logo.svg"
+    title = "Hvem er Holion,"
+    subtitle = "og hvad kan vi gøre for dig?"
+
 [params.testimonials]
     enable = true
     title = "Hvad siger kunderne?"
     subtitle = "Vi har haft mange kunder gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt. Kontakt os for at høre mere om en eller flere specifikke kundecases."
 
 [params.see_more]
+    icon = "/img/layout/holion-circle.svg"      
     enable = true
     title = "Hvem er Holion?"
-    subtitle = '''Holion er et konsulentfirma med speciale indenfor .NET udvikling. Vi leverer <a href="appudvikling">apps</a>, <a href="webudvikling">webløsninger</a> og programmer til virksomheder i alle størrelser, og vi er meget stolte af de mange succesfulde løsninger, som vi har leveret. Under <a href="cases">cases</a> kan du læse mere om, hvordan vi har gjort en forskel for vores kunder. Vi holder til i Hadsten, i Favrskov kommune, og hovedparten af vores kunder holder til i Østjylland - men vi har kunder over hele landet.
+   
 
-Vi er eksperter i det tekniske - men de specifikke detaljer behøver vi ikke kede dig med. Vi hjælper nemlig vores kunder igennem alle faser af projektet, hvor vi dækker både de tekniske og kreative aspekter, der er vigtige at tage stilling til. Vi ser frem til at løse opgaver for dig, der giver værdi både i dag og i morgen. 
 
-Vi har kompetencerne til at vækste din forretning, og vi stræber altid efter at levere et resultat af højeste kvalitet. Fortæl os om dit behov, så kommer vi med et forslag til den løsning, som vi mener passer bedst til din forretning. <a href="kontakt">Kontakt os</a> allerede i dag!'''
