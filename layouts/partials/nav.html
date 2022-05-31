@@ -12,19 +12,22 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
-            <a class="nav-item nav-link" href="#">{{ .Name }} <span class="sr-only">(current)</span></a> {{/*
-            <ul class="submenu__list">
-                {{ range .Children }}
-                <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                    <a class="submenu__link" href="{{ .URL }}">
+            <li class="nav-item">
+                <a class="nav-item nav-link" href="#">{{ .Name }} <span class="sr-only">(current)</span></a>
+
+                <ul class="submenu__list">
+                    {{ range .Children }}
+                    <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                        <a class="submenu__link" href="{{ .URL }}">
                         {{ .Pre }}
                         <span class="submenu__text">{{ .Name }}</span>
                         {{ .Post }}
                     </a>
-                </li>
-                {{ end }}
-            </ul> */}}
-
+                    </li>
+                    {{ end }}
+                </ul>
+            </li>
+            {{/*
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ .Name }}
@@ -34,8 +37,7 @@
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-            </li>
-            {{- end }} {{- end }} {{- end }}
+            </li> */}} {{- end }} {{- end }} {{- end }}
         </div>
     </div>
 </nav>
