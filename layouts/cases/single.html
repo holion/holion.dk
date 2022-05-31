@@ -4,107 +4,84 @@
 {{ partial "head.html" . }}
 
 <body>
-  {{ partial "bodytop.html" . }}
-  <div id="all">
+    {{ partial "bodytop.html" . }}
+    <div id="all">
 
-    <header>
 
-      {{ partial "nav.html" . }}
+        <header>
+            {{ partial "nav.html" . }}
+        </header>
 
-    </header>
+        {{ partial "breadcrumbs.html" . }}
 
-    <div id="content">
-      {{ if isset .Params "id" }}
+        <div id="content">
+            {{ if isset .Params "id" }} {{ partial .Params.id . }} {{ else }}
 
-      {{ partial .Params.id . }}
+            <div class="container">
 
-      {{ else }}
+                {{ partial "pc.html" . }} 
+                
+                {{ partial "case_images.html" . }} 
+                
+                {{ partial "vertical_line.html" . }} 
+                
+                {{ partial "citation.html" . }} 
+                
+                {{ partial "vertical_line.html" . }} 
+                
+                {{ partial "case_content.html" . }}
 
-      <div class="container">
+                {{ partial "vertical_line.html" . }} 
 
-        <div class="row">
-
-          <div class="col-md-12">
-
-            <div>
-              {{ partial "testimonial.html" . }}
-              <h2>{{ .Params.header }}</h2>
-              <div style="float: right; margin-left: 20px; margin-bottom: 20px; margin-top: 48px" class="hidden-xs">
-                <img src="{{ .Params.img }}" width="350">
-              </div>
-              <div class="visible-xs">
-                <img src="{{ .Params.img }}" class="img-responsive">
-              </div>
-              {{ .Content }}
             </div>
+            <!-- /.container -->
 
-          </div>
-
+            {{ end }}
         </div>
-        <!-- /.row -->
 
-        <h2>
-          Andre cases
-        </h2>
+        <!-- /#content -->
 
-        <p>
-          {{ range (where (where .Site.Pages "Type" "cases") "Title" "!=" .Page.Title) }}
-          {{ if ne .Kind "section" }}
-          {{ if isset .Params "link" }}
-          {{ partial "case.html" . }}
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </p>
-      </div>
-      <!-- /.container -->
+        {{ partial "footer.html" . }}
 
-      {{ end }}
-    </div>
-
-    <!-- /#content -->
-
-    {{ partial "footer.html" . }}
-
-    <div id="contact-footer">
-      Skal dit projekt også være en success?
-      <span>
+        <div id="contact-footer">
+            Skal dit projekt også være en success?
+            <span>
         <a href="/kontakt" class="btn btn-small btn-template-main">Kontakt os</a>
       </span>
+        </div>
+
     </div>
+    <!-- /#all -->
 
-  </div>
-  <!-- /#all -->
+    <style>
+        body {
+            margin-bottom: 2em;
+        }
+        
+        #contact-footer {
+            position: fixed;
+            font-size: 1.2em;
+            padding: 0.5em;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            background-color: black;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-bottom: 0px;
+        }
+        
+        #contact-footer span {
+            padding: 20px 10px;
+        }
+        
+        #contact-footer span a:hover {
+            border: 1px solid white;
+        }
+    </style>
 
-  <style>
-    body {
-      margin-bottom: 2em;
-    }
-
-    #contact-footer {
-      position: fixed;
-      font-size: 1.2em;
-      padding: 0.5em;
-      font-weight: bold;
-      color: white;
-      text-align: center;
-      background-color: #38a7bb;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      margin-bottom: 0px;
-    }
-
-    #contact-footer span {
-      padding: 20px 10px;
-    }
-
-    #contact-footer span a:hover {
-      border: 1px solid white;
-    }
-  </style>
-
-  {{ partial "scripts.html" . }}
+    {{ partial "scripts.html" . }}
 
 </body>
 

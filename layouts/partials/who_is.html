@@ -1,0 +1,23 @@
+{{ if isset .Site.Params "who_is" }} {{ if .Site.Params.who_is.enable }}
+<section class="bar">
+    <div class="container">
+        <div>
+            <img class="img-holion" src="{{ .Site.Params.who_is.icon }}" />
+            <div class="title_large mt-5">
+                {{ .Site.Params.who_is.title }} <br /> {{ .Site.Params.who_is.subtitle }}
+            </div>
+        </div>
+        {{ range $index, $element := sort .Site.Data.who_is "weight" }}
+        <div class="textRegion">
+            <div class="title_medium">
+                {{ $element.name }}
+            </div>
+            <div class="content_medium ml-5">
+                {{ $element.description | markdownify }}
+            </div>
+        </div>
+
+        {{ end }}
+    </div>
+</section>
+{{ end }} {{ end }}
