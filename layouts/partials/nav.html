@@ -1,49 +1,35 @@
-<nav class="navbar navbar-expand-lg navbar-dark navbar-affixed-top affix">
-    <div class="navbar-brand">
-        <a href="/">
-            <img class="img-holion-small mt-5 pt-5" src="/img/layout/holion-logo.svg" />
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-affixed-top affix">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/img/logo.png" height="50" class="d-inline-block align-top" alt="PUBG Indonesia">
         </a>
-    </div>
-
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
-            <li class="nav-item">
-                <a class="nav-item nav-link" href="#">{{ .Name }} <span class="sr-only">(current)</span></a>
-
-                <ul class="submenu__list">
-                    {{ range .Children }}
-                    <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                        <a class="submenu__link" href="{{ .URL }}">
-                        {{ .Pre }}
-                        <span class="submenu__text">{{ .Name }}</span>
-                        {{ .Post }}
-                    </a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </li>
-            {{/*
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ .Name }}
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li> */}} {{- end }} {{- end }} {{- end }}
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            {{ $currentPage := . }}
+            <ul class="navbar-nav ml-auto">
+                {{ range .Site.Menus.main }} {{ if .HasChildren }}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{.URL}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+                  </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {{ range .Children }}
+                        <a class="dropdown-item" href="{{.URL}}">{{.Name}}</a> {{ end }}
+                    </div>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{.URL}}">
+              {{ .Pre }}
+                <span>{{ .Name }}</span>
+            </a>
+                </li>
+                {{end}} {{end}}
+            </ul>
         </div>
     </div>
 </nav>
-
-
-
-
-
-<!-- *** NAVBAR END ***-->
