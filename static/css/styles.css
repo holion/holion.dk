@@ -455,6 +455,10 @@ a:hover {
 }
 
 .img-half-width {
+    max-height: 200px;
+}
+
+.img-half-width-zoom {
     zoom: 60%;
 }
 
