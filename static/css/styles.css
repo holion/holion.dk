@@ -306,33 +306,26 @@ a:hover {
 .vertical-line {
     border-left: 1px solid #65bd84;
     position: absolute;
-    top: 5%;
     left: 50%;
-    height: 90%;
+    height: 95%;
 }
 
 .circle {
     border-radius: 50%;
-    margin-left: -2px;
-    left: 50%;
+    margin: auto;
+    margin-top: 3%;
     width: 5px;
     height: 5px;
-    top: 5%;
-    position: absolute;
-    background: black;
     border: 2px solid #65bd84;
     text-align: center;
 }
 
 .circle_lower {
     border-radius: 50%;
-    margin-left: -1px;
-    left: 50%;
+    margin: auto;
     width: 3px;
     height: 3px;
-    top: 95%;
-    position: absolute;
-    background: black;
+    margin-top: 373px;
     border: 1px solid #65bd84;
     text-align: center;
 }
