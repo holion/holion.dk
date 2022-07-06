@@ -19,7 +19,9 @@ Vi er passionerede IT-konsulenter, som udvikler og designer applikationer i tæt
 
 Hvad det koster at lave en app afhænger af, om den skal indeholde få, basale features eller om det er en mere kompliceret app med et væld af funktioner, hvilket har betydning for den tid det tager at udvikle appen. Derfor er der heller ikke ét korrekt svar på, hvad appudvikling koster, da ambitionsniveauet har stor indflydelse på prisen.  
 
-Med mange års erfaring inden for appudvikling mestrer vi både apps med enkelte funktioner og de mere komplekse appløsninger. Hos Holion udvikler vi intuitive applikationer i unikke designs til smartphones og tablets, der er driftssikre, lette at bruge og kompatibel med flere styresystemer.
+Med mere end 10 års erfaring inden for appudvikling mestrer vi både apps med enkelte funktioner og de mere komplekse appløsninger. Hos Holion udvikler vi intuitive applikationer i unikke designs til smartphones og tablets, der er driftssikre, lette at bruge og kompatibel med både iPhone og Android.
+
+Vil du gerne have en rigtig billig app, bør du nok læse mere om vores produkt, [starti.app](https://starti.app). Dette er især relevant, hvis du i forvejen har et webbaseret system, der fungerer rigtig fint på en mobiltelefon men mangler noget af det der gør, at det spiller 100% (f.eks. push notifikationer, geofences og integration med kalenderen).
 
 {{< cta "/kontakt" >}}Få et tilbud på appudvikling{{< /cta >}}
 
