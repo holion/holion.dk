@@ -4,8 +4,10 @@
 
         <div class="container">
             <div class="navbar-header">
-                <a href="/">
-                    <img class="img-holion-small mt-5 pt-5" src="/img/layout/holion-logo.svg" />
+                <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
+                    <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
+                    <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="visible-xs visible-sm" style="width: 188px">
+                    <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
             </div>
             <!--/.navbar-header -->
