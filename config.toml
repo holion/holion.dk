@@ -149,8 +149,8 @@ googleAnalytics = "UA-338843-5"
     defaultKeywords = ["udvikling", "app", "web", ""]
     defaultDescription = "Specialister i apps til Android/iPhone, websystemer og automatisering af IT-processer. Se hvordan vi kan hjælpe dig her."
 
-    logo = "/img/logo.png"
-    logo_small = "/img/logo.png"
+    logo = "/img/layout/holion-logo.svg"
+    logo_small = "/img/layout/holion-logo.svg"
 
     googleMapsApiKey = "AIzaSyDIVOs27G2ngMgR84tFtaKTGsIjg70EIcc"
 
