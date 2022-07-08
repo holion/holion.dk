@@ -12,13 +12,16 @@
             </div>
             <!--/.navbar-header -->
 
+            
             {{ if .Site.Menus.main }}
             <nav class="menu">
-                <button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-                    <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
+                <button class="menu__btn" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                    {{/*  <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>  */}}
                 </button>
-                <ul class="menu__list">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
+                    <ul class=" ml-auto menu__list">
                     <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
                         <a class="menu__link" href="">
                             {{ .Pre }}
@@ -49,6 +52,7 @@
                     </li>
                     {{- end }} {{- end }} {{- end }}
                 </ul>
+                </div>
             </nav>
             {{ end }}
             <!-- <div class="navbar-collapse collapse" id="navigation">
