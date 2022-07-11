@@ -588,17 +588,18 @@ element.style {
     cursor: default;
     display: inline;
     padding-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-weight: 500;
     color: #fff;
     /* background-color: #e22d30; */
     text-transform: uppercase;
+    width: 100px;
 }
 
-.show .menu__link {
+/* .show .menu__link {
     padding-top: 5px;
-}
+} */
 
 :focus>.menu__btn-title {
     box-shadow: inset 0 0 1px 3px #e22d30;
@@ -607,7 +608,8 @@ element.style {
 
 .submenu__link {
     display: block;
-    padding-top: 7px;
+
+    /* padding-top: 7px; */
     padding-bottom: 7px;
     padding-left: 15px;
     padding-right: 15px;
@@ -617,7 +619,9 @@ element.style {
     text-transform: uppercase;
 }
 
-
+/* .submenu__text, .submenu__link {
+    padding-left: 80px;
+} */
 /* 
 .submenu__list .menu__link span {
     background-color: #152d1d;
@@ -636,6 +640,7 @@ element.style {
     /* max-width: 15rem; */
     /* transition: all 0.5s ease; */
     display: none;
+
 }
 
 /* 
@@ -755,9 +760,20 @@ element.style {
     .hide_when_small {
         display: none;
     }
+
+    .menu__link {
+        padding-top: 5px;
+    } 
+
+    .menu__list .menu__item:hover>.submenu__list,
+    .menu__list .menu__item:focus-within>.submenu__list,
+    .menu__list .menu__item .submenu__list:hover,
+    .menu__list .menu__item .submenu__list:focus {
+        left: 120px;
+    }
 }
 
-@media screen and (max-width: 620px) {
+/* @media screen and (max-width: 620px) {
     .menu__item.menu__dropdown .drop-icon {
         position: absolute;
         right: 1rem;
@@ -778,7 +794,9 @@ element.style {
     .hide_when_small {
         display: none;
     }
-}
+
+   
+} */
 
 
 /*# sourceMappingURL=styles.css.map */
