@@ -8,7 +8,7 @@
                     <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
                     <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-none d-md-block d-lg-none mt-3" style="width: 150px">
                     <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-sm-block d-md-none" style="width: 150px">
-                    <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
+
                 </a>
                 <div class="navbar-buttons">
                     {{/*  <button type="button" class="navbar-toggle btn-template-main" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">  */}}
@@ -25,17 +25,16 @@
             
             {{ if .Site.Menus.main }}
             <nav class="menu">
-                <button class="menu__btn navbar-toggle btn-template-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="menu__btn navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" >
+
                     <i class="fa fa-bars"></i>
-                    {{/*  <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>  */}}
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="navbar-collapse" id="navbarResponsive">
                     {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
-                    <ul class=" ml-auto menu__list">
+                    <ul class=" ms-auto menu__list">
                     <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
                         <a class="menu__link" >
                             <span class="menu__text">{{ .Name }}</span>
-                            {{/*  <label class="drop-icon" for="{{ .Name }}">▾</label>  */}}
 
                         </a>
                         <input type="checkbox" id="{{ .Name }}">
@@ -54,29 +53,6 @@
                 </div>
             </nav>
             {{ end }}
-            <!-- <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-right">
-                    {{ $current := . }} {{ range .Site.Menus.main }} {{ $topLevel := replace .URL "/" "" }}
-                    <li class="dropdown{{ if eq $current.RelPermalink .URL | or (eq $current.Type $topLevel) | or (and (eq (default (trim .URL " / ") .Identifier) "blog ") (in (slice "taxonomy " "taxonomyTerm ") $current.Kind)) }} active{{ end }}">
-                        {{ if .HasChildren }}
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            {{ range .Children }}
-                            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                            {{ end }}
-                        </ul>
-                        {{ else }}
-                        <a href="{{ .URL }}">{{ .Name }}</a> {{ end }}
-                    </li>
-                    {{ end }} {{ if ne .Page.Params.id "contact" }}
-                    <div style="margin-left: 20px; display: flex">
-                        <a href="/kontakt/" class="btn btn-small btn-template-main hidden-xs hidden-sm" style="margin-top: 22px; background: black; border-color: black; color: white">Kontakt
-                            os</a>
-                    </div>
-                    {{ end }}
-                </ul>
-            </div> -->
-            <!--/.nav-collapse -->
 
             <div class="collapse clearfix" id="search">
 
