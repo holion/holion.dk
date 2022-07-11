@@ -1,55 +1,64 @@
 <div class="navbar-affixed-top affix">
 
-    <div class="navbar navbar-expand-md navbar-default yamm" role="navigation" id="navbar">
+    <div class="navbar navbar-expand-md navbar-default">
+        <div class="container-fluid">
+            <div class="container-fluid justify-content-between">
+                {{/*  <div class="navbar-header">
+                    <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
+                        <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
+                        <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-none d-md-block d-lg-none mt-3" style="width: 150px">
+                        <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-sm-block d-md-none" style="width: 150px">
 
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
+                    </a>
+                    <div class="navbar-buttons">
+                        {{/*  <button type="button" class="navbar-toggle btn-template-main" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">  */}}
+                        
+                        {{/*  {{ if ne .Page.Params.id "contact" }}
+                        <a href="/kontakt/" class="btn btn-small navbar-toggle btn-template-main" style="margin-top: 13px; background: #38a7bb; border-color: #38a7bb; color: white">Kontakt
+                            os</a> {{ else }}
+                        <a href="tel:+4561303039" class="btn btn-small navbar-toggle btn-template-main" style="margin-top: 13px; background: #38a7bb; border-color: #38a7bb; color: white">Ring 61 30 30
+                            39</a> {{ end }}  
+                    </div>
+                </div>  */}}
+                <!--/.navbar-header -->
+
+                <a class="navbar-brand " href="{{ .Site.BaseURL }}">
                     <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
                     <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-none d-md-block d-lg-none mt-3" style="width: 150px">
                     <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-sm-block d-md-none" style="width: 150px">
 
                 </a>
                 <div class="navbar-buttons">
-                    {{/*  <button type="button" class="navbar-toggle btn-template-main" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">  */}}
-                    
-                    {{/*  {{ if ne .Page.Params.id "contact" }}
-                    <a href="/kontakt/" class="btn btn-small navbar-toggle btn-template-main" style="margin-top: 13px; background: #38a7bb; border-color: #38a7bb; color: white">Kontakt
-                        os</a> {{ else }}
-                    <a href="tel:+4561303039" class="btn btn-small navbar-toggle btn-template-main" style="margin-top: 13px; background: #38a7bb; border-color: #38a7bb; color: white">Ring 61 30 30
-                        39</a> {{ end }}  */}}
+                    <button class="menu__btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
                 </div>
             </div>
-            <!--/.navbar-header -->
-
-            
             {{ if .Site.Menus.main }}
-            <nav class="menu">
-                <button class="menu__btn navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" >
-
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="navbar-collapse" id="navbarResponsive">
+            <nav>
+                       
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
-                    <ul class=" ms-auto menu__list">
-                    <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                        <a class="menu__link" >
-                            <span class="menu__text">{{ .Name }}</span>
+                    <ul class="me-auto menu__list">
+                        <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                            <a class="menu__link" >
+                                <span class="menu__text">{{ .Name }}</span>
 
-                        </a>
-                        <input type="checkbox" id="{{ .Name }}">
-                        <ul class="submenu__list">
-                            {{ range .Children }}
-                            <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                                <a class="submenu__link" href="{{ .URL }}">
-                                    <span class="submenu__text">{{ .Name }}</span>
-                                </a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </li>
+                            </a>
+                            {{/*  <input type="checkbox" id="{{ .Name }}">  */}}
+                            <ul class="submenu__list">
+                                {{ range .Children }}
+                                <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                                    <a class="submenu__link" href="{{ .URL }}">
+                                        <span class="submenu__text">{{ .Name }}</span>
+                                    </a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                       
+                    </ul>
                     {{- end }} {{- end }} {{- end }}
-                </ul>
                 </div>
             </nav>
             {{ end }}

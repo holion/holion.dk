@@ -26,9 +26,9 @@
 .hide {
   display: none !important;
 }
-.show {
+/* .show {
   display: block !important;
-}
+} */
 .invisible {
   visibility: hidden;
 }
@@ -2832,7 +2832,7 @@ fieldset[disabled] .btn-template-primary.active {
     box-shadow: none;
   }
   .navbar-collapse.collapse {
-    display: block !important;
+    /* display: block !important; */
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
@@ -3529,12 +3529,12 @@ a.list-group-item.active > .badge,
  * 
  * @geedmo - Licensed under the MIT license
  */
-.yamm .nav,
+/* .yamm .nav,
 .yamm .collapse,
 .yamm .dropup.use-yamm,
 .yamm .dropdown.use-yamm {
   position: static;
-}
+} */
 .yamm .container {
   position: relative;
 }
