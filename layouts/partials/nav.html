@@ -32,25 +32,26 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
                     <ul class=" ml-auto menu__list">
-                    <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                        <a class="menu__link" >
-                            <span class="menu__text">{{ .Name }}</span>
-                            {{/*  <label class="drop-icon" for="{{ .Name }}">▾</label>  */}}
+                        <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                            <a class="menu__link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ .Name }} <span class="caret"></span>
+                                {{/*  <span class="menu__text">{{ .Name }}</span>  */}}
+                                {{/*  <label class="drop-icon" for="{{ .Name }}">▾</label>  */}}
 
-                        </a>
-                        <input type="checkbox" id="{{ .Name }}">
-                        <ul class="submenu__list">
-                            {{ range .Children }}
-                            <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                                <a class="submenu__link" href="{{ .URL }}">
-                                    <span class="submenu__text">{{ .Name }}</span>
-                                </a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </li>
-                    {{- end }} {{- end }} {{- end }}
-                </ul>
+                            </a>
+                            {{/*  <input type="checkbox" id="{{ .Name }}">  */}}
+                            <ul class="submenu__list dropdown-menu">
+                                {{ range .Children }}
+                                <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                                    <a class="submenu__link" href="{{ .URL }}">
+                                        <span class="submenu__text">{{ .Name }}</span>
+                                    </a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                        {{- end }} {{- end }} {{- end }}
+                    </ul>
                 </div>
             </nav>
             {{ end }}
