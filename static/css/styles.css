@@ -560,6 +560,7 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 }
 
 .menu__link {
+    cursor: default;
     display: block;
     padding-top: 60px;
     padding-left: 15px;
