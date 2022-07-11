@@ -1,14 +1,24 @@
 <div class="navbar-affixed-top affix">
 
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+    <div class="navbar navbar-expand-md navbar-default yamm" role="navigation" id="navbar">
 
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
-                    <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-md-block">
-                    <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-sm-block d-md-none" style="width: 188px">
+                    <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
+                    <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-none d-md-block d-lg-none mt-3" style="width: 150px">
+                    <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-sm-block d-md-none" style="width: 150px">
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
+                <div class="navbar-buttons">
+                    {{/*  <button type="button" class="navbar-toggle btn-template-main" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">  */}}
+                    
+                    {{/*  {{ if ne .Page.Params.id "contact" }}
+                    <a href="/kontakt/" class="btn btn-small navbar-toggle btn-template-main" style="margin-top: 13px; background: #38a7bb; border-color: #38a7bb; color: white">Kontakt
+                        os</a> {{ else }}
+                    <a href="tel:+4561303039" class="btn btn-small navbar-toggle btn-template-main" style="margin-top: 13px; background: #38a7bb; border-color: #38a7bb; color: white">Ring 61 30 30
+                        39</a> {{ end }}  */}}
+                </div>
             </div>
             <!--/.navbar-header -->
 
