@@ -137,7 +137,7 @@ h3 {
         font-size: 22px !important;
     }
     h2 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     h3 {
         font-size: 18px;
@@ -205,3 +205,43 @@ h3 {
 #static a {
     font-weight: bold;
 }
+
+.home-carousel {
+    position: relative;
+    background: url('../img/Billede_forside.jpg') center center repeat;
+    background-size: cover;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    height: 80vh;
+  }
+
+  .home-carousel .container div {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+  
+  .home-carousel h2 {
+    border-bottom: none;
+  }
+
+  .home-carousel a {
+    margin-top: 50px;
+    display: table;
+    background-color: #F38A2A;
+    border-radius: 10px;
+    font-size: 1em;
+    color: white;
+    border: 1px solid black;
+    padding: 15px;
+  }
+
+  @media (max-width: 991px) {
+    .home-carousel h2 {
+      font-size: 30px;
+    }
+  }
+  
