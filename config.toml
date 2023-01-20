@@ -87,6 +87,13 @@ googleAnalytics = "UA-338843-5"
     weight = 4
 
 [[menu.main]]
+	identifier = "privatlivspolitik"
+	name = "Privatlivspolitik"
+	url = "/privatlivspolitik/"
+	parent = "about"
+    weight = 5    
+
+[[menu.main]]
 	identifier = "contact"
 	name = "Kontakt"
 	url = "/kontakt/"
