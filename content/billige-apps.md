@@ -15,6 +15,8 @@ Det har aldrig været billigt at udvikle apps. Hvad den præcise pris er, afhæn
 
 Vi har hos Holion udviklet muligheden for at få en billig app. Dette har vi gjort ved at udvikle det vi kalder en appskal, som kan anvendes til at pakke en webside ind i en app. Websiden har via appskallen mulighed for at fungere ligesom en almindelig app. Vi kalder denne appskal for [starti.app](https://starti.app).
 
+{{< what-is-starti >}}
+
 ### Kan du drage fordel af starti.app?
 
 Afhængig af dine behov, har du måske mulighed for at gøre brug af [starti.app](https://starti.app) i stedet for at udvikle en "rigtig" app. 
