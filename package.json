@@ -1,0 +1,7 @@
+{
+  "name": "holion.dk",
+  "description": "The famous Holion website",
+  "scripts": {
+    "start": "hugo serve"
+  }
+}
