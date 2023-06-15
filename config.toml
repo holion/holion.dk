@@ -121,7 +121,7 @@ googleAnalytics = "UA-338843-5"
     longitude = "10.0483177"
     directions = "Holion ApS, Vesselbjergvej 3"
 
-    mailService = "https://holionsharedfunctions.azurewebsites.net/api/contact"
+    mailService = "http://localhost:7071/api/contact"
     contact_form_ajax = true
 
 [params.carousel]

@@ -67,43 +67,49 @@ function contactFormAjax() {
 
     contactForm.onsubmit = function (event) {
         event.preventDefault();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Ld7CegkAAAAANYOk95ejvtGXVYnOkxrGSzPAIYr', {action: 'submit'}).then(function(token) {
 
-        var magicValueElement = document.getElementById('magicValue');
-        if (magicValueElement.value !== '4') {
-            magicValueElement.scrollIntoView(true);
-            document.getElementById('magicValueRequired').style.display = '';
-            return false;
-        }
-        document.getElementById('magicValueRequired').style.display = 'none';
+                var magicValueElement = document.getElementById('magicValue');
+                if (magicValueElement.value !== '4') {
+                    magicValueElement.scrollIntoView(true);
+                    document.getElementById('magicValueRequired').style.display = '';
+                    return false;
+                }
+                document.getElementById('magicValueRequired').style.display = 'none';
+                
 
-        var payload = {};
+                var payload = {};
+                contactForm.querySelectorAll("input, textarea").forEach(function (field) {
+                    payload[field.name] = field.value;
+                    field.readOnly = true;
+                });
+                payload['token'] = token;
 
-        contactForm.querySelectorAll("input, textarea").forEach(function (field) {
-            payload[field.name] = field.value;
-            field.readOnly = true;
-        });
-        $('#contact-message').empty();
+                $('#contact-message').empty();
 
-        fetch(contactForm.action, {
-            method: 'post',
-            body: JSON.stringify(payload)
-        }).then(function (response) {
-            contactForm.querySelectorAll("input, textarea").forEach(function (field) {
-                field.readOnly = false;
+                fetch(contactForm.action, {
+                    method: 'post',
+                    body: JSON.stringify(payload)
+                }).then(function (response) {
+                    contactForm.querySelectorAll("input, textarea").forEach(function (field) {
+                        field.readOnly = false;
+                    });
+                    
+                    if (!response.ok) {
+                        $('#contact-message')
+                            .html('<div class="alert alert-danger" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Åhh nej. Noget gik galt og beskeden kunne ikke sendes. Prøv evt. igen. Hvis det stadig ikke fungerer håber vi, at du vil kontakte os på anden vis - og også gerne fortælle os om dette problem.</div>')
+                            .fadeIn()
+                        console.error(response);
+                        return;
+                    }
+                    contactForm.reset();
+
+                    showMessageSent();
+                });
+                return false
             });
-
-            if (!response.ok) {
-                $('#contact-message')
-                    .html('<div class="alert alert-danger" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Åhh nej. Noget gik galt og beskeden kunne ikke sendes. Prøv evt. igen. Hvis det stadig ikke fungerer håber vi, at du vil kontakte os på anden vis - og også gerne fortælle os om dette problem.</div>')
-                    .fadeIn()
-                console.error(response);
-                return;
-            }
-            contactForm.reset();
-
-            showMessageSent();
         });
-        return false
     };
 }
 
