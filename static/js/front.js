@@ -141,9 +141,9 @@ function sliders() {
         $('.owl-carousel.testimonials').owlCarousel({
             autoPlay: 10000,
             stopOnHover: true,
-            items: 3,
-            itemsDesktop: 3,
-            itemsDesktopSmall: [990, 2],
+            items: 1,
+            itemsDesktop: 1,
+            itemsDesktopSmall: [990, 1],
             itemsTablet: [768, 1],
             itemsMobile: [480, 1]
         })

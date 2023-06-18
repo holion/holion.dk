@@ -15,7 +15,8 @@ weight: 5
 
 testimonial: "I over fire år har vi kontinuerligt og med meget stor succes brugt Holion til udvikling af vores system. Vi er rigtig glade for både den forretningsmæssige, strategiske og processorienterede input og sparring og samtidig den udvikling af produktet, vi har fået ved samarbejdet."
 testimonialBy: "Dennis Præstekjær"
-testimonialByImg: "dp.jpg"
+testimonialByImg:
+  path: "dp.jpg"
 testimonialByLink: "https://www.linkedin.com/in/dennispraestekjaer/"
 testimonialByTitle: "CIO"
 

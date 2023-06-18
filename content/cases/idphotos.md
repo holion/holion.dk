@@ -25,7 +25,8 @@ De har formået at lave en app, der har opnået gode anmeldelser, tilfredse kund
 
 Hvis man søger appudvikling og vil have rigtig god kommunikation, en innovativ tilgang, god sparring og ikke mindst gode programmører, kan jeg på det kraftigste anbefale Holion."
 testimonialBy: "Kristian Jensen"
-testimonialByImg: "kj.png"
+testimonialByImg:
+  path: "kj.png"
 testimonialByLink: "https://idfotos.com"
 testimonialByTitle: "Direktør"
 

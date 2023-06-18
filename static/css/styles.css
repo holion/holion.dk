@@ -253,6 +253,11 @@ a:hover {
     position: relative;
 }
 
+.testimonial-items {
+    background-color: black;
+    min-width: 100%;
+}
+
 .card-box.holion-border {
     border-width: 1px;
     border-color: #65bd84;
@@ -279,10 +284,22 @@ a:hover {
 }
 
 .card-box .bigcontent {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 300;
-    text-transform: uppercase;
 }
+
+.btn-secondary {
+    background-color: #65bd84;
+    color: white !important;
+    font-size: 1.1em;
+    padding-inline: 80px!important;
+  }
+
+  .btn-secondary:hover {
+      background: #04261A;
+      border: 1px solid #65bd84;
+      color: #65bd84 !important;
+  }
 
 .same-size-box {
     min-height: 100%;
@@ -381,7 +398,6 @@ a:hover {
 .title_medium_weight_medium {
     font-size: 14px;
     letter-spacing: 2.2px;
-    text-transform: uppercase;
     font-weight: 500;
     text-align: left;
 }
@@ -402,11 +418,11 @@ a:hover {
 }
 
 .title_large {
+    color: #65bd84;
     letter-spacing: 1.8px;
     font-weight: 300;
     font-size: 40px;
     line-height: 48px;
-    text-transform: uppercase;
     text-align: left;
 }
 

@@ -17,7 +17,8 @@ weight: 1
 
 testimonial: "Jeg havde brug for en knivskarp udvikler, der kunne samle et eksisterende halvfærdigt Xamarin app projekt op, og 2 uger efter være lead udvikler på det. Det finder man ikke bare lige, men det fandt jeg med Holion. Har kun pæne ord om kvaliteten af arbejdet, kompetencer og fleksibiliteten fra Holions side."
 testimonialBy: "Martin Wickings"
-testimonialByImg: "mw.jpg"
+testimonialByImg: 
+  path: "mw.jpg"
 testimonialByLink: "https://www.linkedin.com/in/wickings/"
 testimonialByTitle: "Senior Business Developer"
 

@@ -191,6 +191,8 @@ googleAnalytics = "UA-338843-5"
 [params.testimonials]
     enable = true
     title = "Hvad siger kunderne?"
+    buttonText = "Se ALLE VORES KUNDECASES"
+    buttonLink = ""
     subtitle = "Vi har haft mange kunder gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt. Kontakt os for at høre mere om en eller flere specifikke kundecases."
 
 [params.see_more]

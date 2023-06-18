@@ -15,7 +15,8 @@ weight: 2
 
 testimonial: "Jeg havde brug for at få lavet en kompliceret mobil app af høj kvalitet, som skulle være klar i løbet af kort tid. Til rette tid og med rette kvalitet, havde vi en løsning klar til både iOS og Android. Samarbejdet har været præget af en stor fleksibilitet og engagement. Så det bliver ikke det sidste samarbejde, vi har med Holion."
 testimonialBy: "Anette Irene Algreen"
-testimonialByImg: "aia.jpg"
+testimonialByImg: 
+  path: "aia.jpg"
 testimonialByLink: "https://www.linkedin.com/in/aalgreen/"
 testimonialByTitle: "Administrerende direktør"
 
