@@ -1,20 +1,28 @@
 {{ if isset .Site.Params "features" }} {{ if .Site.Params.features.enable }} {{ if gt (len .Site.Data.features) 0 }}
-
-<div class="container">
-    {{ range $index, $element := sort .Site.Data.features "weight" }} {{ if eq (mod $index 3) 0 }}
-    <div class="col-12 mt-4">
+<div class="green-box">
+    <div class="container">
         <div class="row">
-            {{ end }}
-            <div class="col-md-4 col-sm-12 mt-3">
-                <div class="card-box holion-border same-size-box">
-                    <div class="title mx-4 mt-4">{{ $element.name }}</div>
-                    <div class="content mx-4 mb-4">{{ $element.description | markdownify }}</div>
-                </div>
+            <div class="col-md-12">
+                <div class="title_large my-3">{{ .Site.Params.features.title }}</div>
+                <div class="bigcontent my-3">{{ .Site.Params.features.description | markdownify }}</div>
+                <div class="bigcontent bold my-3">{{ .Site.Params.features.subtitle }}</div>
             </div>
-            {{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.features) 1 )) }}
         </div>
+        <div class="col-12 my-4">
+            <div class="row">
+
+                {{ range $index, $element := sort .Site.Data.features "weight" }}
+                <div class="col-md-3 col-sm-12 mt-3 mb-5">
+                    <div class="features-box holion-border same-size-box">
+                        <div class="title px-2 mt-4">{{ $element.name }}</div>
+                        <div class="content px-2 mb-4">{{ $element.description | markdownify }}</div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
     </div>
-    {{ end }} {{ end }}
 </div>
 
 {{ end }} {{ end }} {{ end }}
