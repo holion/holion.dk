@@ -3,20 +3,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="title_large my-3">{{ .Site.Params.features.title }}</div>
-                <div class="bigcontent my-3">{{ .Site.Params.features.description | markdownify }}</div>
-                <div class="bigcontent bold my-3">{{ .Site.Params.features.subtitle }}</div>
+                <div class="holion-title-section holion_main_color my-3">{{ .Site.Params.features.title }}</div>
+                <div class="holion-text my-3">{{ .Site.Params.features.description | markdownify }}</div>
+                <div class="holion-text my-3">{{ .Site.Params.features.subtitle }}</div>
             </div>
         </div>
         <div class="col-12 my-4">
-            <div class="row">
+            <div class="row justify-content-center">
 
                 {{ range $index, $element := sort .Site.Data.features "weight" }}
-                <div class="col-md-3 col-sm-12 mt-3 mb-5">
-                    <div class="features-box holion-border same-size-box">
-                        <div class="title px-2 mt-4">{{ $element.name }}</div>
-                        <div class="content px-2 mb-4">{{ $element.description | markdownify }}</div>
-                    </div>
+                <div class="col-md-4 col-sm-12 mt-3 mb-5">
+                    <a href="{{ $element.link }}">
+                        <div class="features-box holion-border same-size-box holion-title-section">
+                            <div class="d-flex flex-column text-align-center">
+                                <div>{{ $element.name }}</div>
+                                <img style="width: 60px; align-items: right;" src="/img/layout/arrow-right.svg" />
+                            </div>
+                        </div>
+                        </a>
                 </div>
                 {{ end }}
             </div>

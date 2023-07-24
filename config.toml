@@ -179,7 +179,7 @@ googleAnalytics = "UA-338843-5"
 [params.features]
     enable = true
     title = "Din partner igennem hele udviklingsprocessen"
-    description = "Holion er et konsulentfirma med speciale inden for .net-udvikling. Vi har over 20 års erfaring med at levere apps, webløsninger og programmer til virksomheder i alle størrelser. Vi er eksperter, og vi sørger for at hjælpe vores kunder igennem alle faser af et projekt, hvor vi dækker både de tekniske og kreative aspekter af processen."
+    description = "Holion er et IT-konsulentfirma med speciale inden for .net-udvikling. Siden 2014 har vi leveret skræddersyede apps, IT-systemer, webløsninger og programmer til virksomheder i alle størrelser. Vi er eksperter, og vi sørger for at hjælpe vores kunder igennem alle faser af et projekt, hvor vi dækker både de tekniske og kreative aspekter af processen. Vores erfaring og ekspertise sikrer dig en struktureret og gennemtænkt process, hvor slutproduktet og din tilfredshed er i højsædet. Selvom vi bare er IT-konsulenter, ser vi os selv som din partner igennem hele udviklingsprocessen, og det er lige så vigtigt for os, som for dig, at dit projekt bliver en succes. Derfor er et af nøgleordene hos Holion tillid, ordentlighed og samarbejde."
     subtitle= "Hvad skal vi hjælpe dig med?"
 
 [params.vertical_line]
@@ -194,7 +194,7 @@ googleAnalytics = "UA-338843-5"
 [params.testimonials]
     enable = true
     title = "Hvad siger kunderne?"
-    buttonText = "Se ALLE VORES KUNDECASES"
+    buttonText = "Se flere kundecases"
     buttonLink = ""
     subtitle = "Vi har haft mange kunder gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt. Kontakt os for at høre mere om en eller flere specifikke kundecases."
 

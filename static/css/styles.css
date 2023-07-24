@@ -204,6 +204,41 @@ body {
     bottom: 0px;
 }
 
+.holion-title {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.holion-title-page {
+    font-size: 64px;
+}
+
+.holion-title-section {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.holion-top-text {
+    font-size: 24px;
+}
+
+.holion-footer-text {
+    font-size: 16px;
+}
+
+.holion-menu-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.holion-text {
+    font-size: 18px;
+}
+
+.holion-buttons {
+    font-size: 21px;
+    font-weight: bold;
+}
 .holion-button-outer .holion-button-inner {
     position: absolute;
     top: 0px;
@@ -253,11 +288,23 @@ a:hover {
 }
 
 .features-box {
+    display: flex;
     min-width: 100%;
-    font-size: 24px;
+    min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
     padding: 20px;
     margin-bottom: 20px;
-    text-align: right;
+    color: #fff;
+    }
+    
+    .features-box:hover {
+        background-color: #65bd84;
+    }
+    
+    
+    .currentColor {
+        color: #65bd84;
 }
 
 .testimonial-items {
@@ -300,18 +347,24 @@ a:hover {
     font-weight: 300;
 }
 
-.btn-secondary {
+.btn-primary {
+    text-transform: none;
+    background: #04261A;
+    border: 1px solid #65bd84;
+    font: 21px;
+    font-weight: bold;
+    width: 450px;
+    height: 40px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
     background-color: #65bd84;
     color: white !important;
-    font-size: 1.1em;
     padding-inline: 80px!important;
-  }
-
-  .btn-secondary:hover {
-      background: #04261A;
-      border: 1px solid #65bd84;
-      color: #65bd84 !important;
-  }
+}
 
 .same-size-box {
     min-height: 100%;
