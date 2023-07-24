@@ -19,27 +19,23 @@ module.exports = {
         environment: 'master',
     },
 
-    singleTypes: [
-        // {
-        //     id: 'user',
-        //     directory: 'content',
-        //     fileName: '_index',
-        //     fileExtension: 'md',
-        // },
-    ],
-    repeatableTypes: [
-        {
-            id: 'case',
-            directory: 'content/cases',
-            mainContent: 'content',
-            resolveEntries: {
-                categories: 'fields.slug',
-                author: 'fields.name',
-                relatedPosts: 'sys.id',
-            },
-        },
-        // {
-        //     id: 'user',
+  singleTypes: [
+    {
+      id: "pageContent",
+      directory: "content",
+      fileName: "test",
+      fileExtension: "md",
+      mainContent: "content",
+    },
+  ],
+  repeatableTypes: [
+    {
+      id: "case",
+      directory: "content/cases",
+      mainContent: "content",
+    },
+    // {
+    //     id: 'user',
         //     directory: 'content/users',
         //     mainContent: 'content',
         //     resolveEntries: {
