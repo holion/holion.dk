@@ -2,10 +2,7 @@
 title: "Hosting og drift af apps og websystemer"
 pagetitle: "IT- og app-hosting | Vi varetager driften af dine app- og webløsninger"
 description: "Vi hoster dine app og webløsninger og sørger for, at de altid er opdateret til nyeste versioner af browsere, Android og iOS."
-# type: withtestimonials
 ---
-
-{{< line-devider src="/img/layout/curlylines/ikon9.png" >}}
 
 {{< pc "Saml udvikling og drift ét sted" "Saml udvikling og drift ét sted">}}
 
@@ -16,8 +13,6 @@ Hos Holion kan vi hjælpe dig med webhosting, hvor vi sørger for stabil drift o
 Ofte er det en fordel at bruge den samme virksomhed til at udvikle, vedligeholde og optimere dine apps og websystemer. På den måde kan du nemlig altid være sikker på, at der vælges de bedste løsninger, som sikrer, at din app og dit websystem altid er opdateret. Uanset om det gælder rådgivning, udvikling eller drift, så sørger vi for, at du kommer sikkert i mål.
 
 {{< /pc >}}
-
-{{< line-devider src="/img/layout/curlylines/ikon10.png" >}}
 
 {{< pc "IT Hosting" "IT Hosting" "kontakt os for tilbud" "/kontakt">}}
 
@@ -30,8 +25,6 @@ En app er sjældent meget værd uden en backend. Det er her systemet holder styr
 
 {{< /pc >}}
 
-{{< line-devider src="/img/layout/curlylines/ikon11.png" >}}
-
 {{< pc "Distribution" "Distribution">}}
 
 
@@ -40,8 +33,6 @@ Apps distribueres normalt til brugerne via [App Store](https://www.apple.com/ios
 Når en app er klar til udgivelse, kan den sendes direkte fra App Center og over i App Store og Google Play. Dermed undgår vi unødig spildtid og manuelt arbejde i forbindelse med udgivelse af nye versioner.
 
 {{< /pc >}}
-
-{{< line-devider src="/img/layout/curlylines/ikon12.png" >}}
 
 {{< pc "Overvågning af app- og webløsninger" "Overvågning af app- og webløsninger">}}
 
@@ -54,5 +45,3 @@ Der findes masser af systemer, som kan anvendes til overvågning af andre system
 Hos Holion varetager vi driften af dine app- og webløsninger. Vi tilbyder også [on-site konsulentassistance]({{< ref konsulent >}}), hvis du har behov for at vores specialiserede IT-konsulenter kommer ud og hjælper dit team direkte på lokationen. Vil du vide mere om, hvordan vi kan hjælpe dig med skalerbar og omkostningseffektiv webhosting af dine apps og websystemer, er du altid meget velkommen til at kontakte os. 
 
 {{< /pc >}}
-
-{{< vertical-line >}}
