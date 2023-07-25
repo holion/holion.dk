@@ -1,5 +1,6 @@
 
 {{ $currentPageUrl := .Params.contentUrl }}
+{{ $showTeasers := .Params.showTeaserBox }}
 {{ $i := 0 }}
 
 {{ if gt (len .Site.Data.services) 0 }}
@@ -13,6 +14,10 @@
         {{ end }}
     {{ end }}
     
+    {{ if $showTeasers}}                
+        {{ partial "serviceTeaserBoxes.html" .}}   
+        {{ $i = add $i 1 }}
+    {{ end }}
 
     {{ range sort .Site.Data.services "weight" }}
         {{ if and (ne .isHeader true) (eq .url $currentPageUrl) }}   

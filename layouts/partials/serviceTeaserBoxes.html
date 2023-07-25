@@ -1,0 +1,16 @@
+
+{{ $currentPageUrl := .Params.contentUrl }}
+{{ $i := 0 }}
+
+{{ if gt (len .Site.Data.services) 0 }}
+    <div class="green-box">    
+        <div class="row justify-content-center">
+            {{ range sort .Site.Data.services "weight" }}
+                {{ if and .teaser (eq .url $currentPageUrl) }}         
+                    {{ partial "serviceTeaser.html" .}}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+
+{{ end }}
