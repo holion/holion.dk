@@ -1,13 +1,29 @@
 
 {{ $currentPageUrl := .Params.contentUrl }}
+{{ $i := 0 }}
 
 {{ if gt (len .Site.Data.services) 0 }}
 
+
     {{ range sort .Site.Data.services "weight" }}
         {{ if eq .url $currentPageUrl }}
-            <div class="green-box mt-5">
-                {{ partial "serviceSection.html" .}}
-            </div>
+            {{ if .isHeader}}
+                {{ partial "serviceHeader.html" .}}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    
+
+    {{ range sort .Site.Data.services "weight" }}
+        {{ if and (ne .isHeader true) (eq .url $currentPageUrl) }}   
+            {{ $i = add $i 1 }}
+            {{ if eq (mod $i 2) 1 }}
+                <div class="green-box">
+             {{ else }}
+                <div>
+             {{ end }}       
+                    {{ partial "serviceSection.html" .}}
+                </div>
         {{ end }}
     {{ end }}
 
