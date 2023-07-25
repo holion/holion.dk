@@ -1,0 +1,15 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
+            <div class="holion-text my-3 mb-5">{{ .content | markdownify }}</div>
+                <div class="mb-5">
+                {{ partial "button-link.html" (dict "link" .buttonLink "text"
+                .buttonText "buttontype" "btn-primary" )}}
+            </div>
+        </div>
+    </div>
+    
+</div>
+

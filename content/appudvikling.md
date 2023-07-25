@@ -2,7 +2,8 @@
 title: "App-udvikling"
 pagetitle: "Appudvikling | Eksperter i udvikling af apps til Andriod og iOS/iPhone"
 description: "Gennemtænkte apps til både Android og iOS/iPhone - altid med slutbrugeren i centrum. Se hvordan vi kan hjælpe dig her."
-# type: withtestimonials
+services: true
+contentUrl: "appudvikling"
 ---
 
 
@@ -50,7 +51,7 @@ Det kan være en god idé at få specialudviklet en app til din virksomhed, hvis
 * Vil brande virksomheden, hvor du kommer tættere på din målgruppe og tiltrækker nye kunder.
 * Ønsker en salgsplatform, hvor brugerne kan tilgå hurtig og brugervenlig service hvor som helst.
 
-Hos Holion får du en professionel udviklet app i topkvalitet, men til en væsentlig lavere pris, end du gør ved mange andre appudviklere - fordi vi anvender smartere løsninger i udviklingsprocessen. Vi tilbyder naturligvis også [on-site konsulentassistance]({{< ref konsulent >}}), hvis du har behov for at vores specialiserede IT-konsulenter kommer ud og hjælper dit team direkte på lokationen. 
+Hos Holion får du en professionel udviklet app i topkvalitet, men til en væsentlig lavere pris, end du gør ved mange andre appudviklere - fordi vi anvender smartere løsninger i udviklingsprocessen. Vi tilbyder naturligvis også [on-site konsulentassistance], hvis du har behov for at vores specialiserede IT-konsulenter kommer ud og hjælper dit team direkte på lokationen. 
 
 Fortæl os om dit projekt, hvad enten det gælder [udvikling af websystemer]({{< ref webudvikling >}}), applikationer eller [hosting og drift]({{< ref drift >}}), kan vi være behjælpelige. Er du interesseret i at få udviklet en app til din virksomhed, er du altid meget velkommen til at kontakte os. Vi sidder klar ved tasterne og telefonen til en uforpligtende snak.
 

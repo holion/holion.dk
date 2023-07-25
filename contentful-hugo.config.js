@@ -34,6 +34,12 @@ module.exports = {
       directory: "content/cases",
       mainContent: "content",
     },
+    {
+      id: "standardSection",
+      directory: "data/services",
+      mainContent: "data",
+      fileExtension: "yaml",
+    },
     // {
     //     id: 'user',
         //     directory: 'content/users',

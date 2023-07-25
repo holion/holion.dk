@@ -20,8 +20,11 @@
 
               {{ partial .Params.id . }}
 
+            
+            {{ else if isset .Params "services" }}
+               {{ partial "services.html" . }}
+                          
             {{ else }}
-
             <div class="container">
 
                 <div class="row">
