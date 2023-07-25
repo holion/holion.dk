@@ -2,6 +2,12 @@
   "name": "holion.dk",
   "description": "The famous Holion website",
   "scripts": {
-    "start": "hugo serve"
+    "start": "npx contentful-hugo --preview && hugo serve"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "contentful-hugo": "^2.3.0"
   }
 }
