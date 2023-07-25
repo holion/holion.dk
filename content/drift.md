@@ -42,6 +42,6 @@ Desuden kan der ske fejl på servere og integrationer kan drille i forbindelse m
 
 Der findes masser af systemer, som kan anvendes til overvågning af andre systemer. I Holion har vi i flere år anvendt [Humio](https://humio.com) til den daglige overvågning. I Humio kan der opsættes dashboards med tabeller og grafer som fortæller, hvordan dit system klarer driften. På vores kontor har vi en storskærm, hvor vi løbende kan følge med i om alt fungerer som tiltænkt. Er der noget, som ikke fungerer, kan Humio sættes til automatisk at give besked herom. 
 
-Hos Holion varetager vi driften af dine app- og webløsninger. Vi tilbyder også [on-site konsulentassistance]({{< ref konsulent >}}), hvis du har behov for at vores specialiserede IT-konsulenter kommer ud og hjælper dit team direkte på lokationen. Vil du vide mere om, hvordan vi kan hjælpe dig med skalerbar og omkostningseffektiv webhosting af dine apps og websystemer, er du altid meget velkommen til at kontakte os. 
+Hos Holion varetager vi driften af dine app- og webløsninger. Vi tilbyder også [on-site konsulentassistance] hvis du har behov for at vores specialiserede IT-konsulenter kommer ud og hjælper dit team direkte på lokationen. Vil du vide mere om, hvordan vi kan hjælpe dig med skalerbar og omkostningseffektiv webhosting af dine apps og websystemer, er du altid meget velkommen til at kontakte os. 
 
 {{< /pc >}}

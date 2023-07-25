@@ -9,7 +9,7 @@ googleAnalytics = "UA-338843-5"
 
 [[menu.main]]
 	identifier = "services"
-	name = "4X Ydelser"
+	name = "Ydelser"
 	url = "/ydelser/"
 	weight = 3
 
@@ -21,31 +21,17 @@ googleAnalytics = "UA-338843-5"
     parent = "services"
 
 [[menu.main]]
-    identifier = "billigeapps"
-    name = "Udvikling af billige apps"
-    url = "/billige-apps/"
-    weight = 2
-    parent = "services"
-
-[[menu.main]]
     identifier = "websys"
     name = "Udvikling af websystemer"
     url = "/webudvikling/"
-    weight = 3
+    weight = 2
     parent = "services"
 
 [[menu.main]]
     identifier = "drift"
     name = "Hosting og drift af apps og websystemer"
     url = "/drift/"
-    weight = 4
-    parent = "services"
-
-[[menu.main]]
-    identifier = "konsulent"
-    name = "Konsulentassistance"
-    url = "/konsulent/"
-    weight = 5
+    weight = 3
     parent = "services"
 
 [[menu.main]]

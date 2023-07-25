@@ -35,7 +35,7 @@ Holion er din kompetente samarbejdspartner, når du skal have udviklet unikke we
 
 {{< pc "Holion – din foretrukne webudvikler" "Holion – din foretrukne webudvikler">}}
 
-Hos Holion sætter vi en ære i at være din foretrukne webudvikler. Derfor gør vi kun det, som vi er bedst til. Det betyder, at vi gør meget ud af at forstå din virksomhed og dine brugere. På den måde sikrer vi, at vi skaber innovative og langtidsholdbare webløsninger, der giver værdi for virksomheden både i dag og i morgen. Derudover tilbyder vi naturligvis også [on-site konsulentassistance]({{< ref konsulent >}}), hvis du foretrækker at vi sidder tæt på dig og måske som en del af et eksisterende team.
+Hos Holion sætter vi en ære i at være din foretrukne webudvikler. Derfor gør vi kun det, som vi er bedst til. Det betyder, at vi gør meget ud af at forstå din virksomhed og dine brugere. På den måde sikrer vi, at vi skaber innovative og langtidsholdbare webløsninger, der giver værdi for virksomheden både i dag og i morgen. Derudover tilbyder vi naturligvis også [on-site konsulentassistance], hvis du foretrækker at vi sidder tæt på dig og måske som en del af et eksisterende team.
 
 Fortæl os om dit projekt, hvad enten det gælder [udvikling af applikationer]({{< ref appudvikling >}}) til smartphones og tablets eller webbaserede systemer, kan vi være behjælpelige. Er du interesseret i at få udviklet et webbaseret system til din virksomhed, er du velkommen til at kontakte os. Vi sidder klar ved tasterne og telefonen til en uforpligtende snak.
 
