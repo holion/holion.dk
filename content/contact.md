@@ -4,6 +4,7 @@ title: "Kontakt os"
 slug: kontakt
 pagetitle: "Kontakt Holion | Skal vi ta' en snak om din nye app eller websystem?"
 description: "Skriv eller ring til os, hvis du har en app- eller web-idé, som vi skal kigge på. Det koster ikke noget at tage os med på råd."
+contentUrl: "kontakt"
 ---
 
 Skal vi ta' en snak?

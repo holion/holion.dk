@@ -1,0 +1,137 @@
+<div class="container pb-5" id="contact">
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <section>
+
+                <div id="contact-message"></div>
+
+                <form id="contact-form" class="contact-form-ajax" action="{{ .Site.Params.mailService }}" method="POST">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="name">{{ i18n "contactName" }}</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="email">{{ i18n "contactMail" }}</label>
+                                <input type="text" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="phone">Dit telefonnummer</label>
+                                <input type="text" class="form-control" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="name">Robottjek! Hvad er 2 + 2?</label>
+                                <span id="magicValueRequired" style="display: none; color: red"><br />Du skal svare
+                                    korrekt på dette spørgsmål.</span>
+                                <input type="text" class="form-control" name="magicValue" id="magicValue" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="message">{{ i18n "contactMessage" }}</label>
+                                <textarea id="message" class="form-control" name="message" rows="12"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" class="btn btn-contact form-control">{{ i18n
+                                "contactSend" }}</button>
+
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </form>
+
+            </section>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <section>
+                <h3 class="text-uppercase">Kontakt</h3>
+                <div style="display: table">
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Mobil:&nbsp;
+                        </p>
+                        <p style="display: table-cell">
+                            <a href="tel:+4561303039">61 30 30 39</a>
+                        </p>
+                    </div>
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Mail:&nbsp;
+                        </p>
+                        <p style="display: table-cell">
+                            <a href="mailto:info@holion.dk">info@holion.dk</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {{ if isset .Site.Params "address" }}
+            <section>
+
+                <h3 class="text-uppercase"> {{ i18n "contactAddrTitle" }}</h3>
+
+                <strong>{{.Site.Params.companyName}}</strong>
+                <a
+                    href="https://www.google.com/maps/place/Vesselbjergvej+3,+8370+Hadsten/@56.3287242,10.0482798,18z/data=!3m1!4b1!4m5!3m4!1s0x464c10835d66c501:0xaeffd73d6b489156!8m2!3d56.3287242!4d10.0489197?hl=da">
+                    {{ .Site.Params.address | safeHTML }}
+                </a>
+            </section>
+
+            {{ end }}
+
+            <section>
+                <h3 class="text-uppercase">Bank</h3>
+                Spar Nord Bank
+                <br /><br />
+                <div style="display: table">
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Regnr:
+                        </p>
+                        <p style="display: table-cell">
+                            7470
+                        </p>
+                    </div>
+                    <div style="display: table-row">
+                        <p style="display: table-cell">
+                            Kontonr:&nbsp;
+                        </p>
+                        <p style="display: table-cell">
+                            4583314437
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-uppercase">CVR</h3>
+                36 08 60 09
+            </section>
+
+            <section>
+                <h3 class="text-uppercase">Sociale medier</h3>
+                <a href="https://www.linkedin.com/company/holion/"><img src="/img/LinkedIn-logo.png" alt="LinkedIn logo"
+                        style="max-width: 100px"></a>
+            </section>
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+
+{{/* {{ partial "map.html" . }} */}}

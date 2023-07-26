@@ -40,5 +40,11 @@ module.exports = {
       mainContent: "data",
       fileExtension: "yaml",
     },
+    {
+      id: "standardHeaderSection",
+      directory: "data/standardHeaderSection",
+      mainContent: "data",
+      fileExtension: "yaml",
+    },
   ],
 };

@@ -6,14 +6,7 @@
 {{ if .Site.Data.standardSection }}
 {{ if gt (len .Site.Data.standardSection) 0 }}
 
-
-        {{ range sort .Site.Data.standardSection "weight" }}
-        {{ if eq .url $currentPageUrl }}
-        {{ if .isHeader}}
-        {{ partial "serviceHeader.html" .}}
-        {{ end }}
-        {{ end }}
-        {{ end }}
+        {{ partial "sectionHeader.html" . }}
         
         {{ if $showTeasers}}
         {{ partial "serviceTeaserBoxes.html" .}}

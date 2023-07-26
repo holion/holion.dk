@@ -266,6 +266,7 @@ body {
     background-color: grey;
 }
 
+.white_text_color,
 .white_text_color a {
     color: #fff;
 }
@@ -285,6 +286,20 @@ body {
     text-align: center;
 }
 
+.form-control {
+    border-color: #65bd84;
+    background-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border-color: #65bd84;
+    background-color: #65bd84;
+    color: white !important;
+    padding-inline: 80px !important;
+}
 a,
 a:hover {
     color: #65bd84;
@@ -313,11 +328,13 @@ a:hover {
         max-height: 100%;
     padding: 20px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #65bd84;
+    text-align: end;
     }
     
-    .features-box:hover {
-        background-color: #65bd84;
+.features-box:hover {
+    color: #fff;
+    background-color: #65bd84;
     }
     
     
@@ -367,7 +384,7 @@ a:hover {
 
 .btn-primary {
     text-transform: none;
-    background: #04261A;
+    background: transparent;
     border: 1px solid #65bd84;
     font: 21px;
     font-weight: bold;
@@ -384,6 +401,17 @@ a:hover {
     padding-inline: 80px!important;
 }
 
+.btn-contact {
+    text-transform: none;
+    background: transparent;
+    font: 21px;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff !important;
+}
 .same-size-box {
     min-height: 100%;
 }
