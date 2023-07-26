@@ -1,12 +1,15 @@
-<div class="container pb-5" id="contact">
+{{ $currentPageUrl := .Params.contentUrl }}
+{{ $currentPage := .Site.Params }}
 
+{{ range .Site.Data.contactSection }}
+{{ if eq .url $currentPageUrl }}
+
+<div class="container py-5" id="contact">
+    <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7 me-md-5">
 
             <section>
-
-                <div id="contact-message"></div>
-
                 <form id="contact-form" class="contact-form-ajax" action="{{ .Site.Params.mailService }}" method="POST">
                     <div class="row">
                         <div class="col-sm-12">
@@ -43,7 +46,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12 text-center">
+                        <div class="col-sm-12 text-center mt-4">
                             <button type="submit" class="btn btn-contact form-control">{{ i18n
                                 "contactSend" }}</button>
 
@@ -56,82 +59,63 @@
 
         </div>
 
-        <div class="col-md-4">
-
+        <div class="col-md-4 holion-top-text">
             <section>
-                <h3 class="text-uppercase">Kontakt</h3>
+                <div class="holion_main_color">
+                    {{ .contactName }}
+                </div>
+                <div style="font-style: italic;">
+                    {{ .contactFrase }}
+                </div>
+                </section>
+                <section>
+                    <div class="holion-title-section holion_main_color my-3">{{ i18n
+                        "contactTitle" }}</div>
                 <div style="display: table">
-                    <div style="display: table-row">
+                    <div class="holion_main_color" style="display: table-row">
                         <p style="display: table-cell">
-                            Mobil:&nbsp;
+                            Telefon:&nbsp;&nbsp;&nbsp;
                         </p>
-                        <p style="display: table-cell">
+                        <p class="white-link" style="display: table-cell">
                             <a href="tel:+4561303039">61 30 30 39</a>
                         </p>
                     </div>
-                    <div style="display: table-row">
+                    <div class="holion_main_color" style="display: table-row">
                         <p style="display: table-cell">
                             Mail:&nbsp;
                         </p>
-                        <p style="display: table-cell">
+                        <p class="white-link" style="display: table-cell">
                             <a href="mailto:info@holion.dk">info@holion.dk</a>
                         </p>
                     </div>
                 </div>
             </section>
 
-            {{ if isset .Site.Params "address" }}
-            <section>
-
-                <h3 class="text-uppercase"> {{ i18n "contactAddrTitle" }}</h3>
-
-                <strong>{{.Site.Params.companyName}}</strong>
+            {{ if .showAdress }}
+            <div class="white-link">
+                <div class="holion-title-section holion_main_color my-3">{{ i18n
+                    "contactAddrTitle" }}</div>
+                {{$currentPage.companyName}}
                 <a
                     href="https://www.google.com/maps/place/Vesselbjergvej+3,+8370+Hadsten/@56.3287242,10.0482798,18z/data=!3m1!4b1!4m5!3m4!1s0x464c10835d66c501:0xaeffd73d6b489156!8m2!3d56.3287242!4d10.0489197?hl=da">
-                    {{ .Site.Params.address | safeHTML }}
+                {{ $currentPage.address | safeHTML }}
                 </a>
-            </section>
-
+            <br>
+            {{$currentPage.companyCvr}}
+            </div>
             {{ end }}
 
-            <section>
-                <h3 class="text-uppercase">Bank</h3>
-                Spar Nord Bank
-                <br /><br />
-                <div style="display: table">
-                    <div style="display: table-row">
-                        <p style="display: table-cell">
-                            Regnr:
-                        </p>
-                        <p style="display: table-cell">
-                            7470
-                        </p>
-                    </div>
-                    <div style="display: table-row">
-                        <p style="display: table-cell">
-                            Kontonr:&nbsp;
-                        </p>
-                        <p style="display: table-cell">
-                            4583314437
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h3 class="text-uppercase">CVR</h3>
-                36 08 60 09
-            </section>
-
-            <section>
+            {{/* <section>
                 <h3 class="text-uppercase">Sociale medier</h3>
                 <a href="https://www.linkedin.com/company/holion/"><img src="/img/LinkedIn-logo.png" alt="LinkedIn logo"
                         style="max-width: 100px"></a>
-            </section>
+            </section> */}}
         </div>
 
     </div>
     <!-- /.row -->
 </div>
+{{ end }}
+{{ end }}
 
 {{/* {{ partial "map.html" . }} */}}

@@ -4,6 +4,7 @@ body {
     color: #fff;
     font-family: "Mukta Mahee", sans-serif;
     font-weight: 400;
+    font-size: 18px;
     background-image: url("~images/background_1.svg") no-repeat center center fixed;
     background-size: cover;
 }
@@ -234,10 +235,6 @@ body {
     font-weight: bold;
 }
 
-.holion-text {
-    font-size: 18px;
-}
-
 .holion-buttons {
     font-size: 21px;
     font-weight: bold;
@@ -305,6 +302,8 @@ a:hover {
     color: #65bd84;
 }
 
+.white-link a,
+.white-link a:hover,
 .holion-button-inner a,
 .holion-button-inner a:hover {
     color: #fff;
@@ -386,11 +385,11 @@ a:hover {
     text-transform: none;
     background: transparent;
     border: 1px solid #65bd84;
-    font: 21px;
+    font-size: 21px !important;
     font-weight: bold;
     width: 450px;
-    height: 40px;
-    line-height: 25px;
+    height: 50px;
+        line-height: 33px;
     text-align: center;
     color: #fff !important;
 }
@@ -404,7 +403,7 @@ a:hover {
 .btn-contact {
     text-transform: none;
     background: transparent;
-    font: 21px;
+    font-size: 21px;
     font-weight: bold;
     width: 100%;
     height: 40px;

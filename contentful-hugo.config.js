@@ -46,5 +46,11 @@ module.exports = {
       mainContent: "data",
       fileExtension: "yaml",
     },
+    {
+      id: "contactSection",
+      directory: "data/contactSection",
+      mainContent: "data",
+      fileExtension: "yaml",
+    },
   ],
 };

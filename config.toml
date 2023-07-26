@@ -156,6 +156,8 @@ googleAnalytics = "UA-338843-5"
     longitude = "10.0483177"
     directions = "Holion ApS, Vesselbjergvej 3"
 
+    companyCvr = "CVR: 36 08 60 09"
+
     mailService = "https://holionsharedfunctions.azurewebsites.net/api/contact"
     contact_form_ajax = true
 
