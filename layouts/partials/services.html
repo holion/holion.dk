@@ -23,8 +23,18 @@
                 {{ end }}
                 {{ partial "standardSection.html" .}}
             </div>
-            {{ end }}
-            {{ end }}
+        {{ end }}
+        {{ end }}
+
+
+        {{ $i = add $i 1 }}
+        {{ if eq (mod $i 2) 1 }}
+            <div class="green-box">
+        {{ else }}
+            <div>
+        {{ end }}
+            {{ partial "contactForm.html" .}}
+        </div>
 
     {{ end }}
 {{ end }}

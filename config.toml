@@ -145,6 +145,8 @@ googleAnalytics = "UA-338843-5"
     <br>spændende udviklingsrejse i forhold til miljø, etik og en
     <br>ny grøn profil
     """
+    privatePolicy = "Når du klikker 'Kontakt mig', accepterer du også vores privatlivspolitik."
+    privatePolicyLink = "/privatlivspolitik/"
 
     punchline = "&#8208; DET SKAL GIVE MENING!"
                     
