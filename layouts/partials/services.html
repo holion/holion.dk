@@ -3,11 +3,11 @@
 {{ $showTeasers := .Params.showTeaserBox }}
 {{ $i := 0 }}
 
-{{ if .Site.Data.services }}
-    {{ if gt (len .Site.Data.services) 0 }}
+{{ if .Site.Data.standardSection }}
+{{ if gt (len .Site.Data.standardSection) 0 }}
 
 
-        {{ range sort .Site.Data.services "weight" }}
+        {{ range sort .Site.Data.standardSection "weight" }}
         {{ if eq .url $currentPageUrl }}
         {{ if .isHeader}}
         {{ partial "serviceHeader.html" .}}
@@ -20,7 +20,7 @@
         {{ $i = add $i 1 }}
         {{ end }}
 
-        {{ range sort .Site.Data.services "weight" }}
+        {{ range sort .Site.Data.standardSection "weight" }}
         {{ if and (ne .isHeader true) (eq .url $currentPageUrl) }}
         {{ $i = add $i 1 }}
         {{ if eq (mod $i 2) 1 }}
@@ -28,7 +28,7 @@
             {{ else }}
             <div>
                 {{ end }}
-                {{ partial "serviceSection.html" .}}
+                {{ partial "standardSection.html" .}}
             </div>
             {{ end }}
             {{ end }}

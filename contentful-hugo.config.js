@@ -36,19 +36,9 @@ module.exports = {
     },
     {
       id: "standardSection",
-      directory: "data/services",
+      directory: "data/standardSection",
       mainContent: "data",
       fileExtension: "yaml",
     },
-    // {
-    //     id: 'user',
-        //     directory: 'content/users',
-        //     mainContent: 'content',
-        //     resolveEntries: {
-        //         categories: 'fields.slug',
-        //         author: 'fields.name',
-        //         relatedPosts: 'sys.id',
-        //     },
-        // },
-    ],
+  ],
 };
