@@ -17,7 +17,7 @@ body {
 
 .footer .footer-position {
     position: absolute;
-    bottom: 40%;
+    bottom: 0%;
 }
 
 .footer .footer-position.position-top {
@@ -55,13 +55,13 @@ body {
 
 #footer-lower,
 #footer-small {
-    background-color: rgba(101, 189, 132, 0.1);
-    padding-bottom: 30px;
+    background-color: #04261A;
+    padding-bottom: 20px;
 }
 
 .footer-lower {
     /* background-color: rgba(101, 189, 132, 0.1); */
-    height: 180px;
+    height: 120px;
     /* display: table;
     table-layout: fixed; */
 }

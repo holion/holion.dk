@@ -1,35 +1,19 @@
 <footer class="d-none d-md-block"> {{/* hide on screens smaller than md */}}
     <div class="container">
 
-        <div class="footer footer-upper">
-            <div class="footer-position position-left">
-                <img class="img-holion-small" src="/img/layout/holion-logo.svg" />
-                <div class="title_small mt-4">
-                    {{ .Site.Params.about_us | safeHTML }}
-                    <span class="holion_main_color"> {{ .Site.Params.punchline | markdownify }}</span>
-                </div>
-            </div>
-            <div class="footer-position position-right title_small white_text_color">
-                <a href="{{ .Page.Params.url }}">
-                    <img src="/img/layout/circle-arrow.svg" /> Gå til toppen
-                </a>
-            </div>
-
-        </div>
-
     </div>
     <div id="footer-lower">
         <div class="container">
             <div class="footer footer-lower">
                 <div class="footer-position position-left">
-                    <img src="/img/layout/denmarks-trees.svg" />
+                    
                 </div>
                 <div class="footer-position position-center">
-                    <img src="/img/layout/gazelle.svg" />
+                    
                 </div>
-                <div class="footer-position position-right title_medium_weight_medium">
+                <div class="footer-position position-right title_medium_weight_medium white-link">
                     {{.Site.Params.companyName}} {{ .Site.Params.address | safeHTML }} <br> Mobil: <a href="tel:+4561303039">61 30 30 39</a> <br> CVR: 36 08 60 09
-                    <div class="kontact-background white_text_color"> <a href="/kontakt">kontakt</a></div>
+                    <div class="kontact-background white_text_color"></div>
                 </div>
             </div>
 
@@ -44,20 +28,13 @@
 
         <div class="footer footer-small">
             <div class="footer-position position-top mt-3">
-                <img class="img-holion-small" src="/img/layout/holion-logo.svg" />
-                <div class="title_small mt-4">
-                    {{ .Site.Params.about_us | safeHTML }}
-                    <span class="holion_main_color"> {{ .Site.Params.punchline | markdownify }}</span>
-                </div>
+               
             </div>
             <div class="footer-position position-middle title_small white_text_color">
-                <a href="{{ .Page.Params.url }}">
-                    <img src="/img/layout/circle-arrow.svg" /> Gå til toppen
-                </a>
+               
             </div>
-            <div class="footer-position position-bottom title_medium_weight_medium">
-                {{.Site.Params.companyName}} {{ .Site.Params.address | safeHTML }} <br> Mobil: <a href="tel:+4561303039">61 30 30 39</a> <br> CVR: 36 08 60 09
-                <div class="kontact-background white_text_color"> <a href="/kontakt">kontakt</a></div>
+            <div class="footer-position position-bottom title_medium_weight_medium white-link">
+                {{.Site.Params.companyName}} {{ .Site.Params.address | safeHTML }} <br> Telefon: <a href="tel:+4561303039">61 30 30 39</a> <br> {{ .Site.Params.companyCvr | safeHTML }}
             </div>
         </div>
 
