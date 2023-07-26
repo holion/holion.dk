@@ -1,15 +1,20 @@
 
 {{ $currentPageUrl := .Params.contentUrl }}
+{{ $currentTeaserHeading := .Params.teaserHeading }}
 {{ $i := 0 }}
 
 {{ if gt (len .Site.Data.services) 0 }}
     <div class="green-box">    
+        <div class="container py-5">
         <div class="row justify-content-center">
-            {{ range sort .Site.Data.services "weight" }}
-                {{ if and .teaser (eq .url $currentPageUrl) }}         
-                    {{ partial "serviceTeaser.html" .}}
+                <div class="holion-title-section holion_main_color my-3">{{ $currentTeaserHeading }}</div>
+                {{ range sort .Site.Data.services "weight" }}
+                    {{ if and .teaser (eq .url $currentPageUrl) }}
+                        {{ partial "serviceTeaser.html" .}}
+                    {{ end }}
                 {{ end }}
-            {{ end }}
+                </div>
+            </div>
         </div>
     </div>
 

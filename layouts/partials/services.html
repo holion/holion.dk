@@ -3,33 +3,35 @@
 {{ $showTeasers := .Params.showTeaserBox }}
 {{ $i := 0 }}
 
-{{ if gt (len .Site.Data.services) 0 }}
+{{ if .Site.Data.services }}
+    {{ if gt (len .Site.Data.services) 0 }}
 
 
-    {{ range sort .Site.Data.services "weight" }}
+        {{ range sort .Site.Data.services "weight" }}
         {{ if eq .url $currentPageUrl }}
-            {{ if .isHeader}}
-                {{ partial "serviceHeader.html" .}}
-            {{ end }}
+        {{ if .isHeader}}
+        {{ partial "serviceHeader.html" .}}
         {{ end }}
-    {{ end }}
-    
-    {{ if $showTeasers}}                
-        {{ partial "serviceTeaserBoxes.html" .}}   
+        {{ end }}
+        {{ end }}
+        
+        {{ if $showTeasers}}
+        {{ partial "serviceTeaserBoxes.html" .}}
         {{ $i = add $i 1 }}
-    {{ end }}
-
-    {{ range sort .Site.Data.services "weight" }}
-        {{ if and (ne .isHeader true) (eq .url $currentPageUrl) }}   
-            {{ $i = add $i 1 }}
-            {{ if eq (mod $i 2) 1 }}
-                <div class="green-box">
-             {{ else }}
-                <div>
-             {{ end }}       
-                    {{ partial "serviceSection.html" .}}
-                </div>
         {{ end }}
-    {{ end }}
 
+        {{ range sort .Site.Data.services "weight" }}
+        {{ if and (ne .isHeader true) (eq .url $currentPageUrl) }}
+        {{ $i = add $i 1 }}
+        {{ if eq (mod $i 2) 1 }}
+        <div class="green-box">
+            {{ else }}
+            <div>
+                {{ end }}
+                {{ partial "serviceSection.html" .}}
+            </div>
+            {{ end }}
+            {{ end }}
+
+    {{ end }}
 {{ end }}

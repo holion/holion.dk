@@ -5,6 +5,7 @@ description: "Med et webbaseret IT-system får du en moderne løsning, der kan t
 services: true
 contentUrl: "webudvikling"
 showTeaserBox: true
+teaserHeading: "Hvilket IT-system har du brug for?"
 ---
 
 {{< pc "Moderne systemer" "Moderne systemer">}}
