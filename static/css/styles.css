@@ -295,7 +295,7 @@ body {
     border-color: #65bd84;
     background-color: #65bd84;
     color: white !important;
-    padding-inline: 80px !important;
+    padding-inline: 0px !important;
 }
 a,
 a:hover {
@@ -389,15 +389,28 @@ a:hover {
     font-weight: bold;
     width: 450px;
     height: 50px;
-        line-height: 33px;
+    line-height: 33px;
     text-align: center;
     color: #fff !important;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: #65bd84;
-    color: white !important;
-    padding-inline: 80px!important;
+    padding-inline: 0px !important;
+    border-color: #65bd84 !important;
+}
+    
+.show_on_hover {
+    display: none;
+}
+
+.content-change-on-hoover:hover .show_on_hover {
+    display: block;
+}
+
+.content-change-on-hoover:hover .hide_on_hover {
+    display: none;
 }
 
 .btn-contact {

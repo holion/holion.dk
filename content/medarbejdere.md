@@ -2,7 +2,9 @@
 title: "Medarbejdere"
 pagetitle: "Medarbejdere -pageTitle"
 description: "Medarbejdere -description"
-# type: withtestimonials
+standardPage: true
+contentUrl: "medarbejdere"
+showEmployeeSection: true
 ---
 
 

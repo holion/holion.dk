@@ -20,13 +20,13 @@ module.exports = {
     },
 
   singleTypes: [
-    {
-      id: "pageContent",
-      directory: "content",
-      fileName: "test",
-      fileExtension: "md",
-      mainContent: "content",
-    },
+    // {
+    //   id: "pageContent",
+    //   directory: "content",
+    //   fileName: "test",
+    //   fileExtension: "md",
+    //   mainContent: "content",
+    // },
   ],
   repeatableTypes: [
     {
@@ -41,6 +41,12 @@ module.exports = {
       fileExtension: "yaml",
     },
     {
+      id: "specialSection",
+      directory: "data/specialSection",
+      mainContent: "data",
+      fileExtension: "yaml",
+    },
+    {
       id: "standardHeaderSection",
       directory: "data/standardHeaderSection",
       mainContent: "data",
@@ -49,6 +55,12 @@ module.exports = {
     {
       id: "contactSection",
       directory: "data/contactSection",
+      mainContent: "data",
+      fileExtension: "yaml",
+    },
+    {
+      id: "employees",
+      directory: "data/employees",
       mainContent: "data",
       fileExtension: "yaml",
     },

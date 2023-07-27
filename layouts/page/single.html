@@ -21,8 +21,8 @@
               {{ partial .Params.id . }}
 
             
-            {{ else if isset .Params "services" }}
-               {{ partial "services.html" . }}
+            {{ else if isset .Params "standardpage" }}
+            {{ partial "standardPage.html" . }}
                           
             {{ else }}
             <div class="container">
