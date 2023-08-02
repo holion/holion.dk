@@ -319,22 +319,21 @@ a:hover {
     position: relative;
 }
 
-.features-box {
+.hover-box {
     display: flex;
     min-width: 100%;
     min-height: 100%;
-        max-width: 100%;
+    max-width: 100%;
         max-height: 100%;
     padding: 20px;
     margin-bottom: 20px;
     color: #65bd84;
-    text-align: end;
-    }
+}
     
-.features-box:hover {
+.hover-box:hover {
     color: #fff;
     background-color: #65bd84;
-    }
+}
     
     
     .currentColor {
