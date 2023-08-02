@@ -1,0 +1,29 @@
+<div class="col-md-6 col-sm-12 mt-3 mb-5">
+    <a href="{{ .content.link }}">
+        <div class="hover-box holion-border same-size-box content-change-on-hoover">
+            <div class="d-flex flex-column">
+                {{ if .orientationUp }}
+                {{ partial "employee-image.html" .content }}
+                <div class="d-flex flex-row justify-content-center mx-5 mb-5">
+                    <div class="mx-3 mt-4">
+                        <i class="holion-arrow-size fa fa-long-arrow-up"></i>
+                    </div>
+                    <div class="mx-3">
+                        {{ partial "employee-description.html" .content }}
+                    </div>
+                </div>
+                {{ else }}
+                <div class="d-flex flex-row justify-content-center mx-5 mt-5">
+                    <div class="mx-3 mt-4">
+                        <i class="holion-arrow-size fa fa-long-arrow-down"></i>
+                    </div>
+                    <div class="mx-3">
+                        {{ partial "employee-description.html" .content }}
+                    </div>
+                </div>
+                {{ partial "employee-image.html" .content }}
+                {{ end }}
+            </div>
+        </div>
+    </a>
+</div>

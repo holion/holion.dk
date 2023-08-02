@@ -1,25 +1,6 @@
-{{/* <div class="row">
-    {{ range (where (where .Site.Pages "Type" "employees" ) ".Params.shown" true) }}
-    <div class="col-md-4 item">
-        <div class="card-box">
-            <img class="img-full-width" src="/img/employees/{{ .Params.Img }}" />
-            <div class="name-box">
-                <img class="align-top mt-4" src="/img/layout/arrow-up.svg" />
-
-                <div class="name-fill m-4">
-                    <div class="holion_main_color title_medium_weight_medium">{{ .Params.name }}</div>
-                    <div class="content_medium">
-                        {{ .Params.title }} <br> {{ .Params.email }} <br> {{ .Params.tlfnr }}
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    {{ end }}
-</div> */}}
 {{ $currentPageUrl := .Params.contentUrl }}
 {{ $currentPage := .Site.Params }}
+{{ $i := 0 }}
 
 <div class="green-box">
     <div class="container py-5">
@@ -34,22 +15,8 @@
         <div class="row">
 
             {{ range sort .Site.Data.employees "weight" }}
-
-            <div class="col-md-6 col-sm-12 mt-3 mb-5">
-                <a href="{{ .link }}">
-                    <div
-                        class="features-box holion-border same-size-box holion-title-section justify-content-end content-change-on-hoover">
-                        <div class="d-flex flex-column">
-                            <div class="white_text_color">{{ .name }}</div>
-                            <div class="white_text_color hide_on_hover">{{ .textSerious }}</div>
-                            <div class="white_text_color show_on_hover">{{ .textFunny }}</div>
-                            <img class="align-top mt-4" src="/img/layout/arrow-up.svg" />
-
-                        </div>
-                    </div>
-                </a>
-            </div>
-
+            {{ $i = add $i 1 }}
+            {{ partial "employee-box.html" (dict "content" . "orientationUp" (eq (mod $i 2) 1)) }}
             {{ end }}
 
         </div>

@@ -214,6 +214,10 @@ body {
     font-size: 64px;
 }
 
+.holion-arrow-size {
+    font-size: 64px;
+    margin: auto;
+}
 .holion-title-section {
     font-size: 36px;
     font-weight: bold;
