@@ -31,7 +31,7 @@ module.exports = {
   repeatableTypes: [
     {
       id: "case",
-      directory: "content/cases",
+      directory: "content/testimonials",
       mainContent: "content",
     },
     {
