@@ -41,48 +41,6 @@ googleAnalytics = "UA-338843-5"
 	weight = 2
 
 [[menu.main]]
-    identifier = "stofa"
-    name = "Stofa"
-    url = "/cases/stofa/"
-    weight = 1
-    parent = "cases"  
-
-[[menu.main]]
-    identifier = "bescord"
-    name = "Bescord"
-    url = "/bescord/"
-    weight = 2
-    parent = "cases"      
-
-[[menu.main]]
-    identifier = "caleon"
-    name = "Caleon"
-    url = "/caleon/"
-    weight = 3
-    parent = "cases"
-
-[[menu.main]]
-    identifier = "carbuddii"
-    name = "Carbuddii"
-    url = "/carbuddii/"
-    weight = 4
-    parent = "cases"    
-
-[[menu.main]]
-    identifier = "idphotos"
-    name = "Idphotos"
-    url = "/idphotos/"
-    weight = 5
-    parent = "cases"   
-
-    [[menu.main]]
-    identifier = "improvento"
-    name = "Improvento"
-    url = "/improvento/"
-    weight = 6
-    parent = "cases"  
-
-[[menu.main]]
 	identifier = "about"
 	name = "Kontakt"
 	weight = 10

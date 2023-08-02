@@ -1,0 +1,18 @@
+{{ $currentPageUrl := .Params.contentUrl }}
+{{ $currentPage := .Site.Params }}
+{{ $i := 0 }}
+
+<div class="green-box">
+    <div class="container py-5">
+
+        <div class="row">
+
+            {{/* {{ range sort .Site.Content.cases "weight" }} */}}
+            {{ range (where .Site.AllPages.ByWeight "Type" "cases") }}
+            {{ $i = add $i 1 }}
+            {{ partial "employee-box.html" (dict "content" . "orientationUp" (eq (mod $i 2) 1)) }}
+            {{ end }}
+
+        </div>
+    </div>
+</div>

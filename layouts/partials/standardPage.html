@@ -1,6 +1,7 @@
 {{ $currentPageUrl := .Params.contentUrl }}
 {{ $showTeasers := .Params.showTeaserBox }}
 {{ $showEmployeeSection := .Params.showEmployeeSection }}
+{{ $showCaseSection := .Params.showCaseSection }}
 {{ $i := 0 }}
 
 {{ if .Site.Data.standardSection }}
@@ -15,6 +16,11 @@
 
 {{ if $showEmployeeSection}}
 {{ partial "employees.html" .}}
+{{ $i = add $i 1 }}
+{{ end }}
+
+{{ if $showCaseSection}}
+{{ partial "cases.html" .}}
 {{ $i = add $i 1 }}
 {{ end }}
 
