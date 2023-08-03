@@ -16,7 +16,7 @@
 
             {{ range sort .Site.Data.employees "weight" }}
             {{ $i = add $i 1 }}
-            {{ partial "employee-box.html" (dict "content" . "orientationUp" (eq (mod $i 2) 1)) }}
+            {{ partial "hover-box.html" (dict "content" . "orientationUp" (eq (mod $i 2) 1)) }}
             {{ end }}
 
         </div>

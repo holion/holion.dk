@@ -4,14 +4,14 @@
             <div class="d-flex flex-column">
                 {{ if .orientationUp }}
                 <div class="m-5">
-                {{ partial "employee-image.html" .content }}
+                {{ partial "contentful-image.html" .content }}
                 </div>
                 <div class="d-flex flex-row justify-content-center mx-5 mb-5">
                     <div class="mx-3 mt-4">
                         <i class="holion-arrow-size fa fa-long-arrow-up"></i>
                     </div>
                     <div class="mx-3">
-                        {{ partial "employee-description.html" .content }}
+                        {{ partial "hover-box-description.html" .content }}
                     </div>
                 </div>
                 {{ else }}
@@ -20,11 +20,11 @@
                         <i class="holion-arrow-size fa fa-long-arrow-down"></i>
                     </div>
                     <div class="mx-3">
-                        {{ partial "employee-description.html" .content }}
+                        {{ partial "hover-box-description.html" .content }}
                     </div>
                 </div>
                 <div class="m-5">
-                {{ partial "employee-image.html" .content }}
+                {{ partial "contentful-image.html" .content }}
                 </div>
                 {{ end }}
             </div>
