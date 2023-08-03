@@ -38,6 +38,13 @@ module.exports = {
       id: "case",
       directory: "content/cases",
       mainContent: "content",
+      customFields: {
+        // these fields will be added to the frontmatter
+        standardPage: true,
+        contentUrl: (entry) => {
+          return "cases/" + entry.fields.slug;
+        },
+      },
     },
     {
       id: "standardSection",

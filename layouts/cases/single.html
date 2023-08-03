@@ -15,26 +15,17 @@
         {{ partial "breadcrumbs.html" . }}
 
         <div id="content">
-            {{ if isset .Params "id" }} {{ partial .Params.id . }} {{ else }}
-
+            {{ if isset .Params "id" }} {{ partial .Params.id . }}
+            {{ else if isset .Params "standardpage" }}
+            {{ partial "standardPage.html" . }}
+            {{/* {{ else }}
             <div class="container">
+                {{.}}
+                {{ partial "sectionHeader.html" . }}
 
-                {{ partial "pc.html" . }} 
-                
-                {{ partial "case_images.html" . }} 
-                
-                {{ partial "vertical_line.html" . }} 
-                
-                {{ partial "citation.html" . }} 
-                
-                {{ partial "vertical_line.html" . }} 
-                
-                {{ partial "case_content.html" . }}
-
-                {{ partial "vertical_line.html" . }} 
 
             </div>
-            <!-- /.container -->
+            <!-- /.container --> */}}
 
             {{ end }}
         </div>
@@ -43,12 +34,12 @@
 
         {{ partial "footer.html" . }}
 
-        <div id="contact-footer">
+        {{/* <div id="contact-footer">
             Skal dit projekt også være en success?
             <span>
         <a href="/kontakt" class="btn btn-small btn-template-main">Kontakt os</a>
       </span>
-        </div>
+        </div> */}}
 
     </div>
     <!-- /#all -->
