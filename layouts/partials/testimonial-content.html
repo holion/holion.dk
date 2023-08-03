@@ -1,0 +1,19 @@
+
+<div class="col-md-3">
+    {{ with .Params.testimonialByImg }} {{ if isset . "url" }}
+    <img class="img-full-width m-0 p-0" src="{{ .url }}" />
+    {{ else if isset . "path"}}
+    <img class="img-full-width m-0 p-0" src="/img/testimonials/{{ .path }}" />
+    {{ end }} {{ end }}
+</div>
+<div class="col-md-8">
+    <div class="bigcontent m-5">
+        <p>{{ .Params.testimonial | markdownify }}</p>
+    </div>
+    <div class="holion_main_color title_medium_weight_medium m-5">
+        <a href="/cases/{{.Params.link}}">
+            {{ .Params.testimonialBy }}, {{ .Params.testimonialByTitle
+            }} hos {{ .Params.company }}
+        </a>
+    </div>
+</div>
