@@ -32,7 +32,11 @@
     {{ else }}
     <div>
         {{ end }}
+        {{ if isset . "imagePosition" }}
+        {{ partial "standardSectionImageLeft.html" .}}
+        {{ else }}
         {{ partial "standardSection.html" .}}
+        {{ end }}
     </div>
     {{ end }}
     {{ end }}
