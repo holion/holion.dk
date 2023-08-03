@@ -8,6 +8,8 @@ data/standardHeaderSection/*
 data/specialSection/*
 data/contactSection/*
 data/employees/*
+content/cases/*
+content/testimonials/*
 holion-new-design/images/*
 holion-new-design/fonts/*
 holion-new-design/*.css
