@@ -18,15 +18,7 @@
             {{ if isset .Params "id" }} {{ partial .Params.id . }}
             {{ else if isset .Params "standardpage" }}
             {{ partial "standardPage.html" . }}
-            {{/* {{ else }}
-            <div class="container">
-                {{.}}
-                {{ partial "sectionHeader.html" . }}
-
-
-            </div>
-            <!-- /.container --> */}}
-
+           
             {{ end }}
         </div>
 

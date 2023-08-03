@@ -1,0 +1,9 @@
+
+<div class="holion-title my-3">{{ .title }}</div>
+<div class=" my-3 mb-5">{{ .content | markdownify }}</div>
+{{ if and .buttonLink .buttonText }}
+<div class="my-5">
+    {{ partial "button-link-left.html" (dict "link" .buttonLink "text"
+    .buttonText "buttontype" "btn-primary" )}}
+</div>
+{{ end }}
