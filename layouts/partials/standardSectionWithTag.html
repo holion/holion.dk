@@ -1,9 +1,15 @@
 
 <div class="container py-5">
+    {{/*  <div class="mb-5">
+        {{ partial "button-link.html" (dict "link" .site.Params.testimonials.buttonLink "text"
+        .site.Params.testimonials.buttonText "buttontype" "btn-primary" )}}
+        
+    </div>  */}}
     <div class="row">
         {{ range (where (where (where .site.AllPages.ByWeight "Type" "testimonials")
                     ".Params.testimonial" "!=" nil) ".Params.currentPageUrl" "=" .case)}}
                 {{ partial "testimonial-content.html" . }}
         {{ end }}
+
     </div>
 </div>
