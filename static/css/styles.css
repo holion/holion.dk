@@ -253,7 +253,7 @@ body {
     /* height: 30px; */
     font-size: 14px;
     letter-spacing: 2.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
     padding: 5px
 }
@@ -360,7 +360,7 @@ a:hover {
 }
 
 .card-box .title {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
 }
 
@@ -507,21 +507,21 @@ a:hover {
 .title_small {
     letter-spacing: 2px;
     font-size: 10px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: left;
 }
 
 .testiment {
     font-size: 14px;
     letter-spacing: 2.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: left;
 }
 
 .punchline {
     font-size: 14px;
     letter-spacing: 2.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: left;
     color: #65bd84;
 }
@@ -529,7 +529,7 @@ a:hover {
 .title_medium {
     font-size: 14px;
     letter-spacing: 2.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: left;
 }
 
@@ -551,7 +551,7 @@ a:hover {
 .title_medium_large {
     font-size: 16px;
     letter-spacing: 2.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: left;
 }
 
@@ -569,7 +569,7 @@ a:hover {
     font-weight: 300;
     font-size: 50px;
     line-height: 68px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: left;
 }
 
@@ -747,7 +747,7 @@ element.style {
     font-weight: 500;
     color: #fff;
     /* background-color: #e22d30; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     width: 100px;
 }
 
@@ -770,7 +770,7 @@ element.style {
     font-weight: 500;
     color: #fff;
     /* background-color: #e22d30; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 
