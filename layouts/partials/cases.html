@@ -1,18 +1,14 @@
 {{ $currentPageUrl := .Params.contentUrl }}
 {{ $currentPage := .Site.Params }}
 {{ $i := 0 }}
-<div class="green-box">
-    <div class="container py-5">
+<div class="container">
+    <div class="row g-0">
+        {{/* {{ range sort .Site.Content.cases "weight" }} */}}
+        {{ range (where (where .Site.AllPages.ByWeight "Type" "cases")
+        ".Params.teaserText" "!=" nil) }}
+        {{ $i = add $i 1 }}
+        {{ partial "hover-box.html" (dict "content" .Params "orientationUp" (eq (mod $i 2) 1)) }}
+        {{ end }}
 
-        <div class="row">
-
-            {{/* {{ range sort .Site.Content.cases "weight" }} */}}
-            {{ range (where (where .Site.AllPages.ByWeight "Type" "cases")
-            ".Params.teaserText" "!=" nil) }}
-            {{ $i = add $i 1 }}
-            {{ partial "hover-box.html" (dict "content" .Params "orientationUp" (eq (mod $i 2) 1)) }}
-            {{ end }}
-
-        </div>
     </div>
 </div>
