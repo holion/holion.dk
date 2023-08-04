@@ -15,8 +15,7 @@
         {{ partial "breadcrumbs.html" . }}
 
         <div id="content">
-            {{ if isset .Params "id" }} {{ partial .Params.id . }}
-            {{ else if isset .Params "standardpage" }}
+            {{ if isset .Params "standardpage" }}
             {{ partial "standardPage.html" . }}
            
             {{ end }}

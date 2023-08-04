@@ -14,36 +14,10 @@
         </header>
 
         {{ partial "breadcrumbs.html" . }}
-
+        
         <div id="content">
-            {{ if isset .Params "id" }} {{ partial .Params.id . }} {{ else }}
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <section>
-                            {{ .Content }}
-                        </section>
-
-                        {{ $paginator := .Paginate (where .Data.Pages "Type" "cases") }} {{ range $paginator.Pages }}
-                            {{ if isset .Params "link" }}
-                                {{ partial "case.html" . }}
-                            {{ end }}
-                        {{ end }}
-
-                        <section>
-                            {{.Page.Params.footer}}
-                        </section>
-                    </div>
-
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /.container -->
-
+            {{ if isset .Params "standardpage" }}
+            {{ partial "standardPage.html" . }}
             {{ end }}
         </div>
         <!-- /#content -->

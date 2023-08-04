@@ -44,6 +44,9 @@ module.exports = {
         contentUrl: (entry) => {
           return "cases/" + entry.fields.slug;
         },
+        link: (entry) => {
+          return entry.fields.slug;
+        },
       },
     },
     {
