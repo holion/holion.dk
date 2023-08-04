@@ -715,6 +715,11 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
     list-style: none;
 }
 
+.submenu__list {
+    padding-block-start: 33px;
+}
+
+
 
 /* .submenu__list:hover>a {
     background-color: rgba(101, 189, 132, 0.1);
@@ -741,9 +746,10 @@ element.style {
     margin-top: 30px;
     cursor: default;
     display: inline;
-    padding-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-weight: 500;
     color: #fff;
     /* background-color: #e22d30; */
@@ -820,7 +826,7 @@ element.style {
 }
 
 .menu__item:hover>a {
-    background-color: #65bd84;
+    background-color: #04261A;
     text-decoration: none;
 }
 
@@ -835,7 +841,7 @@ element.style {
 }
 
 .submenu__text {
-    background-color: #163a22;
+    background-color: #04261A;
     padding-left: 32px;
     padding-right: 10px;
     display: flex;
@@ -844,7 +850,7 @@ element.style {
     /* position: absolute;
     padding-top: 10px;
     left: 0; */
-    width: 400px;
+    width: 250px;
 }
 
 .js .menu__list {
