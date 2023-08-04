@@ -22,14 +22,14 @@ googleAnalytics = "UA-338843-5"
 
 [[menu.main]]
     identifier = "websys"
-    name = "Udvikling af websystemer"
+    name = "Udvikling af IT-systemer"
     url = "/webudvikling/"
     weight = 2
     parent = "services"
 
 [[menu.main]]
     identifier = "drift"
-    name = "Hosting og drift af apps og websystemer"
+    name = "Hosting og drift"
     url = "/drift/"
     weight = 3
     parent = "services"
@@ -40,14 +40,16 @@ googleAnalytics = "UA-338843-5"
 	url = "/cases/"
 	weight = 2
 
+
 [[menu.main]]
-	identifier = "about"
-	name = "Kontakt"
-	weight = 10
+	identifier = "csr"
+	name = "CSR"
+	url = "/csr/"
+	weight = 1
 
 [[menu.main]]
 	identifier = "holion"
-	name = "Holion"
+	name = "Om Holion"
     url = "/holion/"
 	weight = 9
 
@@ -55,7 +57,7 @@ googleAnalytics = "UA-338843-5"
     identifier = "medarbejdere"
     name = "Medarbejdere"
     url = "/medarbejdere/"
-    weight = 3
+    weight = 2
     parent = "holion"    
 
 [[menu.main]]
@@ -63,27 +65,19 @@ googleAnalytics = "UA-338843-5"
     name = "Ledige stillinger"
     url = "/ledige-stillinger/"
     parent = "holion"
-    weight = 1
+    weight = 3
 
 [[menu.main]]
     identifier = "teknologi"
     name = "Teknologi"
     url = "/teknologi/"
     parent = "holion"
-    weight = 2
-
-[[menu.main]]
-    identifier = "fællesindsats"
-    name = "Fælles indsats"
-    url = "/fællesskab/"
-    parent = "about"
-    weight = 4
+    weight = 1
 
 [[menu.main]]
 	identifier = "contact"
 	name = "Kontakt"
 	url = "/kontakt/"
-	parent = "about"
     weight = 100
 
 [params]
