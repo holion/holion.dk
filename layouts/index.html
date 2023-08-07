@@ -8,21 +8,22 @@
     <div id="all">
 
         <header>
-
-            {{ partial "breadcrumbs.html" . }}
             
             {{ partial "nav.html" . }}
 
         </header>
 
         <div id="content">
-            {{ partial "see_more.html" . }} 
-            
+            <div class="frontpage-header-box">
+                {{ partial "sectionHeader.html" . }}
+            </div>
             {{ partial "features.html" . }} 
             
             {{ partial "testimonials.html" . }} 
+
             
-            {{ partial "who_is.html" . }} 
+            
+            {{/* {{ partial "who_is.html" . }} */}}
             
             <!-- {{ partial "clients.html" . }} -->
         </div>

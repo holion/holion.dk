@@ -359,6 +359,22 @@ a:hover {
     background-color: #04261A;
 }
 
+.frontpage-header-box {
+    position: relative;
+    margin-top: 200px;
+    margin-top: -16px;
+    background: url('/img/Forside udenbeskæring_noise.jpg') center center repeat;
+    background-size: cover;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    height: 60vh;
+}
+
+.header-distance {
+    margin-top: 200px;
+}
+
 .card-box .title {
     /* text-transform: uppercase; */
     letter-spacing: 1px;
@@ -430,6 +446,11 @@ a:hover {
     min-height: 100%;
 }
 
+.square-box {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
 .video-container {
     padding-top: 56.25%;
     position: relative;

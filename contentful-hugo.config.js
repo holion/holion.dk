@@ -78,5 +78,11 @@ module.exports = {
       mainContent: "data",
       fileExtension: "yaml",
     },
+    {
+      id: "features",
+      directory: "data/features",
+      mainContent: "data",
+      fileExtension: "yaml",
+    },
   ],
 };

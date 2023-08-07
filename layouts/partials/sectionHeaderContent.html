@@ -1,5 +1,6 @@
-
-<div class="holion-title my-3">{{ .title }}</div>
+<div class="header-distance">
+<div class="holion-title mt-3">{{ .title }}</div>
+<div class="holion-title holion_main_color mb-3">{{ .partTwoTitle }}</div>
 <div class=" my-3 mb-5">{{ .content | markdownify }}</div>
 {{ if and .buttonLink .buttonText }}
 <div class="my-5">
@@ -7,3 +8,4 @@
     .buttonText "buttontype" "btn-primary" )}}
 </div>
 {{ end }}
+</div>
