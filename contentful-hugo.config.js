@@ -1,23 +1,22 @@
 // go to https://github.com/ModiiMedia/contentful-hugo#configuration for configuration instructions
 
+require("dotenv").config();
+
 /**
  * @type {import('contentful-hugo').ContentfulHugoConfig}
  */
 module.exports = {
-    
-
-    locales: [], // uses default locale if left empty
-    
-    contentful: {
-        // defaults to CONTENTFUL_SPACE env variable
-        space: 'X',
-        // defaults to CONTENTFUL_TOKEN env variable
-        token: 'X',
-        // defaults to CONTENTFUL_PREVIEW_TOKEN env variable
-        previewToken: 'X',
-        // defaults to "master"
-        environment: 'master',
-    },
+  locales: [], // uses default locale if left empty
+  contentful: {
+    // defaults to CONTENTFUL_SPACE env variable
+    space: process.env.CONTENTFUL_SPACE_ID,
+    // defaults to CONTENTFUL_TOKEN env variable
+    token: process.env.CONTENTFUL_TOKEN,
+    // defaults to CONTENTFUL_PREVIEW_TOKEN env variable
+    previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN,
+    // defaults to "master"
+    environment: "master",
+  },
 
   singleTypes: [
     // {
