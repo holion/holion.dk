@@ -359,16 +359,40 @@ a:hover {
     background-color: #04261A;
 }
 
-.frontpage-header-box {
-    position: relative;
-    margin-top: 200px;
-    margin-top: -16px;
-    background: url('/img/Forside udenbeskæring_noise.jpg') center center repeat;
-    background-size: cover;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    height: 60vh;
+@media screen and (min-width: 1636px) {
+    .frontpage-header-box {
+            position: relative;
+        background: url('/img/Forside udenbeskæring_noise.jpg') 0% 20% repeat;
+            background-size: cover;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            height: 60vh;
+        }
+}
+
+@media screen and (max-width: 1636px) {
+    .frontpage-header-box {
+        position: relative;
+        background: url('/img/Forside udenbeskæring_noise.jpg') 30px -80px repeat;
+        background-size: 1500px 1500px;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .frontpage-header-box {
+        position: relative;
+        background: url('/img/Forside udenbeskæring_noise.jpg') -380px -80px repeat;
+        background-size: 1500px 1500px;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        height: 50vh;
+    }
 }
 
 .header-distance {
