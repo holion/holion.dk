@@ -1,5 +1,7 @@
 <div class="row justify-content-center">
     <div class="text-center">
-      <a class="btn {{ .buttontype }}" href="{{ .link }}" role="button"><nobr>{{ .text }}</nobr></a>
+      <a class="btn {{ .buttontype }}" href="{{ .link }}" {{ if eq .buttonOpenLinkInExternalTab true }} target="_blank" {{ end
+        }} role="button">
+        <span style="white-space: nowrap;">{{.text }}</span></a>
     </div>
   </div>

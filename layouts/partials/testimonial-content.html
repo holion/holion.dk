@@ -11,7 +11,8 @@
         <p>{{ .Params.testimonial | markdownify }}</p>
     </div>
     <div class="holion_main_color title_medium_weight_medium m-5">
-        <a href="/cases/{{.Params.link}}">
+        <a href="{{.Params.testimonialByLink}}" {{ if eq .Params.testimonialByOpenLinkInExternalTab true}} target="_blank" {{
+            end }}>
             {{ .Params.testimonialBy }}, {{ .Params.testimonialByTitle
             }} hos {{ .Params.company }}
         </a>
