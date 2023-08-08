@@ -354,6 +354,21 @@ a:hover {
     border-style: solid;
 }
 
+.so-me-circle, .so-me-circle:active {
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border-color: #65bd84 !important;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.so-me-circle:hover {
+    background-color: #65bd84 !important;
+    color: white;
+}
 
 .green-box {
     background-color: #04261A;

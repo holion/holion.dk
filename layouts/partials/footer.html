@@ -9,7 +9,18 @@
                     
                 </div>
                 <div class="footer-position position-center">
-                    
+                    <div class="d-flex flex-column">
+                        
+                    <div class="d-flex justify-content-center">
+                        {{ partial "soMe.html" (dict "icon" "fa-linkedin" "link" "https://www.linkedin.com/company/holion/" )}}
+                        {{ partial "soMe.html" (dict "icon" "fa-youtube-play" "link" "https://www.youtube.com/@holion" )}}
+                        {{ partial "soMe.html" (dict "icon" "fa-instagram" "link" "https://www.instagram.com/holion_aps/" )}}
+                        {{ partial "soMe.html" (dict "icon" "fa-facebook" "link" "https://www.facebook.com/HolionApS/" )}}
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="/privatlivspolitik">Læs vores privatlivspolitik</a>
+                    </div>
+                    </div>
                 </div>
                 <div class="footer-position position-right title_medium_weight_medium white-link">
                     {{.Site.Params.companyName}} {{ .Site.Params.address | safeHTML }} <br> Mobil: <a href="tel:+4561303039">61 30 30 39</a> <br> CVR: 36 08 60 09
