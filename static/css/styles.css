@@ -39,17 +39,17 @@ body {
 }
 
 .footer .footer-position.position-left {
-    left: 70px;
+    left: 90px;
     width: 30%;
 }
 
 .footer .footer-position.position-center {
-    left: 40%;
+    left: 38%;
     width: 30%;
 }
 
 .footer .footer-position.position-right {
-    left: 75%;
+    left: 85%;
     width: 30%;
 }
 
@@ -647,6 +647,10 @@ a:hover {
 
 .img-holion-small {
     zoom: 40%;
+}
+
+.img-holion-medium {
+    zoom: 140%;
 }
 
 .img-holion-large {
