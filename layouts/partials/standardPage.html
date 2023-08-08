@@ -2,12 +2,24 @@
 {{ $showTeasers := .Params.showTeaserBox }}
 {{ $showEmployeeSection := .Params.showEmployeeSection }}
 {{ $showCaseSection := .Params.showCaseSection }}
+{{ $frontpage := .Params.isFrontPage }}
 {{ $i := 0 }}
 
 {{ if .Site.Data.standardSection }}
 {{ if gt (len .Site.Data.standardSection) 0 }}
 
+{{ if $frontpage}}
+
+<div class="frontpage-header-box">
+    {{ partial "sectionHeader.html" . }}
+</div>
+{{ partial "features.html" . }}
+
+{{ partial "testimonials.html" . }}
+
+{{ else}}
 {{ partial "sectionHeader.html" . }}
+{{ end }}
 
 {{ if $showTeasers}}
 {{ partial "serviceTeaserBoxes.html" .}}

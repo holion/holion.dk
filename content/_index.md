@@ -1,3 +1,4 @@
 ---
 contentUrl: 'frontpage'
+isFrontPage: true
 ---
