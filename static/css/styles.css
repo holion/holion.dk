@@ -477,13 +477,14 @@ a:hover {
 
 .footer-apple .hoverText {
     position: absolute;
-    top: 50px;
+    top: 48px;
     left: 40px;
-    width: 200px;
+    width: 220px;
     height: 56px;
     text-align: center;
     background-color: #65bd84;
     color: white;
+    font-weight: bold;
 }
 .btn-contact {
     text-transform: none;
