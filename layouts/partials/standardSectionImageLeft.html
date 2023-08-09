@@ -1,13 +1,13 @@
 <div class="container py-5">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 m-auto">
             {{ partial "contentful-image.html" . }}
         </div>
-        <div class="col-md-6">
-            <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
-            <div class="my-3 mb-5">{{ .content | markdownify }}</div>
+        <div class="col-md-6 px-5 m-auto">
+            <div class="holion-title-section holion_main_color mb-3">{{ .title }}</div>
+            <div class="my-3">{{ .content | markdownify }}</div>
             {{ if .content2 }}
-            <div class="my-3 mb-5">{{ .content2 | markdownify }}</div>
+            <div class="mt-5">{{ .content2 | markdownify }}</div>
             {{ end }}
             {{ if and .buttonLink .buttonText }}
             <div class="my-5">
