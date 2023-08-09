@@ -692,6 +692,17 @@ a:hover {
     max-width: 100%;
 }
 
+.contentful-image-box {
+    position: relative;
+}
+
+.contentful-image-box-link {
+    position: absolute;
+    top: 6px;
+    left: 70%;
+    width: 100%;
+    height: 100%;
+}
 .img-half-width {
     max-height: 200px;
 }

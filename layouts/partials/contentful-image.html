@@ -1,4 +1,17 @@
-<div>
+<div class="contentful-image-box">
+    <div class="contentful-image-box-link">
+        <div class="d-inline-flex">
+            {{ if (isset . "email") | or (eq .email "") }}
+            {{ partial "soMe.html" (dict "icon" "fa-envelope-o" "link" .email )}}
+            {{ end }}
+            {{ if (isset . "tlf") | or (eq .tlf "") }}
+            {{ partial "soMe.html" (dict "icon" "fa-phone" "link" .tlf )}}
+            {{ end }}
+            {{ if (isset . "linkedIn") | or (eq .linkedIn "") }}
+            {{ partial "soMe.html" (dict "icon" "fa-linkedin" "link" .linkedIn )}}
+            {{ end }}
+        </div>
+    </div>
     {{ with .image }} {{ if isset . "url" }}
     <img class="img-full-width m-0 p-0" src="{{ .url }}" />
     {{ end }} {{ end }}

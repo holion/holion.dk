@@ -1,5 +1,7 @@
 <div class="col-md-6 col-sm-12">
+    {{ if .content.link}}
     <a href="{{ .content.link }}">
+    {{ end }}
         <div class="hover-box same-size-box content-change-on-hoover">
             <div class="d-flex flex-column">
                 {{ if .orientationUp }}
@@ -29,5 +31,7 @@
                 {{ end }}
             </div>
         </div>
+    {{ if .content.link}}
     </a>
+    {{ end }}
 </div>
