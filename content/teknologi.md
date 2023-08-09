@@ -1,5 +1,9 @@
 ---
 title: "Teknologi"
+pagetitle: "Teknologi"
+description: "Teknologi"
+standardPage: true
+contentUrl: "teknologi"
 ---
 
 {{< technologies title="Med nye teknologier følger nye standarder" subtitle="Vi benytter følgende teknologier">}}
