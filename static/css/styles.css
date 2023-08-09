@@ -39,17 +39,17 @@ body {
 }
 
 .footer .footer-position.position-left {
-    left: 90px;
+    left: 5%;
     width: 30%;
 }
 
 .footer .footer-position.position-center {
-    left: 38%;
+    left: 32%;
     width: 30%;
 }
 
 .footer .footer-position.position-right {
-    left: 85%;
+    left: 80%;
     width: 30%;
 }
 
@@ -339,7 +339,7 @@ a:hover {
 }
     
     
-    .currentColor {
+.currentColor {
         color: #65bd84;
 }
 
@@ -470,6 +470,21 @@ a:hover {
     display: none;
 }
 
+.footer-apple {
+    position: relative;
+}
+
+
+.footer-apple .hoverText {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 200px;
+    height: 56px;
+    text-align: center;
+    background-color: #65bd84;
+    color: white;
+}
 .btn-contact {
     text-transform: none;
     background: transparent;
