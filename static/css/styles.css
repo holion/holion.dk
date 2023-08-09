@@ -376,7 +376,7 @@ a:hover {
 
 @media screen and (min-width: 1636px) {
     .frontpage-header-box {
-            position: relative;
+        position: relative;
         background: url('/img/Forside udenbeskæring_noise.jpg') 0% 20% repeat;
             background-size: cover;
             -webkit-transition: all 0.2s ease-out;

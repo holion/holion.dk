@@ -2,17 +2,18 @@
 
 {{ range .Site.Data.standardHeaderSection }}
 {{ if eq .url $currentPageUrl }}
+
 <div class="container pb-5">
     <div class="row">
         {{ if isset . "imagePosition" }}
-        <div class="col-md-6">
+        <div class="col-md-6 header-distance">
             {{ partial "sectionHeaderContent.html" . }}    
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 header-distance">
             {{ partial "contentful-image.html" . }}
         </div>
         {{ else }}
-        <div class="col-md-12">
+        <div class="col-md-12 header-distance">
             {{ partial "sectionHeaderContent.html" . }}    
         </div>
         {{ end }}   
