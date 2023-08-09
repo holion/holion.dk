@@ -47,7 +47,7 @@
     <div>
         {{ end }}
         {{ if isset . "imagePosition" }}
-        {{ partial "standardSectionImageLeft.html" .}}
+        {{ partial "standardSectionImagePosition.html" .}}
         {{ else if isset . "tag" }}
         {{ if eq .tag "testimonial"}}
         {{ partial "standardSectionWithTag.html" (dict "site" $site "case" $currentPageUrl)}}

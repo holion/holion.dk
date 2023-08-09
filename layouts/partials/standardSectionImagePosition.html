@@ -1,0 +1,11 @@
+<div class="container py-5">
+    <div class="row">
+        <div {{ if eq .imagePosition "right" }} class="col m-auto order-last" {{ else }} class="col m-auto" {{ end }}>
+            {{ partial "contentful-image.html" . }}
+        </div>
+        <div {{ if eq .imageSize "oneThird" }} class="col-md-8 px-5 m-auto" {{ else if eq .imageSize "oneFourth" }}
+            class="col-md-9 px-5 m-auto" {{ else }} class="col-md-6 px-5 m-auto" {{ end }}>
+            {{ partial "standardSectionContentImagePos" . }}
+        </div>
+    </div>
+</div>

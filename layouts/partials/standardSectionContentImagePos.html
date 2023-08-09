@@ -1,0 +1,11 @@
+<div class="holion-title-section holion_main_color mb-3">{{ .title }}</div>
+<div class="my-3">{{ .content | markdownify }}</div>
+{{ if .content2 }}
+<div class="mt-5">{{ .content2 | markdownify }}</div>
+{{ end }}
+{{ if and .buttonLink .buttonText }}
+<div class="my-5">
+    {{ partial "button-link.html" (dict "link" .buttonLink "text"
+    .buttonText "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .buttonOpenLinkInExternalTab)}}
+</div>
+{{ end }}
