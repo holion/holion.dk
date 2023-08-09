@@ -248,7 +248,7 @@ body {
     top: 0px;
     right: 10%;
     width: 220px;
-    background-color: #65bd84;
+    background-color: #09bf80;
     color: white;
     /* height: 30px; */
     font-size: 14px;
@@ -288,7 +288,7 @@ body {
 }
 
 .form-control {
-    border-color: #65bd84;
+    border-color: #09bf80;
     background-color: transparent;
     border-width: 3px;
     border-style: solid;
@@ -296,14 +296,14 @@ body {
 
 .form-control:hover,
 .form-control:focus {
-    border-color: #65bd84;
-    background-color: #65bd84;
+    border-color: #09bf80;
+        background-color: #09bf80;
     color: white !important;
     padding-inline: 0px !important;
 }
 a,
 a:hover {
-    color: #65bd84;
+    color: #09bf80;
 }
 
 .white-link a,
@@ -314,7 +314,7 @@ a:hover {
 }
 
 .holion_main_color {
-    color: #65bd84;
+    color: #09bf80;
 }
 
 .card-box {
@@ -330,17 +330,17 @@ a:hover {
     max-width: 100%;
     max-height: 100%;
     padding: 20px;
-    color: #65bd84;
+    color: #09bf80;
 }
     
 .hover-box:hover {
     color: #fff;
-    background-color: #65bd84;
+    background-color: #09bf80;
 }
     
     
 .currentColor {
-        color: #65bd84;
+        color: #09bf80;
 }
 
 .testimonial-items {
@@ -350,7 +350,7 @@ a:hover {
 
 .holion-border {
     border-width: 2px;
-    border-color: #65bd84 !important;
+    border-color: #09bf80 !important;
     border-style: solid;
 }
 
@@ -360,13 +360,13 @@ a:hover {
     height: 40px;
     text-align: center;
     padding-top: 8px;
-    /* border-color: #65bd84 !important; */
+    /* border-color: #09bf80 !important; */
         /* border-style: solid; */
     border-radius: 50%;
 }
 
 .so-me-circle:hover {
-    background-color: #65bd84 !important;
+    background-color: #09bf80 !important;
     /* color: white; */
 }
 
@@ -441,7 +441,7 @@ a:hover {
 .btn-primary {
     text-transform: none;
     background: transparent;
-    border: 1px solid #65bd84;
+    border: 1px solid #09bf80;
     font-size: 21px !important;
     font-weight: bold;
     width: fit-content;
@@ -455,9 +455,9 @@ a:hover {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #65bd84;
+    background-color: #09bf80;
     /* padding-inline: 0px !important; */
-    border-color: #65bd84 !important;
+    border-color: #09bf80 !important;
     text-decoration: none;
 }
     
@@ -486,7 +486,7 @@ a:hover {
     width: 220px;
     height: 56px;
     text-align: center;
-    /* background-color: #65bd84; */
+    /* background-color: #09bf80; */
     color: white;
     font-weight: bold;
 }
@@ -539,7 +539,7 @@ a:hover {
 }
 
 .vertical-line {
-    border-left: 1px solid #65bd84;
+    border-left: 1px solid #09bf80;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -555,7 +555,7 @@ a:hover {
     top: 5%;
     position: absolute;
     background: black;
-    border: 2px solid #65bd84;
+    border: 2px solid #09bf80;
     text-align: center;
 }
 
@@ -568,7 +568,7 @@ a:hover {
     top: 95%;
     position: absolute;
     background: black;
-    border: 1px solid #65bd84;
+    border: 1px solid #09bf80;
     text-align: center;
 }
 
@@ -603,7 +603,7 @@ a:hover {
     letter-spacing: 2.2px;
     /* text-transform: uppercase; */
     text-align: left;
-    color: #65bd84;
+    color: #09bf80;
 }
 
 .title_medium {
@@ -636,7 +636,7 @@ a:hover {
 }
 
 .title_large {
-    color: #65bd84;
+    color: #09bf80;
     letter-spacing: 1.8px;
     font-weight: 300;
     font-size: 40px;
@@ -930,7 +930,7 @@ element.style {
 }
 
 .submenu__text:hover {
-    background-color: #65bd84;
+    background-color: #09bf80;
     text-decoration: none;
     padding-left: 32px;
 }
