@@ -444,7 +444,9 @@ a:hover {
     border: 1px solid #65bd84;
     font-size: 21px !important;
     font-weight: bold;
-    width: 450px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 50px;
     line-height: 33px;
     text-align: center;
@@ -454,8 +456,9 @@ a:hover {
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: #65bd84;
-    padding-inline: 0px !important;
+    /* padding-inline: 0px !important; */
     border-color: #65bd84 !important;
+    text-decoration: none;
 }
     
 .show_on_hover {
