@@ -1,6 +1,6 @@
 <div class="contentful-image-box">
     <div class="contentful-image-box-link">
-        <div class="d-inline-flex">
+        <div class="">
             {{ if (isset . "email") | or (eq .email "") }}
             {{ partial "soMe.html" (dict "icon" "fa-envelope-o" "link" .email )}}
             {{ end }}
