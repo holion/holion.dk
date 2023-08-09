@@ -355,19 +355,19 @@ a:hover {
 }
 
 .so-me-circle, .so-me-circle:active {
-    border-width: 1px;
+    /* border-width: 1px; */
     width: 40px;
     height: 40px;
     text-align: center;
     padding-top: 8px;
-    border-color: #65bd84 !important;
-    border-style: solid;
+    /* border-color: #65bd84 !important; */
+        /* border-style: solid; */
     border-radius: 50%;
 }
 
 .so-me-circle:hover {
     background-color: #65bd84 !important;
-    color: white;
+    /* color: white; */
 }
 
 .green-box {
@@ -472,17 +472,18 @@ a:hover {
 
 .footer-apple {
     position: relative;
+    width: fit-content;
 }
 
 
 .footer-apple .hoverText {
     position: absolute;
-    top: 48px;
+    top: 40px;
     left: 40px;
     width: 220px;
     height: 56px;
     text-align: center;
-    background-color: #65bd84;
+    /* background-color: #65bd84; */
     color: white;
     font-weight: bold;
 }
