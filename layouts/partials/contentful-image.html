@@ -5,7 +5,7 @@
             {{ partial "soMe.html" (dict "icon" "fa-envelope-o" "link" .email )}}
             {{ end }}
             {{ if (isset . "tlf") | or (eq .tlf "") }}
-            {{ partial "soMe.html" (dict "icon" "fa-phone" "link" .tlf )}}
+            {{ partial "tlf.html" (dict "icon" "fa-phone" "link" .tlf )}}
             {{ end }}
             {{ if (isset . "linkedIn") | or (eq .linkedIn "") }}
             {{ partial "soMe.html" (dict "icon" "fa-linkedin" "link" .linkedIn )}}
