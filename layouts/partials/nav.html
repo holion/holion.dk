@@ -61,7 +61,7 @@
                     <ul class=" menu__list">
                         <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
                             <a class="menu__link text-nowrap" href="{{ .URL }}">
-                                <span >{{ .Name }}</span>
+                                <span {{ if eq .Name "CSR" }} class="holion_main_color" {{ end }}> {{ .Name }}</span>
                             </a>
                         </li>
                     </ul>
