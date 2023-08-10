@@ -1,18 +1,18 @@
 <div class="contentful-image-box">
-    <div class="contentful-image-box-link">
+    <div class="contentful-image-box-link {{.class}}">
         <div class="">
-            {{ if (isset . "email") | or (eq .email "") }}
-            {{ partial "soMe.html" (dict "icon" "fa-envelope-o" "link" .email )}}
+            {{ if (isset .content "email") | or (eq .content.email "") }}
+            {{ partial "soMe.html" (dict "icon" "fa-envelope-o" "link" .content.email )}}
             {{ end }}
-            {{ if (isset . "tlf") | or (eq .tlf "") }}
-            {{ partial "tlf.html" (dict "icon" "fa-phone" "link" .tlf )}}
+            {{ if (isset .content "tlf") | or (eq .content.tlf "") }}
+            {{ partial "tlf.html" (dict "icon" "fa-phone" "link" .content.tlf )}}
             {{ end }}
-            {{ if (isset . "linkedIn") | or (eq .linkedIn "") }}
-            {{ partial "soMe.html" (dict "icon" "fa-linkedin" "link" .linkedIn )}}
+            {{ if (isset .content "linkedIn") | or (eq .content.linkedIn "") }}
+            {{ partial "soMe.html" (dict "icon" "fa-linkedin" "link" .content.linkedIn )}}
             {{ end }}
         </div>
     </div>
-    {{ with .image }} {{ if isset . "url" }}
+    {{ with .content.image }} {{ if isset . "url" }}
     <img class="img-full-width m-0 p-0" src="{{ .url }}" />
     {{ end }} {{ end }}
 </div>

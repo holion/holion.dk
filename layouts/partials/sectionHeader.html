@@ -10,7 +10,7 @@
             {{ partial "sectionHeaderContent.html" . }}    
         </div>
         <div class="col-md-6 header-distance">
-            {{ partial "contentful-image.html" . }}
+            {{ partial "contentful-image.html" (dict "content" . ) }}
         </div>
         {{ else }}
         <div class="col-md-12 header-distance">

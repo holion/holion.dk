@@ -67,7 +67,11 @@
         <div class="col-md-4 holion-top-text">
             <section>
                 <div class="my-3" {{ if .showAdress }} style="max-width: 250px" {{ end }}}>
-                    {{ partial "contentful-image.html" . }}
+                    {{ if .showAdress }}
+                    {{ partial "contentful-image.html" (dict "content" . "class" "shorter") }}
+                    {{ else }}
+                    {{ partial "contentful-image.html" (dict "content" . "class" "short") }}
+                    {{ end }}
                 </div>
                 <div class="holion_main_color">
                     {{ .contactName }}
