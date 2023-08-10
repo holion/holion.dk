@@ -3,6 +3,21 @@
 {{ $currentTeaserHeading := .Params.teaserHeading }}
 {{ $i := 0 }}
 
+{{/* Get element count of pages that needs to be displayed */}}
+{{ $count := 0 }}
+{{ $colNo := 2 }}
+{{ range sort .Site.Data.standardSection "weight" }}
+{{ if and .teaser (eq .url $currentPageUrl) }}
+{{ $count = add $count 1 }}
+{{ end }}
+{{ end }}
+
+{{ if or (eq $count 2) (eq $count 4)}}
+{{ $colNo = 4 }}
+{{ else}}
+{{ $colNo = 3 }}
+{{ end }}
+
 {{ if gt (len .Site.Data.standardSection) 0 }}
     <div class="green-box">    
         <div class="container py-5">
@@ -10,7 +25,9 @@
                 <div class="holion-title-section holion_main_color my-3">{{ $currentTeaserHeading }}</div>
                 {{ range sort .Site.Data.standardSection "weight" }}
                     {{ if and .teaser (eq .url $currentPageUrl) }}
-                        {{ partial "serviceTeaser.html" .}}
+                        <div class="col-md-{{$colNo}} col-sm-12 m-4">
+                            {{ partial "serviceTeaser.html" .}}
+                        </div>
                     {{ end }}
                 {{ end }}
                 </div>
