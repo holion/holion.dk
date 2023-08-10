@@ -137,7 +137,7 @@ googleAnalytics = "UA-338843-5"
     enable = true
     title = "Hvad siger vores kunder?"
     buttonText = "Se flere kundecases"
-    buttonLink = ""
+    buttonLink = "/cases/"
     subtitle = "Vi har haft mange kunder gennem tiden og vi vil altid gerne høre, hvad de tænker om samarbejdet og os. Her er noget af det, de har sagt. Kontakt os for at høre mere om en eller flere specifikke kundecases."
 
 [params.see_more]
