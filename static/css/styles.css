@@ -55,7 +55,7 @@ body {
 
 #footer-lower,
 #footer-small {
-    background-color: #04261A;
+    background-color: #02261a;
     padding-bottom: 20px;
 }
 
@@ -371,7 +371,7 @@ a:hover {
 }
 
 .green-box {
-    background-color: #04261A;
+    background-color: #02261a;
 }
 
 @media screen and (min-width: 1636px) {
@@ -921,7 +921,7 @@ element.style {
 }
 
 .menu__item:hover>a {
-    background-color: #04261A;
+    background-color: #06734d;
     text-decoration: none;
 }
 
@@ -936,7 +936,7 @@ element.style {
 }
 
 .submenu__text {
-    background-color: #04261A;
+    background-color: #06734d;
     padding-left: 32px;
     padding-right: 10px;
     display: flex;
