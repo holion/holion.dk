@@ -1,6 +1,12 @@
-<div class="frame-content-outer">
-    <img class="img-holion" src="/img/layout/billedramme.png" />
-    <div>
-        {{ partial "frame-image" .}}
+{{ if isset . "link" }}
+<a href="{{.link}}">
+{{ end }}
+    <div class="frame-content-outer">
+        <img class="img-holion" src="/img/layout/billedramme.png" />
+        <div>
+            {{ partial "frame-image" .}}
+        </div>
     </div>
-</div>
+{{ if isset . "link" }}
+</a>
+{{ end }}
