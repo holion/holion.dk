@@ -34,23 +34,20 @@ body {
 
 .footer .footer-position.position-bottom {
     top: 130px;
-    left: 5%;
-    width: 90%;
 }
 
 .footer .footer-position.position-left {
-    left: 5%;
-    width: 30%;
+    left: 0%;
 }
 
 .footer .footer-position.position-center {
-    left: 32%;
-    width: 30%;
+    left: 33%;
+    width: 33%;
 }
 
 .footer .footer-position.position-right {
-    left: 80%;
-    width: 30%;
+    right: 0%;
+    text-align: right;
 }
 
 #footer-lower,
@@ -60,10 +57,7 @@ body {
 }
 
 .footer-lower {
-    /* background-color: rgba(101, 189, 132, 0.1); */
     height: 120px;
-    /* display: table;
-    table-layout: fixed; */
 }
 
 .footer-small {
