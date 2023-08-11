@@ -1,0 +1,22 @@
+{{ with .image }} {{ if isset . "url" }}
+
+{{ if isset . "width" }}
+    {{ $ratio := div (mul .height 1.0) .width}}
+
+    {{ if lt $ratio 1.33 }}
+    <div class="inner-top width">
+        <div class>
+            <img class="img-full-width" src="{{ .url }}" />
+        </div>
+    </div>
+    {{ else}}
+    <div class="inner-top height">
+        <img class="img-full-height" src="{{ .url }}" />
+    </div>
+    {{ end }}
+
+{{ else }}
+    <img class="img-full-width m-0 p-0" src="{{ .url }}" />
+{{ end }}
+
+{{ end }} {{ end }}
