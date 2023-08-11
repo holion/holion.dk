@@ -286,14 +286,17 @@ body {
     background-color: transparent;
     border-width: 3px;
     border-style: solid;
+    color: white !important;
 }
 
 .form-control:hover,
 .form-control:focus {
     border-color: #09bf80;
-        background-color: #09bf80;
+    background-color: #09bf80;
     color: white !important;
-    padding-inline: 0px !important;
+    box-shadow: none;
+    border-radius: 0;
+    padding-inline: 10px !important;
 }
 a,
 a:hover {
