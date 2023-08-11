@@ -84,5 +84,11 @@ module.exports = {
       mainContent: "data",
       fileExtension: "yaml",
     },
+    {
+      id: "frameContent",
+      directory: "data/frameContent",
+      mainContent: "data",
+      fileExtension: "yaml",
+    },
   ],
 };

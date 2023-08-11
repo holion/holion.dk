@@ -138,15 +138,25 @@ function sliders() {
             itemsMobile: [480, 1]
         })
 
-        $('.owl-carousel.testimonials').owlCarousel({
-            autoPlay: 10000,
-            stopOnHover: true,
-            items: 1,
-            itemsDesktop: 1,
-            itemsDesktopSmall: [990, 1],
-            itemsTablet: [768, 1],
-            itemsMobile: [480, 1]
-        })
+        $(".owl-carousel.testimonials").owlCarousel({
+          autoPlay: 6000,
+          stopOnHover: true,
+          items: 1,
+          itemsDesktop: 1,
+          itemsDesktopSmall: [990, 1],
+          itemsTablet: [768, 1],
+          itemsMobile: [480, 1],
+        });
+
+        $(".owl-carousel.csr").owlCarousel({
+          autoPlay: 3000,
+          stopOnHover: true,
+          items: 3,
+          itemsDesktop: 1,
+          itemsDesktopSmall: [990, 1],
+          itemsTablet: [768, 1],
+          itemsMobile: [480, 1],
+        });
 
         $('.project').owlCarousel({
             navigation: true, // Show next and prev buttons

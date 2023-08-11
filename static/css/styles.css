@@ -348,6 +348,24 @@ a:hover {
     min-width: 100%;
 }
 
+.csr-items {
+    background-color: #02261a;
+    width: 100%;
+}
+
+.csr {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.csr .item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .holion-border {
     border-width: 2px;
     border-color: #09bf80 !important;
@@ -661,6 +679,9 @@ a:hover {
     padding-bottom: 0;
 }
 
+.csr .item {
+    padding-bottom: 0;
+}
 .img-holion {
     zoom: 80%;
 }
@@ -742,6 +763,26 @@ a:hover {
     flex-grow: 100;
 }
 
+.frame-content-outer {
+    position: relative;
+    height: 550px;
+    width: 100px;
+}
+
+.frame-content-outer .inner-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.frame-content-outer .inner-top {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 309px;
+    z-index: 2;
+}
 #heading-top {
     margin-top: 200px;
 }

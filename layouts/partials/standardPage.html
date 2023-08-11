@@ -1,5 +1,6 @@
 {{ $currentPageUrl := .Params.contentUrl }}
 {{ $showTeasers := .Params.showTeaserBox }}
+{{ $showCSR := .Params.showCSRBox }}
 {{ $showEmployeeSection := .Params.showEmployeeSection }}
 {{ $showCaseSection := .Params.showCaseSection }}
 {{ $frontpage := .Params.isFrontPage }}
@@ -23,6 +24,11 @@
 
 {{ if $showTeasers}}
 {{ partial "serviceTeaserBoxes.html" .}}
+{{ $i = add $i 1 }}
+{{ end }}
+
+{{ if $showCSR}}
+{{ partial "csr-box.html" .}}
 {{ $i = add $i 1 }}
 {{ end }}
 

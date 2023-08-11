@@ -1,0 +1,37 @@
+{{ $currentPageUrl := .Params.contentUrl }}
+{{ $currentPage := .Site.Params }}
+{{ $i := 0 }}
+
+<div class="green-box">
+    <div class="container py-5">
+
+        {{ range .Site.Data.specialSection }}
+        {{ if and (eq .url $currentPageUrl) (eq .tag "csr") }}
+        <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
+        <div class="my-3 mb-5">{{ .content | markdownify }}</div>
+        {{ end }}
+        {{ end }}
+
+        <!-- *** TESTIMONIALS CAROUSEL *** -->
+        <ul class="owl-carousel csr">
+
+            {{ range sort .Site.Data.frameContent "weight" }}
+            {{ if and (eq .tag "csr") (eq .url $currentPageUrl) }}
+            <li class="item csr-item">
+                {{ partial "frameContent.html" . }}
+            </li>
+            {{ end }}
+            {{ end }}
+
+        </ul>
+
+        {{/* <div class="row">
+
+            {{ range sort .Site.Data.employees "weight" }}
+            {{ $i = add $i 1 }}
+            {{ partial "hover-box.html" (dict "content" . "orientationUp" (eq (mod $i 2) 1)) }}
+            {{ end }}
+
+        </div> */}}
+    </div>
+</div>
