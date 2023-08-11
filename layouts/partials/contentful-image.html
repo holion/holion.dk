@@ -1,4 +1,10 @@
+{{ $showLink := false }}
+{{ if (isset .content "email") | or (isset .content "tlf") | or (isset .content "linkedIn") }}
+{{ $showLink = true }}
+{{ end }}
+
 <div class="contentful-image-box">
+    {{ if $showLink }}
     <div class="contentful-image-box-link {{.class}}">
         <div class="">
             {{ if (isset .content "email") | or (eq .content.email "") }}
@@ -12,6 +18,7 @@
             {{ end }}
         </div>
     </div>
+    {{ end }}
     {{ with .content.image }} {{ if isset . "url" }}
     <img class="img-full-width m-0 p-0" src="{{ .url }}" />
     {{ end }} {{ end }}
