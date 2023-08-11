@@ -372,20 +372,17 @@ a:hover {
     border-style: solid;
 }
 
-.so-me-circle, .so-me-circle:active {
-    /* border-width: 1px; */
+.so-me-circle,
+.so-me-circle:active {
     width: 40px;
     height: 40px;
     text-align: center;
     padding-top: 5px;
-    /* border-color: #09bf80 !important; */
-        /* border-style: solid; */
     border-radius: 50%;
 }
 
 .so-me-circle:hover {
     background-color: #09bf80 !important;
-    /* color: white; */
 }
 
 .green-box {
