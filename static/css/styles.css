@@ -841,7 +841,7 @@ element.style {
 }
 
 .navbar-brand {
-    padding: 0;
+    padding-left: 3px;
 }
 .menu__link {
     margin-top: 30px;
