@@ -49,6 +49,17 @@ module.exports = {
       },
     },
     {
+      id: "metaDataPage",
+      directory: "content",
+      mainContent: "content",
+      customFields: {
+        // these fields will be added to the frontmatter
+        slug: (entry) => {
+          return entry.fields.contentUrl;
+        },
+      },
+    },
+    {
       id: "standardSection",
       directory: "data/standardSection",
       mainContent: "data",
