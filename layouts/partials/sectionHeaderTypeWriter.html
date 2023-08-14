@@ -1,10 +1,9 @@
 <div>
-  <h1>
-    <a href="" class="typewrite holion-title holion_main_color mb-3" data-period="2000"
-      data-type='[ "{{ .partTwoTitle }}", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-      <span class="wrap"></span>
-    </a>
-  </h1>
+  {{ if .partTwoTitle }}
+  <div class="typewrite holion-title holion_main_color mb-5" data-period="2000" data-type="{{.partTwoTitle}}">
+    <span class="wrap"></span>
+  </div>
+  {{ end }}
 
   <script>
 
