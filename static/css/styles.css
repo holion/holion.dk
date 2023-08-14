@@ -209,6 +209,7 @@ body {
 }
 
 .holion-arrow-size {
+    padding-left: 12px;
     font-size: 64px;
     margin: auto;
 }
