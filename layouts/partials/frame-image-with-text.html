@@ -1,0 +1,12 @@
+{{ $text := .text }}
+
+{{ with .image }} {{ if isset . "url" }}
+
+<div class="inner-top top">
+    <img class="img-full-width" src="{{ .url }}" />
+</div>
+<div class="inner-top text">
+    <p class="holion-title-section">{{ $text }}</p>
+</div>
+
+{{ end }} {{ end }}

@@ -6,23 +6,22 @@
     <div class="container py-5">
 
         {{ range .Site.Data.specialSection }}
-        {{ if and (eq .url $currentPageUrl) (eq .tag "csr") }}
+        {{ if and (eq .url $currentPageUrl) (eq .tag "technology") }}
         <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
         <div class="my-3 mb-5">{{ .content | markdownify }}</div>
         {{ end }}
         {{ end }}
 
-        <!-- *** TESTIMONIALS CAROUSEL *** -->
-        <ul class="owl-carousel csr">
 
+        <div class="row">
             {{ range sort .Site.Data.frameContent "weight" }}
-            {{ if and (eq .tag "csr") (eq .url $currentPageUrl) }}
-            <li class="item csr-item">
+            {{ if and (eq .tag "technology") (eq .url $currentPageUrl) }}
+            <div class="col">
                 {{ partial "frameContent.html" . }}
-            </li>
+            </div>
             {{ end }}
             {{ end }}
+        </div>
 
-        </ul>
     </div>
 </div>

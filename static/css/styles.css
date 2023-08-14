@@ -708,6 +708,10 @@ a:hover {
     max-width: 100%;
 }
 
+.frame-content-image {
+    min-width: 80;
+    padding: 10%;
+}
 .img-full-height {
     min-height: -webkit-fill-available;
     max-height: 100%;
@@ -761,6 +765,14 @@ a:hover {
     flex-grow: 100;
 }
 
+.holion-frame {
+    position: relative;
+    background: url('/img/layout/billedramme.png');
+    background-size: cover;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
 .frame-content-outer {
     position: relative;
     height: 512px;
@@ -786,6 +798,22 @@ a:hover {
     transform: translateY(50%);
 }
 
+.frame-content-outer .inner-top.top {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 309px;
+    z-index: 2;
+}
+
+.frame-content-outer .inner-top.text {
+    position: absolute;
+    top: 75%;
+    left: 50px;
+    text-align: center;
+    width: 309px;
+    z-index: 3;
+}
 #heading-top {
     margin-top: 200px;
 }
