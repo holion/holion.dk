@@ -1,11 +1,7 @@
 <div class="holion-title">{{ .title }}</div>
-<div class="holion-title holion_main_color mb-3">{{ .partTwoTitle }}</div>
-<h1>
-    <a href="" class="typewrite" data-period="2000"
-        data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-        <span class="wrap"></span>
-    </a>
-</h1>
+
+{{ partial "sectionHeaderTypeWriter.html" . }}
+
 <div class=" my-3 mb-5">{{ .content | markdownify }}</div>
 {{ if and .buttonLink .buttonText }}
 <div class="my-5">
