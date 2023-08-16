@@ -451,6 +451,7 @@ a:hover {
     font-weight: 300;
 }
 
+@media screen and (min-width: 767px) {
 .btn-primary {
     text-transform: none;
     background: transparent;
@@ -464,6 +465,24 @@ a:hover {
     line-height: 33px;
     text-align: center;
     color: #fff !important;
+    white-space: nowrap;
+    }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .btn-primary {
+            text-transform: none;
+            background: #09bf80;
+            border: 1px solid #09bf80;
+            font-size: 21px !important;
+            font-weight: bold;
+            width: fit-content;
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 33px;
+            text-align: center;
+            color: #fff !important;
+        }
 }
 
 .btn-primary:hover,
