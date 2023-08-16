@@ -2,9 +2,15 @@
 <a href="{{.link}}">
 {{ end }}
     <div class="holion-frame">
-        {{ with .image }} {{ if isset . "url" }}
-        <img class="frame-content-image" src="{{ .url }}" />
-        {{ end }} {{ end }}
+        <div class="holion-frame-inner">
+            {{ with .image }} {{ if isset . "url" }}
+            <img class="frame-content-image" src="{{ .url }}" />
+            {{ end }} {{ end }}
+            {{ if isset . "text" }}
+            <div class="frame-content-text">
+                <p class="holion-title-section">{{ .text }}</p>
+            </div>
+            {{ end }}
         {{/* {{ partial "frame-image" .}} */}}
         {{/* <div class="frame-content-outer"> */}}
             {{/* <img class="img-holion" src="/img/layout/billedramme.png" />
@@ -13,6 +19,7 @@
             {{ else }}
             {{ partial "frame-image" .}}
         {{ end }} */}}
+        </div>
     </div>
 {{ if isset . "link" }}
 </a>
