@@ -1,4 +1,5 @@
 {{ $currentPageUrl := .Params.contentUrl }}
+{{ $frontpage := .Params.isFrontPage }}
 
 {{ range .Site.Data.standardHeaderSection }}
 {{ if eq .url $currentPageUrl }}
@@ -7,17 +8,18 @@
     <div class="row">
         {{ if isset . "imagePosition" }}
         <div class="col-md-6 header-distance">
-            {{ partial "sectionHeaderContent.html" . }}    
+            {{ partial "sectionHeaderContent.html" (dict "content" . "isFrontPage" $frontpage) }}
         </div>
         <div class="col-md-6 header-distance">
             {{ partial "contentful-image.html" (dict "content" . ) }}
         </div>
         {{ else }}
         <div class="col-md-12 header-distance">
-            {{ partial "sectionHeaderContent.html" . }}    
+            {{ partial "sectionHeaderContent.html" (dict "content" . "isFrontPage" $frontpage) }}
         </div>
         {{ end }}   
     </div>
+
 </div>
 {{ end }}
 {{ end }}

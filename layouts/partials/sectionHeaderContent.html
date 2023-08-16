@@ -1,12 +1,16 @@
-<div class="holion-title">{{ .title }}</div>
 
-{{ partial "sectionHeaderTypeWriter.html" . }}
+<div {{ if .isFrontPage }} class="holion-title" {{else}} class="holion-title-page" {{ end }}>{{ .content.title }}
 
-<div class=" my-3 mb-5">{{ .content | markdownify }}</div>
-{{ if and .buttonLink .buttonText }}
+    {{ partial "sectionHeaderTypeWriter.html" .content }}
+
+</div>
+
+<div class=" my-3 mb-5">{{ .content.content | markdownify }}</div>
+
+{{ if and .content.buttonLink .content.buttonText }}
 <div class="my-5">
-    {{ partial "button-link-left.html" (dict "link" .buttonLink "text"
-    .buttonText "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .buttonOpenLinkInExternalTab)}}
+    {{ partial "button-link-left.html" (dict "link" .content.buttonLink "text"
+    .content.buttonText "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .content.buttonOpenLinkInExternalTab)}}
 </div>
 {{ end }}
 
