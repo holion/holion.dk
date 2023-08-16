@@ -199,6 +199,7 @@ body {
     bottom: 0px;
 }
 
+@media screen and (min-width: 767px) {
 .holion-title {
     font-size: 70px;
     font-weight: bold;
@@ -213,6 +214,7 @@ body {
     font-size: 64px;
     margin: auto;
 }
+
 .holion-title-section {
     font-size: 36px;
     font-weight: bold;
@@ -234,9 +236,46 @@ body {
     font-weight: bold;
 }
 
-.holion-buttons {
-    font-size: 21px;
-    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .holion-title {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .holion-title-page {
+        font-size: 24px;
+    }
+
+    .holion-arrow-size {
+        padding-left: 12px;
+        font-size: 64px;
+        margin: auto;
+    }
+
+    .holion-title-section {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .holion-title-section-light {
+        font-size: 18px;
+    }
+
+    .holion-top-text {
+        font-size: 18px;
+    }
+
+    .holion-footer-text {
+        font-size: 14px;
+    }
+
+    .holion-menu-text {
+        font-size: 18px;
+        font-weight: bold;
+    
+    }
 }
 .holion-button-outer .holion-button-inner {
     position: absolute;
@@ -467,22 +506,21 @@ a:hover {
     color: #fff !important;
     white-space: nowrap;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .btn-primary {
+        text-transform: none;
+        background: #09bf80;
+        border: 1px solid #09bf80;
+        font-size: 18px !important;
+        width: fit-content;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 25px;
+        text-align: center;
+        color: #fff !important;
     }
-    
-    @media screen and (max-width: 767px) {
-        .btn-primary {
-            text-transform: none;
-            background: #09bf80;
-            border: 1px solid #09bf80;
-            font-size: 21px !important;
-            font-weight: bold;
-            width: fit-content;
-            padding-left: 30px;
-            padding-right: 30px;
-            line-height: 33px;
-            text-align: center;
-            color: #fff !important;
-        }
 }
 
 .btn-primary:hover,
