@@ -1,14 +1,27 @@
 
 {{ with .Params.testimonialByImg }} {{ if isset . "url" }}
-<div class="col-md-3">
-    <img class="img-full-width m-0 p-0" src="{{ .url }}" />
+<div class="col-6 col-md-3 m-auto">
+    <img class="img-full-width" src="{{ .url }}" />
 </div>
 {{ end }} {{ end }}
-<div class="col-md-8 m-auto">
+<div class="col-6 holion_main_color title_medium_weight_medium mt-4 d-md-none">
+    {{ if .Params.testimonialByLink }}
+    <a href="{{.Params.testimonialByLink}}" {{ if eq .Params.testimonialByOpenLinkInExternalTab true}} target="_blank"
+        {{ end }}>
+        {{ .Params.testimonialBy }}, {{ .Params.testimonialByTitle
+        }} hos {{ .Params.company }}
+    </a>
+    {{ else }}
+    <p> {{ .Params.testimonialBy }}, {{ .Params.testimonialByTitle
+        }} hos {{ .Params.company }}</p>
+    {{ end}}
+</div>
+
+<div class="col-md-8 mt-5 m-md-auto ">
     <div style="font-style: italic;">
     {{ partial "testIfMobileContent" (dict "mobileContent" .Params.testimonialMobile "content" .Params.testimonial ) }}
     </div>
-    <div class="holion_main_color title_medium_weight_medium mt-5">
+<div class="holion_main_color title_medium_weight_medium mt-5 d-none d-md-block">
         {{ if .Params.testimonialByLink }}
         <a href="{{.Params.testimonialByLink}}" {{ if eq .Params.testimonialByOpenLinkInExternalTab true}} target="_blank" {{
             end }}>

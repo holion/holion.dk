@@ -115,6 +115,13 @@ body {
         background: none;
         font-size: 50px;
     }
+.owl-carousel .owl-controls .owl-buttons {
+    top: 130px;
+    left: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 30px; */
+}
 }
 
 .owl-carousel .owl-controls .owl-page.active span,
