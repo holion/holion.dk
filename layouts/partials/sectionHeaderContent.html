@@ -5,7 +5,7 @@
 
 </div>
 
-{{ partial "testIfMobileContent" (dict "mobileContent" .content.contentMobile "content" .content.content "style" "my-3 mb-5"
+{{ partial "testIfMobileContent" (dict "mobileContent" .content.contentMobile "content" .content.content "style" "my-3 mb-5 pb-5"
 "doNotShowOnMobile" .content.doNotShowContentOnMobile) }}
 
 {{ if and .content.buttonLink .content.buttonText }}
