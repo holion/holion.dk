@@ -143,6 +143,12 @@ function sliders() {
           stopOnHover: true,
           items: 1,
           itemsDesktop: 1,
+          navigation: true,
+          navigationText: [
+            "<i class='fa fa fa-long-arrow-left'></i>",
+            "<i class='fa fa fa-long-arrow-right'></i>",
+          ],
+
           itemsDesktopSmall: [990, 1],
           itemsTablet: [768, 1],
           itemsMobile: [480, 1],

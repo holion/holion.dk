@@ -81,6 +81,48 @@ body {
     display: table-cell;
 } */
 
+@media screen and (min-width: 768px) {
+
+    .owl-carousel .owl-controls .owl-buttons .owl-next,
+    .owl-carousel .owl-controls .owl-buttons .owl-prev {
+        color: #09bf80;
+        background: none;
+        font-size: 50px;
+        top: 400px;
+        left: 20%;
+    }
+
+    .owl-carousel .owl-controls .owl-buttons {
+        top: 400px;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        /* padding-left: 30px; */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .owl-carousel .owl-controls.clickable .owl-page {
+        display: none !important;
+    }
+
+    .owl-carousel .owl-controls .owl-buttons .owl-prev {
+        display: none;
+    }
+
+    .owl-carousel .owl-controls .owl-buttons .owl-next {
+        color: #09bf80;
+        background: none;
+        font-size: 50px;
+    }
+}
+
+.owl-carousel .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page.active span,
+.owl-carousel .owl-controls.clickable .owl-page:hover span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #09bf80;
+}
 .footer-upper {
     background-color: black;
     height: 180px;
