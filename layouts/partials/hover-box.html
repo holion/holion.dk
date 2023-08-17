@@ -1,8 +1,8 @@
 <div class="col-md-6 col-sm-12">
+<div class="d-none d-md-block">
     {{ if .content.link}}
     <a href="{{ .content.link }}">
     {{ end }}
-<div class="d-none d-md-block">
             <div class="hover-box same-size-box content-change-on-hoover">
                 <div class="d-flex flex-column">
                     {{ if .orientationUp }}
@@ -32,23 +32,29 @@
                     {{ end }}
                 </div>
             </div>
+        {{ if .content.link}}
+        </a>
+        {{ end }}
+    </div>
+    <div class="d-md-none d-flex flex-column">
+        <div class="m-3 mt-5">
+                {{ if .content.link}}
+                <a href="{{ .content.link }}">
+                    {{ end }}
+                {{ partial "contentful-image.html" (dict "content" .content) }}
+                {{ if .content.link}}
+                </a>
+                {{ end }}
             </div>
-            <div class="d-md-none d-flex flex-column">
-                <div class="m-3 mt-5">
-                    {{ partial "contentful-image.html" (dict "content" .content) }}
-                </div>
-                <div class="mx-3">
-                    {{ partial "hover-box-description.html" .content }}
-                </div>
-                {{ if eq .content.sys.contentType "case" }}
-                <div class="my-5">
-                    {{ partial "button-link-left.html" (dict "link" .content.link "title"
-                    "test" "buttontype" "btn-primary")}}
-                </div>
-                {{end}}
+            <div class="mx-3">
+                {{ partial "hover-box-description.html" .content }}
+            </div>
+            {{ if eq .content.sys.contentType "case" }} {{ if .content.buttonTextMobile }}
+            <div class="my-4">
+                {{ partial "button-link-left.html" (dict "link" .content.link "textMobile" .content.buttonTextMobile
+                "buttontype" "btn-primary")}}
+            </div>
+            {{end}}{{end}}
 
     </div>
-    {{ if .content.link}}
-    </a>
-    {{ end }}
 </div>
