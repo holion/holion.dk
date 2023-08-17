@@ -2,35 +2,52 @@
     {{ if .content.link}}
     <a href="{{ .content.link }}">
     {{ end }}
-        <div class="hover-box same-size-box content-change-on-hoover">
-            <div class="d-flex flex-column">
-                {{ if .orientationUp }}
-                <div class="m-3">
-                {{ partial "contentful-image.html" (dict "content" .content) }}
-                </div>
-                <div class="d-flex flex-row justify-content-center mt-4">
-                    <div class="mt-2">
-                        <i class="holion-arrow-size fa fa-long-arrow-up"></i>
+<div class="d-none d-md-block">
+            <div class="hover-box same-size-box content-change-on-hoover">
+                <div class="d-flex flex-column">
+                    {{ if .orientationUp }}
+                    <div class="m-3">
+                        {{ partial "contentful-image.html" (dict "content" .content) }}
                     </div>
-                    <div class="mx-3">
-                        {{ partial "hover-box-description.html" .content }}
+                    <div class="d-flex flex-row justify-content-center mt-4">
+                        <div class="mt-2">
+                            <i class="holion-arrow-size fa fa-long-arrow-up"></i>
+                        </div>
+                        <div class="mx-3">
+                            {{ partial "hover-box-description.html" .content }}
+                        </div>
                     </div>
-                </div>
-                {{ else }}
-                <div class="d-flex flex-row justify-content-center mb-4">
-                    <div class="mt-2">
-                        <i class="holion-arrow-size fa fa-long-arrow-down"></i>
+                    {{ else }}
+                    <div class="d-flex flex-row justify-content-center mb-4">
+                        <div class="mt-2">
+                            <i class="holion-arrow-size fa fa-long-arrow-down"></i>
+                        </div>
+                        <div class="mx-3">
+                            {{ partial "hover-box-description.html" .content }}
+                        </div>
                     </div>
-                    <div class="mx-3">
-                        {{ partial "hover-box-description.html" .content }}
+                    <div class="m-3">
+                        {{ partial "contentful-image.html" (dict "content" .content) }}
                     </div>
+                    {{ end }}
                 </div>
-                <div class="m-3">
-                {{ partial "contentful-image.html" (dict "content" .content) }}
-                </div>
-                {{ end }}
             </div>
-        </div>
+            </div>
+            <div class="d-md-none d-flex flex-column">
+                <div class="m-3 mt-5">
+                    {{ partial "contentful-image.html" (dict "content" .content) }}
+                </div>
+                <div class="mx-3">
+                    {{ partial "hover-box-description.html" .content }}
+                </div>
+                {{ if eq .content.sys.contentType "case" }}
+                <div class="my-5">
+                    {{ partial "button-link-left.html" (dict "link" .content.link "title"
+                    "test" "buttontype" "btn-primary")}}
+                </div>
+                {{end}}
+
+    </div>
     {{ if .content.link}}
     </a>
     {{ end }}

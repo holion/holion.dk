@@ -4,6 +4,6 @@
 {{ if and .buttonLink .buttonText }}
 <div class="my-5">
     {{ partial "button-link.html" (dict "link" .buttonLink "text"
-    .buttonText "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .buttonOpenLinkInExternalTab)}}
+    .buttonText "textMobile" .buttonTextMobile "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .buttonOpenLinkInExternalTab)}}
 </div>
 {{ end }}

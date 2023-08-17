@@ -2,6 +2,7 @@
     <div class="text-center">
       <a class="btn {{ .buttontype }}" href="{{ .link }}" {{ if eq .buttonOpenLinkInExternalTab true }} target="_blank" {{ end
         }} role="button">
-        <span>{{.text }}</span></a>
+        <span> {{ partial "testIfMobileContent" (dict "mobileContent" .textMobile "content" .text ) }}</span>
+        </a>
     </div>
   </div>

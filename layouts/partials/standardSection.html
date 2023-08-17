@@ -4,17 +4,15 @@
         <div class="col-md-12">
             <div class="holion-title-section holion_main_color my-3" id="{{.sys.id}}" style="scroll-margin-top: 4em;">{{ .title }}
             </div>
-            <div class="my-3 mb-5">{{ .content | markdownify }}</div>
+            {{ partial "testIfMobileContent" (dict "mobileContent" .contentMobile "content" .content "style" "my-3 mb-5") }}
             {{ if .youtubeId }}
             {{ partial "youtube.html" (dict "id" .youtubeId )}}
             {{ end }}
-            {{ if .content2 }} 
-            <div class="my-3 mb-5">{{ .content2 | markdownify }}</div>
-            {{ end }}
+            {{ partial "testIfMobileContent" (dict "mobileContent" .content2Mobile "content" .content2 "style" "my-3 mb-5") }}
             {{ if and .buttonLink .buttonText }} 
             <div class="my-5">
                 {{ partial "button-link.html" (dict "link" .buttonLink "text"
-                .buttonText "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .buttonOpenLinkInExternalTab)}}
+                .buttonText "textMobile" .buttonTextMobile "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .buttonOpenLinkInExternalTab)}}
             </div>
             {{ end }}
         </div>

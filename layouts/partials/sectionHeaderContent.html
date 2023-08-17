@@ -5,12 +5,13 @@
 
 </div>
 
-<div class=" my-3 mb-5">{{ .content.content | markdownify }}</div>
+{{ partial "testIfMobileContent" (dict "mobileContent" .content.contentMobile "content" .content.content "style" "my-3 mb-5"
+"doNotShowOnMobile" .content.doNotShowContentOnMobile) }}
 
 {{ if and .content.buttonLink .content.buttonText }}
 <div class="my-5">
     {{ partial "button-link-left.html" (dict "link" .content.buttonLink "text"
-    .content.buttonText "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .content.buttonOpenLinkInExternalTab)}}
+    .content.buttonText "textMobile" .content.buttonTextMobile "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .content.buttonOpenLinkInExternalTab)}}
 </div>
 {{ end }}
 

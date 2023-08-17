@@ -6,7 +6,7 @@
 {{ end }} {{ end }}
 <div class="col-md-8 m-auto">
     <div style="font-style: italic;">
-        <p>"{{ .Params.testimonial | markdownify }}"</p>
+    {{ partial "testIfMobileContent" (dict "mobileContent" .Params.testimonialMobile "content" .Params.testimonial ) }}
     </div>
     <div class="holion_main_color title_medium_weight_medium mt-5">
         {{ if .Params.testimonialByLink }}

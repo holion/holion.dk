@@ -1,0 +1,14 @@
+{{ if ne .doNotShowOnMobile true }}
+<div class="d-md-none">
+    {{ if .mobileContent }}
+    <div class="{{.style}}">{{ .mobileContent | markdownify }}</div>
+    {{ else if .content }}
+    <div class="{{.style}}">{{ .content | markdownify }}</div>
+    {{ end }}
+</div>
+{{ end }}
+<div class="d-none d-md-block">
+    {{ if .content }}
+    <div class="{{.style}}">{{ .content | markdownify }}</div>
+    {{ end }}
+</div>
