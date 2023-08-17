@@ -3,10 +3,10 @@
 {{ $i := 0 }}
 
 {{ if isset .Site.Params "features" }} {{ if .Site.Params.features.enable }} {{ if gt (len .Site.Data.features) 0 }}
-<div class="green-box">
+<div class="green-box pt-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 mt-5">
+        <div class="row d-none d-md-block">
+            <div class="col-md-12">
                 {{ range .Site.Data.specialSection }}
                 {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
                 <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
