@@ -511,6 +511,60 @@ a:hover {
     }
 }
 
+.contact-outer-div-mobile {
+    position: relative;
+}
+
+.contact-inner-mobile-image {
+    position: absolute;
+    max-width: 70%;
+    left: 30%
+}
+
+.contact-inner-mobile-info {
+    position: absolute;
+    background-color: #06734d80;
+    padding: 5px;
+    padding-right: 30px;
+}
+
+@media screen and (min-width: 500px) {
+    .contact-inner-mobile-info {
+        top: 50%;
+    }
+    .contact-outer-div-mobile {
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 431px) {
+    .contact-inner-mobile-info {
+        top: 50%;
+        /* left: 10px; */
+    }
+    .contact-outer-div-mobile {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 430px) and (min-width: 411px) {
+    .contact-inner-mobile-info {
+        top: 55%;
+        /* left: 10px; */
+    }
+    .contact-outer-div-mobile {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .contact-inner-mobile-info {
+        top: 60%;
+    }
+    .contact-outer-div-mobile {
+        height: 300px;
+    }
+}
 .card-box .title {
     /* text-transform: uppercase; */
     letter-spacing: 1px;
