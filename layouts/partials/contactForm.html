@@ -4,7 +4,7 @@
 {{ range .Site.Data.contactSection }}
 {{ if eq .url $currentPageUrl }}
 
-<div class="container pt-5 pb-md-5" id="contact">
+<div class="container pt-5 pb-md-2 pb-xl-5" id="contact">
     <div class="holion-title-section holion_main_color my-3 d-none d-md-block">{{ .title }}</div>
     <div class="holion-title-section holion_main_color my-3 d-md-none">{{ .titleMobile }}</div>
     {{ if .content }}
