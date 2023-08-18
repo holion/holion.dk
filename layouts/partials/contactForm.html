@@ -4,12 +4,15 @@
 {{ range .Site.Data.contactSection }}
 {{ if eq .url $currentPageUrl }}
 
-<div class="container py-md-5" id="contact">
-    <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
+<div class="container pt-5 pb-md-5" id="contact">
+    <div class="holion-title-section holion_main_color my-3 d-none d-md-block">{{ .title }}</div>
+    <div class="holion-title-section holion_main_color my-3 d-md-none">{{ .titleMobile }}</div>
+    {{ if .content }}
     <div class="my-3 mb-5">{{ .content | markdownify }}</div>
+    {{end}}
     <div class="row">
-        <div class="col-md-7 me-md-5 d-none d-md-block">
-
+        <div {{ if eq $currentPageUrl "kontakt" }} class="col-md-7 me-md-5 order-2 order-md-1" {{else}}
+            class="col-md-7 me-md-5 d-none d-md-block" {{end}}>
             <section>
                 <form id="contact-form" class="contact-form-ajax" action="{{ .Site.Params.mailService }}" method="POST">
                     <div class="row">
@@ -64,7 +67,7 @@
 
         </div>
 
-        <div class="col-md-4 holion-top-text d-none d-md-block">
+        <div class="col-md-4 holion-top-text d-none d-md-block order-1">
             <section>
                 <div class="my-3" {{ if .showAdress }} style="max-width: 250px" {{ end }}}>
                     {{ if .showAdress }}
@@ -129,7 +132,7 @@
                     <div style="line-height: 12px; margin-top:8px;">{{ .contactFraseMobile | markdownify }}</div>
                 </div>
             </div>
-            {{ partial "button-link.html" (dict "link" .buttonLink "text" "Kontakt os" "buttontype" "btn-primary" )}}
+            {{ partial "button-link.html" (dict "link" "/kontakt/" "text" "Kontakt os" "buttontype" "btn-primary" )}}
         </div>
 
     </div>
