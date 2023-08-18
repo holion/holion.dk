@@ -1,0 +1,20 @@
+{{if .content.imageMobile}}
+
+<div class="section-header-mobile"
+    style="background-image: url({{.content.imageMobile.url }});">
+</div>
+
+<div class="section-header-content-mobile" >
+    {{ partial "sectionHeaderContentHeader.html" . }}
+</div>
+
+{{ else }}
+
+{{ partial "sectionHeaderContentHeader.html" . }}
+
+{{end}}
+<div class="container mt-4 mb-0">
+    <div class="row">
+        {{ partial "sectionHeaderContentInfo.html" . }}
+    </div>
+</div>

@@ -1,17 +1,4 @@
 
-<div {{ if .isFrontPage }} class="holion-title" {{else}} class="holion-title-page" {{ end }}>{{ .content.title }}
+{{ partial "sectionHeaderContentHeader.html" . }}
 
-    {{ partial "sectionHeaderTypeWriter.html" .content }}
-
-</div>
-
-{{ partial "testIfMobileContent" (dict "mobileContent" .content.contentMobile "content" .content.content "style" "my-3 mb-5 pb-5"
-"doNotShowOnMobile" .content.doNotShowContentOnMobile) }}
-
-{{ if and .content.buttonLink .content.buttonText }}
-<div class="my-5">
-    {{ partial "button-link-left.html" (dict "link" .content.buttonLink "text"
-    .content.buttonText "textMobile" .content.buttonTextMobile "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .content.buttonOpenLinkInExternalTab)}}
-</div>
-{{ end }}
-
+{{ partial "sectionHeaderContentInfo.html" . }}

@@ -3,11 +3,13 @@
 
 {{ range .Site.Data.standardHeaderSection }}
 {{ if eq .url $currentPageUrl }}
-
-<div class="container">
+<div class="col-md-12 header-distance d-md-none">
+    {{ partial "sectionHeaderContentMobile.html" (dict "content" . "isFrontPage" $frontpage) }}
+</div>
+<div class="container d-none d-md-block">
     <div class="row">
         {{ if isset . "imagePosition" }}
-        <div class="col-md-6 header-distance">
+        <div class="col-md-6 header-distance ">
             {{ partial "sectionHeaderContent.html" (dict "content" . "isFrontPage" $frontpage) }}
         </div>
         <div class="col-md-6 header-distance">

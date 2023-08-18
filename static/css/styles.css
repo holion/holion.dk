@@ -241,6 +241,18 @@ body {
     bottom: 0px;
 }
 
+.section-header-mobile {
+    height: 350px;
+    width: 100%;
+}
+
+.section-header-content-mobile {
+    margin-top: -50px; 
+    background: #06734d80; 
+    margin-left:10%; 
+    width: 80%;
+}
+
 @media screen and (min-width: 768px) {
 .header-distance {
         margin-top: 200px;
