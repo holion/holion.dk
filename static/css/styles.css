@@ -879,13 +879,58 @@ a:hover {
 }
 
 .contentful-image-box-link.short {
-    left: 85%;
+    left: 80%;
 }
 
 .contentful-image-box-link.shorter {
-    left: 78%;
+    left: 73%;
     top: 2px;
 }
+
+
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+    .contentful-image-box-link {
+        left: 85%;
+    }
+
+    .contentful-image-box-link.short {
+        left: 80%;
+    }
+
+    .contentful-image-box-link.shorter {
+        left: 73%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contentful-image-box-link {
+        left: 80%;
+    }
+
+    .contentful-image-box-link.short {
+        left: 78%;
+    }
+
+    .contentful-image-box-link.shorter {
+        left: 78%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contentful-image-box-link {
+        left: 80%;
+    }
+
+    .contentful-image-box-link.short {
+        left: 85%;
+    }
+
+    .contentful-image-box-link.shorter {
+        left: 80%;
+
+    }
+}
+
 .img-half-width {
     max-height: 200px;
 }
