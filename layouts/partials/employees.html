@@ -7,7 +7,7 @@
 
         {{ range .Site.Data.specialSection }}
         {{ if and (eq .url $currentPageUrl) (eq .tag "employees") }}
-        <div class="holion-title-section holion_main_color my-3">{{ .title }}</div>
+        <h2 class="holion-title-section holion_main_color my-3">{{ .title }}</h2>
         <div class="my-3 mb-5">{{ .content | markdownify }}</div>
         {{ end }}
         {{ end }}
