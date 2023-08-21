@@ -601,36 +601,43 @@ a:hover {
     font-weight: 300;
 }
 
-@media screen and (min-width: 768px) {
 .btn-primary {
     text-transform: none;
-    background: transparent;
     border: 1px solid #09bf80;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    color: #fff !important;
+    }
+
+
+@media screen and (min-width: 768px) {
+.btn-primary {
+    background: transparent;
     font-size: 21px !important;
     font-weight: bold;
     width: fit-content;
-    padding-left: 30px;
-    padding-right: 30px;
     height: 50px;
     line-height: 33px;
-    text-align: center;
-    color: #fff !important;
     white-space: nowrap;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 465px) {
     .btn-primary {
-        text-transform: none;
         background: #09bf80;
-        border: 1px solid #09bf80;
         font-size: 18px !important;
         width: fit-content;
-        padding-left: 30px;
-        padding-right: 30px;
         line-height: 25px;
-        text-align: center;
-        color: #fff !important;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .btn-primary {
+        background: #09bf80;
+        font-size: 18px !important;
+        width: 100%;
+        line-height: 25px;
     }
 }
 
