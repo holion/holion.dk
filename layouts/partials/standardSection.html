@@ -10,7 +10,7 @@
             {{ end }}
             {{ partial "testIfMobileContent" (dict "mobileContent" .content2Mobile "content" .content2 "style" "my-3 mb-5") }}
             {{ if and .buttonLink .buttonText }} 
-            <div class="my-5">
+            <div class="mt-5 mb-3">
                 {{ partial "button-link.html" (dict "link" .buttonLink "text"
                 .buttonText "textMobile" .buttonTextMobile "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .buttonOpenLinkInExternalTab)}}
             </div>

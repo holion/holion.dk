@@ -1,29 +1,26 @@
-<section class="bar no-mb">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="holion-title-section holion_main_color my-5">{{ .Site.Params.testimonials.title }}</h2>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="holion-title-section holion_main_color mt-3 mb-5">{{ .Site.Params.testimonials.title }}</h2>
 
-                <!-- *** TESTIMONIALS CAROUSEL *** -->
-                <ul class="owl-carousel testimonials">
-                    {{ range (where (where .Site.AllPages.ByWeight "Type" "testimonials")
-                    ".Params.testimonial" "!=" nil) }}
-                    <li class="item">
-                        <div class="row testimonial-items">
-                            {{ partial "testimonial-content.html" . }}
-                        </div>
-                    </li>
-                    {{ end }}
+            <!-- *** TESTIMONIALS CAROUSEL *** -->
+            <ul class="owl-carousel testimonials">
+                {{ range (where (where .Site.AllPages.ByWeight "Type" "testimonials")
+                ".Params.testimonial" "!=" nil) }}
+                <li class="item">
+                    <div class="row testimonial-items">
+                        {{ partial "testimonial-content.html" . }}
+                    </div>
+                </li>
+                {{ end }}
 
-                </ul>
-                <!-- /.owl-carousel -->
-                {{ partial "button-link.html" (dict "link" $.Site.Params.testimonials.buttonLink "text"
-                $.Site.Params.testimonials.buttonText "buttontype" "btn-primary" )}}
-                <!-- *** TESTIMONIALS CAROUSEL END *** -->
-            </div>
-            
-
+            </ul>
+            <!-- /.owl-carousel -->
+            {{ partial "button-link.html" (dict "link" $.Site.Params.testimonials.buttonLink "text"
+            $.Site.Params.testimonials.buttonText "buttontype" "btn-primary my-3" )}}
+            <!-- *** TESTIMONIALS CAROUSEL END *** -->
         </div>
+        
+
     </div>
-</section>
-<!-- /.bar -->
+</div>
