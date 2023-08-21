@@ -422,11 +422,16 @@ a:hover {
     color: #09bf80;
 }
 
-.white-link a,
-.white-link a:hover,
+
 .holion-button-inner a,
 .holion-button-inner a:hover {
     color: #fff;
+}
+
+.white-link a,
+.white-link a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .holion_main_color {
