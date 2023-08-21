@@ -37,7 +37,7 @@
         {{ end }}
     </div>
     <div class="holion_main_color d-md-none d-flex flex-column">
-        <div class="m-3 mt-5">
+        <div class="mt-5">
                 {{ if .content.link}}
                 <a href="{{ .content.link }}">
                     {{ end }}
@@ -46,9 +46,7 @@
                 </a>
                 {{ end }}
             </div>
-            <div class="mx-3">
-                {{ partial "hover-box-description.html" .content }}
-            </div>
+            {{ partial "hover-box-description.html" .content }}
             {{ if eq .content.sys.contentType "case" }} {{ if .content.buttonTextMobile }}
             <div class="my-4">
                 {{ partial "button-link-left.html" (dict "link" .content.link "textMobile" .content.buttonTextMobile
