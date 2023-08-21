@@ -9,6 +9,21 @@ body {
     background-size: cover;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Mukta Mahee", sans-serif;
+    ;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: inherit;
+}
+
 .footer {
     position: relative;
     width: 100%;
