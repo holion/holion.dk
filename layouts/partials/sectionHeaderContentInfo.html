@@ -1,9 +1,9 @@
 
-{{ partial "testIfMobileContent" (dict "mobileContent" .content.contentMobile "content" .content.content "style" "my-3 mb-5 pb-5"
+{{ partial "testIfMobileContent" (dict "mobileContent" .content.contentMobile "content" .content.content "style" "mt-3 mb-md-0 pb-5"
 "doNotShowOnMobile" .content.doNotShowContentOnMobile) }}
 
 {{ if and .content.buttonLink .content.buttonText }}
-<div class="my-5">
+<div class="pb-5 mb-3 mb-md-5">
     {{ partial "button-link-left.html" (dict "link" .content.buttonLink "text"
     .content.buttonText "textMobile" .content.buttonTextMobile "buttontype" "btn-primary" "buttonOpenLinkInExternalTab" .content.buttonOpenLinkInExternalTab)}}
 </div>
