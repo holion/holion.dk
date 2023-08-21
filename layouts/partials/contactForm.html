@@ -134,7 +134,9 @@
                 </div>
             </a>
             </div>
-            {{ partial "button-link.html" (dict "link" "/kontakt/" "text" "Kontakt os" "buttontype" "btn-primary" )}}
+            {{ if eq .showAdress false}}
+                {{ partial "button-link.html" (dict "link" "/kontakt/" "text" "Kontakt os" "buttontype" "btn-primary" )}}
+            {{ end }}
         </div>
 
     </div>
