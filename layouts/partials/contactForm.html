@@ -125,12 +125,14 @@
                 <div class="my-3 contact-inner-mobile-image">
                     {{ partial "contentful-image.html" (dict "content" . "class" "shorter") }}
                 </div>
+            <a href="tel:+45{{.tlf}}">
                 <div class="contact-inner-mobile-info">
                     <div class="holion_main_color" style="font-weight: bold;">
                         {{ .contactName }}
                     </div>
-                    <div style="line-height: 12px; margin-top:8px;">{{ .contactFraseMobile | markdownify }}</div>
+                    <div style="line-height: 12px; margin-top:8px;" class="white_text_color">{{ .contactFraseMobile | markdownify }}</div>
                 </div>
+            </a>
             </div>
             {{ partial "button-link.html" (dict "link" "/kontakt/" "text" "Kontakt os" "buttontype" "btn-primary" )}}
         </div>
