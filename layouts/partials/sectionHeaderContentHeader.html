@@ -1,7 +1,17 @@
 
-<h1 {{ if .isFrontPage }} class="holion-title" {{else}} class="holion-title-page" {{ end }}>{{
-    .content.title }}
-    {{ partial "sectionHeaderTypeWriter.html" .content }}
+<h1 {{ if .isFrontPage }} class="holion-title" {{else}} class="holion-title-page" {{ end }}>
+    <div> {{ partial "testIfMobileContent" (dict "mobileContent" .content.titleMobile "content" .content.title ) }}
+    </div>
+    <div class=" d-none d-md-block">
+        {{ if .content.partTwoTitle}}
+        {{ partial "sectionHeaderTypeWriter.html" (dict "content" .content.partTwoTitle) }}
+        {{ end }}
+    </div>
+    <div class="d-md-none">
+        {{ if .content.partTwoTitleMobile}}
+        {{ partial "sectionHeaderTypeWriter.html" (dict "content" .content.partTwoTitleMobile) }}
+        {{ end }}
+    </div>
 </h1>
 
 
