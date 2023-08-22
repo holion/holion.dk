@@ -1,11 +1,16 @@
 
 
     <a href="#{{ .sys.id }}">
-        <div class="hover-box holion-border same-size-box d-flex flex-column">
+        <div class="service-hover-box holion-border max-width d-flex flex-column">
             <div class="teaser-title holion-title-section-light">
-                <span> {{ .title }} </span>
+                <span class="teaser-title-large"> {{ .title }} </span>
+                <span class="teaser-title-small"> {{ .teaserTitleSmall }} </span>
+                {{/* <span class="d-none d-lg-block"> {{ .title }} </span>
+                <span class="d-none d-md-block d-lg-none "> {{ .teaserTitleSmall }} </span>
+                <span class="d-none d-sm-block d-md-none"> {{ .title }} </span>
+                <span class="d-none"> {{ .teaserTitleSmall }} </span> */}}
             </div>
-            <div class="teaser-section white_text_color">
+            <div class="teaser-section white_text_color d-none d-lg-block">
                 <span>{{ .teaser }}</span>
             </div>
         </div>

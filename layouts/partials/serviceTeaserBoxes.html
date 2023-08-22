@@ -13,9 +13,9 @@
 {{ end }}
 
 {{ if or (eq $count 2) (eq $count 4)}}
-{{ $colNo = 4 }}
+{{ $colNo = 5 }}
 {{ else}}
-{{ $colNo = 3 }}
+{{ $colNo = 4 }}
 {{ end }}
 
 {{ if gt (len .Site.Data.standardSection) 0 }}
@@ -25,7 +25,7 @@
                 <h2 class="holion-title-section holion_main_color my-3">{{ $currentTeaserHeading }}</h2>
                 {{ range sort .Site.Data.standardSection "weight" }}
                     {{ if and .teaser (eq .url $currentPageUrl) }}
-                        <div class="col-md-{{$colNo}} col-sm-12 m-4">
+                        <div class="col-md-{{$colNo}} col-6 my-3">
                             {{ partial "serviceTeaser.html" .}}
                         </div>
                     {{ end }}

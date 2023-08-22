@@ -310,6 +310,61 @@ h6 {
 
 }
 
+.teaser-title {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 991px) {
+    .teaser-title-large {
+        display: block;
+    }
+
+    .teaser-title-small {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .teaser-title-large {
+        display: none;
+    }
+
+    .teaser-title-small {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .teaser-title-large {
+        display: block;
+    }
+
+    .teaser-title-small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .teaser-title-large {
+        display: none;
+    }
+
+    .teaser-title-small {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .holion-title-section-light {
+        font-size: 30px;
+    }
+}
 @media screen and (max-width: 767px) {
     .header-distance {
         margin-top: 120px;
@@ -339,7 +394,7 @@ h6 {
     }
 
     .holion-title-section-light {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .holion-top-text {
@@ -385,19 +440,15 @@ h6 {
     color: #fff;
 }
 
-.teaser-title {
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .teaser-section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
+    padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
 }
 
 .form-control {
@@ -453,8 +504,18 @@ a:hover {
     padding: 20px;
     color: #09bf80;
 }
-    
-.hover-box:hover {
+
+.service-hover-box {
+    display: flex;
+    min-height: 100%;
+    max-height: 100%;
+    color: #09bf80;
+    max-width: 400px;
+    width: 100%;
+}
+
+.hover-box:hover,
+.service-hover-box:hover {
     color: #fff;
     background-color: #09bf80;
 }
