@@ -1299,7 +1299,7 @@ element.style {
 
     .menu__link {
         margin-top: 30px;
-        cursor: default;
+        cursor: pointer;
         display: inline;
         padding-top: 30px;
         padding-bottom: 22px;
@@ -1406,7 +1406,7 @@ element.style {
     
 .menu__link {
     /* margin-top: 30px; */
-    cursor: default;
+    cursor: pointer;
     display: flex;
     /* padding-top: 30px;
     padding-bottom: 22px;
