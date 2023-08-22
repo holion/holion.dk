@@ -1363,12 +1363,7 @@ element.style {
 
     .submenu__link, .menu__link {
         text-align: center;
-    }
-    
-
-    .menu__item:hover>a {
-        width: 100%;
-        }
+    } 
 
     .menu__item:hover>a {
         width: 100%;
@@ -1377,6 +1372,14 @@ element.style {
     nav {
         min-width: 100%;
     }
+
+    /* #nav-arrow-up:hover {
+        display: block;
+    }
+
+    #nav-arrow-up {
+        display: none;
+    } */
 
     .menu__list {
         /* background-color: blue; */
@@ -1450,9 +1453,17 @@ element.style {
 
 .submenu__text, .menu__text  {
     padding: 5px;
-    padding-left: 10px;
     width: 100%;
     justify-content: center;
+}
+
+.menu__text_arrow {
+    padding-top: 5px;
+    width: 26px;
+} 
+
+.menu__link.content-change-on-hoover:hover .show_on_hover {
+    display: inline;
 }
 
         /* .menu__list .menu__item .submenu__list:active {

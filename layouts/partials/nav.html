@@ -23,9 +23,14 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
                     <ul class=" menu__list">
-                        <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                            <a class="menu__link text-nowrap" >
-                                <span class="menu__text">{{ .Name }}</span>
+                        <li class="content-change-on-hoover menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                            <a class="menu__link text-nowrap " >
+                                <span class="menu__text_arrow"></span>
+                                <span class="menu__text">{{ .Name }}</span> 
+                                <span class="menu__text_arrow"> 
+                                    <i class="fa fa-arrow-down d-lg-none hide_on_hover"></i> 
+                                    <i class="fa fa-arrow-up d-lg-none show_on_hover"></i>
+                                </span>
                             </a>
                             
                             <ul class="submenu__list">
