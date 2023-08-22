@@ -1421,14 +1421,19 @@ element.style {
 }
    
 
-    .submenu__text, .submenu__link, .submenu__text:hover  {
-        /* margin-left:300px; */
-            padding: 0;
-            /* padding-left: 10px; */
-            width: 100%;
-            margin: 0px;
-            background-color: #09bf80;
-    }
+.submenu__text, .submenu__link, .submenu__text:hover,
+.submenu__text, .submenu__link, .submenu__text:active   {
+    padding: 0;
+    width: 100%;
+    margin: 0px;
+    background-color: #09bf80;
+}
+
+.submenu__text, .submenu__text:hover {
+    padding: 5px;
+    padding-left: 10px;
+}
+
 
         /* .menu__list .menu__item .submenu__list:active {
         visibility: visible;
