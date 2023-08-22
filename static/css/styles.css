@@ -518,13 +518,16 @@ a:hover {
     color: #09bf80;
 }
 
-.service-hover-box {
-    display: flex;
+.service-box {
     min-height: 100%;
     max-height: 100%;
-    color: #09bf80;
     max-width: 400px;
-    width: 100%;
+    width: 100%; 
+}
+
+.service-hover-box {
+    display: flex;
+    color: #09bf80;
 }
 
 .hover-box:hover,
