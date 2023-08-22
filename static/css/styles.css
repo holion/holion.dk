@@ -1155,9 +1155,13 @@ element.style {
     padding-right: 0;
 }
 
-.navbar-brand {
-    padding-left: 3px;
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 0;
+    }
 }
+
 .menu__link {
     margin-top: 30px;
     cursor: default;
