@@ -1107,29 +1107,13 @@ a:hover {
     margin-top: 200px;
 }
 
-/* nav-bar --------------------------------------------
+/* nav-bar -------------------------------------------- */
 
 
 
 /* .no-js .menu__btn {
     display: none;
-}
-
-*/
-.menu__btn {
-    font-size: 20px;
-    border-color: #fff;
-    color: #2a2a2a;
-    background: #fff;
-    padding: 4px;
-}
-
-.menu__btn:hover,.menu__btn:focus {
-    color: white;
-    background: #2a2a2a;
-
-}
-
+} */
 
 /* button:not(:-moz-focusring):focus>.menu__btn-title {
     box-shadow: none;
@@ -1287,6 +1271,7 @@ element.style {
     transition: visibility 0.15s ease, transform 0.15s ease, -webkit-transform 0.15s ease;
 }
 
+/*wide nav-bar */
 @media screen and (min-width: 992px) {
     .menu__btn {
         display: none;
@@ -1310,6 +1295,10 @@ element.style {
         /* background-color: #e22d30; */
         /* text-transform: uppercase; */
         width: 100px;
+    }
+
+    .menu__link .green {
+        color: #09bf80;
     }
 
     .menu__list,
@@ -1344,12 +1333,34 @@ element.style {
     }
 }
 
+/*small nav-bar */
 @media screen and (max-width: 992px) {
     /* .menu__item.menu__dropdown .drop-icon {
         position: absolute;
         right: 1rem;
         top: auto;
     */ 
+
+    .menu__btn {
+        font-size: 30px;
+        /* border-color: #fff; */
+        color: #09bf80;
+        /* background: #fff; */
+        padding: 4px;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .menu__btn .fa {
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .menu__btn:hover,.menu__btn:focus {
+        /* color: white; */
+        background: none;
+        box-shadow: none;
+    }
 
     .navbar-default .navbar-collapse  {
         margin: 0;
@@ -1440,7 +1451,21 @@ element.style {
     width: auto;
     padding: 10px;
 }
+
+.menu__link.background-green {
+    background-color: #09bf80;
+    font-size: x-large;
+}
    
+
+.navbar-toggler[aria-expanded=false] .nav-bar-button-expanded {
+    display: none;
+  }
+  .navbar-toggler[aria-expanded=true] .nav-bar-button-collapsed {
+    display: none;
+  }
+
+
 
 .submenu__text, .submenu__link, .submenu__text:hover,
 .submenu__text, .submenu__link, .submenu__text:active   {

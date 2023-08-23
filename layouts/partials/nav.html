@@ -7,13 +7,11 @@
                 <a class="navbar-brand" href="{{ .Site.BaseURL }}">
                     <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
                     <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-lg-none" style="width: 150px">
-                    {{/* <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-sm-block d-md-none" style="width: 150px">
-                    */}}
-
                 </a>
                 <div class="navbar-buttons">
                     <button class="menu__btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
+                        <i class="nav-bar-button-expanded holion_main_color fa fa-times"></i>
+                        <i class="nav-bar-button-collapsed  fa fa-bars"></i>
                     </button>
                 </div>
             </div>
@@ -48,8 +46,14 @@
                     {{- else }}
                     <ul class=" menu__list">
                         <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                            <a class="menu__link text-nowrap" href="{{ .URL }}">
-                                <span class="menu__text" {{ if eq .Name "CSR" }} class="menu__text holion_main_color" {{ end }}> {{ .Name }}</span>
+                            <a  {{ if eq .Name "Kontakt" }} class="menu__link text-nowrap background-green" 
+                                {{ else }} class="menu__link text-nowrap" 
+                                {{ end }} href="{{ .URL }}">
+                                <span   {{ if eq .Name "CSR" }} class="menu__text green" 
+                                        {{ else }} class="menu__text" 
+                                        {{ end }}>
+                                        {{ .Name }}
+                                </span>
                             </a>
                         </li>
                     </ul>
