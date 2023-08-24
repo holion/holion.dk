@@ -1271,6 +1271,10 @@ element.style {
     transition: visibility 0.15s ease, transform 0.15s ease, -webkit-transform 0.15s ease;
 }
 
+.menu-holion-apple {
+    display: none;
+
+}
 /*wide nav-bar */
 @media screen and (min-width: 992px) {
     .menu__btn {
@@ -1491,6 +1495,25 @@ element.style {
     display: inline;
 }
 
+.navbar-default .navbar-collapse {
+    background-color: transparent;
+    min-height: calc(100vh - 80px);
+}
+
+#navbarResponsive {
+    position: relative;
+}
+
+.navbar-default {
+    background-color: #000000a0;
+}
+
+.menu-holion-apple {
+    display: block;
+    position: absolute;
+    bottom: 36px;
+    right: 0;
+}
         /* .menu__list .menu__item .submenu__list:active {
         visibility: visible;
         opacity: 1;

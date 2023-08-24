@@ -1,8 +1,8 @@
 <div class="navbar-affixed-top affix">
 
-    <div class="navbar navbar-expand-lg navbar-default">
+    <div class="navbar navbar-expand-lg navbar-default p-0">
         <div class="container">
-            <div class="d-flex justify-content-between" style="width: 100%">
+            <div class="d-flex justify-content-between p-2" style="width: 100%; height: 100%;  background-color:black;">
 
                 <a class="navbar-brand" href="{{ .Site.BaseURL }}">
                     <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
@@ -58,6 +58,12 @@
                         </li>
                     </ul>
                     {{- end }} {{- end }} {{- end }}
+
+                   <div class="menu-holion-apple">
+                    <a href="/csr/">
+                        <img class="img-holion-medium" src="/img/layout/holion-circle.svg" />
+                    </a>
+                   </div>
                 </div>
             </nav>
             {{ end }}
