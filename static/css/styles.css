@@ -1204,14 +1204,12 @@ element.style {
     display: none;
 } */
 
-.menu__list .menu__item:hover>.submenu__list,
-.menu__list .menu__item:focus-within>.submenu__list,
-.menu__list .menu__item .submenu__list:hover,
-.menu__list .menu__item .submenu__list:focus {
+.menu__list .menu__item:focus-within>.submenu__list {
     visibility: visible;
     opacity: 1;
     display: block;
     left: auto;
+    color: #fff;
 }
 
 .menu__link:hover,
@@ -1219,16 +1217,19 @@ element.style {
     color: #fff;
 }
 
-.submenu__item:hover>a {
+.submenu__item:hover>a,
+.menu__item:hover>a {
     text-decoration: none;
 }
 
-.submenu__text:hover {
+/* .submenu__text:hover {
     background-color: #09bf80;
     text-decoration: none;
     padding-left: 32px;
 
 }
+
+*/
 
 .submenu__text {
     background-color: #06734d;
@@ -1280,10 +1281,10 @@ element.style {
     .menu__btn {
         display: none;
     }
-    .menu__item:hover>a {
+        /* .menu__item:hover>a {
         background-color: #06734d;
         text-decoration: none;
-    }
+    */
 
 
     .menu__link {
@@ -1370,19 +1371,22 @@ element.style {
         margin: 0;
         padding: 0;
     }
-
+/* 
     .menu__item:hover>a {
-        /* background-color: #06734d; */
+        background-color: #06734d;
         text-decoration: none;
-    }
+    */
 
     .submenu__link, .menu__link {
         text-align: center;
     } 
 
-    .menu__item:hover>a {
+        /* .menu__item:hover>a {
         width: 100%;
-    }
+        text-decoration: none;
+        }
+        
+        */
 
     nav {
         min-width: 100%;
@@ -1471,11 +1475,17 @@ element.style {
 
 
 
-.submenu__text, .submenu__link, .submenu__text:hover,
-.submenu__text, .submenu__link, .submenu__text:active   {
-    padding: 0;
+.submenu__text,
+.submenu__text:hover {
     margin: 0px;
     background-color: #09bf80;
+    width: 100%;
+    text-align: center;
+}
+
+.submenu__link {
+    padding: 0;
+    margin: 0;
     width: 100%;
     text-align: center;
 }

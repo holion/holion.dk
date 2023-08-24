@@ -21,19 +21,21 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
                     <ul class=" menu__list">
-                        <li class="content-change-on-hoover menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                            <a class="menu__link text-nowrap " >
+                        <li class="menu__item menu__dropdown">
+                                <a href="#" class="menu__link text-nowrap" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
                                 <span class="menu__text_arrow"></span>
                                 <span class="menu__text">{{ .Name }}</span> 
                                 <span class="menu__text_arrow"> 
                                     <i class="fa fa-arrow-down d-lg-none hide_on_hover"></i> 
                                     <i class="fa fa-arrow-up d-lg-none show_on_hover"></i>
                                 </span>
+                                </a>
                             </a>
                             
                             <ul class="submenu__list">
                                 {{ range .Children }}
-                                <li class="submenu__item{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
+                                <li class="submenu__item">
                                     <a class="submenu__link text-nowrap" href="{{ .URL }}">
                                         <span class="submenu__text">{{ .Name }}</span>
                                     </a>
