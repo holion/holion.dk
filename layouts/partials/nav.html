@@ -1,94 +1,62 @@
-<div class="navbar-affixed-top affix">
-
-    <div class="navbar navbar-expand-lg navbar-default p-0">
-        <div class="container">
-            <div class="d-flex justify-content-between p-2" style="width: 100%; height: 100%;  background-color:black;">
-
-                <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-                    <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
-                    <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-lg-none" style="width: 150px">
-                </a>
-                <div class="navbar-buttons">
-                    <button class="menu__btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="nav-bar-button-expanded holion_main_color fa fa-times"></i>
-                        <i class="nav-bar-button-collapsed  fa fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-            {{ if .Site.Menus.main }}
-            <nav>
-                       
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
-                    <ul class=" menu__list">
-                        <li class="menu__item menu__dropdown">
-                                <a href="#" class="menu__link text-nowrap" data-toggle="dropdown" role="button"
-                                    aria-haspopup="true" aria-expanded="false">
-                                <span class="menu__text_arrow"></span>
-                                <span class="menu__text">{{ .Name }}</span> 
-                                <span class="menu__text_arrow"> 
-                                    <i class="fa fa-arrow-down d-lg-none hide_on_hover"></i> 
-                                    <i class="fa fa-arrow-up d-lg-none show_on_hover"></i>
-                                </span>
-                                </a>
-                            </a>
-                            
-                            <ul class="submenu__list">
-                                {{ range .Children }}
-                                <li class="submenu__item">
-                                    <a class="submenu__link text-nowrap" href="{{ .URL }}">
-                                        <span class="submenu__text">{{ .Name }}</span>
-                                    </a>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </li>
-                       
-                    </ul>
-                    {{- else }}
-                    <ul class=" menu__list">
-                        <li class="menu__item menu__dropdown{{ if or ($currentNode.IsMenuCurrent " main " .) ($currentNode.HasMenuCurrent "main " .) }} menu__item--active{{ end }}">
-                            <a  {{ if eq .Name "Kontakt" }} class="menu__link text-nowrap background-green" 
-                                {{ else }} class="menu__link text-nowrap" 
-                                {{ end }} href="{{ .URL }}">
-                                <span   {{ if eq .Name "CSR" }} class="menu__text green" 
-                                        {{ else }} class="menu__text" 
-                                        {{ end }}>
-                                        {{ .Name }}
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    {{- end }} {{- end }} {{- end }}
-
-                   <div class="menu-holion-apple">
-                    <a href="/csr/">
-                        <img class="img-holion-medium" src="/img/layout/holion-circle.svg" />
-                    </a>
-                   </div>
-                </div>
-            </nav>
-            {{ end }}
-
-            <div class="collapse clearfix" id="search">
-
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-
-                        </span>
-                    </div>
-                </form>
-
-            </div>
-            <!--/.nav-collapse -->
-
-        </div>
+{{ if .Site.Menus.main }}
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container nav-container">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+            <img src="{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="d-none d-lg-block">
+            <img src="{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="d-lg-none" style="width: 150px">
+        </a>
+      <div class="navbar-buttons">
+        <button class="menu__btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="nav-bar-button-expanded holion_main_color fa fa-times"></i>
+            <i class="nav-bar-button-collapsed holion_main_color fa fa-bars"></i>
+        </button>
     </div>
-    <!-- /#navbar -->
+    
+      <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+        <ul class="navbar-nav menu__list">
+        {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
+        
+          <li class="nav-item dropdown menu__item">
+            <a class="nav-link menu__link text-nowrap dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span class="menu__text_arrow"></span>
+              <span class="menu__text">{{ .Name }}</span>
+              <span class="menu__text_arrow">
+                <i class="fa fa-arrow-down d-lg-none show_when_unfolded"></i>
+                <i class="fa fa-arrow-up d-lg-none show_when_folded"></i>
+              </span>
+            </a>
+            <ul class="submenu__list dropdown-menu" aria-labelledby="navbarDropdown">
+                {{ range .Children }}
+                <li class="submenu__item">
+                  <a class="dropdown-item submenu__link text-nowrap" href="{{ .URL }}">
+                    <span class="submenu__text">{{ .Name }}</span>
+                  </a>
+                  </li>
+              {{ end }}
+            </ul>
+          </li>
+    
+        {{- else }}
+          <li class="nav-item menu__item">
+              <a {{ if eq .Name "Kontakt" }} class="nav-link menu__link text-nowrap background-green" {{ else }}
+                class="menu__link text-nowrap" {{ end }} href="{{ .URL }}">
+                <span {{ if eq .Name "CSR" }} class="menu__text green" {{ else }} class="menu__text" {{ end }}>
+                  {{ .Name }}
+                </span>
+              </a>
 
-</div>
-
-<!-- *** NAVBAR END ***-->
+            </li>
+          
+        {{- end }} {{- end }} {{- end }}
+      </ul>
+        <div class="menu-holion-apple">
+          <a href="/csr/">
+            <img class="img-holion-medium" src="/img/layout/holion-circle.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  {{ end }}
