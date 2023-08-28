@@ -1,36 +1,54 @@
 <div class="container py-5">
     {{if eq .imagePosition "mid" }}
-        <div class="row">
+        {{/* --Mobile-- */}}
+        <div class="row d-md-none">
+            {{ partial "standardSectionContentImagePosTitle" . }}
+            {{ partial "testIfMobileContent" (dict "mobileContent" .contentMobile "content" .content "style" "my-3") }}
+            {{ if .imageSizeMobile }}
+                <div class="col-{{.imageSizeMobile }} m-auto">
+            {{ else if .imageSize }}
+            <div class="col-{{.imageSize }} m-auto">
+            {{ else }}
+            <div class="col-6 m-auto">
+                {{ end }}
+                {{ partial "contentful-image.html" (dict "content" .) }}
+            </div>
+            {{ partial "standardSectionContentImagePosBottom" . }}
+            </div>
+            {{/* --PC-- */}}
+            <div class="d-none d-md-block">
             {{ partial "standardSectionContentImagePosTitle" . }}
             {{ partial "testIfMobileContent" (dict "mobileContent" .contentMobile "content" .content "style" "my-3") }}
             {{ if .imageSize }}
-            <div class="col-md-{{.imageSize }} m-auto">
-                {{ partial "contentful-image.html" (dict "content" .) }}
-            </div>
+                    <div class="col-md-{{.imageSize }} m-auto">
             {{ else }}
             <div class="col-md-6 m-auto">
+            {{ end }}
                 {{ partial "contentful-image.html" (dict "content" .) }}
             </div>
-            {{ end }}
             {{ partial "standardSectionContentImagePosBottom" . }}
         </div>
     {{ else }}
+        {{/* --Mobile-- */}}
         <div class="row d-md-none">
             {{ partial "standardSectionContentImagePosTitle" . }}
-            {{ if .imageSize }}
+            {{ if .imageSizeMobile }}
+            <div class="col-md-{{.imageSizeMobile }} m-auto my-3">
+                {{ else if .imageSize }}
             <div class="col-md-{{.imageSize }} m-auto my-3">
-                {{ partial "contentful-image.html" (dict "content" .) }}
-            </div>
             {{ else }}
             <div class="col-md-6 m-auto my-3">
+            {{ end }}
                 {{ partial "contentful-image.html" (dict "content" .) }}
             </div>
-            {{ end }}
+
             {{ partial "testIfMobileContent" (dict "mobileContent" .contentMobile "content" .content "style" "my-3") }}
             {{ partial "standardSectionContentImagePosBottom" . }}
         </div>
+        {{/* --PC-- */}}
         <div class="d-none d-md-block">
             <div class="row">
+                {{ .imageSizeMobile }}
                 <div {{ if eq .imagePosition "left" }} class="col m-auto ms-5 order-last" {{ else }} class="col me-md-5 m-auto" {{
                     end }}>
                     {{ partial "standardSectionContentImagePosTitle" . }}
