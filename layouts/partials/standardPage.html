@@ -57,6 +57,8 @@
         {{ else if isset . "tag" }}
         {{ if eq .tag "testimonial"}}
         {{ partial "standardSectionTestimonial.html" (dict "site" $site "case" $currentPageUrl)}}
+        {{ else if eq .tag "technology"}}
+        {{ partial "standardSectionTextVertical.html" .}}
         {{ end }}
         {{ else }}
         {{ partial "standardSection.html" .}}

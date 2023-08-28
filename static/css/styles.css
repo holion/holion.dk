@@ -451,6 +451,12 @@ h6 {
     color: #fff;
 }
 
+.vericaltext {
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    /* transform: rotate(180deg); */
+    text-transform: uppercase;
+}
 
 .teaser-section {
     display: flex;
