@@ -42,9 +42,9 @@ googleAnalytics = "UA-338843-5"
 
 
 [[menu.main]]
-	identifier = "csr"
-	name = "CSR"
-	url = "/csr/"
+	identifier = "esg"
+	name = "ESG"
+	url = "/esg/"
 	weight = 1
 
 [[menu.main]]
