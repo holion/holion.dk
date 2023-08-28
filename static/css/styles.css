@@ -295,7 +295,13 @@ h6 {
 @media screen and (min-width: 768px) {
 .header-distance {
         margin-top: 200px;
-    }
+}
+.vericaltext {
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+}
 .holion-title {
     font-size: 70px;
     font-weight: bold;
@@ -397,7 +403,13 @@ h6 {
 @media screen and (max-width: 767px) {
     .header-distance {
         margin-top: 120px;
-        }
+    }
+    
+    .vericaltext {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
     .holion-title {
         font-size: 40px;
         font-weight: bold;
@@ -470,13 +482,6 @@ h6 {
 .white_text_color,
 .white_text_color a {
     color: #fff;
-}
-
-.vericaltext {
-    writing-mode: vertical-lr;
-    text-orientation: sideways-right;
-    /* transform: rotate(180deg); */
-    text-transform: uppercase;
 }
 
 .teaser-section {
