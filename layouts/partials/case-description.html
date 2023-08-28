@@ -1,2 +1,7 @@
 <h2 class="holion-title-section text-align-left mt-3 mt-md-0">{{ .title }}</h2>
 <div class="white_text_color">{{ .teaserText }}</div>
+<div style="display: inline-flex;">
+    {{ range .tags }}
+    <div class="holion_tag holion-tag-text">{{ . }}</div>
+    {{ end }}
+</div>
