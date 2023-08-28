@@ -56,7 +56,7 @@
         {{ partial "standardSectionImagePosition.html" .}}
         {{ else if isset . "tag" }}
         {{ if eq .tag "testimonial"}}
-        {{ partial "standardSectionWithTag.html" (dict "site" $site "case" $currentPageUrl)}}
+        {{ partial "standardSectionTestimonial.html" (dict "site" $site "case" $currentPageUrl)}}
         {{ end }}
         {{ else }}
         {{ partial "standardSection.html" .}}
