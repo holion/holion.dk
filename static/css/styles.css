@@ -116,14 +116,9 @@ h6 {
         display: none !important;
     }
 
-    .owl-carousel .owl-controls .owl-buttons .owl-prev {
+                .owl-carousel .owl-controls .owl-buttons .owl-prev,
+                .owl-carousel .owl-controls .owl-buttons .owl-next {
         display: none;
-    }
-
-    .owl-carousel .owl-controls .owl-buttons .owl-next {
-        color: #09bf80;
-        background: none;
-        font-size: 50px;
     }
 
         .owl-carousel .owl-controls .owl-buttons {
@@ -574,6 +569,13 @@ a:hover {
 .testimonial-items {
     background-color: black;
     min-width: 100%;
+    padding-right: 60px;
+    }
+    
+@media screen and (min-width: 769px) {
+    .testimonial-items {
+        padding-right: 0px;
+    }
 }
 
 .csr-items {

@@ -131,12 +131,12 @@ function sliderHomepage() {
 /* sliders */
 function sliders() {
     if ($('.owl-carousel').length) {
-        $('.customers').owlCarousel({
-            items: 6,
-            itemsDesktopSmall: [990, 4],
-            itemsTablet: [768, 2],
-            itemsMobile: [480, 1]
-        })
+        $(".customers").owlCarousel({
+          items: 6,
+          itemsDesktopSmall: [990, 4],
+          itemsTablet: [767, 2],
+          itemsMobile: [480, 1],
+        });
 
         $(".owl-carousel.testimonials").owlCarousel({
           autoPlay: 6000,
@@ -150,8 +150,8 @@ function sliders() {
           ],
 
           itemsDesktopSmall: [990, 1],
-          itemsTablet: [768, 1],
-          itemsMobile: [480, 1],
+          itemsTablet: [767, 1.2],
+          itemsMobile: [480, 1.2],
         });
 
         $(".owl-carousel.csr").owlCarousel({
@@ -160,8 +160,8 @@ function sliders() {
           items: 3,
           itemsDesktop: 1,
           itemsDesktopSmall: [990, 1],
-          itemsTablet: [768, 1],
-          itemsMobile: [480, 1],
+          itemsTablet: [767, 1.2],
+          itemsMobile: [480, 1.2],
         });
 
         $('.project').owlCarousel({
