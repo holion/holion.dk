@@ -533,6 +533,29 @@ a:hover {
     position: relative;
 }
 
+.container-square {
+    border-color: #09bf80;
+    border-width: 2px;
+    border-style: solid;
+    position: relative; /* REQUIRED */
+    width: 40%;   /* REQUIRED, change it to adjust the aspect ratio */
+    padding-top: 40%;    /* REQUIRED, change it to adjust the aspect ratio */
+}
+
+.container-inner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-inner-arrow {
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+}
+
 .hover-box {
     display: flex;
     min-width: 100%;
@@ -556,7 +579,8 @@ a:hover {
 }
 
 .hover-box:hover,
-.service-hover-box:hover {
+.service-hover-box:hover,
+.container-square:hover {
     color: #fff;
     background-color: #09bf80;
 }
@@ -823,9 +847,17 @@ a:hover {
 }
 
 .square-box {
-    height: 300px;
-    width: 300px;
-    padding: 20px;
+    background-color: silver;
+        display: inline-block;
+        height: 0;
+        padding-bottom: 50%;
+        width: 50%;
+    }
+    
+    .square-box-inner {
+        margin: 20px;
+        min-width: 100%;
+        min-height: 100%;
 }
 .video-container {
     padding-top: 56.25%;

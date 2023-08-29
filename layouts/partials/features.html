@@ -3,7 +3,7 @@
 {{ $i := 0 }}
 
 {{ if isset .Site.Params "features" }} {{ if .Site.Params.features.enable }} {{ if gt (len .Site.Data.features) 0 }}
-<div class="green-box pt-5">
+<div class="green-box pt-5 pb-5">
     <div class="container">
         <div class="row d-none d-md-block">
             <div class="col-md-12">
@@ -15,27 +15,18 @@
                 {{ end }}
             </div>
         </div>
-        <div class="col-12">
-            <div class="d-flex justify-content-center">
-                {{ range $index, $element := sort .Site.Data.features "weight" }}
-                {{/* <div class="col-md-4 col-sm-12 mt-3 mb-5"> */}}
-                    <div class="square-box mb-5">
-                    <a href="{{ $element.link }}">
-                        <div class="hover-box holion-border holion-title-section">
-                            <div class="d-flex flex-column">
-                                <div class="d-flex flex-row justify-content-center">
-                                <div class="white_text_color">{{ $element.name }}</div>
-                                </div>
-                                <i class="mt-auto ml-auto fa fa-long-arrow-right"></i>
-                                {{/* <img style="width: 60px; align-items: right;" src="/img/layout/arrow-right.svg" /> */}}
-                            </div>
-                        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                <div class="d-flex justify-content-evenly">
+                    {{ range $index, $element := sort .Site.Data.features "weight" }}
+                        <a href="{{ $element.link }}" class="container-square holion-border holion-title-section">
+                            <div class="container-inner-text white_text_color">{{ $element.name }}</div>
+                            <i class="container-inner-arrow fa fa-long-arrow-right"></i>
                         </a>
+                    {{ end }}
                 </div>
-                {{ end }}
             </div>
         </div>
-
     </div>
 </div>
 
