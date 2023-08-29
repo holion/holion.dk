@@ -287,6 +287,13 @@ h6 {
     font-size: 12px;
     text-transform: uppercase;
 }
+
+.holion-tag-text {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
 .header-distance {
         margin-top: 200px;
@@ -330,11 +337,6 @@ h6 {
 
 .holion-menu-text {
     font-size: 18px;
-    font-weight: bold;
-}
-
-.holion-tag-text {
-    font-size: 12px;
     font-weight: bold;
 }
 
@@ -443,11 +445,6 @@ h6 {
         font-size: 18px;
         font-weight: bold;
     
-    }
-
-    .holion-tag-text {
-        font-size: 12px;
-        font-weight: bold;
     }
 }
 .holion-button-outer .holion-button-inner {
