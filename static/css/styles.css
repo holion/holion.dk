@@ -1619,16 +1619,20 @@ display: none;
 .menu__text_arrow {
     padding-top: 5px;
     width: 26px;
+    margin-right: 10px;
+        margin-left: 10px;
 } 
 
 .menu__link.content-change-on-hoover:hover .show_on_hover {
     display: inline;
 }
 
-.navbar-collapse {
+/* .navbar-collapse {
     background-color: transparent;
     min-height: calc(100vh - 80px);
 }
+
+*/
 
 /* .navbar {
     background-color: #06734d80;
