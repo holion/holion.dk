@@ -1,0 +1,11 @@
+.menu__link {
+    border: none;
+}
+
+.submenu__list {
+    left: 18px !important;
+
+    .dropdown-item {
+        padding-inline: 0 !important;
+    }
+}

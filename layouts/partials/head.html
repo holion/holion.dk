@@ -59,6 +59,8 @@
 
      <!-- Custom stylesheet - for your changes -->
      <link href="{{ "css/styles.css" | relURL}}" rel="stylesheet">
+     {{ $scss := resources.Get "scss/main.scss" | resources.ToCSS }}
+     <link rel="stylesheet" href="{{ $scss.Permalink }}">
 
     <!-- Responsivity for older IE -->
     {{ `
