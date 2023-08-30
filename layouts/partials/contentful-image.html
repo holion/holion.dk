@@ -19,7 +19,16 @@
         </div>
     </div>
     {{ end }}
+    {{/* on PC */}}
     {{ with .content.image }} {{ if isset . "url" }}
-    <img class="img-full-width m-0 p-0" src="{{ .url }}" />
+    <img class="img-full-width m-0 p-0 d-none d-md-block" src="{{ .url }}" />
     {{ end }} {{ end }}
+    {{/* on Mobile */}}
+    {{ with .content }}
+    {{ if isset .imageMobile "url" }}
+    <img class="img-full-width m-0 p-0 d-md-none" src="{{ .imageMobile.url }}" />
+    {{ else if isset .image "url" }}
+    <img class="img-full-width m-0 p-0 d-md-none" src="{{ .image.url }}" />
+    {{ end }}
+    {{ end }}
 </div>
