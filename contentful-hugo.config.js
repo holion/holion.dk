@@ -18,15 +18,6 @@ module.exports = {
     environment: "master",
   },
 
-  singleTypes: [
-    // {
-    //   id: "pageContent",
-    //   directory: "content",
-    //   fileName: "test",
-    //   fileExtension: "md",
-    //   mainContent: "content",
-    // },
-  ],
   repeatableTypes: [
     {
       id: "testimonial",
