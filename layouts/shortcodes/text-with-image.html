@@ -1,4 +1,0 @@
-{{ $leftorright := .Get 1 }}
-<div style="float: {{$leftorright}}; margin-{{ if eq $leftorright "right" }}left{{else}}right{{end}}: 20px; margin-bottom: 20px" class="hidden-xs">
-	<img src="{{.Get 0}}" width="350">
-</div>

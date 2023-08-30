@@ -3,7 +3,7 @@
     {{ if .mobileContent }}
     <div class="{{.style}}">{{ .mobileContent | markdownify }}</div>
     {{ else if .content }}
-    <div class="{{.style}}">{{ .content | markdownify }}</div>
+    <div class="{{.style}}" style="">{{ .content | markdownify }}</div>
     {{ end }}
 </div>
 {{ end }}
