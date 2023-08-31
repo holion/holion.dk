@@ -5,3 +5,8 @@
   left: 18px !important; }
   .submenu__list .dropdown-item {
     padding-inline: 0 !important; }
+
+.frame-content-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }

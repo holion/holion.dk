@@ -16,6 +16,7 @@ holion-new-design/images/*
 holion-new-design/fonts/*
 holion-new-design/*.css
 holion-new-design/package*.*
+.env
 
 node_modules
 content/1Tjzj18qGcoY7UGaUIgaPk.md
