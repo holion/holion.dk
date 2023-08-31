@@ -148,45 +148,6 @@ h6 {
     right: 40px;
 }
 
-.img-outer {
-    position: relative;
-    width: 100%;
-    bottom: 0px;
-}
-
-.img-outer .img-inner {
-    position: absolute;
-    left: 40%;
-}
-
-@media screen and (min-width: 768px) {
-    .img-outer {
-        height: 360px;
-    }
-    .img-outer .img-inner {
-        top: -10%;
-        max-height: 110%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .img-outer {
-        height: 440px;
-    }
-    .img-outer .img-inner {
-        top: 10%;
-        max-height: 80%;
-    }
-}
-
-.img-outer .img-inner.left-big {
-    left: 51%;
-}
-
-.img-outer .img-inner.left {
-    left: 43%;
-}
-
 .citation-outer {
     position: relative;
     height: 500px;

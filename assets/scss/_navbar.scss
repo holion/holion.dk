@@ -1,5 +1,9 @@
 .menu__link {
     border: none;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .submenu__list {

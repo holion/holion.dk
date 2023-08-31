@@ -1,0 +1,13 @@
+.owl-buttons {
+    position: absolute;
+    top: 0 !important;
+    margin-top: 400px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 355px;
+    }
+
+    @media screen and (max-width: 992px) {
+        display: none !important;
+    }
+}

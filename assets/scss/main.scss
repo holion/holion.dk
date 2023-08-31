@@ -1,7 +1,32 @@
+// @import 'old';
 @import 'navbar';
+@import 'forside';
 
-.frame-content-outer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hover-box.same-size-box.content-change-on-hoover {
+    .d-flex.flex-column {
+        padding: 30px;
+    }
+}
+
+.container.py-5 {
+    position: relative;
+}
+
+.btn-primary.my-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+
+.owl-buttons {
+    position: absolute;
+    top: 0 !important;
+    margin-top: 400px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 355px;
+    }
 }
