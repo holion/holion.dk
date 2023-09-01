@@ -80,53 +80,6 @@ h6 {
 .footer-small {
     height: 140px;
 }
-
-@media screen and (min-width: 768px) {
-
-    .owl-carousel .owl-controls .owl-buttons .owl-next,
-    .owl-carousel .owl-controls .owl-buttons .owl-prev {
-        color: #09bf80;
-        background: none;
-        font-size: 50px;
-        top: 400px;
-        left: 20%;
-    }
-
-    .owl-carousel .owl-controls .owl-buttons {
-        top: 400px;
-        left: 0;
-        display: flex;
-        justify-content: space-between;
-        /* padding-left: 30px; */
-    }
-    
-    .owl-carousel .owl-controls .owl-page.active span,
-    .owl-theme .owl-controls .owl-page.active span,
-    .owl-carousel .owl-controls.clickable .owl-page:hover span,
-    .owl-theme .owl-controls.clickable .owl-page:hover span {
-        background: #09bf80;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .owl-carousel .owl-controls .owl-page,
-        .owl-theme .owl-controls .owl-page,
-        .owl-carousel .owl-controls.clickable .owl-page:hover span,
-        .owl-theme .owl-controls.clickable .owl-page:hover span {
-        display: none !important;
-    }
-
-                .owl-carousel .owl-controls .owl-buttons .owl-prev,
-                .owl-carousel .owl-controls .owl-buttons .owl-next {
-        display: none;
-    }
-
-        .owl-carousel .owl-controls .owl-buttons {
-    top: -55px;
-    left: 80%;
-    display: flex;
-    }
-}
     
 .footer-upper {
     background-color: black;
@@ -558,30 +511,6 @@ a:hover {
     .testimonial-items {
         padding-right: 0px;
     }
-}
-
-.csr-items {
-    background-color: #02261a;
-    width: 100%;
-}
-
-.csr {
-    padding: 0;
-    margin-bottom: 40px;
-}
-
-.csr .item {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.holion-border {
-    border-width: 2px;
-    border-color: #09bf80 !important;
-    border-style: solid;
 }
 
 .so-me-circle,
@@ -1050,31 +979,6 @@ a:hover {
     -webkit-box-flex: 100;
     -ms-flex-positive: 100;
     flex-grow: 100;
-}
-
-.frame-content-outer {
-    position: relative;
-    height: 512px;
-    width: 410px;
-}
-
- .frame-content-outer .inner-top.height {
-    position: absolute;
-    top: 50px;
-    height: 412px;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.frame-content-outer .inner-top.width {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 309px;
-    height: 50%;
-    z-index: 2;
-    transform: translateY(50%);
 }
 
 #heading-top {

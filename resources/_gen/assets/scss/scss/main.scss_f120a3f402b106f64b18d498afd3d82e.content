@@ -1,32 +1,3 @@
-.img-outer {
-  position: relative;
-  width: 100%;
-  bottom: 0px; }
-
-.img-outer .img-inner {
-  position: absolute;
-  left: 40%; }
-
-@media screen and (min-width: 768px) {
-  .img-outer {
-    height: 360px; }
-  .img-outer .img-inner {
-    top: -10%;
-    max-height: 110%; } }
-
-@media screen and (max-width: 767px) {
-  .img-outer {
-    height: 440px; }
-  .img-outer .img-inner {
-    top: 10%;
-    max-height: 80%; } }
-
-.img-outer .img-inner.left-big {
-  left: 51%; }
-
-.img-outer .img-inner.left {
-  left: 43%; }
-
 .menu__link {
   border: none; }
   .menu__link:focus {
@@ -47,6 +18,36 @@
   @media screen and (max-width: 992px) {
     .owl-buttons {
       display: none !important; } }
+.owl-wrapper {
+  display: flex !important; }
+
+.item.csr-item {
+  padding-right: 50px; }
+
+.owl-wrapper {
+  list-style: none; }
+
+.frame-content-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: 600px;
+  background-image: url("/img/billedramme.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.frame-content-inner {
+  width: 100% !important;
+  background-color: red; }
+
+.frame-content-inner img {
+  width: 100% !important;
+  position: absolute; }
+
+.csr-image-container {
+  scale: 50%; }
+
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
 

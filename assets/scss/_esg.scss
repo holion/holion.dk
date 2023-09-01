@@ -1,0 +1,38 @@
+.owl-wrapper {
+    display: flex !important;
+    // gap: 72px;
+}
+
+.item.csr-item {
+    padding-right: 50px;
+}
+
+.owl-wrapper {
+    list-style: none;
+}
+
+.frame-content-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 600px; //temp
+    background-image: url('/img/billedramme.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.frame-content-inner {
+    width: 100% !important;
+    background-color: red;
+}
+
+.frame-content-inner img {
+    width: 100% !important;
+    position: absolute;
+}
+
+.csr-image-container {
+    // margin: 60px;
+    scale: 50%;
+}
