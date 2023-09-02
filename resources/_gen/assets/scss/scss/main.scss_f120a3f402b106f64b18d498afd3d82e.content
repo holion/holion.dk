@@ -67,3 +67,36 @@
   @media screen and (min-width: 1200px) {
     .owl-buttons {
       margin-top: 355px; } }
+.col-md-3.m-auto {
+  margin-top: 20px !important; }
+
+#content {
+  min-height: calc(100vh - 320px); }
+
+.scroll-to-top {
+  border-radius: 100vh;
+  background-color: #0CBF80;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  border: none;
+  opacity: 0;
+  pointer-events: none; }
+  .scroll-to-top span {
+    border-radius: 2px;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(-45deg);
+    margin-top: 5px; }
+  @media screen and (max-width: 768px) {
+    .scroll-to-top.active {
+      opacity: 1;
+      pointer-events: auto; } }

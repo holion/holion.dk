@@ -1,4 +1,25 @@
 {{ if .Site.Menus.main }}
+
+<script defer>
+  const scrollButton = document.querySelector('.scroll-to-top');
+
+  onscroll = () => {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.scroll-to-top').classList.add('active');
+      } else {
+        document.querySelector('.scroll-to-top').classList.remove('active');
+      }
+  }
+
+  const scrollToTop = () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      console.log('scrolling');
+  }
+</script>
+<button class="scroll-to-top" onclick="scrollToTop()">
+  <span></span>
+</button>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container nav-container">
         <a class="navbar-brand" href="{{ .Site.BaseURL }}">
