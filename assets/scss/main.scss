@@ -25,10 +25,16 @@
 .owl-buttons {
     position: absolute;
     top: 0 !important;
-    margin-top: 400px;
+    margin-top: 360px;
 
     @media screen and (min-width: 1200px) {
-        margin-top: 355px;
+        margin-top: 316px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .owl-pagination {
+        padding-bottom: 30px;
     }
 }
 
@@ -80,3 +86,9 @@
     scale: 120%;
 }
 
+
+.row.text-md-center {
+    p {
+        text-align: center;
+    }
+}

@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="text-center text-md-start">
+    <div class="text-center text-lg-start text-md-center">
         <a class="btn {{ .buttontype }}" href="{{ .link }}" {{ if eq .buttonOpenLinkInExternalTab true }} target="_blank" {{ end
         }} role="button">
         <span> {{ partial "testIfMobileContent" (dict "mobileContent" .textMobile "content" .text ) }}</span>
