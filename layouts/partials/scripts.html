@@ -19,4 +19,29 @@
 <!-- owl carousel -->
 <script src="/js/owl.carousel.min.js"></script>
 
+<!-- scroll to top -->
+<script>
+    onscroll = () => {
+        const scrollButton = document.querySelector('.scroll-to-top');
+        const scrollTop = pageYOffset || document.documentElement.scrollTop;
+        const totalHeight = document.documentElement.scrollHeight;
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollButton.classList.add('active');
+        } else {
+          scrollButton.classList.remove('active');
+        }
+        if (totalHeight - scrollTop <= innerHeight + 100) {
+          scrollButton.style.marginBottom = '160px';
+        } else {
+          scrollButton.style.marginBottom = '';
+        }
+      }
+    
+      const scrollToTop = () => {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+          console.log('scrolling');
+      }
+</script>
+
 <script> (function(){ window.ldfdr = window.ldfdr || {}; (function(d, s, ss, fs){ fs = d.getElementsByTagName(s)[0]; function ce(src){ var cs = d.createElement(s); cs.src = src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)}, 1); } ce(ss); })(document, 'script', 'https://sc.lfeeder.com/lftracker_v1_3P1w24d0Mol4mY5n.js'); })(); </script>

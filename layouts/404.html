@@ -18,14 +18,10 @@
 
                 <div class="col-sm-6 col-sm-offset-3" id="error-page">
 
-                        <p class="text-center">
-                            <a href="{{ .Site.BaseURL }}">
-                                <img src="/img/404.jpg" alt="Oh no - 404 :-/" class="img-responsive">
-                            </a>
-                        </p>
-
                         <h2>Vi beklager</h2>
                         <h4 class="text-muted">Du har ramt en side, som vi ikke kender.</h4>
+
+                        <img src="img/404.png" class="error-img">
 
                         <p class="buttons"><a href="{{ .Site.BaseURL }}" class="btn btn-template-main"><i class="fa fa-home"></i> Gå til forsiden</a>
                         </p>
@@ -40,5 +36,7 @@
         {{ partial "footer.html" . }}
 
     </div>
+    
+    {{ partial "scripts.html" . }}
   </body>
 </html>

@@ -1,6 +1,7 @@
 @import 'old';
 @import 'navbar';
 @import 'forside';
+@import '404';
 
 .hover-box.same-size-box.content-change-on-hoover {
     .d-flex.flex-column {
@@ -35,12 +36,11 @@
     margin-top: 20px !important;
 }
 
-#content {
-    min-height: calc(100vh - 320px);
-}
+// #content {
+//     min-height: calc(100vh - 320px);
+// }
 
 .scroll-to-top {
-    border-radius: 100vh;
     background-color: #0CBF80;
     position: fixed;
     display: flex;
@@ -48,6 +48,9 @@
     align-items: center;
     z-index: 10000;
     bottom: 30px;
+    // left: 0%;
+    // right: 0%;
+    // margin: auto;
     right: 30px;
     width: 50px;
     aspect-ratio: 1 / 1;
@@ -56,7 +59,7 @@
     pointer-events: none;
 
     span {
-        border-radius: 2px;
+        // border-radius: 2px;
         width: 12px;
         height: 12px;
         border-top: 2px solid white;
@@ -72,3 +75,8 @@
         }
     }
 }
+
+.nav-bar-button-expanded {
+    scale: 120%;
+}
+

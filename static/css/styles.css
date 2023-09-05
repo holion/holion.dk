@@ -747,7 +747,9 @@ a:hover {
     .btn-primary {
         background: #09bf80;
         font-size: 18px !important;
-        width: 100%;
+        /* width: 100%;
+        max-width: calc(100% - 30px) !important; */
+        width: fit-content;
         line-height: 25px;
     }
 }
