@@ -3,6 +3,8 @@
 @import 'forside';
 @import '404';
 
+$primary: #65bd84;
+
 .hover-box.same-size-box.content-change-on-hoover {
     .d-flex.flex-column {
         padding: 30px;
@@ -47,7 +49,7 @@
 // }
 
 .scroll-to-top {
-    background-color: #65bd84;
+    background-color: $primary;
     position: fixed;
     display: flex;
     justify-content: center;

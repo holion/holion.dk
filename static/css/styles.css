@@ -611,7 +611,7 @@ a:hover {
 @media screen and (min-width: 1636px) {
     .frontpage-header-box {
         position: relative;
-        background: url('/img/Forside.webp') 0% 20% repeat;
+        background: url('/img/Forside.jpg') 0% 20% repeat;
         background-size: cover;
             -webkit-transition: all 0.2s ease-out;
             -moz-transition: all 0.2s ease-out;
@@ -622,7 +622,7 @@ a:hover {
 @media screen and (max-width: 1636px) {
     .frontpage-header-box {
         position: relative;
-        background: url('/img/Forside.webp') 30px -80px repeat;
+        background: url('/img/Forside.jpg') 30px -80px repeat;
         background-size: 1500px 1500px;
         -webkit-transition: all 0.2s ease-out;
         -moz-transition: all 0.2s ease-out;
@@ -633,7 +633,7 @@ a:hover {
 @media screen and (max-width: 880px) {
     .frontpage-header-box {
         position: relative;
-        background: url('/img/Forside.webp') -380px -80px repeat;
+        background: url('/img/Forside.jpg') -380px -80px repeat;
         background-size: 1500px 1500px;
         -webkit-transition: all 0.2s ease-out;
         -moz-transition: all 0.2s ease-out;
