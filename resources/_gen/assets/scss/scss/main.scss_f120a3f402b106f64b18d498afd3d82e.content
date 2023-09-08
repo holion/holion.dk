@@ -55,6 +55,20 @@
   @media screen and (max-width: 992px) {
     .owl-buttons {
       display: none !important; } }
+.btn-contact {
+  text-transform: none;
+  background: transparent;
+  font-size: 21px;
+  font-weight: bold;
+  width: fit-content;
+  height: 40px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff !important;
+  padding-inline: 20px; }
+  .btn-contact:hover {
+    padding-inline: 20px !important; }
+
 #error-page {
   max-width: 100%;
   display: flex;

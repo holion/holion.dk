@@ -1,0 +1,16 @@
+.btn-contact {
+    text-transform: none;
+    background: transparent;
+    font-size: 21px;
+    font-weight: bold;
+    width: fit-content;
+    height: 40px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff !important;
+    padding-inline: 20px;
+
+    &:hover {
+        padding-inline: 20px !important;
+    }
+}
