@@ -94,7 +94,7 @@ function contactFormAjax() {
 
             if (!response.ok) {
                 $('#contact-message')
-                    .html('<div class="alert alert-danger" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Åhh nej. Noget gik galt og beskeden kunne ikke sendes. Prøv evt. igen. Hvis det stadig ikke fungerer håber vi, at du vil kontakte os på anden vis - og også gerne fortælle os om dette problem.</div>')
+                    .html('<div class="alert alert-danger" role="alert">Åhh nej. Noget gik galt og beskeden kunne ikke sendes. Prøv evt. igen. Hvis det stadig ikke fungerer håber vi, at du vil kontakte os på anden vis - og også gerne fortælle os om dette problem.</div>')
                     .fadeIn()
                 console.error(response);
                 return;
@@ -109,7 +109,7 @@ function contactFormAjax() {
 
 function showMessageSent() {
     $('#contact-message')
-        .html('<div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Tak for din besked. Vi vender tilbage så hurtigt som muligt.</div>')
+        .html('<div class="alert alert-success" role="alert">Tak for din besked. Vi vender tilbage så hurtigt som muligt.</div>')
         .fadeIn()
 }
 

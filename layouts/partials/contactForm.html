@@ -14,7 +14,9 @@
         <div {{ if eq $currentPageUrl "kontakt" }} class="col-md-7 me-md-5 order-2 order-md-1" {{else}}
             class="col-md-7 me-md-5 d-none d-md-block" {{end}}>
             <section>
-                <form id="contact-form" class="contact-form-ajax" action="{{ .Site.Params.mailService }}" method="POST">
+                <div id="contact-message"></div>
+
+                <form id="contact-form" class="contact-form-ajax" action="{{ $currentPage.mailService }}" method="POST">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
