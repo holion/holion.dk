@@ -1400,7 +1400,7 @@ element.style {
 }
 
 /*small nav-bar */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     /* .menu__item.menu__dropdown .drop-icon {
         position: absolute;
         right: 1rem;

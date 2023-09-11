@@ -67,12 +67,12 @@ googleAnalytics = "UA-338843-5"
     parent = "holion"
     weight = 3
 
-[[menu.main]]
-    identifier = "teknologi"
-    name = "Teknologi"
-    url = "/teknologi/"
-    parent = "holion"
-    weight = 1
+# [[menu.main]]
+#     identifier = "teknologi"
+#     name = "Teknologi"
+#     url = "/teknologi/"
+#     parent = "holion"
+#     weight = 1
 
 [[menu.main]]
 	identifier = "contact"

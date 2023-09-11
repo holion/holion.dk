@@ -33,7 +33,7 @@
     outline: none; }
 
 .submenu__list {
-  left: 18px !important; }
+  left: -2px !important; }
   .submenu__list .dropdown-item {
     padding-inline: 0 !important; }
 
@@ -44,6 +44,13 @@
 @media screen and (max-width: 768px) {
   .navbar-collapse {
     padding-inline: 29px; } }
+
+.nav-item {
+  padding: 0; }
+
+@media screen and (min-width: 991px) {
+  .menu__link {
+    padding-inline: 30px !important; } }
 
 .owl-buttons {
   position: absolute;

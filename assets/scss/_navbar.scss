@@ -7,7 +7,7 @@
 }
 
 .submenu__list {
-    left: 18px !important;
+    left: -2px !important;
 
     .dropdown-item {
         padding-inline: 0 !important;
@@ -26,5 +26,15 @@
 
     @media screen and (max-width: 768px) {
         padding-inline: 29px;
+    }
+}
+
+.nav-item {
+    padding: 0;
+}
+
+.menu__link {
+    @media screen and (min-width: 991px) {
+        padding-inline: 30px !important;
     }
 }
