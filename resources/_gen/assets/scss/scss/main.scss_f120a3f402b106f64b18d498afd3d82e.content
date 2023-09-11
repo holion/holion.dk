@@ -87,6 +87,9 @@
     width: 100%;
     max-width: 600px; }
 
+.owl-carousel.csr.owl-theme {
+  display: none !important; }
+
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
 
