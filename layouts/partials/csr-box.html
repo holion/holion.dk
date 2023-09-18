@@ -12,18 +12,15 @@
         {{ end }}
         {{ end }}
 
-        <!-- *** TESTIMONIALS CAROUSEL *** -->
-        <ul class="owl-carousel csr">
+        <!-- *** TESTIMONIALS *** -->
 
+        <div class="esg-grid">
             {{ range sort .Site.Data.frameContent "weight" }}
-            {{ if and (eq .tag "csr") (eq .url $currentPageUrl) }}
-            <li class="item csr-item">
-                {{ partial "frameContent.html" . }}
-            </li>
+                {{ if and (eq .tag "csr") (eq .url $currentPageUrl) }}
+                    {{ partial "frameContent.html" . }}
+                {{ end }}
             {{ end }}
-            {{ end }}
-
-        </ul>
+        </div>
 
         {{/* <div class="row">
 
