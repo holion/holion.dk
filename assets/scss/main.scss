@@ -1,3 +1,4 @@
+@import 'variables';
 @import 'old';
 @import 'navbar';
 @import 'forside';
@@ -26,21 +27,7 @@ $primary: #65bd84;
 }
 
 
-.owl-buttons {
-    position: absolute;
-    top: 0 !important;
-    margin-top: 360px;
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 316px;
-    }
-}
-
-@media screen and (min-width: 993px) {
-    .owl-pagination {
-        padding-bottom: 30px;
-    }
-}
 
 .col-md-3.m-auto {
     margin-top: 20px !important;

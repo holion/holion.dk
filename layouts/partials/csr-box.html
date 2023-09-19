@@ -16,6 +16,7 @@
 
         <div class="esg-grid">
             {{ range sort .Site.Data.frameContent "weight" }}
+                {{ $i = add $i 1 }}
                 {{ if and (eq .tag "csr") (eq .url $currentPageUrl) }}
                     {{ partial "frameContent.html" . }}
                 {{ end }}

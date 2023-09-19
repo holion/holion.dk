@@ -7,7 +7,7 @@
 }
 
 .submenu__list {
-    left: -2px !important;
+    left: -1px !important;
 
     .dropdown-item {
         padding-inline: 0 !important;
@@ -36,5 +36,42 @@
 .menu__link {
     @media screen and (min-width: 991px) {
         padding-inline: 30px !important;
+    }
+}
+
+.navbar-brand {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 80%;
+        display: block;
+        margin-bottom: 6px;
+    }
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+
+// Remove borders from dropdown menus
+
+.nav-item.menu__item {
+    border: none;
+}
+
+.submenu__item {
+    border: none;
+}
+
+.submenu__text {
+    border: none;
+    transition: $ts;
+
+    &:hover {
+        background-color: $primary;
     }
 }
