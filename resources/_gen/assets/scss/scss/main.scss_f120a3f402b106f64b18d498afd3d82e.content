@@ -65,18 +65,6 @@
 .navbar {
   min-height: 80px; }
 
-.nav-item.menu__item {
-  border: none; }
-
-.submenu__item {
-  border: none; }
-
-.submenu__text {
-  border: none;
-  transition: 0.2s; }
-  .submenu__text:hover {
-    background-color: #65BD84; }
-
 .owl-buttons {
   position: absolute;
   top: 0 !important;
@@ -176,6 +164,11 @@
   .esg-img {
     height: 80%;
     object-fit: contain; } }
+
+.show_on_hover.hoverText {
+  background: rgba(56, 132, 83, 0.5);
+  padding-left: 10px;
+  top: 34px; }
 
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
