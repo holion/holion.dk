@@ -9,6 +9,7 @@ sys:
 date: "2023-10-03T15:40:39.100Z"
 intertNavn: "Visitkort"
 title: "Visitkort"
+type: "visitkort"
 pagetitle: "Visitkort"
 description: "Visitkort"
 standardPage: true
@@ -18,5 +19,4 @@ showEmployeeSection: false
 showTeaserBox: false
 showTechnology: false
 slug: "visitkort"
-type: "visitkort"
 ---
