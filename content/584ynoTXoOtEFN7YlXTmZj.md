@@ -2,21 +2,20 @@
 sys:
   id: "584ynoTXoOtEFN7YlXTmZj"
   updatedAt: "2023-10-03T15:40:39.100Z"
-  createdAt: "2023-10-03T16:29:09.549Z"
+  createdAt: "2023-10-03T17:19:20.217Z"
   revision: 2
   space: "pae07rsu8v0z"
   contentType: "metaDataPage"
 date: "2023-10-03T15:40:39.100Z"
 intertNavn: "Visitkort"
 title: "Visitkort"
-type: "visitkort"
 pagetitle: "Visitkort"
 description: "Visitkort"
-standardPage: true
+standardPage: false
 contentUrl: "visitkort"
 showCsrBox: false
 showEmployeeSection: false
 showTeaserBox: false
 showTechnology: false
-slug: "visitkort"
+type: "visitkort"
 ---
