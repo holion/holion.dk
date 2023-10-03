@@ -170,6 +170,88 @@
   padding-left: 10px;
   top: 34px; }
 
+.mainWrapper {
+  margin-top: 80px; }
+  .mainWrapper .visitkortHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px; }
+    .mainWrapper .visitkortHeader h1 {
+      font-size: 40px;
+      width: 100%;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .mainWrapper .visitkortHeader h1 {
+          font-size: 30px; } }
+    .mainWrapper .visitkortHeader #typewriter {
+      text-align: center !important;
+      font-weight: bold;
+      font-size: 40px;
+      color: #65BD84; }
+      @media screen and (max-width: 768px) {
+        .mainWrapper .visitkortHeader #typewriter {
+          font-size: 30px; } }
+      .mainWrapper .visitkortHeader #typewriter::after {
+        content: '|';
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 100;
+        color: white;
+        scale: 150%; }
+  .mainWrapper img {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    height: 500px;
+    opacity: .5;
+    object-fit: cover;
+    z-index: -1; }
+
+.greenBoxes {
+  background-color: black;
+  padding-block: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-inline: 30px; }
+  .greenBoxes > * {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #65BD84;
+    width: 50%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .greenBoxes > * {
+        font-size: 24px; } }
+    .greenBoxes > * a {
+      color: white !important;
+      text-decoration: none; }
+    .greenBoxes > * i {
+      bottom: 10px;
+      right: 20px;
+      color: #65BD84;
+      transition: 0.2s; }
+    .greenBoxes > *:hover {
+      background-color: #65BD84; }
+      .greenBoxes > *:hover i {
+        color: white; }
+
+*:has(.mainWrapper) #footer-upper {
+  margin: 0 !important;
+  padding-block: 30px;
+  background-color: black; }
+
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
 
