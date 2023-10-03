@@ -11,7 +11,7 @@ intertNavn: "Visitkort"
 title: "Visitkort"
 pagetitle: "Visitkort"
 description: "Visitkort"
-standardPage: false
+standardPage: true
 contentUrl: "visitkort"
 showCsrBox: false
 showEmployeeSection: false
