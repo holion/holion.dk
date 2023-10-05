@@ -9,8 +9,8 @@ sys:
 date: "2023-10-03T15:40:39.100Z"
 intertNavn: "Visitkort"
 title: "Visitkort"
-pagetitle: "Visitkort"
-description: "Visitkort"
+pagetitle: "Er Holion noget for en medarbejder som dig?"
+description: "Hvis du er vild med apps og IT, elsker kage og fredagsbarer og ikke har noget imod at affaldssortere, så JA!"
 standardPage: true
 contentUrl: "visitkort"
 showCsrBox: false
