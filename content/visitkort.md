@@ -1,4 +1,0 @@
----
-contentUrl: "visitkort"
-type: "visitkort"
----

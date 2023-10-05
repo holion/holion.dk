@@ -2,8 +2,8 @@
 sys:
   id: "584ynoTXoOtEFN7YlXTmZj"
   updatedAt: "2023-10-03T15:40:39.100Z"
-  createdAt: "2023-10-04T14:00:31.595Z"
-  revision: 5
+  createdAt: "2023-10-05T12:28:08.546Z"
+  revision: 6
   space: "pae07rsu8v0z"
   contentType: "metaDataPage"
 date: "2023-10-03T15:40:39.100Z"
@@ -17,5 +17,6 @@ showCsrBox: false
 showEmployeeSection: false
 showTeaserBox: false
 showTechnology: false
+type: "visitkort"
 slug: "visitkort"
 ---
