@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'old';
 @import 'navbar';
-@import 'forside';
+@import 'frontpage';
 @import 'contact';
 @import '404';
 @import 'esg';
@@ -86,6 +86,6 @@ $primary: #65bd84;
     }
 }
 
-// #all {
-//     margin-top: 80px;
-// }
+.black-box {
+    background-color: black;
+}

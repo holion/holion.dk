@@ -50,7 +50,7 @@
 {{ if eq (mod $i 2) 1 }}
 <div class="green-box">
     {{ else }}
-    <div>
+    <div class="black-box">
         {{ end }}
         {{ if isset . "imagePosition" }}
         {{ partial "standardSectionImagePosition.html" .}}

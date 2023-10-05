@@ -181,7 +181,8 @@
     .mainWrapper .visitkortHeader h1 {
       font-size: 40px;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      padding-inline: 30px; }
       @media screen and (max-width: 768px) {
         .mainWrapper .visitkortHeader h1 {
           font-size: 30px; } }
@@ -216,6 +217,10 @@
   justify-content: center;
   gap: 30px;
   padding-inline: 30px; }
+  @media screen and (max-width: 768px) {
+    .greenBoxes {
+      gap: 15px;
+      padding-inline: 15px; } }
   .greenBoxes > * {
     position: relative;
     display: flex;
@@ -298,3 +303,6 @@
 
 .row.text-md-center p {
   text-align: center; }
+
+.black-box {
+  background-color: black; }
