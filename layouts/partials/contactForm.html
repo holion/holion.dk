@@ -5,6 +5,8 @@
 {{ if eq .url $currentPageUrl }}
 
 <div class="container pt-5 pb-md-2 pb-xl-5" id="contact">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+
     <h2 class="holion-title-section holion_main_color my-3 d-none d-md-block">{{ .title }}</h2>
     <h2 class="holion-title-section holion_main_color my-3 d-md-none">{{ .titleMobile }}</h2>
     {{ if .content }}
@@ -38,18 +40,16 @@
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="name">Robottjek! Hvad er 2 + 2?</label>
-                                <span id="magicValueRequired" style="display: none; color: red"><br />Du skal svare
-                                    korrekt på dette spørgsmål.</span>
-                                <input type="text" class="form-control" name="magicValue" id="magicValue" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
                                 <label for="message">{{ i18n "contactMessage" }}</label>
                                 <textarea id="message" class="form-control" name="message" rows="12"
                                     required></textarea>
                             </div>
+                        </div>
+
+                        <div class="checkbox mb-3">
+                            <!-- The following line controls and configures the Turnstile widget. -->
+                            <div class="cf-turnstile" data-sitekey="0x4AAAAAAALaNIsm4WRGlrLv" data-theme="light"></div>
+                            <!-- end. -->
                         </div>
                         
                         <div class="col-sm-12 text-center mt-2 holion_main_color">
@@ -61,7 +61,6 @@
                                 "contactSend" }}</button>
                             
                         </div>
-
                     </div>
                     <!-- /.row -->
                 </form>
