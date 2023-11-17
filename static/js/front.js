@@ -68,14 +68,6 @@ function contactFormAjax() {
     contactForm.onsubmit = function (event) {
         event.preventDefault();
 
-        var magicValueElement = document.getElementById('magicValue');
-        if (magicValueElement.value !== '4') {
-            magicValueElement.scrollIntoView(true);
-            document.getElementById('magicValueRequired').style.display = '';
-            return false;
-        }
-        document.getElementById('magicValueRequired').style.display = 'none';
-
         var payload = {};
 
         contactForm.querySelectorAll("input, textarea").forEach(function (field) {
@@ -83,6 +75,8 @@ function contactFormAjax() {
             field.readOnly = true;
         });
         $('#contact-message').empty();
+
+        payload["websiteName"] = "holion";
 
         fetch(contactForm.action, {
             method: 'post',
