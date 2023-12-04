@@ -6,7 +6,7 @@
             </h2>
             {{ partial "testIfMobileContent" (dict "mobileContent" .contentMobile "content" .content "style" "my-3 mb-5") }}
             {{ if .youtubeId }}
-            {{ partial "youtube.html" (dict "id" .youtubeId )}}
+            {{ partial "streamable.html" (dict "id" .streamableId )}}
             {{ end }}
             {{ partial "testIfMobileContent" (dict "mobileContent" .content2Mobile "content" .content2 "style" "my-3 mb-5") }}
             {{ if and .buttonLink .buttonText }} 
