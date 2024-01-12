@@ -21,17 +21,24 @@ googleAnalytics = "UA-338843-5"
     parent = "services"
 
 [[menu.main]]
+    identifier = "xamarin"
+    name = "Konvertering af Xamarin apps"
+    url = "/konvertering-af-xamarin-app/"
+    weight = 2
+    parent = "services"
+
+[[menu.main]]
     identifier = "websys"
     name = "Udvikling af IT-systemer"
     url = "/webudvikling/"
-    weight = 2
+    weight = 3
     parent = "services"
 
 [[menu.main]]
     identifier = "drift"
     name = "Hosting og drift"
     url = "/drift/"
-    weight = 3
+    weight = 4
     parent = "services"
 
 [[menu.main]]
