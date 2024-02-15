@@ -1388,6 +1388,11 @@ element.style {
         /* max-width: 15rem; */
         /* transition: all 0.5s ease; */
         display: none;
+
+    }
+
+    .menu__list .menu__item .submenu__list.show {
+        display: block;
     }
 
     .submenu__list {
