@@ -34,7 +34,11 @@
                 {{ range .Children }}
                 <li class="submenu__item">
                   <a class="dropdown-item submenu__link text-nowrap" href="{{ .URL }}">
-                    <span class="submenu__text">{{ .Name }}</span>
+                    
+                    <span class="submenu__text">
+                      {{- if .Pre }} <span class="submenu__padding" style="margin-right: {{.Pre}}"></span>{{end}}
+                      {{ .Name }}
+                    </span>
                   </a>
                   </li>
               {{ end }}

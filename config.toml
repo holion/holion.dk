@@ -22,16 +22,18 @@ googleAnalytics = "UA-338843-5"
 
 [[menu.main]]
     identifier = "xamarin"
-    name = "\u000B Konvertering af Xamarin apps"
+    name = "Konvertering af Xamarin apps"
     url = "/konvertering-af-xamarin-app/"
     weight = 2
+    pre = "20px"
     parent = "services"
 
 [[menu.main]]
     identifier = "pwa"
-    name = "\u000B Alternativer til PWA"
+    name = "Alternativer til PWA"
     url = "/alternativer-til-pwa-til-ios/"
     weight = 3
+    pre = "20px"
     parent = "services"
 
 [[menu.main]]
