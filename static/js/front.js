@@ -1,6 +1,8 @@
 /* global $this: true */
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "animationsSlider" }] */
 
+console.log('test');
+
 if ($.cookie('themeCSSpath')) {
     $('link#theme-stylesheet').attr('href', $.cookie('themeCSSpath'))
 }

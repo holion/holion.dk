@@ -257,6 +257,66 @@
   padding-block: 30px;
   background-color: black; }
 
+.popup-hidden {
+  opacity: 0;
+  left: -400px !important;
+  pointer-events: none; }
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  height: 600px;
+  width: fit-content;
+  background-color: white;
+  z-index: 100000;
+  transition: .3s;
+  overflow: scroll; }
+  .popup .popup-whitebox {
+    width: 600px;
+    height: 100%; }
+  .popup .popup-header svg {
+    width: 425px;
+    height: 100%; }
+  .popup .close-popup svg {
+    fill: black; }
+  @media screen and (max-width: 900px) {
+    .popup {
+      width: calc(100% - 40px);
+      justify-content: center; }
+      .popup .popup-header {
+        display: none; }
+      .popup h5, .popup p {
+        text-align: center; }
+      .popup .popup-checkbox input {
+        width: fit-content;
+        margin-right: 15px; } }
+  .popup .close-popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer; }
+  .popup div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+    color: black; }
+    .popup div:last-child {
+      padding: 30px; }
+  .popup form {
+    width: 100%;
+    padding: 0; }
+  .popup ._form-thank-you,
+  .popup ._form-branding {
+    display: none; }
+
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
 
