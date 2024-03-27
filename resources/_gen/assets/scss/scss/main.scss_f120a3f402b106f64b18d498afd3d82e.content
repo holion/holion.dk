@@ -261,58 +261,121 @@
   opacity: 0;
   left: -400px !important;
   pointer-events: none; }
-
+  @media screen and (max-width: 940px) {
+    .popup-hidden {
+      bottom: -520px !important;
+      left: 0% !important; } }
 .popup {
   position: fixed;
   bottom: 20px;
   left: 20px;
   display: flex;
-  height: 600px;
-  width: fit-content;
+  justify-content: space-between;
+  height: 500px;
+  width: 900px;
   background-color: white;
   z-index: 100000;
-  transition: .3s;
-  overflow: scroll; }
+  transition: .5s;
+  overflow: scroll;
+  border-radius: 5px; }
   .popup .popup-whitebox {
-    width: 600px;
+    width: 100%;
     height: 100%; }
   .popup .popup-header svg {
-    width: 425px;
+    width: auto;
     height: 100%; }
-  .popup .close-popup svg {
-    fill: black; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 550px) {
+    .popup {
+      height: fit-content;
+      min-height: 500px;
+      max-height: calc(100% - 100px - 20px); } }
+  @media screen and (max-width: 940px) {
     .popup {
       width: calc(100% - 40px);
+      max-width: 550px;
+      left: 0%;
+      right: 0%;
+      margin-inline: auto;
       justify-content: center; }
       .popup .popup-header {
         display: none; }
-      .popup h5, .popup p {
+      .popup p {
         text-align: center; }
       .popup .popup-checkbox input {
         width: fit-content;
-        margin-right: 15px; } }
+        margin-right: 15px; }
+      .popup ._form-title {
+        text-align: center; } }
   .popup .close-popup {
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     padding: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 100vh; }
+    .popup .close-popup:hover {
+      transform: rotate(90deg); }
   .popup div {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: fit-content;
     height: 100%;
     color: black; }
-    .popup div:last-child {
-      padding: 30px; }
   .popup form {
-    width: 100%;
-    padding: 0; }
+    padding: 30px; }
+    .popup form ._form-title {
+      font-weight: bold;
+      width: 100%; }
+    .popup form ._form-title-mobile {
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      display: none; }
+      .popup form ._form-title-mobile span {
+        color: #48a769; }
+    @media screen and (max-width: 940px) {
+      .popup form ._form-title-mobile {
+        display: block; }
+      .popup form ._form-title {
+        display: none; } }
+    .popup form ._form_element {
+      width: 100%;
+      padding-top: 10px; }
+      .popup form ._form_element label {
+        width: 100%; }
+    .popup form ._field-wrapper {
+      width: 100%; }
+    .popup form input {
+      border: 1px solid #000;
+      padding: 5px 10px;
+      width: 100%; }
+      .popup form input:focus {
+        outline: none;
+        border: 1px solid #65BD84; }
+    .popup form ._button-wrapper {
+      width: 100%; }
+    .popup form ._submit {
+      width: 100%;
+      margin-top: 30px;
+      border: none;
+      background-color: #48a769;
+      border-radius: 5px;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px; }
+      .popup form ._submit:hover {
+        background-color: #65BD84; }
+    .popup form p.submit-note {
+      font-size: 14px;
+      padding-top: 5px;
+      text-align: center; }
   .popup ._form-thank-you,
   .popup ._form-branding {
     display: none; }
