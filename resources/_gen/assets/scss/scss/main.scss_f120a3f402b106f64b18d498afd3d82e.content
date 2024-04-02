@@ -286,7 +286,7 @@
   .popup .popup-whitebox {
     width: 100%;
     height: 100%; }
-  .popup .popup-header img {
+  .popup .popup-header svg {
     width: auto;
     height: 100%; }
   @media screen and (max-width: 550px) {
