@@ -6,15 +6,16 @@ closePopup.addEventListener('click', () => {
     sessionStorage.setItem('popup-closed', 'true');
 });
 
-document.querySelector('#_form_3_').addEventListener('submit', () => {
-    localStorage.setItem('popup-submitted', 'true');
-});
-
 if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed')) {
     setTimeout(() => {
         popup.classList.remove('popup-hidden');
     }, 3000);
 };
+
+const popupTeaser = document.querySelector('.popup-teaser');
+popupTeaser.addEventListener('click', () => {
+    popup.classList.remove('popup-hidden');
+});
 
 // ActiveCampaign
 window.cfields = { "1": "holions_privatlivspolitik" };
@@ -32,6 +33,9 @@ window._show_thank_you = function (id, message, trackcmp_url, email) {
         // Site tracking URL to use after inline form submission.
         _load_script(trackcmp_url);
     }
+    // Local storage
+    localStorage.setItem('popup-submitted', 'true');
+
     if (typeof window._form_callback !== 'undefined') window._form_callback(id);
 };
 window._show_unsubscribe = function (id, message, trackcmp_url, email) {
@@ -73,6 +77,8 @@ window._show_error = function (id, message, html) {
         var div = document.createElement('div');
         div.className = '_error-html';
         div.innerHTML = html;
+        // CAPTCHA
+        err.innerHTML = '';
         err.appendChild(div);
     }
 };
@@ -535,3 +541,7 @@ window._load_script = function (url, callback, isSubmit) {
     };
     addEvent(form_to_submit, 'submit', form_submit);
 })();
+
+
+
+// document.querySelector('._error-inner._form_error._no_arrow').textContent = 'Test';

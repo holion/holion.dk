@@ -1,3 +1,37 @@
+// Popup Teaser
+.popup-teaser {
+    position: fixed;
+    bottom: 20px;
+    background-color: $primary;
+    left: 0;
+    // transform: translate(-100%, 100%);
+    transform: translateX(-100%);
+    padding: 20px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    transition: .3s;
+    opacity: 0;
+    z-index: 100000;
+    &:hover {
+        padding-inline: 40px;
+    }
+
+    @media screen and (max-width: 940px) {
+        display: none;
+    }
+}
+
+:has(.popup-hidden) {
+    .popup-teaser {
+        // transform: translate(0, 100%);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+// Popup
 .popup-hidden {
     opacity: 0;
     left: -400px !important;
@@ -15,7 +49,7 @@
     left: 20px;
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    height: 520px;
     width: 900px;
     background-color: white;
     z-index: 100000;
@@ -107,6 +141,9 @@
 
     form {
         padding: 30px;
+        overflow-y: scroll;
+        height: fit-content;
+        max-height: 100%;
 
         ._form-title {
             font-weight: bold;
@@ -160,6 +197,7 @@
 
         ._button-wrapper {
             width: 100%;
+            height: fit-content;
         }
 
         ._submit {
@@ -203,8 +241,4 @@
             margin-right: 10px;
         }
     }
-
-    // ._error-inner {
-    //     display: none;
-    // }
 }
