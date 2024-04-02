@@ -1,5 +1,6 @@
 const popup = document.querySelector('.popup');
 const closePopup = document.querySelector('.close-popup');
+const popupTeaser = document.querySelector('.popup-teaser');
 
 closePopup.addEventListener('click', () => {
     popup.classList.add('popup-hidden');
@@ -12,7 +13,10 @@ if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-c
     }, 3000);
 };
 
-const popupTeaser = document.querySelector('.popup-teaser');
+if (localStorage.getItem('popup-submitted')) {
+    popupTeaser.classList.add('popup-teaser-hidden');
+}
+
 popupTeaser.addEventListener('click', () => {
     popup.classList.remove('popup-hidden');
 });
@@ -78,8 +82,15 @@ window._show_error = function (id, message, html) {
         div.className = '_error-html';
         div.innerHTML = html;
         // CAPTCHA
-        err.innerHTML = '';
+        err.innerHTML = 'Bekræft at du ikke er en robot';
         err.appendChild(div);
+        setTimeout(() => {
+            document.querySelector('#_form_3_').scrollTo({
+                top: document.querySelector('#_form_3_').scrollHeight,
+                behavior: 'smooth'
+            });
+        }, 200);
+        // CAPTCHA End
     }
 };
 window._load_script = function (url, callback, isSubmit) {

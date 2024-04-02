@@ -1,7 +1,7 @@
 // Popup Teaser
 .popup-teaser {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     background-color: $primary;
     left: 0;
     // transform: translate(-100%, 100%);
@@ -13,7 +13,9 @@
     cursor: pointer;
     transition: .3s;
     opacity: 0;
+    pointer-events: none;
     z-index: 100000;
+
     &:hover {
         padding-inline: 40px;
     }
@@ -28,6 +30,13 @@
         // transform: translate(0, 100%);
         transform: translateX(0);
         opacity: 1;
+        pointer-events: auto;
+
+        &.popup-teaser-hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(0);
+        }
     }
 }
 
