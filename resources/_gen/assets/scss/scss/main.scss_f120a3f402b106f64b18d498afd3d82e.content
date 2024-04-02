@@ -278,10 +278,15 @@
   transition: .5s;
   overflow: scroll;
   border-radius: 5px; }
+  .popup ._clear-element {
+    display: none; }
+  @media screen and (max-width: 425px) {
+    .popup * {
+      font-size: 13px !important; } }
   .popup .popup-whitebox {
     width: 100%;
     height: 100%; }
-  .popup .popup-header svg {
+  .popup .popup-header img {
     width: auto;
     height: 100%; }
   @media screen and (max-width: 550px) {
@@ -363,13 +368,13 @@
       width: 100%; }
     .popup form ._submit {
       width: 100%;
-      margin-top: 30px;
       border: none;
       background-color: #48a769;
       border-radius: 5px;
       color: white;
       padding: 10px 20px;
-      font-size: 16px; }
+      font-size: 16px;
+      margin-top: 10px; }
       .popup form ._submit:hover {
         background-color: #65BD84; }
     .popup form p.submit-note {
@@ -379,6 +384,18 @@
   .popup ._form-thank-you,
   .popup ._form-branding {
     display: none; }
+  .popup ._row._checkbox-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-block: 10px;
+    color: black;
+    font-size: 14px; }
+    .popup ._row._checkbox-radio input {
+      width: auto;
+      margin-right: 10px; }
 
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
