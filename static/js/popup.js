@@ -5,13 +5,21 @@ const popupTeaser = document.querySelector('.popup-teaser');
 closePopup.addEventListener('click', () => {
     popup.classList.add('popup-hidden');
     sessionStorage.setItem('popup-closed', 'true');
+    if (!localStorage.getItem('popup-submitted')) {
+        popupTeaser.classList.add('popup-teaser-visible');
+    }
 });
+
 
 if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed')) {
     setTimeout(() => {
         popup.classList.remove('popup-hidden');
     }, 3000);
-};
+} else if (localStorage.getItem('popup-submitted')) {
+    popupTeaser.classList.remove('popup-teaser-visible');
+} else {
+    popupTeaser.classList.add('popup-teaser-visible');
+}
 
 if (localStorage.getItem('popup-submitted')) {
     popupTeaser.classList.add('popup-teaser-hidden');
@@ -19,6 +27,15 @@ if (localStorage.getItem('popup-submitted')) {
 
 popupTeaser.addEventListener('click', () => {
     popup.classList.remove('popup-hidden');
+    popupTeaser.classList.remove('popup-teaser-visible');
+});
+
+document.querySelector('._button-wrapper').addEventListener('DOMNodeInserted', () => {
+    const form = document.querySelector('#_form_3_');
+    form.scrollTo({
+        top: form.scrollHeight,
+        behavior: 'smooth'
+    });
 });
 
 // ActiveCampaign
@@ -27,6 +44,12 @@ window._show_thank_you = function (id, message, trackcmp_url, email) {
     var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
     form.querySelector('._form-content').style.display = 'none';
     thank_you.innerHTML = message;
+
+    const customMessage = document.createElement('div');
+    customMessage.className = 'thank-you-title';
+    customMessage.innerText = 'Tak for din tilmelding';
+    thank_you.prepend(customMessage);
+
     thank_you.style.display = 'block';
     const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
     var visitorObject = window[vgoAlias];
@@ -39,6 +62,7 @@ window._show_thank_you = function (id, message, trackcmp_url, email) {
     }
     // Local storage
     localStorage.setItem('popup-submitted', 'true');
+
 
     if (typeof window._form_callback !== 'undefined') window._form_callback(id);
 };
@@ -552,7 +576,3 @@ window._load_script = function (url, callback, isSubmit) {
     };
     addEvent(form_to_submit, 'submit', form_submit);
 })();
-
-
-
-// document.querySelector('._error-inner._form_error._no_arrow').textContent = 'Test';
