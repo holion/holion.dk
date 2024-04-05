@@ -5,6 +5,10 @@ const popupTeaser = document.querySelector('.popup-teaser');
 const popupForm = document.querySelector('#_form_3_');
 const popupSubmit = document.querySelector('#_form_3_submit');
 
+if (location.href.includes('utm_source=ActiveCampaign')) {
+    localStorage.setItem('subscribed', 'true');
+}
+
 closePopup.addEventListener('click', () => {
     popup.classList.add('popup-hidden');
     sessionStorage.setItem('popup-closed', 'true');
@@ -20,7 +24,7 @@ if (location.href.includes('cases')
     || location.href.includes('alternativer-til-pwa-til-ios')
     || location.href.includes('processen')
     || location.pathname === '/') {
-    if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !location.href.includes('utm_source=ActiveCampaign')) {
+    if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
         setTimeout(() => {
             popup.classList.remove('popup-hidden');
         }, 3000);
