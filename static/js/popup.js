@@ -1,3 +1,4 @@
+// Custom code
 const popup = document.querySelector('.popup');
 const closePopup = document.querySelector('.close-popup');
 const popupTeaser = document.querySelector('.popup-teaser');
@@ -11,7 +12,7 @@ closePopup.addEventListener('click', () => {
 });
 
 
-if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed')) {
+if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !location.href.includes('utm_source=ActiveCampaign')) {
     setTimeout(() => {
         popup.classList.remove('popup-hidden');
     }, 3000);
@@ -38,17 +39,25 @@ document.querySelector('._button-wrapper').addEventListener('DOMNodeInserted', (
     });
 });
 
-// ActiveCampaign
+// ActiveCampaign (Any code that's commented "Custom" is not part of the default ActiveCampaign JS)
 window.cfields = { "1": "holions_privatlivspolitik" };
 window._show_thank_you = function (id, message, trackcmp_url, email) {
     var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
     form.querySelector('._form-content').style.display = 'none';
     thank_you.innerHTML = message;
 
+    // Custom thank you title
     const customMessage = document.createElement('div');
     customMessage.className = 'thank-you-title';
     customMessage.innerText = 'Tak for din tilmelding';
     thank_you.prepend(customMessage);
+
+    // Custom reminder to check spam
+    const customMessageEnd = document.createElement('span');
+    customMessageEnd.innerText = 'Tjek evt. dit spamfilter';
+    customMessageEnd.style.fontWeight = 'bold';
+    thank_you.append(document.createElement('br'));
+    thank_you.append(customMessageEnd);
 
     thank_you.style.display = 'block';
     const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
@@ -60,7 +69,7 @@ window._show_thank_you = function (id, message, trackcmp_url, email) {
         // Site tracking URL to use after inline form submission.
         _load_script(trackcmp_url);
     }
-    // Local storage
+    // Custom Local storage
     localStorage.setItem('popup-submitted', 'true');
 
 
@@ -105,7 +114,7 @@ window._show_error = function (id, message, html) {
         var div = document.createElement('div');
         div.className = '_error-html';
         div.innerHTML = html;
-        // CAPTCHA
+        // Custom CAPTCHA
         err.innerHTML = 'Bekræft at du ikke er en robot';
         err.appendChild(div);
         setTimeout(() => {
@@ -114,7 +123,7 @@ window._show_error = function (id, message, html) {
                 behavior: 'smooth'
             });
         }, 200);
-        // CAPTCHA End
+        
     }
 };
 window._load_script = function (url, callback, isSubmit) {
