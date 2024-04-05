@@ -2,6 +2,8 @@
 const popup = document.querySelector('.popup');
 const closePopup = document.querySelector('.close-popup');
 const popupTeaser = document.querySelector('.popup-teaser');
+const popupForm = document.querySelector('#_form_3_');
+const popupSubmit = document.querySelector('#_form_3_submit');
 
 closePopup.addEventListener('click', () => {
     popup.classList.add('popup-hidden');
@@ -143,6 +145,8 @@ window._load_script = function (url, callback, isSubmit) {
             if (!r && (!this.readyState || this.readyState == 'complete')) {
                 r = true;
                 callback();
+                // Custom code
+                popupSubmit.innerText = 'Jeg er ikke en robot, og vil stadig gerne have e-bogen!';
             }
         };
     }
