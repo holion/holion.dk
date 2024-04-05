@@ -12,19 +12,27 @@ closePopup.addEventListener('click', () => {
 });
 
 
-if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !location.href.includes('utm_source=ActiveCampaign')) {
-    setTimeout(() => {
-        popup.classList.remove('popup-hidden');
-    }, 3000);
-} else if (localStorage.getItem('popup-submitted')) {
-    popupTeaser.classList.remove('popup-teaser-visible');
-} else {
-    popupTeaser.classList.add('popup-teaser-visible');
+if (location.href.includes('cases')
+    || location.href.includes('appudvikling')
+    || location.href.includes('konvertering-af-xamarin-app')
+    || location.href.includes('alternativer-til-pwa-til-ios')
+    || location.href.includes('processen')
+    || location.pathname === '/') {
+    if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !location.href.includes('utm_source=ActiveCampaign')) {
+        setTimeout(() => {
+            popup.classList.remove('popup-hidden');
+        }, 3000);
+    } else if (localStorage.getItem('popup-submitted')) {
+        popupTeaser.classList.remove('popup-teaser-visible');
+    } else {
+        popupTeaser.classList.add('popup-teaser-visible');
+    }
+
+    if (localStorage.getItem('popup-submitted')) {
+        popupTeaser.classList.add('popup-teaser-hidden');
+    }
 }
 
-if (localStorage.getItem('popup-submitted')) {
-    popupTeaser.classList.add('popup-teaser-hidden');
-}
 
 popupTeaser.addEventListener('click', () => {
     popup.classList.remove('popup-hidden');
@@ -123,7 +131,6 @@ window._show_error = function (id, message, html) {
                 behavior: 'smooth'
             });
         }, 200);
-        
     }
 };
 window._load_script = function (url, callback, isSubmit) {
