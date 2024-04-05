@@ -147,6 +147,7 @@ window._load_script = function (url, callback, isSubmit) {
                 callback();
                 // Custom code
                 popupSubmit.innerText = 'Jeg er ikke en robot, og vil stadig gerne have e-bogen!';
+                popupSubmit.classList.add('ready');
             }
         };
     }

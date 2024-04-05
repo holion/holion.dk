@@ -444,6 +444,19 @@
     background-color: rgba(255, 0, 0, 0.1);
     padding-left: 5px; }
 
+@keyframes pop {
+  0% {
+    scale: 100%;
+    opacity: 1; }
+  50% {
+    scale: 110%;
+    opacity: 0; }
+  100% {
+    scale: 100%;
+    opacity: 1; } }
+  .popup #_form_3_submit.ready {
+    animation: pop .3s; }
+
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
 
