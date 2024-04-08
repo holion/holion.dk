@@ -150,8 +150,10 @@ window._load_script = function (url, callback, isSubmit) {
                 r = true;
                 callback();
                 // Custom code
-                popupSubmit.innerText = 'Jeg er ikke en robot, og vil stadig gerne have e-bogen!';
-                popupSubmit.classList.add('ready');
+                setTimeout(() => {
+                    popupSubmit.innerText = 'Bekræft min tilmelding';
+                    popupSubmit.classList.add('ready');
+                }, 3000);
             }
         };
     }
