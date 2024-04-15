@@ -42,8 +42,11 @@
 .frontpage-header-box {
     position: relative;
     background: url('/img/Forside.jpg') 50% 10% repeat;
-    // background-attachment: fixed;
     background-size: 200%;
+
+    @include desktop {
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (min-width: 1440px) {

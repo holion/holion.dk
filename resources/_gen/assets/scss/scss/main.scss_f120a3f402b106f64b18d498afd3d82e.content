@@ -184,7 +184,9 @@ svg.holion-leaf {
   position: relative;
   background: url("/img/Forside.jpg") 50% 10% repeat;
   background-size: 200%; }
-
+  @media screen and (min-width: 992px) {
+    .frontpage-header-box {
+      background-attachment: fixed; } }
 @media screen and (min-width: 1440px) {
   .frontpage-header-box {
     background-size: 100%; } }
