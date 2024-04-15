@@ -1,12 +1,13 @@
 {{ $currentPageUrl := .Params.contentUrl }}
 {{ $currentPage := .Site.Params }}
 {{ $i := 0 }}
+{{ $link := "/cases" }}
 
 {{ if isset .Site.Params "features" }} {{ if .Site.Params.features.enable }} {{ if gt (len .Site.Data.features) 0 }}
     <div class="kunder-section">
         <div class="container">
             <h2 class="holion-title-section holion_main_color my-3">Tillidsfuldt samarbejde med vores kunder:</h2>
-            <a class="kunder-grid" href="/cases">
+            <a class="kunder-grid" href="{{ $link }}">
                 <div>
                     <img src="https://images.ctfassets.net/pae07rsu8v0z/60V3ulUeRTu0oGeB64v5Eo/5ab996d3d5af898fef77cfc9d2603786/kundebillede1.jpg" class="kunde-foto">
                     <div class="kunde-logoer">
@@ -27,12 +28,12 @@
                     </div>
                 </div>
             </a>
-            <div class="kunder-grid-mobile">
+            <a class="kunder-grid-mobile" href="{{ $link }}">
                 <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/gGPBhk9LgLABE2lHXQYvg/fdf3906ce8c4bc4cd2c7e4462a4a319d/guidestory.png" alt=""></div>
                 <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/4AME0uBH9OLboMGqR8Bse1/77638c75b9c6e76a84c49f015909da1b/unitpartner.png" alt=""></div>
                 <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/7kKYRDrd502TeVdlChU3Jm/9ac48923a917ca378ffd48782807e3fa/carbuddii.png" alt=""></div>
                 <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/7JJKJwvBinKqviQ6gsWsQz/3ba358289fe37722eca36f107c934388/improvento.png" alt=""></div>
-            </div>
+            </a>
         </div>
     </div>
 
