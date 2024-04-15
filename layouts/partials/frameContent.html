@@ -2,11 +2,9 @@
 <a href="{{.link}}">
 {{ end }}
     <div class="esg-frame">
-        <img class="img-holion" src="/img/layout/billedramme.png" />
-        <div>
-            {{ partial "frame-image" .}}
-        </div>
-        <div class="esg-shadow"></div>
+        {{ with .image }} {{ if isset . "url" }}
+            <img class="esg-img" src="{{ .url }}" />
+        {{ end }} {{ end }}
     </div>
 {{ if isset . "link" }}
 </a>
