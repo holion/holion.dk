@@ -349,8 +349,9 @@ svg.holion-leaf {
     background-color: white;
     transition: 0.2s;
     border-radius: 4px; }
-    .esg-grid .esg-frame:hover {
-      scale: 105%; }
+    @media screen and (min-width: 992px) {
+      .esg-grid .esg-frame:hover {
+        scale: 105%; } }
     .esg-grid .esg-frame .img-holion {
       width: 100%;
       opacity: 0;
