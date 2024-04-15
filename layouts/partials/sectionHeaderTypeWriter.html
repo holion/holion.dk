@@ -28,10 +28,10 @@
       this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
       var that = this;
-      var delta = 110 - Math.random() * 100;
+      var delta = 130 - Math.random() * 100;
 
       if (this.isDeleting) {
-        delta /= 2;
+        delta /= 3;
       }
 
       if (!this.isDeleting && this.txt === fullTxt) {
