@@ -118,6 +118,10 @@ nav.navbar {
       border-left: 4px solid #65BD84; }
     nav.navbar .menu-link-esg {
       position: relative; } }
+  @media screen and (max-width: 991px) {
+    nav.navbar .is-current-page:not(.submenu__item) .menu__text,
+    nav.navbar .nav-item:has(.is-current-page) .nav-link .menu__text {
+      color: #65BD84; } }
 svg.holion-leaf {
   position: absolute;
   height: 10px;

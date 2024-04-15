@@ -166,6 +166,15 @@ nav.navbar {
             // }
         }
     }
+
+    @include mobile {
+        .is-current-page:not(.submenu__item),
+        .nav-item:has(.is-current-page) .nav-link {
+            .menu__text {
+                color: $primary;
+            }
+        }
+    }
 }
 
 svg.holion-leaf {
