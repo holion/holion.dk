@@ -133,7 +133,7 @@ function sliders() {
         });
 
         $(".owl-carousel.testimonials").owlCarousel({
-          autoPlay: 6000,
+          autoPlay: 12000,
           stopOnHover: true,
           items: 1,
           itemsDesktop: 1,

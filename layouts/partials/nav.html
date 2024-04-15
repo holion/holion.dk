@@ -17,6 +17,7 @@
     
       <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
         <ul class="navbar-nav menu__list">
+          {{ $currentPage := . }}
         {{- $currentNode := . }} {{- range .Site.Menus.main }} {{- if .Name }} {{- if .HasChildren }}
         
           <li class="nav-item dropdown menu__item">
@@ -32,7 +33,7 @@
             </a>
             <ul class="submenu__list dropdown-menu" aria-labelledby="navbarDropdown">
                 {{ range .Children }}
-                <li class="submenu__item">
+                <li class="submenu__item {{ if eq page.RelPermalink .URL }}is-current-page{{ end }}">
                   <a class="dropdown-item submenu__link text-nowrap" href="{{ .URL }}">
                     
                     <span class="submenu__text">
@@ -46,10 +47,16 @@
           </li>
     
         {{- else }}
+        {{ $currentPage := . }}
           <li class="nav-item menu__item">
-              <a {{ if eq .Name "Kontakt" }} class="nav-link menu__link text-nowrap background-green" {{ else }}
-                class="menu__link text-nowrap" {{ end }} href="{{ .URL }}">
-                <span {{ if eq .Name "ESG" }} class="menu__text green" {{ else }} class="menu__text" {{ end }}>
+              <a {{ if eq .Name "Kontakt" }} class="nav-link menu__link text-nowrap {{ if eq page.RelPermalink .URL }} is-current-page {{ end }}" {{ else }}
+                class="menu__link text-nowrap {{ if eq page.RelPermalink .URL }} is-current-page {{ end }}" {{ end }} href="{{ .URL }}">
+                <span {{ if eq .Name "ESG" }} class="menu__text menu-link-esg" {{ else }} class="menu__text" {{ end }}>
+                  {{ if eq .Name "ESG" }}
+                    <svg class="holion-leaf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.51 14.76">
+                      <path d="M16.04,0C16.84,0,17.51,0,18.19,0c.3,0,.35.06.31.37-.11.69-.23,1.38-.37,2.06-.39,1.82-.99,3.57-1.9,5.21-2.01,3.62-5.06,5.82-9.08,6.72-1.75.4-3.53.45-5.31.34-.33-.03-.67-.07-1.01-.12-.15,0-.26-.07-.31-.23C-.01,12.27-.23,10.19.34,8.08c.56-2.03,1.79-3.58,3.49-4.79,1.13-.81,2.37-1.39,3.68-1.84,1.59-.55,3.22-.9,4.89-1.13,1.25-.18,2.5-.24,3.64-.32Z" style="fill: #65bd84; stroke-width: 0px;"/>
+                    </svg>
+                  {{ end }}
                   {{ .Name }}
                 </span>
               </a>

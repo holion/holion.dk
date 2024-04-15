@@ -3,31 +3,88 @@
 {{ $i := 0 }}
 
 {{ if isset .Site.Params "features" }} {{ if .Site.Params.features.enable }} {{ if gt (len .Site.Data.features) 0 }}
-<div class="green-box pt-5 pb-5">
-    <div class="container">
-        <div class="row d-none d-md-block">
-            <div class="col-md-12">
-                {{ range .Site.Data.specialSection }}
-                {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
-                <h2 class="holion-title-section holion_main_color my-3">{{ .title }}</h2>
-                <div class="my-3 mb-5">{{ .content | markdownify }}</div>
-                {{ end }}
-                {{ end }}
+    <div class="kunder-section">
+        <div class="container">
+            <h2 class="holion-title-section holion_main_color my-3">Tillidsfuldt samarbejde med vores kunder:</h2>
+            <div class="kunder-grid">
+                <div>
+                    <img src="https://images.ctfassets.net/pae07rsu8v0z/60V3ulUeRTu0oGeB64v5Eo/5ab996d3d5af898fef77cfc9d2603786/kundebillede1.jpg" class="kunde-foto">
+                    <div class="kunde-logoer">
+                        <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/gGPBhk9LgLABE2lHXQYvg/fdf3906ce8c4bc4cd2c7e4462a4a319d/guidestory.png" alt=""></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="kunde-logoer">
+                        <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/4AME0uBH9OLboMGqR8Bse1/77638c75b9c6e76a84c49f015909da1b/unitpartner.png" alt=""></div>
+                        <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/7kKYRDrd502TeVdlChU3Jm/9ac48923a917ca378ffd48782807e3fa/carbuddii.png" alt=""></div>
+                    </div>
+                    <img src="https://images.ctfassets.net/pae07rsu8v0z/6e28Kf7hL2vw5NbHyUWQlO/783adf400afdfab94ec33729c1ee8df2/kundebillede2.jpg" class="kunde-foto">
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/pae07rsu8v0z/7h9RjhZVHTVanrP6crzZJM/e5b3c324db410d523573a81a0a4bbcfc/kundebillede3.jpg" class="kunde-foto">
+                    <div class="kunde-logoer">
+                        <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/7JJKJwvBinKqviQ6gsWsQz/3ba358289fe37722eca36f107c934388/improvento.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="kunder-grid-mobile">
+                <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/gGPBhk9LgLABE2lHXQYvg/fdf3906ce8c4bc4cd2c7e4462a4a319d/guidestory.png" alt=""></div>
+                <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/4AME0uBH9OLboMGqR8Bse1/77638c75b9c6e76a84c49f015909da1b/unitpartner.png" alt=""></div>
+                <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/7kKYRDrd502TeVdlChU3Jm/9ac48923a917ca378ffd48782807e3fa/carbuddii.png" alt=""></div>
+                <div class="kunde-logo"><img src="https://images.ctfassets.net/pae07rsu8v0z/7JJKJwvBinKqviQ6gsWsQz/3ba358289fe37722eca36f107c934388/improvento.png" alt=""></div>
             </div>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col-12 col-md-10 col-lg-8 col-xl-6">
-                <div class="d-flex justify-content-evenly">
+    </div>
+
+    <div class="frontpage-box-links pt-5 pb-5">
+        <div class="container">
+            {{/*  <h2 class="holion-title-section holion_main_color mb-3">Hvad vil du gerne vide mere om?</h2>  */}}
+            <h2 class="holion-title-section my-3 text-center" style="font-weight: 300;">
+                Drømmer du om din egen app eller et IT-system,
+                <br class="desktop-br">
+                der kan løfte din forretning til nye højder?
+                <br>
+                <br>
+                Vi kan hjælpe dig med at skabe et!
+            </h2>
+                <div class="d-flex">
                     {{ range $index, $element := sort .Site.Data.features "weight" }}
-                        <a href="{{ $element.link }}" class="container-square holion-border holion-title-section">
+                        <a href="{{ $element.link }}" class="btn btn-primary">
+                            <div>{{ $element.name }}</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                              </svg>
+                        </a>
+                    
+                        {{/*  Old Links  */}}
+                        {{/*  <a href="{{ $element.link }}" class="container-square holion-border holion-title-section">
                             <div class="container-inner-text white_text_color">{{ $element.name }}</div>
                             <i class="container-inner-arrow fa fa-long-arrow-right"></i>
-                        </a>
+                        </a>  */}}
+                    {{ end }}
+                </div>
+        </div>
+    </div>
+    <div class="green-box pt-5 pb-5">
+        <div class="container">
+            <div class="container">
+                <div class="row align-items-start custom-frontpage-section">
+                    {{ range .Site.Data.specialSection }}
+                        {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
+                            <h2 class="holion-title-section holion_main_color my-3">{{ .title }}</h2>
+                            <div class="custom-frontpage-section-content">
+                                <div>
+                                    <img src="{{ .image.url }}" class="specialSection-img">
+                                </div>
+                                <div>
+                                    <div class="my-3 mb-5">{{ .content | markdownify }}</div>
+                                </div>
+                            </div>
+                        {{ end }}
                     {{ end }}
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 {{ end }} {{ end }} {{ end }}

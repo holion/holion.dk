@@ -45,7 +45,7 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@include mobile {
     .esg-grid {
         grid-template-columns: repeat(2, 1fr);
     }

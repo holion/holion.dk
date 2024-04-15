@@ -94,3 +94,22 @@ $primary: #65bd84;
 .checkbox.mb-3 {
     display: none;
 }
+
+#content .container img:not(.esg-grid img) {
+    border-radius: $radius * 2;
+}
+
+a.btn,
+.service-box,
+iframe,
+.hover-box {
+    border-radius: $radius;
+}
+.hover-box {
+    border-radius: $radius * 4;
+}
+
+// Rounded photos on testimonial
+// .testimonial-items img {
+//     border-radius: 100vh !important;
+// }

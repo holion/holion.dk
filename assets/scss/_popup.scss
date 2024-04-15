@@ -7,7 +7,7 @@
     // transform: translate(-100%, 100%);
     transform: translateX(100%);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: $radius;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     cursor: pointer;
@@ -61,7 +61,7 @@
     z-index: 100000;
     transition: .5s;
     overflow: scroll;
-    border-radius: 5px;
+    border-radius: $radius;
 
     ._clear-element {
         display: none;
@@ -211,7 +211,7 @@
             width: 100%;
             border: none;
             background-color: darken($primary, 10%);
-            border-radius: 5px;
+            border-radius: $radius;
             color: white;
             padding: 10px 20px;
             font-size: 16px;

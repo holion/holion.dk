@@ -5,7 +5,9 @@
     --primary-dark: #3b8a57;
     --primary-dark-opaque: #3b8a5780;
     --bg-dark: #02261A;
+    --bg-dark: #212529;
 }
+
 body {
     background: #000;
     color: #fff;
@@ -133,15 +135,6 @@ h6 {
     left: 80%;
     display: flex;
     }
-}
-    
-.footer-upper {
-    background-color: black;
-    height: 180px;
-}
-
-.footer-upper.small {
-    height: 50px;
 }
 .right-positioned-parent {
     position: relative;
@@ -644,18 +637,6 @@ a:hover {
 .header-distance {
     margin-top: 81px;
     padding-top: 100px;
-}
-
-.frontpage-header-box {
-    position: relative;
-    background: url('/img/Forside.jpg') 50% 10% repeat;
-    background-size: 200%;
-}
-
-@media screen and (min-width: 1440px) {
-    .frontpage-header-box {
-        background-size: 100%;
-    }
 }
 
 .contact-outer-div-mobile {

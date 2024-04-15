@@ -7,11 +7,13 @@
             <ul class="owl-carousel testimonials">
                 {{ range (where (where .Site.AllPages.ByWeight "Type" "testimonials")
                 ".Params.testimonial" "!=" nil) }}
-                <li class="item">
-                    <div class="row testimonial-items">
-                        {{ partial "testimonial-content.html" . }}
-                    </div>
-                </li>
+                {{ if .Params.frontPage }}
+                    <li class="item">
+                        <div class="row testimonial-items">
+                            {{ partial "testimonial-content.html" . }}
+                        </div>
+                    </li>
+                {{ end }}
                 {{ end }}
 
             </ul>

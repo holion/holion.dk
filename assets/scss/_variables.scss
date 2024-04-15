@@ -1,2 +1,21 @@
+@mixin mobile {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
 $primary: #65BD84;
 $ts: .2s;
+$radius: 4px;
