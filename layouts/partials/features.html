@@ -1,12 +1,12 @@
 {{ $currentPageUrl := .Params.contentUrl }}
 {{ $currentPage := .Site.Params }}
 {{ $i := 0 }}
-{{ $link := "/cases" }}
+{{ $link := "/cases/" }}
 
 {{ if isset .Site.Params "features" }} {{ if .Site.Params.features.enable }} {{ if gt (len .Site.Data.features) 0 }}
     <div class="kunder-section">
         <div class="container">
-            <h2 class="holion-title-section holion_main_color my-3">Tillidsfuldt samarbejde med vores kunder:</h2>
+            <h2 class="holion-title-section holion_main_color my-3">Tillidsfuldt samarbejde med vores kunder</h2>
             <a class="kunder-grid" href="{{ $link }}">
                 <div>
                     <img src="https://images.ctfassets.net/pae07rsu8v0z/60V3ulUeRTu0oGeB64v5Eo/5ab996d3d5af898fef77cfc9d2603786/kundebillede1.jpg" class="kunde-foto">
