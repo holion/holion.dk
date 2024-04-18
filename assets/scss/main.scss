@@ -110,6 +110,12 @@ iframe,
     border-radius: $radius * 4;
 }
 
+.contentful-image-box {
+    img {
+        object-fit: contain;
+    }
+}
+
 // Rounded photos on testimonial
 // .testimonial-items img {
 //     border-radius: 100vh !important;
