@@ -113,6 +113,7 @@ iframe,
 .contentful-image-box {
     img {
         object-fit: contain;
+        border-radius: $radius !important;
     }
 }
 
