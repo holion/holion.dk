@@ -115,5 +115,6 @@ iframe,
     overflow: hidden;
     img {
         object-fit: contain;
+        border-radius: $radius !important;
     }
 }
