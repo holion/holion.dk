@@ -109,3 +109,7 @@ iframe,
 .hover-box {
     border-radius: $radius * 4;
 }
+
+.contentful-image-box img {
+    object-fit: cover;
+}
