@@ -158,7 +158,9 @@
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
           'event': 'formSubmission',
-          'email': this.value.toLowerCase().trim()
+          'email': {
+            'email_address': this.value.toLowerCase().trim()
+          }
         });
       });
     
