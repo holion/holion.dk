@@ -157,7 +157,7 @@
       emailInput.addEventListener('change', function() {
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-          'event': 'formSubmission',
+          'event': 'gtm.click',
           'email': {
             'email_address': this.value.toLowerCase().trim()
           }
@@ -167,7 +167,7 @@
       nameInput.addEventListener('change', function() {
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-          'event': 'formSubmission',
+          'event': 'gtm.click',
           'first_name': this.value.toLowerCase().trim()
         });
       });
@@ -175,7 +175,7 @@
       phoneInput.addEventListener('change', function() {
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-          'event': 'formSubmission',
+          'event': 'gtm.click',
           'phone_number': this.value.toLowerCase().trim()
         });
       });
