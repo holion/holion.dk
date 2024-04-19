@@ -153,29 +153,50 @@
       var emailInput = document.querySelector('#email');
       var nameInput = document.querySelector('#name');
       var phoneInput = document.querySelector('#phone');
-    
+  
+      function hashSHA256(value) {
+        var crypto = window.crypto || window.msCrypto;
+        var encoder = new TextEncoder();
+        var data = encoder.encode(value);
+        return crypto.subtle.digest('SHA-256', data).then(function(hash) {
+          var hex = Array.from(new Uint8Array(hash))
+            .map(function(byte) {
+              return byte.toString(16).padStart(2, '0');
+            })
+            .join('');
+          return hex;
+        });
+      }
+  
       emailInput.addEventListener('change', function() {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          'event': 'gtm.click',
-          'email': this.value.toLowerCase().trim()
+        hashSHA256(this.value.toLowerCase().trim()).then(function(hash) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'gtm.click',
+            'email_hash': hash
+          });
         });
       });
-    
+  
       nameInput.addEventListener('change', function() {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          'event': 'gtm.click',
-          'first_name': this.value.toLowerCase().trim()
+        hashSHA256(this.value.toLowerCase().trim()).then(function(hash) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'gtm.click',
+            'first_name_hash': hash
+          });
         });
       });
-    
+  
       phoneInput.addEventListener('change', function() {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          'event': 'gtm.click',
-          'phone_number': this.value.toLowerCase().trim()
+        hashSHA256(this.value.toLowerCase().trim()).then(function(hash) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'gtm.click',
+            'phone_number_hash': hash
+          });
         });
       });
     });
-</script>
+  </script>
+  
