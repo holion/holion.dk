@@ -683,6 +683,12 @@ svg.holion-leaf {
   .popup #_form_3_submit.ready {
     animation: pop .3s; }
 
+.customMessageEnd {
+  font-weight: bold;
+  border-left: 4px solid #65BD84;
+  padding-left: 10px;
+  color: #65BD84; }
+
 .hover-box.same-size-box.content-change-on-hoover .d-flex.flex-column {
   padding: 30px; }
 

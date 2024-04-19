@@ -63,13 +63,14 @@ window._show_thank_you = function (id, message, trackcmp_url, email) {
     // Custom thank you title
     const customMessage = document.createElement('div');
     customMessage.className = 'thank-you-title';
-    customMessage.innerText = 'Tak for din tilmelding';
+    customMessage.innerText = 'Bekræft din tilmelding på mail';
     thank_you.prepend(customMessage);
 
     // Custom reminder to check spam
     const customMessageEnd = document.createElement('span');
     customMessageEnd.innerText = 'Tjek evt. dit spamfilter';
-    customMessageEnd.style.fontWeight = 'bold';
+    customMessageEnd.classList.add('customMessageEnd');
+    thank_you.append(document.createElement('br'));
     thank_you.append(document.createElement('br'));
     thank_you.append(customMessageEnd);
 
