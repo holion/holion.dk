@@ -109,12 +109,3 @@ iframe,
 .hover-box {
     border-radius: $radius * 4;
 }
-
-.contentful-image-box {
-    border-radius: $radius;
-    overflow: hidden;
-    img {
-        object-fit: contain;
-        border-radius: $radius !important;
-    }
-}
