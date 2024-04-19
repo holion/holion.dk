@@ -115,6 +115,6 @@ iframe,
 //     border-radius: 100vh !important;
 // }
 
-img {
-    object-fit: contain !important;
+.contentful-image-box img {
+    object-fit: cover;
 }

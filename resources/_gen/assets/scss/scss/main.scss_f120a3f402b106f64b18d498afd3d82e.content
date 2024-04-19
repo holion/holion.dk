@@ -749,5 +749,5 @@ iframe,
 .hover-box {
   border-radius: 16px; }
 
-img {
-  object-fit: contain !important; }
+.contentful-image-box img {
+  object-fit: cover; }
