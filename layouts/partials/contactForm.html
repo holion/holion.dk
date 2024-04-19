@@ -148,3 +148,35 @@
 </div>
 {{ end }}
 {{ end }}
+<script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+      var emailInput = document.querySelector('#email');
+      var nameInput = document.querySelector('#name');
+      var phoneInput = document.querySelector('#phone');
+    
+      emailInput.addEventListener('change', function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'formSubmission',
+          'emailValue': this.value
+        });
+      });
+    
+      nameInput.addEventListener('change', function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'formSubmission',
+          'nameValue': this.value
+        });
+      });
+    
+      phoneInput.addEventListener('change', function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'formSubmission',
+          'phoneValue': this.value
+        });
+      });
+    });
+    </script>
+    
