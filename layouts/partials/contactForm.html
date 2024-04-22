@@ -153,6 +153,12 @@
 
     function pushToDataLayer(event, data) {
       data['event'] = event;
+      for (var key in data) {
+        if (data.hasOwnProperty(key)) {
+          data[key] = String(data[key]);
+          data[key] = data[key].toLowerCase();
+        }
+      }
       window.dataLayer.push(data);
     }
     
