@@ -191,49 +191,47 @@ svg.holion-leaf {
   .frontpage-header-box {
     background-size: 100%; } }
 
-.frontpage-box-links {
-  background-color: #2c3237; }
-  .frontpage-box-links .d-flex {
-    gap: 50px;
-    justify-content: center;
-    padding-block: 60px; }
-    @media screen and (max-width: 991px) {
-      .frontpage-box-links .d-flex {
-        gap: 15px;
-        padding-block: 30px; } }
-  .frontpage-box-links a {
+.frontpage-box-links .d-flex {
+  gap: 50px;
+  justify-content: center;
+  padding-block: 60px; }
+  @media screen and (max-width: 991px) {
+    .frontpage-box-links .d-flex {
+      gap: 15px;
+      padding-block: 30px; } }
+.frontpage-box-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 25%;
+  width: 100%;
+  height: 70px;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid #65BD84; }
+  .frontpage-box-links a div {
+    height: 100%;
+    width: 0%;
+    transition: .3s;
+    white-space: nowrap;
+    border-radius: 100vh; }
+  .frontpage-box-links a * {
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
-    width: 25%;
-    width: 100%;
-    height: 70px;
-    text-decoration: none;
-    position: relative;
-    border: 1px solid #65BD84; }
-    .frontpage-box-links a div {
-      height: 100%;
-      width: 0%;
-      transition: .3s;
-      white-space: nowrap;
-      border-radius: 100vh; }
-    .frontpage-box-links a * {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .frontpage-box-links a svg {
-      position: absolute;
-      right: 60px;
-      transform: scale(200%);
-      opacity: 0;
-      transition: .3s; }
-    @media screen and (min-width: 992px) {
-      .frontpage-box-links a:hover {
-        background-color: #65BD84; }
-        .frontpage-box-links a:hover svg {
-          right: 30px;
-          opacity: 1; } }
+    align-items: center; }
+  .frontpage-box-links a svg {
+    position: absolute;
+    right: 60px;
+    transform: scale(200%);
+    opacity: 0;
+    transition: .3s; }
+  @media screen and (min-width: 992px) {
+    .frontpage-box-links a:hover {
+      background-color: #65BD84; }
+      .frontpage-box-links a:hover svg {
+        right: 30px;
+        opacity: 1; } }
 @media screen and (max-width: 991px) {
   .custom-frontpage-section {
     flex-direction: column;
@@ -310,6 +308,24 @@ svg.holion-leaf {
 .single-customer-section a img {
   max-width: 50%;
   align-self: center; }
+
+.frontpageCasesWrapper {
+  background-color: #212529; }
+
+.frontpageCases {
+  display: flex;
+  gap: 30px;
+  padding-block: 60px; }
+  .frontpageCases > div {
+    width: 100%;
+    overflow: hidden; }
+    .frontpageCases > div:nth-child(2) {
+      padding-top: 10%; }
+    .frontpageCases > div:nth-child(3) {
+      width: 300%; }
+    .frontpageCases > div img {
+      width: 100%;
+      object-fit: cover; }
 
 .btn-contact {
   text-transform: none;

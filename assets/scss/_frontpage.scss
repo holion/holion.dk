@@ -57,7 +57,6 @@
 
 // Special Section
 .frontpage-box-links {
-    background-color: lighten(#212529, 5%);
 
     .d-flex {
         gap: 50px;
@@ -232,4 +231,32 @@
 .single-customer-section a img {
     max-width: 50%;
     align-self: center;
+}
+
+.frontpageCasesWrapper {
+    background-color: #212529;
+}
+
+.frontpageCases {
+    display: flex;
+    gap: 30px;
+    padding-block: 60px;
+
+    >div {
+        width: 100%;
+        overflow: hidden;
+
+        &:nth-child(2) {
+            padding-top: 10%;
+        }
+        
+        &:nth-child(3) {
+            width: 300%;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
