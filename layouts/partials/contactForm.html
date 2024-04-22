@@ -149,39 +149,40 @@
 {{ end }}
 {{ end }}
 <script defer>
+    window.dataLayer = window.dataLayer || [];
+
+    function pushToDataLayer(event, data) {
+      data['event'] = event;
+      window.dataLayer.push(data);
+    }
+    
     document.addEventListener('DOMContentLoaded', function() {
-        var emailInput = document.querySelector('#email');
-        var nameInput = document.querySelector('#name');
-        var phoneInput = document.querySelector('#phone');
-      
-        function pushToDataLayer(event, data) {
-          window.dataLayer = window.dataLayer || [];
-          data['event'] = event;
-          for (var key in data) {
-            if (data.hasOwnProperty(key)) {
-              data[key] = String(data[key]); // Convert value to string
-            }
-          }
-          window.dataLayer.push(data);
-        }
-      
-        emailInput.addEventListener('change', function() {
-          pushToDataLayer('generate_lead', {
-            'email': this.value.trim()
-          });
+      var emailInput = document.querySelector('#email');
+      var nameInput = document.querySelector('#name');
+      var phoneInput = document.querySelector('#phone');
+    
+      emailInput.addEventListener('change', function() {
+        pushToDataLayer('generate_lead', {
+          'email': this.value.trim(),
+          'first_name': nameInput.value.trim(),
+          'phone_number': phoneInput.value.trim()
         });
-      
-        nameInput.addEventListener('change', function() {
-          pushToDataLayer('generate_lead', {
-            'first_name': this.value.trim()
-          });
+      });
+    
+      nameInput.addEventListener('change', function() {
+        pushToDataLayer('generate_lead', {
+          'first_name': this.value.trim(),
+          'email': emailInput.value.trim(),
+          'phone_number': phoneInput.value.trim()
         });
-      
-        phoneInput.addEventListener('change', function() {
-          pushToDataLayer('generate_lead', {
-            'phone_number': this.value.trim()
-          });
+      });
+    
+      phoneInput.addEventListener('change', function() {
+        pushToDataLayer('generate_lead', {
+          'phone_number': this.value.trim(),
+          'first_name': nameInput.value.trim(),
+          'email': emailInput.value.trim()
         });
-      });      
+      });
+    });
   </script>
-  
