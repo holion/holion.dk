@@ -4,7 +4,7 @@
             <h2 class="holion-title-section holion_main_color mt-3 mb-5">{{ .Site.Params.testimonials.title }}</h2>
 
             <!-- *** TESTIMONIALS CAROUSEL *** -->
-            <ul class="owl-carousel testimonials">
+            <ul class="owl-carousel testimonials d-none d-sm-block">
                 {{ range (where (where .Site.AllPages.ByWeight "Type" "testimonials")
                 ".Params.testimonial" "!=" nil) }}
                 {{ if .Params.frontPage }}
@@ -17,6 +17,18 @@
                 {{ end }}
 
             </ul>
+
+            <div class="single-customer-section d-block d-sm-none mb-4">
+                <a href="/cases/" style="display: flex; flex-direction:column; gap:30px;justify-content:center;text-decoration:none;">
+                    <img src="https://images.ctfassets.net/pae07rsu8v0z/6gWgIcHookgQNdOYoMaaJ9/b1c99907fa38f61ade357ac0751396a8/1597055500890.webp?h=250" alt="">
+                    <div class="d-flex" style="flex-direction: column;">
+                        <p style="color:white;">“Da vi manglede fornyelse og nye perspektiver til vores app, Commute, der motiverer til grøn transport, hev vi fat i Holion. Vi blev straks mødt af et kreativt og fagligt kompetent team, der var i stand til at “oversætte” vores forretningsmæssige idéer til innovative løsninger.”</p>
+                        <div class="holion_main_color title_medium_weight_medium">
+                            <p>Henrik Jespersen, CEO hos CommuteApp</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
             <!-- /.owl-carousel -->
             {{ partial "button-link.html" (dict "link" $.Site.Params.testimonials.buttonLink "text"
             $.Site.Params.testimonials.buttonText "buttontype" "btn-primary my-3" )}}
