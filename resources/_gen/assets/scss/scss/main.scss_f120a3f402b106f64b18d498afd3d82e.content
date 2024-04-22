@@ -307,6 +307,10 @@ svg.holion-leaf {
   .desktop-br {
     display: none; } }
 
+.single-customer-section a img {
+  max-width: 50%;
+  align-self: center; }
+
 .btn-contact {
   text-transform: none;
   background: transparent;
