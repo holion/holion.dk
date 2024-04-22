@@ -23,19 +23,19 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="name">{{ i18n "contactName" }}</label>
-                                <input type="text" class="form-control" name="name" id="name" required>
+                                <input type="text" class="form-control gtm-name" name="name" id="name" class="gtm-name" required>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="email">{{ i18n "contactMail" }}</label>
-                                <input type="text" class="form-control" name="email" id="email" required>
+                                <input type="text" class="form-control gtm-email" name="email" id="email" required>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="phone">Dit telefonnummer</label>
-                                <input type="text" class="form-control" name="phone" id="phone">
+                                <input type="text" class="form-control gtm-phone" name="phone" id="phone" class="gtm-phone">
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -163,9 +163,9 @@
     }
     
     document.addEventListener('DOMContentLoaded', function() {
-      var emailInput = document.querySelector('#email');
-      var nameInput = document.querySelector('#name');
-      var phoneInput = document.querySelector('#phone');
+      var emailInput = document.querySelector('.gtm-email');
+      var nameInput = document.querySelector('.gtm-name');
+      var phoneInput = document.querySelector('.gtm-phone');
     
       emailInput.addEventListener('change', function() {
         pushToDataLayer('generate_lead', {
