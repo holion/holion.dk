@@ -150,53 +150,34 @@
 {{ end }}
 <script defer>
     document.addEventListener('DOMContentLoaded', function() {
-      var emailInput = document.querySelector('#email');
-      var nameInput = document.querySelector('#name');
-      var phoneInput = document.querySelector('#phone');
-  
-      function hashSHA256(value) {
-        var crypto = window.crypto || window.msCrypto;
-        var encoder = new TextEncoder();
-        var data = encoder.encode(value);
-        return crypto.subtle.digest('SHA-256', data).then(function(hash) {
-          var hex = Array.from(new Uint8Array(hash))
-            .map(function(byte) {
-              return byte.toString(16).padStart(2, '0');
-            })
-            .join('');
-          return hex;
-        });
-      }
-  
-      emailInput.addEventListener('change', function() {
-        hashSHA256(this.value.toLowerCase().trim()).then(function(hash) {
+        var emailInput = document.querySelector('#email');
+        var nameInput = document.querySelector('#name');
+        var phoneInput = document.querySelector('#phone');
+      
+        function pushToDataLayer(event, data) {
           window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            'event': 'gtm.click',
-            'sha256_email_address': hash
+          data['event'] = event;
+          window.dataLayer.push(data);
+        }
+      
+        emailInput.addEventListener('change', function() {
+          pushToDataLayer('generate_lead', {
+            'email': this.value.trim()
+          });
+        });
+      
+        nameInput.addEventListener('change', function() {
+          pushToDataLayer('generate_lead', {
+            'first_name': this.value.trim()
+          });
+        });
+      
+        phoneInput.addEventListener('change', function() {
+          pushToDataLayer('generate_lead', {
+            'phone_number': this.value.trim()
           });
         });
       });
-  
-      nameInput.addEventListener('change', function() {
-        hashSHA256(this.value.toLowerCase().trim()).then(function(hash) {
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            'event': 'gtm.click',
-            'sha256_first_name': hash
-          });
-        });
-      });
-  
-      phoneInput.addEventListener('change', function() {
-        hashSHA256(this.value.toLowerCase().trim()).then(function(hash) {
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            'event': 'gtm.click',
-            'sha256_phone_number': hash
-          });
-        });
-      });
-    });
+      
   </script>
   
