@@ -315,7 +315,7 @@ svg.holion-leaf {
 .frontpageCases {
   display: flex;
   gap: 30px;
-  padding-block: 120px;
+  padding-block: 60px 120px;
   position: relative; }
   .frontpageCases > a {
     width: 100%;
