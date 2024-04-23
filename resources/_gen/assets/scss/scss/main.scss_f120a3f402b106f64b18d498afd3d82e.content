@@ -315,17 +315,27 @@ svg.holion-leaf {
 .frontpageCases {
   display: flex;
   gap: 30px;
-  padding-block: 60px; }
-  .frontpageCases > div {
+  padding-block: 120px;
+  position: relative; }
+  .frontpageCases > a {
     width: 100%;
     overflow: hidden; }
-    .frontpageCases > div:nth-child(2) {
+    .frontpageCases > a:nth-child(2) {
       padding-top: 10%; }
-    .frontpageCases > div:nth-child(3) {
+    .frontpageCases > a:nth-child(3) {
       width: 300%; }
-    .frontpageCases > div img {
+    .frontpageCases > a img {
       width: 100%;
       object-fit: cover; }
+  .frontpageCases .moreCasesLink {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10%;
+    color: white;
+    font-size: 24px;
+    width: fit-content;
+    padding: 10px; }
 
 .btn-contact {
   text-transform: none;

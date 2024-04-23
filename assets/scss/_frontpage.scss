@@ -240,9 +240,10 @@
 .frontpageCases {
     display: flex;
     gap: 30px;
-    padding-block: 60px;
+    padding-block: 120px;
+    position: relative;
 
-    >div {
+    >a {
         width: 100%;
         overflow: hidden;
 
@@ -258,5 +259,17 @@
             width: 100%;
             object-fit: cover;
         }
+    }
+
+    .moreCasesLink {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 10%;
+        color: white;
+        font-size: 24px;
+        width: fit-content;
+        padding: 10px;
+
     }
 }
