@@ -164,8 +164,6 @@
     }
     
     form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      
       var emailInput = document.querySelector('.gtm-email');
       var nameInput = document.querySelector('.gtm-name');
       var phoneInput = document.querySelector('.gtm-phone');
@@ -176,8 +174,6 @@
         'phone_number': phoneInput.value.trim()
       });
       
-      event.stopPropagation();
-      event.stopImmediatePropagation();
-      return false;
+      return true;
     });
 </script>
