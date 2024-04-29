@@ -175,7 +175,9 @@
         'first_name': nameInput.value.trim(),
         'phone_number': phoneInput.value.trim()
       });
-
-      this.submit();
+      
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      return false;
     });
 </script>
