@@ -149,6 +149,7 @@
 {{ end }}
 {{ end }}
 <script defer>
+    const form = document.querySelector('#contact-form');
     window.dataLayer = window.dataLayer || [];
 
     function pushToDataLayer(event, data) {
@@ -162,7 +163,7 @@
       window.dataLayer.push(data);
     }
     
-    document.addEventListener('DOMContentLoaded', function() {
+    form.addEventListener('submit', function() {
       var emailInput = document.querySelector('.gtm-email');
       var nameInput = document.querySelector('.gtm-name');
       var phoneInput = document.querySelector('.gtm-phone');
