@@ -163,33 +163,19 @@
       window.dataLayer.push(data);
     }
     
-    form.addEventListener('submit', function() {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
       var emailInput = document.querySelector('.gtm-email');
       var nameInput = document.querySelector('.gtm-name');
       var phoneInput = document.querySelector('.gtm-phone');
-    
-      emailInput.addEventListener('change', function() {
-        pushToDataLayer('generate_lead', {
-          'email': this.value.trim(),
-          'first_name': nameInput.value.trim(),
-          'phone_number': phoneInput.value.trim()
-        });
+
+      pushToDataLayer('generate_lead', {
+        'email': emailInput.value.trim(),
+        'first_name': nameInput.value.trim(),
+        'phone_number': phoneInput.value.trim()
       });
-    
-      nameInput.addEventListener('change', function() {
-        pushToDataLayer('generate_lead', {
-          'first_name': this.value.trim(),
-          'email': emailInput.value.trim(),
-          'phone_number': phoneInput.value.trim()
-        });
-      });
-    
-      phoneInput.addEventListener('change', function() {
-        pushToDataLayer('generate_lead', {
-          'phone_number': this.value.trim(),
-          'first_name': nameInput.value.trim(),
-          'email': emailInput.value.trim()
-        });
-      });
+
+      this.submit();
     });
-  </script>
+</script>
