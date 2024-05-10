@@ -339,6 +339,46 @@ svg.holion-leaf {
     @media screen and (max-width: 991px) {
       .frontpageCases .moreCasesLink {
         display: none; } }
+.frontpage-feature-section {
+  display: flex;
+  background-color: white;
+  border-radius: 60px;
+  margin-block: 100px; }
+  .frontpage-feature-section * {
+    color: black; }
+  @media screen and (max-width: 991px) {
+    .frontpage-feature-section {
+      border-radius: 30px;
+      margin-block: 60px;
+      padding-block: 30px; } }
+  .frontpage-feature-section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 30px; }
+    @media screen and (max-width: 991px) {
+      .frontpage-feature-section > div {
+        padding-inline: 30px; }
+        .frontpage-feature-section > div:nth-child(1) {
+          display: none; }
+        .frontpage-feature-section > div:nth-child(2) {
+          margin-left: 0 !important; } }
+    .frontpage-feature-section > div:nth-child(2) {
+      margin-left: -50px; }
+  .frontpage-feature-section img {
+    width: 60%;
+    scale: 120%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 60px !important; }
+
+.contentful-image-box img {
+  border-radius: 8px; }
+
+.testimonial-items img {
+  border-radius: 8px; }
+
 .btn-contact {
   text-transform: none;
   background: transparent;
