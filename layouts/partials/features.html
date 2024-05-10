@@ -87,31 +87,33 @@
         </div>
     </div>
 </div>
-<div class="container mt-5">
-    {{ range .Site.Data.specialSection }}
-    {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
-    <div class="frontpage-feature-section">
-        <div>
-            <img src="{{ .image.url }}">
-        </div>
-        <div>
-            <div class="my-3">
-                <b>IT-udvikling baseret på partnerskab og tillid</b>
-                <br>
-                <br>
-                Tillid, ordentlighed og samarbejde er nøgleord, når kunder vælger os til at udvikle deres IT-løsninger.
-                <br>
-                <br>
-                I Holion får du ikke bare en tilfældig leverandør, men en partner, som prioriterer langvarige
-                relationer.
-                <br>
-                <br>
-                Vi er et dansk udviklingshus og med vores lokation i Hadsten, er vi altid tæt på dig.
+<div class="grey-box py-1">
+    <div class="container mt-5">
+        {{ range .Site.Data.specialSection }}
+        {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
+        <div class="frontpage-feature-section">
+            <div>
+                <img src="{{ .image.url }}">
+            </div>
+            <div>
+                <div class="my-3">
+                    <b>IT-udvikling baseret på partnerskab og tillid</b>
+                    <br>
+                    <br>
+                    Tillid, ordentlighed og samarbejde er nøgleord, når kunder vælger os til at udvikle deres IT-løsninger.
+                    <br>
+                    <br>
+                    I Holion får du ikke bare en tilfældig leverandør, men en partner, som prioriterer langvarige
+                    relationer.
+                    <br>
+                    <br>
+                    Vi er et dansk udviklingshus og med vores lokation i Hadsten, er vi altid tæt på dig.
+                </div>
             </div>
         </div>
+        {{ end }}
+        {{ end }}
     </div>
-    {{ end }}
-    {{ end }}
 </div>
 
 <div class="frontpageCasesWrapper">
@@ -136,26 +138,28 @@
     </div>
 </div>
 
-<div class="container mt-5">
-    {{ range .Site.Data.specialSection }}
-    {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
-    <div class="frontpage-feature-section">
-        <div>
-            <img src="https://images.ctfassets.net/pae07rsu8v0z/717uBO3xPlyOGcF25tQuiB/4a3141dd0afce103006dcb8d5f5feaf5/Untitled-1.jpg">
-        </div>
-        <div>
-            Holion er et IT-konsulentfirma med speciale inden for .NET-udvikling. Siden 2014 har vi
-            lavet app udvikling, IT-systemer, webløsninger og programmer til virksomheder i alle
-            størrelser.
-            <br>
-            <br>
-            Vi er din ekspert igennem hele processen og sørger for at hjælpe dig trygt igennem alle
-            faser af et projekt - lige fra idéudvikling til færdigt produkt.
+<div class="grey-box py-1">
+    <div class="container mt-5">
+        {{ range .Site.Data.specialSection }}
+        {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
+        <div class="frontpage-feature-section">
+            <div>
+                <img src="https://images.ctfassets.net/pae07rsu8v0z/717uBO3xPlyOGcF25tQuiB/4a3141dd0afce103006dcb8d5f5feaf5/Untitled-1.jpg">
             </div>
+            <div>
+                Holion er et IT-konsulentfirma med speciale inden for .NET-udvikling. Siden 2014 har vi
+                lavet app udvikling, IT-systemer, webløsninger og programmer til virksomheder i alle
+                størrelser.
+                <br>
+                <br>
+                Vi er din ekspert igennem hele processen og sørger for at hjælpe dig trygt igennem alle
+                faser af et projekt - lige fra idéudvikling til færdigt produkt.
+            </div>
+            <a href="/processen/" class="features-link">Læs mere om appudviklingsprocessen</a>
         </div>
+        {{ end }}
+        {{ end }}
     </div>
-    {{ end }}
-    {{ end }}
 </div>
 
 {{ end }} {{ end }} {{ end }}

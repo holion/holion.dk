@@ -1,0 +1,59 @@
+{{ $currentPageUrl := .Params.contentUrl }}
+{{ $currentPage := .Site.Params }}
+{{ $i := 0 }}
+
+{{ if isset .Site.Params "features" }} {{ if .Site.Params.features.enable }} {{ if gt (len .Site.Data.features) 0 }}
+<div class="grey-box py-1">
+    <div class="container mt-5">
+        {{ range .Site.Data.specialSection }}
+        {{ if and (eq .url $currentPageUrl) (eq .tag "features") }}
+        <div class="frontpage-feature-section frontpage-feature-section-reverse">
+            <div>
+                <img
+                    src="https://images.ctfassets.net/pae07rsu8v0z/2OPlp28T9k8PU2g3dyxyfp/ef7fa0ae8eca5d8ae789a210edd1aec8/Untitled-2.jpg">
+            </div>
+            <div>
+                Vi tror på, at det kræver en fælles indsats, og at alle har et ansvar, når det kommer til bæredygtighed
+                og
+                miljø.
+                <br>
+                <br>
+                Derfor tænker vi holdbare, grønne løsninger ind; både i forhold til kunder, medarbejdere og
+                leverandører.
+                <br>
+                <br>
+                Vælger du et samarbejde med Holion, vælger du derfor et samarbejde med et udviklingshus, der tager
+                ansvar
+                for miljøet, social bæredygtighed og en fælles indsats.
+            </div>
+            <a href="/esg/" class="features-link">Læs mere om ESG</a>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+<div class="container">
+    <div class="feature-employee-section">
+        <div class="tri-img-wrap">
+            <img src="https://images.ctfassets.net/pae07rsu8v0z/2SO1hVCvZpsZ8jW4c2YAfB/dd5ba2a364d74ea5e54cc57da07d9541/Medarbejder_-_Nikolaj.png"
+                alt="">
+            <img src="https://images.ctfassets.net/pae07rsu8v0z/p0yxKIwwl76kTRNLchc3t/ecfd7cdb65cd5b26ed615dc837de10da/Cathrine-klar.jpg"
+                alt="">
+            <img src="https://images.ctfassets.net/pae07rsu8v0z/5BuhAPzB5gTr0BwcWcJHAM/3d043be9120f7f7960fbb6858c67252e/Milo-klar.jpg"
+                alt="">
+        </div>
+        <div>
+            Et tillidsfuldt samarbejde er altafgørende for, at dit projekt bliver en succes.
+            <br><br>
+            Derfor prioriterer vi, at du har en tæt dialog med projektlederen i hele processen - både når det kommer til
+            app udvikling og webudvikling.
+            <br><br>
+            Du vil formentlig også møde vores andre udviklere og medarbejdere, der til sammen spiller en vigtig rolle i
+            at kunne hjælpe dig og projektet bedst muligt.
+        </div>
+        <a href="/medarbejdere/" class="features-link">Se vores medarbejdere her</a>
+    </div>
+</div>
+
+{{ end }} {{ end }} {{ end }}
