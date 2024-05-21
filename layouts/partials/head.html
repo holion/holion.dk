@@ -60,7 +60,7 @@
 
      <!-- Custom stylesheet - for your changes -->
      <link href="{{ "css/styles.css" | relURL}}" rel="stylesheet">
-     {{ $scss := resources.Get "scss/main.scss" | resources.ToCSS }}
+     {{ $scss := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
      <link rel="stylesheet" href="{{ $scss.Permalink }}">
 
     <!-- Responsivity for older IE -->
