@@ -1,57 +1,96 @@
-// Custom code
-const popup = document.querySelector('.popup');
-const closePopup = document.querySelector('.close-popup');
-const popupTeaser = document.querySelector('.popup-teaser');
-const popupForm = document.querySelector('#_form_3_');
-const popupSubmit = document.querySelector('#_form_3_submit');
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.querySelector('.popup');
+    const closePopup = document.querySelector('.close-popup');
+    const popupTeaser = document.querySelector('.popup-teaser');
+    const popupForm = document.querySelector('#_form_3_');
+    const popupSubmit = document.querySelector('#_form_3_submit');
+    const elementToScrollIntoView = document.querySelector('#popup-appear');
 
-if (location.href.includes('utm_source=ActiveCampaign')) {
-    localStorage.setItem('subscribed', 'true');
-}
+    const checkPopupVisibility = () => {
+        if (location.pathname === '/' && elementToScrollIntoView) {
+            const elementRect = elementToScrollIntoView.getBoundingClientRect();
+            const isInViewport = (
+                elementRect.top <= (window.innerHeight / 2) &&
+                elementRect.left >= 0 &&
+                elementRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                elementRect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
 
-closePopup.addEventListener('click', () => {
-    popup.classList.add('popup-hidden');
-    sessionStorage.setItem('popup-closed', 'true');
-    if (!localStorage.getItem('popup-submitted')) {
-        popupTeaser.classList.add('popup-teaser-visible');
+            if (isInViewport && !localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
+                popup.classList.remove('popup-hidden');
+            } else if (isInViewport && localStorage.getItem('popup-submitted')) {
+                popupTeaser.classList.remove('popup-teaser-visible');
+            } else if (isInViewport) {
+                popupTeaser.classList.add('popup-teaser-visible');
+            }
+
+            if (isInViewport && localStorage.getItem('popup-submitted')) {
+                popupTeaser.classList.add('popup-teaser-hidden');
+            }
+        }
+    };
+
+    if (location.href.includes('utm_source=ActiveCampaign')) {
+        localStorage.setItem('subscribed', 'true');
     }
-});
 
-
-if (location.href.includes('cases')
-    || location.href.includes('appudvikling')
-    || location.href.includes('konvertering-af-xamarin-app')
-    || location.href.includes('alternativer-til-pwa-til-ios')
-    || location.href.includes('processen')
-    || location.pathname === '/') {
-    if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
-        setTimeout(() => {
-            popup.classList.remove('popup-hidden');
-        }, 3000);
-    } else if (localStorage.getItem('popup-submitted')) {
-        popupTeaser.classList.remove('popup-teaser-visible');
-    } else {
-        popupTeaser.classList.add('popup-teaser-visible');
-    }
-
-    if (localStorage.getItem('popup-submitted')) {
-        popupTeaser.classList.add('popup-teaser-hidden');
-    }
-}
-
-
-popupTeaser.addEventListener('click', () => {
-    popup.classList.remove('popup-hidden');
-    popupTeaser.classList.remove('popup-teaser-visible');
-});
-
-document.querySelector('._button-wrapper').addEventListener('DOMNodeInserted', () => {
-    const form = document.querySelector('#_form_3_');
-    form.scrollTo({
-        top: form.scrollHeight,
-        behavior: 'smooth'
+    closePopup.addEventListener('click', () => {
+        popup.classList.add('popup-hidden');
+        sessionStorage.setItem('popup-closed', 'true');
+        if (!localStorage.getItem('popup-submitted')) {
+            popupTeaser.classList.add('popup-teaser-visible');
+        }
     });
+
+    popupTeaser.addEventListener('click', () => {
+        popup.classList.remove('popup-hidden');
+        popupTeaser.classList.remove('popup-teaser-visible');
+    });
+
+    document.querySelector('._button-wrapper').addEventListener('DOMNodeInserted', () => {
+        popupForm.scrollTo({
+            top: popupForm.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
+
+    // Check visibility on scroll and resize
+    window.addEventListener('scroll', checkPopupVisibility);
+    window.addEventListener('resize', checkPopupVisibility);
+
+    // Initial check
+    checkPopupVisibility();
+
+    // Show popup after 3 seconds on specific pages
+    const pagesToShowPopup = [
+        'cases', 'appudvikling', 'konvertering-af-xamarin-app',
+        'alternativer-til-pwa-til-ios', 'processen'
+    ];
+    const shouldShowPopup = pagesToShowPopup.some(page => location.href.includes(page));
+
+    if (shouldShowPopup) {
+        setTimeout(() => {
+            if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
+                popup.classList.remove('popup-hidden');
+            } else if (localStorage.getItem('popup-submitted')) {
+                popupTeaser.classList.remove('popup-teaser-visible');
+            } else {
+                popupTeaser.classList.add('popup-teaser-visible');
+            }
+
+            if (localStorage.getItem('popup-submitted')) {
+                popupTeaser.classList.add('popup-teaser-hidden');
+            }
+        }, 3000);
+    }
 });
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 // ActiveCampaign (Any code that's commented "Custom" is not part of the default ActiveCampaign JS)
 window.cfields = { "1": "holions_privatlivspolitik" };
@@ -63,12 +102,12 @@ window._show_thank_you = function (id, message, trackcmp_url, email) {
     // Custom thank you title
     const customMessage = document.createElement('div');
     customMessage.className = 'thank-you-title';
-    customMessage.innerText = 'Bekræft din tilmelding på mail';
+    customMessage.innerText = 'Tak for din tilmelding';
     thank_you.prepend(customMessage);
 
     // Custom reminder to check spam
     const customMessageEnd = document.createElement('span');
-    customMessageEnd.innerText = 'Tjek evt. dit spamfilter';
+    customMessageEnd.innerText = 'Tjek spam, hvis mailen ikke er kommet indenfor et par minutter';
     customMessageEnd.classList.add('customMessageEnd');
     thank_you.append(document.createElement('br'));
     thank_you.append(document.createElement('br'));
