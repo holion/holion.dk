@@ -99,15 +99,19 @@ window._show_thank_you = function (id, message, trackcmp_url, email) {
     form.querySelector('._form-content').style.display = 'none';
     thank_you.innerHTML = message;
 
-    // Custom thank you title
-    const customMessage = document.createElement('div');
-    customMessage.className = 'thank-you-title';
-    customMessage.innerText = 'Tak for din tilmelding';
-    thank_you.prepend(customMessage);
-
     // Custom reminder to check spam
     const customMessageEnd = document.createElement('span');
-    customMessageEnd.innerText = 'Tjek spam, hvis mailen ikke er kommet indenfor et par minutter';
+    customMessageEnd.innerHTML = `
+    <b style="color:#05A66F;font-weight:bold;">Tak for din tilmelding</b>
+    <br><br>
+    <b style="font-size: 200%;">Sådan!<br> Tjek din indbakke &#x1F440;</b>
+    <br><br>
+    Vi har sendt dig en mail, som du lige skal bekræfte, før vi kan sende dig e-bogen. Mailen kommer fra "Niels fra Holion".
+    <br><br>
+    <span style="color:#05A66F;">
+        <b style>Tjek spam</b>, hvis mailen ikke er kommet indenfor et par minutter.
+    </span>
+    `;
     customMessageEnd.classList.add('customMessageEnd');
     thank_you.append(document.createElement('br'));
     thank_you.append(document.createElement('br'));
