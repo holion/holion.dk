@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const closePopup = document.querySelector('.close-popup');
     const popupTeaser = document.querySelector('.popup-teaser');
     const popupForm = document.querySelector('#_form_3_');
-    const popupSubmit = document.querySelector('#_form_3_submit');
     const elementToScrollIntoView = document.querySelector('#popup-appear');
 
     const checkPopupVisibility = () => {
