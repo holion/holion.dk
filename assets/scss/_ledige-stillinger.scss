@@ -26,11 +26,12 @@
         @media screen and (min-width: 991px) {
             &:hover {
                 background-color: rgba(white, .2);
+
                 span {
                     opacity: 1;
                     bottom: -10px;
                 }
-    
+
                 img {
                     scale: 110%;
                 }
@@ -55,7 +56,7 @@
             padding: 20px;
             width: 60%;
             transition: $ts;
-            
+
             @include mobile {
                 width: 70%;
             }
@@ -76,6 +77,7 @@
         flex-direction: column;
         margin-bottom: 30px;
     }
+
     >* {
         width: 100%;
     }
@@ -89,53 +91,120 @@
     }
 }
 
-.ledige-stillinger-section {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
-    img {
-        width: 20%;
-    }
-
-    @include tablet {
-        flex-direction: column;
-        img {
-            width: 50%;
-        }
-    }
-}
-
 .ledige-stillinger-steps {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 20px;
-
-    @include mobile {
-        grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid $primary;
+    margin-left: 15px;
 }
- 
+
 .ledige-stillinger-step {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
     position: relative;
-    background-color: #212529;
     border-radius: $radius * 2;
     padding: 20px;
-    
+
     b {
         font-size: 150%;
+        margin-left: 15px;
+    }
+
+    p {
+        margin-left: 15px;
     }
 
     span {
         position: absolute;
-        left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: -15px;
         font-size: 150%;
         background-color: $primary;
-        padding-inline: 10px;
+        width: 30px;
         border-radius: $radius;
+    }
+}
+
+.ledige-stillinger-section {
+    display: flex;
+    padding-block: 50px;
+    gap: 50px;
+
+    >*:nth-child(1) {
+        width: 70%;
+        padding-top: 20px;
+    }
+
+    >*:nth-child(2) {
+        width: 30%;
+    }
+
+    @include mobile {
+        flex-direction: column;
+
+        >* {
+            width: 100% !important;
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+
+
+    .ledige-stillinger-info {
+        display: flex;
+        flex-direction: column;
+
+        @include mobile {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 425px) {
+            flex-direction: column;
+            gap: 0;
+
+            img {
+                aspect-ratio: 1/1;
+                width: 100%;
+            }
+        }
+
+        img {
+            margin-bottom: 30px;
+            object-fit: cover;
+        }
+
+        span {
+            font-size: 75%;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(white, .1);
+            padding: 10px 20px;
+            position: relative;
+            border-radius: $radius * 2;
+            border: 1px solid rgba(white, .2);
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $primary;
+            }
+
+            svg {
+                position: absolute;
+                align-self: center;
+                left: 30px;
+            }
+        }
     }
 }
