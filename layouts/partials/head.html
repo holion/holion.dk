@@ -12,8 +12,12 @@
         })(window, document, 'script', 'dataLayer', 'GTM-5P9GDDP');</script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
+    {{ if isset .Page.Params "no-seo" }}
+        <meta name="robots" content="noindex, nofollow">
+    {{ else }}
+        <meta name="robots" content="all,follow">
+        <meta name="googlebot" content="index,follow,snippet,archive">
+    {{ end }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ if isset .Page.Params "pagetitle"}}{{.Page.Params.pagetitle}}{{else}}{{.Title}}{{end}}</title>
