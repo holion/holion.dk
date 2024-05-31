@@ -28,3 +28,22 @@
         }
     }
 }
+
+.tilmeld-nyhedsbrev-section {
+    display: flex;
+    gap: 50px;
+
+    img {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    @include mobile {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            max-height: 75vh;
+        }
+    }
+}
