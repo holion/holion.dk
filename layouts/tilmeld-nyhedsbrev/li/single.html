@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "bodytop.html" . }}
+    <div id="all">
+
+        <header>
+
+            {{ partial "nav.html" . }}
+
+        </header>
+
+        <div id="content">
+
+            <div class="col-md-12 header-distance">
+                <div class="container">
+                    <h1 class="holion-title-page m-0">Hold dig opdateret på app- og webudvikling</h1>
+                    <h2 class="holion-title-section holion_main_color my-3">Tilmeld dig Holions nyhedsbrev, og modtag 1
+                        gang i måneden den nyeste og vigtigste viden indenfor app- og webudvikling direkte i din
+                        indbakke.</h2>
+                    <div class="tilmeld-nyhedsbrev">
+                        <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_3_"
+                            class="_form _form_3 _inline-form  _dark" novalidate data-styles-version="5">
+                            <input type="hidden" name="u" value="3" />
+                            <input type="hidden" name="f" value="3" />
+                            <input type="hidden" name="s" />
+                            <input type="hidden" name="c" value="0" />
+                            <input type="hidden" name="m" value="0" />
+                            <input type="hidden" name="act" value="sub" />
+                            <input type="hidden" name="v" value="2" />
+                            <input type="hidden" name="or" value="20cf04ae-658e-40a3-96b5-d4424d949adb" />
+                            <div class="_form-content">
+                                <div class="_form_element _x02321309 _full_width ">
+                                    <label for="firstname" class="_form-label">
+                                        Fornavn
+                                    </label>
+                                    <div class="_field-wrapper">
+                                        <input type="text" id="firstname" name="firstname" required />
+                                    </div>
+                                </div>
+                                <div class="_form_element _x46688109 _full_width ">
+                                    <label for="email" class="_form-label">
+                                        E-mail adresse
+                                    </label>
+                                    <div class="_field-wrapper">
+                                        <input type="text" id="email" name="email" required />
+                                    </div>
+                                </div>
+                                <div class="_form_element _x13276726 _full_width ">
+                                    <fieldset class="_form-fieldset">
+                                        <input data-autofill="false" type="hidden" id="field[1][]" name="field[1][]"
+                                            value="~|">
+                                        <div class="_row _checkbox-radio">
+                                            <input id="field_1Option 1" type="checkbox" name="field[1][]" value="this field"
+                                                class="checkPrivacyPolicy" required>
+                                            <span>
+                                                <label for="field_1Option 1">
+                                                    Ja, jeg har læst og accepterer <a href="/privatlivspolitik"
+                                                        target="_blank">Holions
+                                                        privatlivspolitik</a>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="_button-wrapper _full_width">
+                                    <button id="_form_3_submit" class="_submit" type="submit">
+                                        Tilmeld
+                                    </button>
+                                    <p style="font-size: 90%;">Du kan altid afmelde nyhedsbrevet igen.</p>
+                                </div>
+                                <div class="_clear-element">
+                                </div>
+                            </div>
+                            <div class="_form-thank-you" style="display:none;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            {{ partial "footer.html" . }}
+
+        </div>
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+    <script src="/js/popup.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.tilmeld-nyhedsbrev {
+    input[type="text"] {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: $radius;
+        border: none;
+        background-color: rgba(white, .2);
+        border: 1px solid rgba(white, .2);
+        color: white;
+        margin-bottom: 30px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        margin-block: 30px 20px;
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: $radius;
+        border: none;
+        background-color: $primary;
+        color: white;
+
+        &:hover {
+            background-color: darken($primary, 10%);
+        }
+    }
+}

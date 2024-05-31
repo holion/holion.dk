@@ -9,6 +9,7 @@
 @import 'visitkort';
 @import 'popup';
 @import 'ledige-stillinger';
+@import 'tilmeld-nyhedsbrev';
 
 $primary: #65bd84;
 
@@ -97,7 +98,7 @@ $primary: #65bd84;
     display: none;
 }
 
-#content .container img:not(.esg-grid img) {
+#content .container img:not(.esg-grid img, footer img) {
     border-radius: $radius * 2;
 }
 
