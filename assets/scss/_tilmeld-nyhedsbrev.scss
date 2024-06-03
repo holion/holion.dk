@@ -12,6 +12,10 @@
         &:focus {
             outline: none;
         }
+
+        &::placeholder {
+            color: rgba(white, .6);
+        }
     }
 
     button {
@@ -31,14 +35,14 @@
 
 .tilmeld-nyhedsbrev-section {
     display: flex;
-    gap: 200px;
+    gap: 250px;
 
     img {
         width: 30%;
         object-fit: contain;
     }
 
-    @media screen and (max-width: 1440px) {
+    @include mobile {
         flex-direction: column;
         gap: 50px;
 
@@ -47,4 +51,8 @@
             max-height: 75vh;
         }
     }
+}
+
+._x00396840 {
+    display: none;
 }
