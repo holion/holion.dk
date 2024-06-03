@@ -42,6 +42,10 @@
         object-fit: contain;
     }
 
+    @media screen and (max-width: 1199px) {
+        gap: 150px;
+    }
+
     @include mobile {
         flex-direction: column;
         gap: 50px;
@@ -53,6 +57,21 @@
     }
 }
 
-._x00396840 {
-    display: none;
+.tilmeld-nyhedsbrev {
+    ._x00396840,
+    ._x27757731,
+    ._button-wrapper {
+        opacity: 0;
+        pointer-events: none;
+        transition: .5s;
+        max-height: 0%;
+        max-height: 1px;
+        overflow: hidden;
+
+        &.visible {
+            opacity: 1;
+            pointer-events: auto;
+            max-height: 124px;
+        }
+    }
 }

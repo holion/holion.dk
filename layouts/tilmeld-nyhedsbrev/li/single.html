@@ -21,7 +21,8 @@
                         <div>
                             <h1 class="holion-title-page m-0">Hold dig opdateret på IT- og appudvikling</h1>
                             <br>
-                            <p style="font-size: 124%;">Tilmeld dig Holions nyhedsbrev, og modtag 1 gang i måneden den nyeste og vigtigste viden indenfor IT- og appudvikling direkte i din indbakke.</p>
+                            <p style="font-size: 124%;">Tilmeld dig Holions nyhedsbrev, og modtag 1 gang i måneden den
+                                nyeste og vigtigste viden indenfor IT- og appudvikling direkte i din indbakke.</p>
                             <div class="tilmeld-nyhedsbrev">
                                 <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_3_"
                                     class="_form _form_3 _inline-form  _dark" novalidate data-styles-version="5">
@@ -36,8 +37,8 @@
                                     <div class="_form-content">
                                         <div class="_form_element _x02321309 _full_width ">
                                             <div class="_field-wrapper">
-                                                <input type="text" id="firstname" name="firstname" placeholder="Dit navn"
-                                                    required />
+                                                <input type="text" id="firstname" name="firstname"
+                                                    placeholder="Dit navn" required />
                                             </div>
                                         </div>
                                         <div class="_form_element _x46688109 _full_width ">
@@ -50,14 +51,16 @@
                                             <label for="ls" class="_form-label">
                                                 Bekræft at du ikke er en robot*
                                             </label>
-                                            <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
                                             </div>
                                         </div>
                                         <div class="_form_element _x27757731 _full_width _clear">
                                             <div class="_html-code">
                                                 <p class="mt-3">
                                                     Når du tilmelder dig nyhedsbrevet, accepterer du <a
-                                                        href="/privatlivspolitik" target="_blank">Holions privatlivspolitik</a>
+                                                        href="/privatlivspolitik" target="_blank">Holions
+                                                        privatlivspolitik</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -75,7 +78,8 @@
                                 </form>
                             </div>
                         </div>
-                        <img src="https://images.ctfassets.net/pae07rsu8v0z/2OWN41FW0ZtgBvdRgckR4I/0ab364103c99b8df9f207778750b00c2/nyhedsbrev.png" alt="Screenshot af Holion's Nyhedsbrev">
+                        <img src="https://images.ctfassets.net/pae07rsu8v0z/2OWN41FW0ZtgBvdRgckR4I/0ab364103c99b8df9f207778750b00c2/nyhedsbrev.png"
+                            alt="Screenshot af Holion's Nyhedsbrev">
                     </div>
                 </div>
             </div>
@@ -86,7 +90,29 @@
     </div>
     <!-- /#all -->
 
-    {{ partial "scripts.html" . }}
+    {{/* {{ partial "scripts.html" . }} */}}
+    <script defer>
+        const formName = document.querySelector('#firstname');
+        const formEmail = document.querySelector('#email');
+        const form = document.querySelector('.tilmeld-nyhedsbrev');
+        const formCaptcha = document.querySelector('._x00396840');
+        const formPrivacyPolicy = document.querySelector('._x27757731');
+        const formSubmit = document.querySelector('._button-wrapper');
+        const formEmailValidation = /@.+?\..{2,}/;
+
+        form.addEventListener('keyup', () => {
+            if (formName.value.length >= 2 && formEmailValidation.test(formEmail.value)) {
+                formCaptcha.classList.add('visible');
+                formPrivacyPolicy.classList.add('visible');
+                formSubmit.classList.add('visible');
+            } else {
+                formCaptcha.classList.remove('visible');
+                formPrivacyPolicy.classList.remove('visible');
+                formSubmit.classList.remove('visible');
+            }
+        });
+    </script>
+
     <script>
         window.cfields = [];
         window._show_thank_you = function (id, message, trackcmp_url, email) {
