@@ -1,4 +1,14 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P9GDDP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+{{ if or
+    (.Params.isFrontPage)
+    (strings.Contains .Permalink "cases")
+    (strings.Contains .Permalink "appudvikling")
+    (strings.Contains .Permalink "konvertering-af-xamarin-app")
+    (strings.Contains .Permalink "alternativer-til-pwa-til-ios")
+    (strings.Contains .Permalink "processen")
+ }}
 {{ partial "popup" . }}
+{{ end }}
+
 <!-- End Google Tag Manager (noscript) -->

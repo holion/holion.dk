@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupTeaser = document.querySelector('.popup-teaser');
     const popupForm = document.querySelector('#_form_3_');
     const elementToScrollIntoView = document.querySelector('#popup-appear');
+    const frontPage = location.pathname === '/'; // Assuming front page has URL '/'
 
     const checkPopupVisibility = () => {
-        if (location.pathname === '/' && elementToScrollIntoView) {
+        if (frontPage) {
             const elementRect = elementToScrollIntoView.getBoundingClientRect();
             const isInViewport = (
                 elementRect.top <= (window.innerHeight / 2) &&
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 elementRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
                 elementRect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
-
             if (isInViewport && !localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
                 popup.classList.remove('popup-hidden');
             } else if (isInViewport && localStorage.getItem('popup-submitted')) {
@@ -22,8 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (isInViewport) {
                 popupTeaser.classList.add('popup-teaser-visible');
             }
-
             if (isInViewport && localStorage.getItem('popup-submitted')) {
+                popupTeaser.classList.add('popup-teaser-hidden');
+            }
+        } else {
+            if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
+                popup.classList.remove('popup-hidden');
+            } else if (localStorage.getItem('popup-submitted')) {
+                popupTeaser.classList.remove('popup-teaser-visible');
+            } else {
+                popupTeaser.classList.add('popup-teaser-visible');
+            }
+            if (localStorage.getItem('popup-submitted')) {
                 popupTeaser.classList.add('popup-teaser-hidden');
             }
         }
@@ -60,26 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial check
     checkPopupVisibility();
 
-    // Show popup after 3 seconds on specific pages
-    const pagesToShowPopup = [
-        'cases', 'appudvikling', 'konvertering-af-xamarin-app',
-        'alternativer-til-pwa-til-ios', 'processen'
-    ];
-    const shouldShowPopup = pagesToShowPopup.some(page => location.href.includes(page));
-
-    if (shouldShowPopup) {
+    // Show popup after 3 seconds if not on the front page
+    if (!frontPage) {
         setTimeout(() => {
-            if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
-                popup.classList.remove('popup-hidden');
-            } else if (localStorage.getItem('popup-submitted')) {
-                popupTeaser.classList.remove('popup-teaser-visible');
-            } else {
-                popupTeaser.classList.add('popup-teaser-visible');
-            }
-
-            if (localStorage.getItem('popup-submitted')) {
-                popupTeaser.classList.add('popup-teaser-hidden');
-            }
+            checkPopupVisibility();
         }, 3000);
     }
 });
