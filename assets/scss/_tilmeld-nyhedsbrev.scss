@@ -15,7 +15,7 @@
     }
 
     button {
-        margin-block: 30px 20px;
+        margin-bottom: 20px;
         padding: 10px 20px;
         width: 100%;
         border-radius: $radius;
@@ -31,15 +31,16 @@
 
 .tilmeld-nyhedsbrev-section {
     display: flex;
-    gap: 50px;
+    gap: 200px;
 
     img {
         width: 30%;
         object-fit: contain;
     }
 
-    @include mobile {
+    @media screen and (max-width: 1440px) {
         flex-direction: column;
+        gap: 50px;
 
         img {
             width: 100%;
