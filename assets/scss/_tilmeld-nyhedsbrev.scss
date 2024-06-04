@@ -74,6 +74,16 @@
         }
     }
 
+    ._button-wrapper {
+        opacity: 0.5;
+        pointer-events: none;
+        
+        &.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+
     ._x20813176 {
         margin-bottom: 30px;
     }
