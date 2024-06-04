@@ -210,3 +210,16 @@
         }
     }
 }
+
+.ledige-stillinger-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(white, .1);
+    border-radius: $radius * 2;
+    padding: 10px 20px;
+
+    p {
+        margin: 0;
+    }
+}
