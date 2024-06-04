@@ -21,7 +21,8 @@
                         <div>
                             <h1 class="holion-title-page m-0">Bliv klogere på IT og apps</h1>
                             <br>
-                            <p style="font-size: 124%;">Tilmeld dig Holions nyhedsbrev, og modtag 1 gang i måneden viden og tips indenfor IT- og appudvikling direkte i din indbakke.</p>
+                            <p style="font-size: 124%;">Tilmeld dig Holions nyhedsbrev, og modtag 1 gang i måneden viden
+                                og tips indenfor IT- og appudvikling direkte i din indbakke.</p>
                             <div class="tilmeld-nyhedsbrev">
                                 {{/* <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_3_"
                                     class="_form _form_3 _inline-form  _dark" novalidate data-styles-version="5">
@@ -212,21 +213,16 @@
                 button = form.querySelector('button'),
                 old_error = form.querySelector('._form_error');
             if (old_error) old_error.parentNode.removeChild(old_error);
-            /* err.innerHTML = message; */
-            /* err.innerHTML = 'Bekræft at du ikke er en robot'; */
-            const targetElement = document.querySelector('._x20813176');
-            if (targetElement.classList.contains('shake')) {
-                targetElement.classList.remove('shake');
-            } else {
-                targetElement.classList.add('shake');
-            }
-            for (var i = 0; i < targetElements.length; i++) {
-                targetElements[i].classList.add('shake');
-            };
+            err.innerHTML = message;
             err.className = '_error-inner _form_error _no_arrow';
             var wrapper = document.createElement('div');
             wrapper.className = '_form-inner';
-            wrapper.appendChild(err);
+            /*wrapper.appendChild(err);*/
+            const shakeElement = document.querySelector('._x20813176');
+            shakeElement.classList.add('shake');
+            setTimeout(() => {
+                shakeElement.classList.remove('shake');
+            }, 500);
             button.parentNode.insertBefore(wrapper, button);
             var submitButton = form.querySelector('[id^="_form"][id$="_submit"]');
             submitButton.disabled = false;
@@ -531,7 +527,7 @@
                     } else if (value === undefined || value === null || value === '') {
                         elem.className = elem.className + ' _has_error';
                         no_error = false;
-                        tooltip = create_tooltip(elem, "Dette felt skal udfyldes");
+                        tooltip = create_tooltip(elem, "Dette felt skal udfyldes.");
                     }
                 }
                 if (no_error && (elem.id == 'field[]' || elem.id == 'ca[11][v]')) {
