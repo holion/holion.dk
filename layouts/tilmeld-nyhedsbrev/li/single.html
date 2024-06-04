@@ -19,63 +19,11 @@
                 <div class="container">
                     <div class="tilmeld-nyhedsbrev-section">
                         <div>
-                            <h1 class="holion-title-page m-0">Bliv klogere på IT og apps</h1>
+                            <h1 class="holion-title-page m-0">Bliv klogere på IT og appudvikling</h1>
                             <br>
-                            <p style="font-size: 124%;">Tilmeld dig Holions nyhedsbrev, og modtag 1 gang i måneden viden
+                            <p class="hide-on-submit">Tilmeld dig Holions nyhedsbrev, og modtag 1 gang i måneden viden
                                 og tips indenfor IT- og appudvikling direkte i din indbakke.</p>
                             <div class="tilmeld-nyhedsbrev">
-                                {{/* <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_3_"
-                                    class="_form _form_3 _inline-form  _dark" novalidate data-styles-version="5">
-                                    <input type="hidden" name="u" value="3" />
-                                    <input type="hidden" name="f" value="3" />
-                                    <input type="hidden" name="s" />
-                                    <input type="hidden" name="c" value="0" />
-                                    <input type="hidden" name="m" value="0" />
-                                    <input type="hidden" name="act" value="sub" />
-                                    <input type="hidden" name="v" value="2" />
-                                    <input type="hidden" name="or" value="71004304-b54f-4d1f-ae81-35541ec8b9c1" />
-                                    <div class="_form-content">
-                                        <div class="_form_element _x02321309 _full_width ">
-                                            <div class="_field-wrapper">
-                                                <input type="text" id="firstname" name="firstname"
-                                                    placeholder="Dit navn" required />
-                                            </div>
-                                        </div>
-                                        <div class="_form_element _x46688109 _full_width ">
-                                            <div class="_field-wrapper">
-                                                <input type="text" id="email" name="email" placeholder="Din email"
-                                                    required />
-                                            </div>
-                                        </div>
-                                        <div class="_form_element _x00396840 _full_width ">
-                                            <label for="ls" class="_form-label">
-                                                Bekræft at du ikke er en robot*
-                                            </label>
-                                            <div class="g-recaptcha"
-                                                data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
-                                            </div>
-                                        </div>
-                                        <div class="_form_element _x27757731 _full_width _clear">
-                                            <div class="_html-code">
-                                                <p class="mt-3">
-                                                    Når du tilmelder dig nyhedsbrevet, accepterer du <a
-                                                        href="/privatlivspolitik" target="_blank">Holions
-                                                        privatlivspolitik</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="_button-wrapper _full_width">
-                                            <button id="_form_3_submit" class="_submit" type="submit">
-                                                Tilmeld
-                                            </button>
-                                            <p style="font-size: 90%;">Du kan altid afmelde nyhedsbrevet igen.</p>
-                                        </div>
-                                        <div class="_clear-element">
-                                        </div>
-                                    </div>
-                                    <div class="_form-thank-you" style="display:none;">
-                                    </div>
-                                </form> */}}
                                 <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_5_"
                                     class="_form _form_5 _inline-form  _dark" novalidate data-styles-version="5">
                                     <input type="hidden" name="u" value="5" />
@@ -149,7 +97,7 @@
     </div>
     <!-- /#all -->
 
-    {{/* {{ partial "scripts.html" . }} */}}
+    {{ partial "scripts.html" . }}
     <script defer>
         const formName = document.querySelector('#fullname');
         const formEmail = document.querySelector('#email');
@@ -176,6 +124,8 @@
             form.querySelector('._form-content').style.display = 'none';
             thank_you.innerHTML = message;
             thank_you.style.display = 'block';
+            thank_you.style.fontSize = '124%';
+            document.querySelector('.hide-on-submit').style.display = 'none';
             const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
             var visitorObject = window[vgoAlias];
             if (email && typeof visitorObject !== 'undefined') {
