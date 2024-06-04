@@ -7,7 +7,7 @@
         background-color: rgba(white, .2);
         border: 1px solid rgba(white, .2);
         color: white;
-        margin-bottom: 30px;
+        margin-top: 30px;
 
         &:focus {
             outline: none;
@@ -38,7 +38,7 @@
     gap: 250px;
 
     img {
-        width: 30%;
+        width: 25%;
         object-fit: contain;
     }
 
@@ -58,9 +58,8 @@
 }
 
 .tilmeld-nyhedsbrev {
-    ._x00396840,
-    ._x27757731,
-    ._button-wrapper {
+    
+    ._x20813176 {
         opacity: 0;
         pointer-events: none;
         transition: .5s;
@@ -73,5 +72,31 @@
             pointer-events: auto;
             max-height: 124px;
         }
+    }
+
+    ._x20813176 {
+        margin-bottom: 30px;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(20px);
+        }
+        25% {
+            transform: translateX(-20px);
+        }
+        50% {
+            transform: translateX(20px);
+        }
+        75% {
+            transform: translateX(-20px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    .shake {
+        animation: shake .5s;
     }
 }

@@ -24,7 +24,7 @@
                             <p style="font-size: 124%;">Tilmeld dig Holions nyhedsbrev, og modtag 1 gang i måneden den
                                 nyeste og vigtigste viden indenfor IT- og appudvikling direkte i din indbakke.</p>
                             <div class="tilmeld-nyhedsbrev">
-                                <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_3_"
+                                {{/* <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_3_"
                                     class="_form _form_3 _inline-form  _dark" novalidate data-styles-version="5">
                                     <input type="hidden" name="u" value="3" />
                                     <input type="hidden" name="f" value="3" />
@@ -75,6 +75,65 @@
                                     </div>
                                     <div class="_form-thank-you" style="display:none;">
                                     </div>
+                                </form> */}}
+                                <form method="POST" action="https://holion.activehosted.com/proc.php" id="_form_5_"
+                                    class="_form _form_5 _inline-form  _dark" novalidate data-styles-version="5">
+                                    <input type="hidden" name="u" value="5" />
+                                    <input type="hidden" name="f" value="5" />
+                                    <input type="hidden" name="s" />
+                                    <input type="hidden" name="c" value="0" />
+                                    <input type="hidden" name="m" value="0" />
+                                    <input type="hidden" name="act" value="sub" />
+                                    <input type="hidden" name="v" value="2" />
+                                    <input type="hidden" name="or" value="b2e5a807-a10c-4f1e-b07c-5415d9750827" />
+                                    <div class="_form-content">
+                                        <div class="_form_element _x62916463 _full_width ">
+                                            <div class="_field-wrapper">
+                                                <input type="text" id="fullname" name="fullname" placeholder="Dit navn"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="_form_element _x78599819 _full_width ">
+                                            <div class="_field-wrapper">
+                                                <input type="text" id="email" name="email" placeholder="Din email"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="_form_element _x20813176 _full_width mt-3">
+                                            <label for="ls" class="_form-label">
+                                                Bekræft at du ikke er en robot.*
+                                            </label>
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+                                            </div>
+                                        </div>
+                                        <p class="mt-3">
+                                            Når du tilmelder dig nyhedsbrevet, accepterer du <a
+                                                href="/privatlivspolitik" target="_blank">Holions
+                                                privatlivspolitik</a>
+                                        </p>
+                                        <div class="_button-wrapper _full_width">
+                                            <button id="_form_5_submit" class="_submit" type="submit">
+                                                Tilmeld
+                                            </button>
+                                        </div>
+                                        <p style="font-size: 90%;">Du kan altid afmelde nyhedsbrevet igen</p>
+                                        <div class="_clear-element">
+                                        </div>
+                                    </div>
+                                    <div class="_form-thank-you" style="display:none;">
+                                    </div>
+                                    {{/* <div class="_form-branding">
+                                        <div class="_marketing-by">
+                                            Marketing by
+                                        </div>
+                                        <a href="https://www.activecampaign.com/?utm_medium=referral&utm_campaign=acforms"
+                                            class="_logo">
+                                            <span class="form-sr-only">
+                                                ActiveCampaign
+                                            </span>
+                                        </a>
+                                    </div> */}}
                                 </form>
                             </div>
                         </div>
@@ -92,22 +151,19 @@
 
     {{/* {{ partial "scripts.html" . }} */}}
     <script defer>
-        const formName = document.querySelector('#firstname');
+        const formName = document.querySelector('#fullname');
         const formEmail = document.querySelector('#email');
         const form = document.querySelector('.tilmeld-nyhedsbrev');
-        const formCaptcha = document.querySelector('._x00396840');
-        const formPrivacyPolicy = document.querySelector('._x27757731');
+        const formCaptcha = document.querySelector('._x20813176');
         const formSubmit = document.querySelector('._button-wrapper');
         const formEmailValidation = /@.+?\..{2,}/;
 
         form.addEventListener('keyup', () => {
             if (formName.value.length >= 2 && formEmailValidation.test(formEmail.value)) {
                 formCaptcha.classList.add('visible');
-                formPrivacyPolicy.classList.add('visible');
                 formSubmit.classList.add('visible');
             } else {
                 formCaptcha.classList.remove('visible');
-                formPrivacyPolicy.classList.remove('visible');
                 formSubmit.classList.remove('visible');
             }
         });
@@ -157,7 +213,17 @@
                 button = form.querySelector('button'),
                 old_error = form.querySelector('._form_error');
             if (old_error) old_error.parentNode.removeChild(old_error);
-            err.innerHTML = message;
+            /* err.innerHTML = message; */
+            /* err.innerHTML = 'Bekræft at du ikke er en robot'; */
+            const targetElement = document.querySelector('._x20813176');
+            if (targetElement.classList.contains('shake')) {
+                targetElement.classList.remove('shake');
+            } else {
+                targetElement.classList.add('shake');
+            }
+            for (var i = 0; i < targetElements.length; i++) {
+                targetElements[i].classList.add('shake');
+            };
             err.className = '_error-inner _form_error _no_arrow';
             var wrapper = document.createElement('div');
             wrapper.className = '_form-inner';
@@ -192,7 +258,7 @@
             var hideButton = document.getElementById('hideButton');
             // Add event listener to the button
             hideButton.addEventListener('click', function () {
-                var submitButton = document.querySelector('#_form_3_submit');
+                var submitButton = document.querySelector('#_form_5_submit');
                 submitButton.disabled = false;
                 submitButton.classList.remove('processing');
                 window.location.href = window.location.href;
@@ -211,7 +277,7 @@
         };
         window._load_script = function (url, callback, isSubmit) {
             var head = document.querySelector('head'), script = document.createElement('script'), r = false;
-            var submitButton = document.querySelector('#_form_3_submit');
+            var submitButton = document.querySelector('#_form_5_submit');
             script.charset = 'utf-8';
             script.src = url;
             if (callback) {
@@ -225,9 +291,9 @@
             script.onerror = function () {
                 if (isSubmit) {
                     if (script.src.length > 10000) {
-                        _show_error("3", "Sorry, your submission failed. Please shorten your responses and try again.");
+                        _show_error("5", "Sorry, your submission failed. Please shorten your responses and try again.");
                     } else {
-                        _show_error("3", "Sorry, your submission failed. Please try again.");
+                        _show_error("5", "Sorry, your submission failed. Please try again.");
                     }
                     submitButton.disabled = false;
                     submitButton.classList.remove('processing');
@@ -261,7 +327,7 @@
                 }
             };
             var _removed = false;
-            var form_to_submit = document.getElementById('_form_3_');
+            var form_to_submit = document.getElementById('_form_5_');
             var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
 
             var getUrlParam = function (name) {
@@ -466,7 +532,7 @@
                     } else if (value === undefined || value === null || value === '') {
                         elem.className = elem.className + ' _has_error';
                         no_error = false;
-                        tooltip = create_tooltip(elem, "This field is required.");
+                        tooltip = create_tooltip(elem, "Dette felt skal udfyldes");
                     }
                 }
                 if (no_error && (elem.id == 'field[]' || elem.id == 'ca[11][v]')) {
@@ -479,7 +545,7 @@
                     if (!value.match(/^[\+_a-z0-9-'&=]+(\.[\+_a-z0-9-']+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)) {
                         elem.className = elem.className + ' _has_error';
                         no_error = false;
-                        tooltip = create_tooltip(elem, "Enter a valid email address.");
+                        tooltip = create_tooltip(elem, "Indtast en gyldig email adresse.");
                     }
                 }
                 if (no_error && /date_field/.test(elem.className)) {
@@ -650,11 +716,11 @@
                 e.preventDefault();
                 if (validate_form()) {
                     // use this trick to get the submit button & disable it using plain javascript
-                    var submitButton = e.target.querySelector('#_form_3_submit');
+                    var submitButton = e.target.querySelector('#_form_5_submit');
                     submitButton.disabled = true;
                     submitButton.classList.add('processing');
                     var serialized = _form_serialize(
-                        document.getElementById('_form_3_')
+                        document.getElementById('_form_5_')
                     ).replace(/%0A/g, '\\n');
                     var err = form_to_submit.querySelector('._form_error');
                     err ? err.parentNode.removeChild(err) : false;
@@ -694,6 +760,7 @@
             };
             addEvent(form_to_submit, 'submit', form_submit);
         })();
+
     </script>
 
 </body>
