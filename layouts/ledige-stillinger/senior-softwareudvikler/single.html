@@ -321,19 +321,20 @@
     <script defer>
         document.addEventListener('copy', function (event) {
             var targetElement = event.target;
-
+        
             // Check if the copied text comes from a link containing "job@holion.dk"
             if (targetElement.tagName === 'A' && targetElement.href.includes('job@holion.dk')) {
                 // Push the 'contentCopied' event to the dataLayer
                 dataLayer.push({
                     'event': 'contentCopied'
                 });
-
-                // Trigger the 'Kopier mailadresse' trigger in Google Tag Manager
-                window.dataLayer.push({ 'event': 'Kopier mailadresse' });
+        
+                // Fire the tag associated with the 'Kopier mailadresse' trigger
+                gtag('event', 'Kopier mailadresse');
             }
         });
-    </script>
+        </script>
+        
 
 
 
