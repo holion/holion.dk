@@ -329,15 +329,18 @@
                     'event': 'contentCopied'
                 });
         
+                // Fire the tag associated with the 'GA - Klik - Mail' trigger
+                dataLayer.push({
+                    'event': 'GA - Klik - Mail'
+                });
+        
                 // Fire the tag associated with the 'Kopier mailadresse' trigger
-                gtag('event', 'Kopier mailadresse');
+                dataLayer.push({
+                    'event': 'Kopier mailadresse'
+                });
             }
         });
         </script>
-        
-
-
-
 
 
 </body>
