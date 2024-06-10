@@ -318,29 +318,6 @@
     <!-- /#all -->
 
     {{ partial "scripts.html" . }}
-    <script defer>
-        document.addEventListener('copy', function (event) {
-            var targetElement = event.target;
-        
-            // Check if the copied text comes from a link containing "job@holion.dk"
-            if (targetElement.tagName === 'A' && targetElement.href.includes('job@holion.dk')) {
-                // Push the 'contentCopied' event to the dataLayer
-                dataLayer.push({
-                    'event': 'contentCopied'
-                });
-        
-                // Fire the tag associated with the 'GA - Klik - Mail' trigger
-                dataLayer.push({
-                    'event': 'GA - Klik - Mail'
-                });
-        
-                // Fire the tag associated with the 'Kopier mailadresse' trigger
-                dataLayer.push({
-                    'event': 'Kopier mailadresse'
-                });
-            }
-        });
-        </script>
 
 
 </body>
