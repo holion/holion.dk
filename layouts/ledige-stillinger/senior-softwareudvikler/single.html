@@ -319,6 +319,19 @@
 
     {{ partial "scripts.html" . }}
 
+    <script defer>
+        document.addEventListener('copy', function (e) {
+            var copiedText = window.getSelection().toString();
+            if (copiedText.includes('job@holion.dk')) {
+                // Push a data layer event
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'emailLinkCopied'
+                });
+            }
+        });
+    </script>
+
 
 </body>
 
