@@ -7,8 +7,18 @@
     (strings.Contains .Permalink "konvertering-af-xamarin-app")
     (strings.Contains .Permalink "alternativer-til-pwa-til-ios")
     (strings.Contains .Permalink "processen")
+    (strings.Contains .Permalink "ActiveCampaign")
  }}
 {{ partial "popup" . }}
 {{ end }}
+
+<script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Handle UTM source for subscription
+        if (location.href.includes('utm_source=ActiveCampaign')) {
+            localStorage.setItem('subscribed', 'true');
+        }
+    });
+</script>
 
 <!-- End Google Tag Manager (noscript) -->

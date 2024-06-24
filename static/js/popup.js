@@ -2,80 +2,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const popup = document.querySelector('.popup');
     const closePopup = document.querySelector('.close-popup');
     const popupTeaser = document.querySelector('.popup-teaser');
-    const popupForm = document.querySelector('#_form_3_');
-    const elementToScrollIntoView = document.querySelector('#popup-appear');
-    const frontPage = location.pathname === '/'; // Assuming front page has URL '/'
 
-    const checkPopupVisibility = () => {
-        if (frontPage) {
-            const elementRect = elementToScrollIntoView.getBoundingClientRect();
-            const isInViewport = (
-                elementRect.top <= (window.innerHeight / 2) &&
-                elementRect.left >= 0 &&
-                elementRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                elementRect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-            if (isInViewport && !localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
-                popup.classList.remove('popup-hidden');
-            } else if (isInViewport && localStorage.getItem('popup-submitted')) {
-                popupTeaser.classList.remove('popup-teaser-visible');
-            } else if (isInViewport) {
-                popupTeaser.classList.add('popup-teaser-visible');
-            }
-            if (isInViewport && localStorage.getItem('popup-submitted')) {
-                popupTeaser.classList.add('popup-teaser-hidden');
-            }
-        } else {
-            if (!localStorage.getItem('popup-submitted') && !sessionStorage.getItem('popup-closed') && !localStorage.getItem('subscribed')) {
-                popup.classList.remove('popup-hidden');
-            } else if (localStorage.getItem('popup-submitted')) {
-                popupTeaser.classList.remove('popup-teaser-visible');
-            } else {
-                popupTeaser.classList.add('popup-teaser-visible');
-            }
-            if (localStorage.getItem('popup-submitted')) {
-                popupTeaser.classList.add('popup-teaser-hidden');
-            }
+    // Function to check if popup should be shown
+    const shouldShowPopup = () => {
+        return !localStorage.getItem('popup-submitted') &&
+            !localStorage.getItem('subscribed');
+    };
+
+    // Function to show the popup
+    const showPopup = () => {
+        if (shouldShowPopup() && !sessionStorage.getItem('popup-closed')) {
+            popup.classList.remove('popup-hidden');
         }
     };
 
-    if (location.href.includes('utm_source=ActiveCampaign')) {
-        localStorage.setItem('subscribed', 'true');
-    }
-
-    closePopup.addEventListener('click', () => {
+    // Function to hide the popup and show the teaser if not submitted
+    const hidePopup = () => {
         popup.classList.add('popup-hidden');
         sessionStorage.setItem('popup-closed', 'true');
-        if (!localStorage.getItem('popup-submitted')) {
+        if (popupTeaser && shouldShowPopup()) {
             popupTeaser.classList.add('popup-teaser-visible');
         }
-    });
+    };
 
-    popupTeaser.addEventListener('click', () => {
-        popup.classList.remove('popup-hidden');
-        popupTeaser.classList.remove('popup-teaser-visible');
-    });
-
-    document.querySelector('._button-wrapper').addEventListener('DOMNodeInserted', () => {
-        popupForm.scrollTo({
-            top: popupForm.scrollHeight,
-            behavior: 'smooth'
-        });
-    });
-
-    // Check visibility on scroll and resize
-    window.addEventListener('scroll', checkPopupVisibility);
-    window.addEventListener('resize', checkPopupVisibility);
-
-    // Initial check
-    checkPopupVisibility();
-
-    // Show popup after 3 seconds if not on the front page
-    if (!frontPage) {
-        setTimeout(() => {
-            checkPopupVisibility();
-        }, 3000);
+    // Event listener for closing the popup
+    if (closePopup) {
+        closePopup.addEventListener('click', hidePopup);
     }
+
+    // Event listener for showing the popup when teaser is clicked
+    if (popupTeaser) {
+        popupTeaser.addEventListener('click', () => {
+            popup.classList.remove('popup-hidden');
+            popupTeaser.classList.remove('popup-teaser-visible');
+            sessionStorage.removeItem('popup-closed'); // Reset the popup closed state for the current session
+        });
+    }
+
+    // Show the popup after 7 seconds
+    setTimeout(() => {
+        showPopup();
+        if (popupTeaser && sessionStorage.getItem('popup-closed') && shouldShowPopup()) {
+            popupTeaser.classList.add('popup-teaser-visible');
+        }
+    }, 7000);
 });
 
 
