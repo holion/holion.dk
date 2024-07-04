@@ -1,0 +1,150 @@
+.e-bog-feature-section {
+    display: flex;
+    align-items: center;
+    // background-color: white;
+    border-radius: 15px;
+    margin-block: 100px;
+    position: relative;
+    height: fit-content;
+    background-color: white;
+
+    .my-3 {
+        padding-inline: 50px;
+
+        @include mobile {
+            padding-inline: 0;
+        }
+    }
+
+    .e-bog-feature-section-title {
+        font-size: 22px;
+    }
+
+    * {
+        color: black;
+    }
+
+    @media screen and (max-width: 991px) {
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding-block: 30px;
+
+        &:has(.features-link) {
+            margin-bottom: 90px;
+        }
+    }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 30px;
+        
+        @include mobile {
+            padding-inline: 30px !important;
+            padding-block: 0 !important;
+        }
+
+        &:nth-child(1) {
+            height: 50%;
+            width: 430px;
+            @include mobile {
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            justify-content: start;
+            padding-left: 50px;
+        }
+    }
+
+    img {
+        position: absolute;
+        left: 30px;
+        width: 300px;
+        height: calc(100% + 30px);
+        object-fit: contain;
+        border-radius: 30px !important;
+        // box-shadow: -30px 30px 0 0 #ccc;
+    }
+
+    .features-link {
+        position: absolute;
+        bottom: -50px;
+        right: 30px;
+        color: white;
+        font-size: 125%;
+
+        @media screen and (max-width: 991px) {
+            left: 0%;
+            right: 0%;
+            width: fit-content;
+            margin-inline: auto;
+        }
+    }
+}
+
+.e-bog-feature-section-reverse {
+    flex-direction: row-reverse;
+
+    img {
+        left: auto;
+        right: 30px;
+    }
+
+    .features-link {
+        position: absolute;
+        bottom: -50px;
+        left: 30px;
+        right: auto;
+        color: white;
+    }
+
+    div:nth-child(2) {
+        padding-inline: 30px 60px;
+    }
+}
+
+.nyhedsbrev-form {
+    input {
+        background-color: rgba(white, .2);
+        border: none;
+        border-radius: $radius * 2;
+        padding: 10px 20px;
+        width: 100%;
+        border: 1px solid rgba(white, .1);
+        margin-bottom: 30px;
+        outline: none;
+        color: white;
+
+        &:focus {
+            outline: 1px solid $primary;
+        }
+    }
+
+    button {
+        background-color: $primary;
+        border: none;
+        border-radius: $radius * 2;
+        padding: 20px 30px;
+        color: white;
+        width: 100%;
+    }
+}
+
+.e-bog-header {
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%
+    }
+
+    @media screen and (max-width: 991px) {
+        img {
+            display: none;
+        }
+    }
+}
