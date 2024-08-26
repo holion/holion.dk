@@ -35,7 +35,7 @@ module.exports = {
           return "cases/" + entry.fields.slug;
         },
         link: (entry) => {
-          return entry.fields.slug;
+          return "cases/" + entry.fields.slug;
         },
       },
     },
